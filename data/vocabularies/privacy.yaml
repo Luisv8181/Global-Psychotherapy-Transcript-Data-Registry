@@ -1,0 +1,14 @@
+privacy_claims:
+  - deidentified
+  - anonymized
+  - pseudonymized
+  - redacted
+  - privacy-evaluated
+  - reidentification-tested
+  - unknown
+
+privacy_assessment:
+  - documented
+  - experimentally-evaluated
+  - not-documented
+  - unknown
