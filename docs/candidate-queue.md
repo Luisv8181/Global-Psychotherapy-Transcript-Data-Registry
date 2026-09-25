@@ -2,7 +2,7 @@
 
 Leads found during discovery that are not yet registry records. Each lists what has been confirmed, where, and what is still needed before a record can be written. A candidate becomes a record only when its primary source has been read. Promote it by copying `data/datasets/_TEMPLATE.yaml`.
 
-Last reviewed: 2026-09-25.
+Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled.
 
 | Candidate | Language | Type (provisional) | Confirmed so far | Still needed |
 |---|---|---|---|---|
@@ -11,13 +11,19 @@ Last reviewed: 2026-09-25.
 | **MAGneT** | English | synthetic | Listed in the [Graph2Counsel README](https://github.com/UKPLab/graph2counsel) with Hugging Face and [TUdatalib](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/5072) links. | Paper, generation method, size and license. |
 | **Eeyore** | English | synthetic profiles | Listed in the Graph2Counsel README (character cards for client simulation); arXiv 2306.09742. | Whether it contains dialogues or only profiles. It may belong outside a transcript registry. |
 | **MIDAS** | Spanish | unknown | Title found by search, "Examining Spanish Counseling with MIDAS: a Motivational Interviewing Dataset in Spanish" (arXiv 2502.08458). | Everything; its repository was not found. It would be the registry's first Spanish motivational-interviewing resource. |
-| **PsyQA** | Chinese | real (single-turn) | [GitHub repository](https://github.com/thu-coai/PsyQA) exists. Named in the SoulChat README as a common counseling Q&A dataset. | Access terms. It is question-answer data, not dialogue, so it may need a `clinical_qa` record type. |
-| **Counsel Chat** | English | real (single-turn) | [GitHub repository](https://github.com/nbertagnolli/counsel-chat) exists; MIT license file. | Whether the MIT license covers the scraped therapist answers. Same Q&A scope question as PsyQA. |
 
-## Scope questions to settle
+## Review flags from this pass
 
-- **Single-turn counseling Q&A** (PsyQA, Counsel Chat) is a large, heavily used resource type. Decide whether the registry covers it, and if so under which `source_context` (the vocabulary already has `clinical_qa`).
-- **Peer and crowdsourced emotional support** (ESConv) and **demonstration recordings** (AnnoMI) currently use `dataset_type: unknown`, because `real / synthetic / hybrid` has no category for them. Adding categories such as `demonstration` and `peer_support` would make the registry's populations countable.
+Now that `demonstration` is a dataset type, three existing records built from public counseling videos should be re-read against their sources:
+
+- **HOPE** (`real`): built from publicly available counseling videos. Check whether these were real sessions or demonstrations.
+- **MindDialog** (`real`, partially verified): its source is described as demonstration videos featuring real therapists.
+- **HighQuality** (`real`, partially verified): 258 therapist-patient dialogues annotated for MI quality. Check whether this is the high- and low-quality MI video collection from Pérez-Rosas et al., which overlaps AnnoMI's sources.
+
+## Video catalog leads
+
+- MindDialog reports more than 325 hours of public psychotherapy demonstration videos. If the authors publish a video list, import it as AnnoMI's was.
+- HOPE's video list is released only under its access agreement and must not be catalogued (see `docs/video-catalog.md`).
 
 ## Access notes for this environment
 
