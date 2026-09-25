@@ -1,0 +1,32 @@
+id: kokorochat
+title: KokoroChat
+canonical_url: https://github.com/UEC-InabaLab/KokoroChat
+status: verified
+dataset_type: hybrid
+source_context: clinician_roleplay
+geography:
+  countries: [Japan]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: documented
+languages: [ja]
+language_context: original
+dialects: []
+cultural_contexts: [Japanese counseling context]
+sessions: 6589
+longitudinal: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: CC-BY-NC-ND-4.0
+  verified: true
+privacy:
+  deidentified: not_applicable_to_roleplay_source
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/UEC-InabaLab/KokoroChat
+  supporting_publications:
+    - https://aclanthology.org/2025.acl-long.608/
+last_verified: 2026-09-24
