@@ -1,0 +1,47 @@
+id: minddialog
+title: MindDialog: A Large-Scale Benchmark for Counseling Dialogue Understanding and Generation
+canonical_url: https://doi.org/10.1016/j.patcog.2026.113766
+status: partially-verified
+dataset_type: real
+domain: psychotherapy
+source_context: Psychotherapy demonstration videos featuring real therapists; the authors describe the source material as authentic counseling sessions
+geography:
+  countries:
+    - unknown
+languages:
+  - unknown
+therapy_modalities:
+  - psychotherapy
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - text
+    - subtitles
+modalities:
+  - video
+  - text
+annotations:
+  - basic_emotions
+  - dialogue_topics
+  - emotional_valence
+  - intervention_labels
+  - response_labels
+  - therapy_methods
+access:
+  level: unknown
+  requirements: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://www.sciencedirect.com/science/article/pii/S0031320326007314
+publication_year: 2026
+notes: The paper reports processing more than 325 hours of publicly available psychotherapy demonstration videos and describes them as authentic counseling sessions featuring real therapists. Because the source is described as demonstration videos, the registry keeps this record partially verified until the underlying videos and the dataset's provenance are reviewed closely enough to distinguish naturally occurring clinical encounters from educational demonstrations or role-play. The paper reports automated subtitle extraction, LLM-assisted transcript processing, expert review, and multi-round manual verification.
+last_verified: 2026-09-24
