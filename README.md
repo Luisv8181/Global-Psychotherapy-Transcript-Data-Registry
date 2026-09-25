@@ -108,6 +108,21 @@ Controlled vocabularies live under `data/vocabularies/`.
 Methodology and governance documentation lives under `docs/`.
 Validation and automation live under `src/`, `scripts/`, `tests/`, and `.github/`.
 
+
+## Dathive architecture
+
+This registry is also the first concrete implementation of the **Dathive** concept: an evidence-grounded research structure maintained through specialized discovery, verification, extraction, linkage, audit, and synthesis agents.
+
+A Dathive is not just another database or knowledge graph. The database stores canonical records; the evidence layer preserves provenance; the agents maintain and interrogate the map; humans retain authority over verification, ethics, licensing, privacy, and consequential research decisions.
+
+The psychotherapy Dathive is defined in `dathive.yaml`, with the architecture in `docs/dathive.md`, the agent protocol in `docs/dathive-agent-model.md`, and the machine-readable task contract in `schema/dathive-task.schema.json`.
+
+The first design principle is simple:
+
+> **A database stores knowledge. A Dathive cultivates an evidence-grounded map of knowledge.**
+
+The term is intentionally conceptual and is not presented as an established technical standard.
+
 ## Contributing
 
 Submit **metadata and official links**, not restricted transcripts. If a dataset is controlled, copyrighted, or otherwise unavailable for redistribution, record its access pathway and restrictions rather than copying the data.
