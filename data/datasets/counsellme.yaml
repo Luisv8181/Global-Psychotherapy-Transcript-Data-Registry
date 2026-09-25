@@ -29,20 +29,19 @@ generation:
   real_session_influence: no direct human session generation reported
 access:
   level: open
-  requirements: None reported. The dataset is published on OSF (osf.io/2ay8d) with no registration step described.
+  requirements: None. The dataset is a public OSF project (osf.io/2ay8d, DOI 10.17605/OSF.IO/2AY8D) with no registration step.
 redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: none-selected
+  verified: true
   notes: >-
-    Three layers apply. (1) The article is open access under CC BY-NC-ND 4.0; that license covers
-    the paper, not necessarily the dataset. (2) The dataset is hosted on OSF (osf.io/2ay8d). Under
-    the OSF Terms of Use (last updated 2025-01-10, sections 5-6), content marked Public may be
-    reproduced and distributed for commercial and non-commercial use, subject to copyright law, to
-    those Terms, and to the license the project administrator selects. Redistribution is therefore
-    permitted but conditional. (3) The project's own license, shown on the OSF project page, has not
-    been confirmed here; a secondary summary reports CC0. If confirmed, set type to CC0-1.0 and
-    redistribution to allowed.
+    The OSF project's License field reads "No License" (checked 2026-09-25), so the authors have
+    not granted an open license and retain copyright. Reuse rests only on the OSF Terms of Use
+    (last updated 2025-01-10, sections 5-6), which let the public use, reproduce and distribute
+    content marked Public, subject to copyright law and those Terms. Redistribution is therefore
+    conditional; ask the authors before republishing the dialogues. The CC BY-NC-ND 4.0 license
+    belongs to the journal article, not the dataset. An earlier secondary report of a CC0 dataset
+    license is contradicted by the project page.
 privacy:
   deidentified: not_applicable
   contextual_reidentification_assessed: not_applicable
@@ -51,10 +50,11 @@ evidence:
     - https://doi.org/10.1016/j.etdah.2025.100170
     - https://iris.unitn.it/handle/11572/466408
     - https://osf.io/2ay8d/
+    - https://doi.org/10.17605/OSF.IO/2AY8D
 publication_year: 2025
 release_year: 2025
 historical_significance:
   - multilingual synthetic counseling corpus
   - multi-model LLM dialogue generation
-notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness.
-last_verified: 2026-09-24
+notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness. Release dates differ by source. The OSF project was created on 2024-05-20, while the journal article appeared in 2025; release_year records the article year.
+last_verified: 2026-09-25
