@@ -1,0 +1,55 @@
+id: smilechat
+title: "SmileChat: Chinese Multi-turn Mental Health Support Dialogues (SMILE)"
+canonical_url: https://github.com/qiuhuachuan/smile
+status: partially-verified
+dataset_type: hybrid
+domain: mental_health_support
+source_context: >-
+  Real single-turn mental-health mutual-help question-answer posts, expanded by ChatGPT into
+  multi-turn help-seeker and supporter dialogues with the SMILE (Single-turn to Multi-turn
+  Inclusive Language Expansion) method.
+geography: null
+languages: [zh]
+language_context: original
+therapy_modalities:
+  - mental_health_support
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+modalities:
+  - text
+generation:
+  method: llm_multi_turn_expansion
+  models:
+    - ChatGPT
+  source_type: real_single_turn_mutual_help_qa
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: None. The README states that the repository's data directory contains all dialogues built with SMILE.
+redistribution: conditional
+license:
+  type: CC0-1.0
+  verified: true
+  source: https://github.com/qiuhuachuan/smile/blob/main/LICENSE
+  notes: The repository is dedicated CC0, but the dialogues are expansions of third-party Q&A posts whose own terms are not documented here, so redistribution is recorded as conditional rather than allowed.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/qiuhuachuan/smile
+  supporting_publications:
+    - https://arxiv.org/abs/2305.00450
+publication_year: 2024
+historical_significance:
+  - early LLM-based expansion of real single-turn help-seeking posts into multi-turn counseling-style dialogue
+  - training data for the MeChat Chinese mental health support model
+notes: >-
+  The README describes expanding real mental-health mutual-help Q&A into multi-turn dialogues and
+  reports acceptance to EMNLP 2024 Findings. The README reports 310,087 training samples after
+  conversion; these are turn-level samples, not dialogues. The dialogue count and the specific source
+  Q&A corpus are not stated in the README and are left unknown here. The authors note that generated
+  dialogues are shorter than real counseling and differ in strategy distribution.
+last_verified: 2026-09-25

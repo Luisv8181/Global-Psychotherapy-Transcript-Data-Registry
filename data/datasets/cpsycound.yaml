@@ -1,0 +1,71 @@
+id: cpsycound
+title: "CPsyCounD: Report-based Reconstructed Chinese Psychological Counseling Dialogues"
+canonical_url: https://github.com/CAS-SIAT-XinHai/CPsyCoun
+status: partially-verified
+dataset_type: hybrid
+domain: psychotherapy
+source_context: >-
+  Multi-turn counseling dialogues reconstructed by a large language model from psychological
+  counseling reports (the Memo2Demo method), with each report normalized into title, type, method,
+  case brief, consultation process and reflections.
+geography: null
+languages: [zh]
+language_context: original
+therapy_modalities:
+  - psychoanalytic_therapy
+  - cognitive_behavioral_therapy
+  - humanistic_therapy
+  - family_therapy
+  - postmodern_therapy
+  - integrative_therapy
+  - other_therapies
+clinical_topics:
+  - self_growth
+  - emotion_and_stress
+  - education
+  - love_and_marriage
+  - family_relationships
+  - social_relationships
+  - sex
+  - career
+  - mental_disease
+sessions: 3134
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+generation:
+  method: report_to_dialogue_reconstruction
+  source_type: psychological_counseling_reports
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: None for the dialogues. The source report dataset (CPsyCounR) is available on reasonable request after signing a Privacy Data Protection Agreement.
+redistribution: conditional
+license:
+  type: CC-BY-4.0
+  verified: true
+  source: https://github.com/CAS-SIAT-XinHai/CPsyCoun/blob/main/LICENSE
+  notes: The CC BY 4.0 license file covers the repository, including CPsyCounD. CPsyCounR, the source reports, is released separately under a privacy agreement.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/CAS-SIAT-XinHai/CPsyCoun
+    - https://github.com/CAS-SIAT-XinHai/CPsyCoun/blob/main/CPsyCounD/README.md
+  supporting_publications:
+    - https://arxiv.org/abs/2405.16433
+publication_year: 2024
+historical_significance:
+  - reconstruction of counseling dialogue from written case reports, a third route between real sessions and free synthesis
+  - covers seven named schools of psychological counseling
+notes: >-
+  The README reports 3,134 dialogues across nine topics and seven counseling schools, acceptance to
+  ACL 2024 Findings, and use of the data to train EmoLLM V3.0. Report normalization follows China's
+  National Class II Psychological Counselor Examination and other counseling literature. Where the
+  source reports came from, and whether they describe real clients, is not stated in the README.
+last_verified: 2026-09-25

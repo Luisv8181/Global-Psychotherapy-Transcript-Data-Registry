@@ -1,0 +1,60 @@
+id: esconv
+title: "ESConv: Emotional Support Conversation Dataset"
+canonical_url: https://github.com/thu-coai/Emotional-Support-Conversation
+status: partially-verified
+dataset_type: unknown
+domain: emotional_support
+source_context: >-
+  Crowdsourced text conversations between help-seekers describing their own current or past
+  emotional difficulties and crowdworkers trained as supporters through a helping-skills tutorial.
+  Emotional support rather than psychotherapy; supporters are not documented as clinicians.
+geography: null
+languages: [en]
+language_context: original
+therapy_modalities:
+  - emotional_support
+sessions: 1300
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+annotations:
+  - support_strategies
+  - problem_type
+  - emotion_type
+  - seeker_emotion_intensity
+  - seeker_turn_feedback
+  - post_conversation_survey
+access:
+  level: open
+  requirements: None. Data file is in the public GitHub repository.
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://github.com/thu-coai/Emotional-Support-Conversation/blob/main/LICENSE
+  notes: The repository LICENSE file is CC BY-NC 4.0, while the README states "Copyright 2021 CoAI Group, Tsinghua University. All rights reserved. Data and codes are for academic research use only." Treat use as non-commercial research only.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/thu-coai/Emotional-Support-Conversation
+    - https://aclanthology.org/2021.acl-long.269/
+  supporting_publications:
+    - https://arxiv.org/abs/2106.01144
+publication_year: 2021
+release_year: 2021
+historical_significance:
+  - widely used benchmark for emotional support dialogue generation
+  - strategy-annotated supporter turns based on a helping-skills framework
+notes: >-
+  Counted from ESConv.json on 2026-09-25, 1,300 conversations and 38,365 turns, of which 991
+  concern a current experience and 309 a previous one. In 2024 the authors added FailedESConv.json
+  with 196 conversations dropped during collection. dataset_type stays unknown because the
+  registry's vocabulary has no category for crowdsourced peer emotional support, which is neither
+  real therapy nor synthetic dialogue. The collection method is described in the ACL 2021 paper.
+last_verified: 2026-09-25
