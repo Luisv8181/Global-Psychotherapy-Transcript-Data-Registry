@@ -44,6 +44,8 @@ redistribution: unknown
 license:
   type: unknown
   verified: false
+  # Where the dataset's own license was read. An article's open-access license is not the dataset's.
+  # source: https://...
 
 privacy:
   deidentified: unknown

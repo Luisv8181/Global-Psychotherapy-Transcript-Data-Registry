@@ -34,6 +34,7 @@ redistribution: conditional
 license:
   type: none-selected
   verified: true
+  source: https://osf.io/2ay8d/
   notes: >-
     The OSF project's License field reads "No License" (checked 2026-09-25), so the authors have
     not granted an open license and retain copyright. Reuse rests only on the OSF Terms of Use

@@ -31,6 +31,7 @@ redistribution: conditional
 license:
   type: CC-BY-SA-4.0
   verified: true
+  notes: The license is recorded from the Hugging Face dataset card. The GitHub repository is licensed Apache 2.0, which covers the code, not the dataset.
 privacy:
   deidentified: true
   method: anonymized_source_graphs
@@ -39,6 +40,8 @@ evidence:
   primary_sources:
     - https://huggingface.co/datasets/UKPLab/Graph2Counsel
     - https://github.com/UKPLab/emnlp2026-graph2counsel
+    - https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/5071
+    - https://arxiv.org/abs/2604.20382
 publication_year: 2026
 release_year: 2026
 historical_significance:

@@ -26,6 +26,7 @@ redistribution: conditional
 license:
   type: research_access_agreement
   verified: true
+  source: https://github.com/LCS2-IIITD/SPARTA_WSDM2022/blob/main/README.md
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown

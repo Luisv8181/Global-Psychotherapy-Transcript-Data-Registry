@@ -57,7 +57,6 @@ The registry now includes verified or provisionally verified real-session resour
 
 - **Counseling and Psychotherapy Transcripts**, an institutional/licensed collection of real psychotherapy and counseling transcripts.
 - **AVATAR Therapy Dialogue Corpus**, a specialized therapy dialogue corpus.
-- **IndieMH**, gated English-Hindi real mental-health therapy sessions with code-mixing/code-switching annotations.
 - **HOPE**, 212 real counseling conversations from publicly available counseling videos, with dialogue-act annotations and controlled research access.
 - **CUEMPATHY**, 156 actual counseling sessions involving 39 therapist-client dyads, with speech, transcripts, and ratings.
 - **BiMISC**, bilingual English-Dutch motivational-interviewing conversations sourced from real counseling sessions.
@@ -65,7 +64,10 @@ The registry now includes verified or provisionally verified real-session resour
 - **Online Mental Health Counseling Dataset (Westlake/Zhejiang University)**, a large-scale text-based counseling resource collected over two years from an online welfare counseling platform.
 - **MindDialog**, a 2026 corpus built from more than 325 hours of publicly available psychotherapy demonstration videos featuring real therapists; it remains provisionally verified because the distinction between clinical encounters and educational demonstrations requires further provenance review.
 
-**AnnoMI is intentionally not counted in the verified real-session population yet.** Its provenance is being kept separate until source evidence establishes whether the dialogues are naturally occurring clinical encounters or demonstrations/role-play.
+Two resources are deliberately kept out of the real-session population:
+
+- **AnnoMI** is excluded because its repository describes the 133 transcripts as *demonstrations* of high- and low-quality motivational interviewing, not naturally occurring clinical encounters.
+- **IndieMH** is recorded as hybrid, because its LREC 2026 paper describes counseling conversations from publicly available sources that were manually *translated* into code-mixed Hinglish. They are not original Hinglish sessions.
 
 These are seed records. The goal is substantially broader coverage.
 
@@ -127,7 +129,7 @@ PYTHONPATH=. python scripts/audit_registry.py      # which core fields each reco
 PYTHONPATH=. python scripts/build_site.py          # site/data/*.json for the Pages site
 ```
 
-Validation **errors** block merges and deployment: unreadable YAML, schema violations, an `id` that does not match its file name, duplicate IDs or canonical URLs, `access.level` or `redistribution` values outside `data/vocabularies/access.yaml`, and `verified`/`partially-verified` records without primary sources or a `last_verified` date. **Warnings** are for a human reviewer: verification dates older than a year.
+Validation **errors** block merges and deployment: unreadable YAML, schema violations, an `id` that does not match its file name, duplicate IDs or canonical URLs, `access.level` or `redistribution` values outside `data/vocabularies/access.yaml`, and `verified`/`partially-verified` records without primary sources or a `last_verified` date. **Warnings** are for a human reviewer: verification dates older than a year, and licenses marked verified without a `license.source` saying where the dataset's own license was read.
 
 The audit lists evidence gaps, not dataset defects: an unestablished field means the reviewed sources have not documented it yet. The same view is published on the site under *Research views → Evidence gaps*.
 

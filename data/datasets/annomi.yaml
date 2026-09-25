@@ -4,7 +4,7 @@ canonical_url: https://github.com/uccollab/AnnoMI
 status: partially-verified
 dataset_type: unknown
 domain: psychotherapy
-source_context: Publicly released motivational interviewing demonstrations; the project documentation does not establish these as naturally occurring real therapy sessions
+source_context: Transcribed motivational interviewing demonstration videos. The repository README describes the 133 transcripts as "demonstrations of high- and low-quality motivational interviewing", and each transcript links to its source video.
 therapy_modalities:
   - motivational_interviewing
 languages:
@@ -22,13 +22,21 @@ access:
   level: open
 redistribution: conditional
 license:
-  type: CC-BY-4.0
-  verified: true
+  type: public-domain-reported
+  verified: false
+  source: https://www.mdpi.com/1999-5903/15/3/110
+  notes: >-
+    The GitHub repository has no license file and its README states no license. The data
+    availability statement of the 2023 Future Internet paper is reported to release the dataset
+    under a "Public Domain License"; this has not been read directly here. The CC BY 4.0 license
+    previously recorded belongs to that journal article, not to the dataset. The paper also reports
+    that video owners consented to dataset creation and public release for research.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://github.com/uccollab/AnnoMI
-notes: Kept in the registry as a therapy-dialogue resource, but excluded from the verified real-session population until source provenance is established as actual clinical encounters rather than demonstrations or role-play.
+    - https://www.mdpi.com/1999-5903/15/3/110
+notes: The repository describes the dialogues as demonstrations, so AnnoMI is excluded from the real-session population. dataset_type stays unknown because the registry's dataset-type vocabulary has no category for demonstration or role-play recordings; source_context carries the distinction. Whether demonstrations used real clients or actors is not established per video.
 last_verified: 2026-09-24

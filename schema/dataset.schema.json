@@ -246,6 +246,16 @@
         },
         "verified": {
           "type": "boolean"
+        },
+        "source": {
+          "type": "string",
+          "description": "URL of the page where the dataset's own license was read (repository LICENSE file, dataset card, data repository record). Not the article's license page."
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     },

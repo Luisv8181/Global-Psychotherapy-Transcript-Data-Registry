@@ -3,6 +3,7 @@ from datetime import date
 from pathlib import Path
 
 import pytest
+import yaml
 
 from src.registry.records import load_records
 from src.registry.validator import validate_registry
@@ -65,8 +66,10 @@ def test_duplicate_canonical_url(registry):
 
 
 def test_verified_status_requires_primary_sources(registry):
-    rewrite(registry, "    - https://github.com/uccollab/AnnoMI\nnotes", "    []\nnotes")
-    rewrite(registry, "  primary_sources:\n    []", "  primary_sources: []")
+    path = registry / "data" / "datasets" / "annomi.yaml"
+    record = yaml.safe_load(path.read_text(encoding="utf-8"))
+    record["evidence"]["primary_sources"] = []
+    path.write_text(yaml.safe_dump(record, sort_keys=False), encoding="utf-8")
     errors = validate_registry(registry, today=TODAY).errors
     assert any("requires at least one evidence.primary_sources" in e for e in errors)
 
@@ -101,3 +104,10 @@ def test_off_vocabulary_access_is_an_error(registry):
 def test_off_vocabulary_redistribution_is_an_error(registry):
     rewrite(registry, "redistribution: conditional", "redistribution: public_release_reported")
     assert any("redistribution 'public_release_reported'" in e for e in validate_registry(registry, today=TODAY).errors)
+
+
+def test_verified_license_without_source_is_a_warning(registry):
+    rewrite(registry, "  verified: false\n  source: https://www.mdpi.com/1999-5903/15/3/110\n", "  verified: true\n")
+    report = validate_registry(registry, today=TODAY)
+    assert report.errors == []
+    assert any("license.source" in w for w in report.warnings)

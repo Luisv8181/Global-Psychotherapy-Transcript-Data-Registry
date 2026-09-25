@@ -5,7 +5,7 @@ access/redistribution values outside the controlled vocabularies, and
 verification claims without evidence.
 
 Warnings are editorial signals for a human reviewer: verification dates that
-have gone stale. Validation never rewrites a record, because the registry does
+have gone stale, and verified licenses that do not cite where they were read. Validation never rewrites a record, because the registry does
 not infer missing facts.
 """
 
@@ -103,6 +103,12 @@ def _check_evidence(name, record, report):
     for src in sources:
         if not (isinstance(src, str) and re.match(r"^https?://", src)):
             report.errors.append(f"{name}: evidence.primary_sources entry is not an http(s) URL: {src!r}")
+
+    # A paper's open-access license is often mistaken for the dataset's license, so a verified
+    # license must say where the dataset's own license was read.
+    license = record.get("license") or {}
+    if license.get("verified") is True and not license.get("source"):
+        report.warnings.append(f"{name}: license.verified is true but license.source does not say where the dataset's license was read")
 
 
 def _check_dates(name, record, today, report):

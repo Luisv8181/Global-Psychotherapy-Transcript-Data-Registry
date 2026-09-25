@@ -1,17 +1,17 @@
 id: indie-mh
 title: "IndieMH: Code-Mixed Mental Health Counseling Conversations"
 canonical_url: https://huggingface.co/datasets/as3eem/IndieMH
-status: verified
-dataset_type: real
+status: partially-verified
+dataset_type: hybrid
 domain: psychotherapy
-source_context: Real mental-health therapy sessions; English-Hindi code-mixed/coded dialogue
+source_context: Counseling conversations from publicly available sources, manually translated into code-mixed Hinglish (English-Hindi) and annotated for emotion. The dialogues are translations, not original Hinglish sessions.
 geography:
   countries:
     - India
 languages:
   - en
   - hi
-language_context: English-Hindi code-mixed/code-switched counseling
+language_context: translated; English-Hindi code-mixed (Hinglish)
 therapy_modalities:
   - mental_health_counseling
 sessions: null
@@ -43,4 +43,12 @@ privacy:
 evidence:
   primary_sources:
     - https://huggingface.co/datasets/as3eem/IndieMH
+    - https://aclanthology.org/2026.lrec-1.226/
+notes: >-
+  The India geography reflects the Hinglish translation; where the original conversations took place
+  is not established. The LREC 2026 paper describes IndieMH as counseling conversations from publicly available sources,
+  manually translated into Hinglish and annotated with 13 emotional states in 3 categories. It was
+  previously recorded as real, originally code-mixed therapy sessions. Which source corpus was
+  translated is not established here; the same group released HOPE, built from public counseling
+  videos, but that link is unconfirmed. Status is partially verified until the source is confirmed.
 last_verified: 2026-09-24
