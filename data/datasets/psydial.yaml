@@ -1,0 +1,47 @@
+id: psydial
+title: "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support"
+canonical_url: https://aclanthology.org/2025.acl-long.1049/
+status: verified
+dataset_type: hybrid
+domain: mental_health_support
+source_context: Privacy-preserving reconstruction of real-world client-counselor dialogues rather than direct release of the original conversations
+languages:
+  - zh
+language_context: Chinese
+therapy_modalities:
+  - mental_health_counseling
+sessions: null
+longitudinal: true
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+generation:
+  method: privacy_preserving_reconstruction
+  pipeline: Retrieve-Mask-Reconstruct-Refine
+  source_type: real_world_counseling_dialogues
+  average_turns_per_dialogue: 37.8
+access:
+  level: public
+  requirements: none reported
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: true
+  method: privacy_preserving_reconstruction
+  contextual_reidentification_assessed: reported_risk_mitigation
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2025.acl-long.1049/
+    - https://github.com/qiuhuachuan/PsyDial
+publication_year: 2025
+release_year: 2025
+historical_significance:
+  - privacy-preserving reconstruction of long-term counseling dialogue
+  - derived mental-health dialogue corpus
+notes: PsyDial is explicitly described by the authors as a semi-real Chinese-language dataset created by reconstructing real-world, long-term counseling dialogues. It should not be counted as a direct real-session transcript corpus because the released dialogue is reconstructed rather than the original observed interaction. The registry therefore keeps it in a derived/hybrid population and links it to the real-world source context.
+last_verified: 2026-09-24
