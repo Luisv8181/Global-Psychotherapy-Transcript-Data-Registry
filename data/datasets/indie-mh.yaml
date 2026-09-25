@@ -1,0 +1,46 @@
+id: indie-mh
+title: IndieMH: Code-Mixed Mental Health Counseling Conversations
+canonical_url: https://huggingface.co/datasets/as3eem/IndieMH
+status: verified
+dataset_type: real
+domain: psychotherapy
+source_context: Real mental-health therapy sessions; English-Hindi code-mixed/coded dialogue
+geography:
+  countries:
+    - India
+languages:
+  - en
+  - hi
+language_context: English-Hindi code-mixed/code-switched counseling
+therapy_modalities:
+  - mental_health_counseling
+sessions: null
+longitudinal: null
+transcript:
+  available: true
+  format:
+    - text
+annotations:
+  - emotion_recognition
+  - dialogue_acts
+  - code_switching
+  - code_mixing
+access:
+  level: gated
+  requirements: Non-commercial academic research agreement
+redistribution: prohibited
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  restrictions:
+    - no_reidentification
+    - secure_storage
+    - no_redistribution
+    - no_clinical_diagnostic_or_therapeutic_use
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/as3eem/IndieMH
+last_verified: 2026-09-24
