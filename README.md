@@ -109,6 +109,14 @@ Methodology and governance documentation lives under `docs/`.
 Validation and automation live under `src/`, `scripts/`, `tests/`, and `.github/`.
 
 
+## Published synthetic therapy corpora
+
+Synthetic psychotherapy and counseling dialogue is a first-class part of the registry, while remaining explicitly distinct from real-session corpora. Records can document generation method, source basis, publication, version, license, intended uses, validation, and known limitations.
+
+Where licensing permits, a future release may also publish synthetic corpus artifacts. Synthetic does not automatically mean clinically representative, privacy-safe, unbiased, or suitable for a particular research question.
+
+See `docs/synthetic-corpora.md`.
+
 ## Dathive architecture
 
 This registry is also the first concrete implementation of the **Dathive** concept: an evidence-grounded research structure maintained through specialized discovery, verification, extraction, linkage, audit, and synthesis agents.
