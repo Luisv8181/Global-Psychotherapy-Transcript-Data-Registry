@@ -1,0 +1,19 @@
+id: avatar-therapy-dialogue-corpus
+title: AVATAR Therapy Dialogue Corpus
+canonical_url: https://kclpure.kcl.ac.uk/portal/en/datasets/avatar-therapy-dialogue-corpus/
+status: verified
+dataset_type: real
+domain: psychotherapy
+access:
+  level: institutional
+redistribution: prohibited
+license:
+  type: custom
+  verified: true
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://kclpure.kcl.ac.uk/portal/en/datasets/avatar-therapy-dialogue-corpus/
+last_verified: 2026-09-24
