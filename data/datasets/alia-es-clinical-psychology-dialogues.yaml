@@ -1,0 +1,31 @@
+id: alia-es-clinical-psychology-dialogues
+title: ALIA Spanish Clinical Psychology Dialogues Corpus
+canonical_url: https://huggingface.co/datasets/SINAI/ALIA-es-clinical-psychology-dialogues
+status: verified
+dataset_type: hybrid
+source_context: mixed
+geography:
+  countries: [Spain]
+  regions: [europe]
+  scope: single_country
+  evidence_level: documented
+languages: [es]
+language_context: original
+dialects: []
+cultural_contexts: [Spanish clinical psychology context]
+therapy_modalities: []
+sessions: 386
+longitudinal: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: mixed
+  verified: true
+privacy:
+  deidentified: documented_for_terapia_subset
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/SINAI/ALIA-es-clinical-psychology-dialogues
+last_verified: 2026-09-24
