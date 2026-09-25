@@ -24,7 +24,14 @@
 - [ ] Privacy/de-identification evidence records
 - [ ] Derived and processed-data relationships
 
-## Phase 4: Research tooling
+## Phase 4: Published synthetic corpus infrastructure
+- [ ] Add explicit synthetic-corpus metadata and validation rules
+- [ ] Track generation method, source basis, model/tooling, human review, and limitations
+- [ ] Track versions and publication lineage
+- [ ] Add license-aware publication/distribution checks
+- [ ] Establish a dedicated published-synthetic-corpus collection
+
+## Phase 5: Research tooling
 - [ ] Registry search CLI
 - [ ] Structured filtering
 - [ ] Dataset comparison reports
@@ -32,7 +39,7 @@
 - [ ] Export to CSV/JSON/JSON-LD
 - [ ] API or static query service
 
-## Phase 5: Community infrastructure
+## Phase 6: Community infrastructure
 - [ ] Maintainer review workflow
 - [ ] Automated URL/link checks
 - [ ] Scheduled metadata refresh
