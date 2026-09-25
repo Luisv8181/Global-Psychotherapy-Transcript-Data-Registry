@@ -30,11 +30,19 @@ generation:
 access:
   level: open
   requirements: None reported. The dataset is published on OSF (osf.io/2ay8d) with no registration step described.
-redistribution: unknown
+redistribution: conditional
 license:
   type: unknown
   verified: false
-  notes: The article is published open access under CC BY-NC-ND 4.0, but that license covers the paper, not necessarily the dataset. A secondary summary reports CC0 for the OSF dataset; this has not been confirmed on the OSF project page. Set license and redistribution once the OSF license field is checked.
+  notes: >-
+    Three layers apply. (1) The article is open access under CC BY-NC-ND 4.0; that license covers
+    the paper, not necessarily the dataset. (2) The dataset is hosted on OSF (osf.io/2ay8d). Under
+    the OSF Terms of Use (last updated 2025-01-10, sections 5-6), content marked Public may be
+    reproduced and distributed for commercial and non-commercial use, subject to copyright law, to
+    those Terms, and to the license the project administrator selects. Redistribution is therefore
+    permitted but conditional. (3) The project's own license, shown on the OSF project page, has not
+    been confirmed here; a secondary summary reports CC0. If confirmed, set type to CC0-1.0 and
+    redistribution to allowed.
 privacy:
   deidentified: not_applicable
   contextual_reidentification_assessed: not_applicable
