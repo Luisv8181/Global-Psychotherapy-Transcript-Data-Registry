@@ -1,0 +1,29 @@
+id: muspsy
+title: Muspsy: Multi-Session Psychological Counseling Conversation Dataset
+canonical_url: https://aclanthology.org/2026.findings-acl.818/
+status: partially-verified
+dataset_type: synthetic
+source_context: Multi-session counseling conversations constructed from client profiles in publicly available psychological case reports
+languages:
+  - zh
+therapy_modalities:
+  - simulated_counseling
+longitudinal: true
+sessions: unknown
+access:
+  level: unknown
+license:
+  type: unknown
+  verified: false
+redistribution: unknown
+privacy:
+  deidentified: unknown
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2026.findings-acl.818/
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - longitudinal_simulated_counseling
+notes: The ACL paper describes Muspsy as a multi-session dataset built from client profiles in public psychological case reports. The exact generation model, dataset size, licensing, and repository release terms are not established by the surfaced abstract, so those fields remain unknown. It is not counted as direct observed psychotherapy-session evidence.
+last_verified: 2026-09-25
