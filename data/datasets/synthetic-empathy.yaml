@@ -1,0 +1,42 @@
+id: synthetic-empathy
+title: "Synthetic Empathy: Artificial Psychotherapy Dialogues for Empathy Detection"
+canonical_url: https://aclanthology.org/2025.clpsych-1.13/
+status: partially-verified
+dataset_type: synthetic
+domain: psychotherapy
+source_context: LLM-generated therapeutic interactions created for empathy-detection research
+languages: [en]
+language_context: English
+therapy_modalities:
+  - psychotherapy
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+generation:
+  method: llm_generation
+  synthetic_interactions_reported: 10464
+  human_therapeutic_interactions_annotated: 579
+  annotation_framework: EPITOME
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: not_applicable_to_synthetic_data
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2025.clpsych-1.13/
+publication_year: 2025
+release_year: 2025
+historical_significance:
+  - large-scale synthetic psychotherapy dialogue generation for empathy research
+notes: The paper reports 10,464 synthetic therapeutic dialogues generated with multiple LLMs and prompting techniques, alongside 579 collected and annotated therapeutic interactions. The registry treats the synthetic component as the primary corpus record and keeps the record partially verified until the exact released-data artifact, access terms, and generation configuration are independently verified.
+last_verified: 2026-09-24
