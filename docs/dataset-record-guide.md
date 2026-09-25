@@ -8,7 +8,7 @@ Each file in `data/datasets/` represents one dataset or collection. The registry
 - `title`: provider's published title
 - `canonical_url`: authoritative landing page
 - `status`: verification state
-- `dataset_type`: real, demonstration, peer_support, synthetic, hybrid, or unknown (definitions in `data/vocabularies/dataset-type.yaml`)
+- `dataset_type`: real, demonstration, dramatized, peer_support, synthetic, hybrid, or unknown (definitions in `data/vocabularies/dataset-type.yaml`)
 
 ## Dialogue structure
 

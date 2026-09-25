@@ -22,6 +22,7 @@
   --t-peer_support: #1baf7a;
   --t-hybrid: #eda100;
   --t-synthetic: #e87ba4;
+  --t-dramatized: #008300;
   --t-unknown: #a1a1a6;
   --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, "Segoe UI", system-ui, sans-serif;
@@ -52,6 +53,7 @@
     --t-peer_support: #199e70;
     --t-hybrid: #c98500;
     --t-synthetic: #d55181;
+    --t-dramatized: #008300;
     --t-unknown: #6e6e73;
     color-scheme: dark;
   }
@@ -77,6 +79,7 @@
   --t-peer_support: #199e70;
   --t-hybrid: #c98500;
   --t-synthetic: #d55181;
+  --t-dramatized: #008300;
   --t-unknown: #6e6e73;
   color-scheme: dark;
 }
@@ -206,6 +209,7 @@ a.finding:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .dot.peer_support { background: var(--t-peer_support); }
 .dot.hybrid { background: var(--t-hybrid); }
 .dot.synthetic { background: var(--t-synthetic); }
+.dot.dramatized { background: var(--t-dramatized); }
 .section-title { display: flex; align-items: baseline; gap: 14px; margin: 40px 0 16px; }
 .section-title .numeral { font: italic 500 22px/1 var(--serif); color: var(--muted); }
 .section-title h2 { font: 500 28px/1.1 var(--serif); letter-spacing: -.015em; margin: 0; }

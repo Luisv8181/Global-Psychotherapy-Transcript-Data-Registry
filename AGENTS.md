@@ -57,6 +57,7 @@ The most common error in this registry has been recording a journal article's op
 Choose `dataset_type` from `data/vocabularies/dataset-type.yaml`, using the most specific type the evidence supports:
 
 - Recorded or posted sessions: are they naturally occurring (`real`), or made to teach a method (`demonstration`)? Public counseling videos are frequently demonstrations or role-plays. Do not call them `real` unless the source says the clients were real.
+- Scripted fiction performed by actors for film, television or theatre: `dramatized`. For example, MESC is transcribed from the drama *In Treatment*.
 - Crowdworkers or volunteers supporting help-seekers: `peer_support`.
 - Human material transformed by translation, paraphrase, LLM expansion or reconstruction: `hybrid`. For example, IndieMH was translated from public counseling conversations and is not an original Hinglish corpus.
 - Fully model-generated: `synthetic`.

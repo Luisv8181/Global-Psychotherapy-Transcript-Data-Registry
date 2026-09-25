@@ -1,0 +1,55 @@
+id: simpsydial
+title: "SimPsyDial: Simulated Counselor-Client Dialogues from Interactive Agents"
+canonical_url: https://github.com/qiuhuachuan/interactive-agents
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Counseling dialogues generated entirely by LLM-to-LLM interaction between a personalized client
+  agent and a counselor agent that follows a three-stage model of exploration, insight and action.
+geography: null
+languages: [zh]
+language_context: original
+therapy_modalities:
+  - three_stage_helping_model
+sessions: 1000
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+generation:
+  method: llm_to_llm_role_play
+  synthetic_dialogues: true
+  real_session_influence: none reported
+access:
+  level: open
+  requirements: None. Released as data/data.json in the GitHub repository.
+redistribution: allowed
+license:
+  type: MIT
+  verified: true
+  source: https://github.com/qiuhuachuan/interactive-agents/blob/main/LICENSE
+  notes: The MIT license file covers the repository, which includes the released data file. The dialogues are model-generated, so no third-party text is reported.
+privacy:
+  deidentified: not_applicable_to_synthetic_data
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://github.com/qiuhuachuan/interactive-agents
+    - https://aclanthology.org/2026.starsem-conference.29/
+publication_year: 2026
+release_year: 2024
+historical_significance:
+  - counselor agent structured by an explicit three-stage helping model
+notes: >-
+  Counted from data/data.json on 2026-09-25, 1,000 dialogues in ShareGPT format with 25,896
+  counselor and client messages (15 to 51 messages including the system prompt, 25.9 on average
+  excluding it); each dialogue shares the same system prompt. The text is Chinese (99.9% of
+  letters are CJK characters). The README reports the data release on 2024-08-29 and links the
+  paper in the 2026 *SEM proceedings. Evaluation against the Working Alliance Inventory is reported
+  by the authors and not reviewed here.
+last_verified: 2026-09-25

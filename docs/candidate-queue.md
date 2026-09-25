@@ -2,7 +2,7 @@
 
 Leads found during discovery that are not yet registry records. Each lists what has been confirmed, where, and what is still needed before a record can be written. A candidate becomes a record only when its primary source has been read. Promote it by copying `data/datasets/_TEMPLATE.yaml`.
 
-Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled.
+Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch, and `dramatized` was added as a dataset type for MESC.
 
 | Candidate | Language | Type (provisional) | Confirmed so far | Still needed |
 |---|---|---|---|---|
@@ -10,6 +10,9 @@ Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and 
 | **SoulChatCorpus** | Chinese | synthetic / hybrid | [GitHub README](https://github.com/scutcyr/SoulChat): EMNLP 2023 Findings; open-source version on ModelScope (June 2024) with about 90,000 dialogues filtered out for privacy, safety and quality; single-turn corpus of more than 150,000 instructions. Project restricted to non-commercial research. | Multi-turn dialogue count, how the dialogues were generated, and the dataset's own license on ModelScope. |
 | **MAGneT** | English | synthetic | Listed in the [Graph2Counsel README](https://github.com/UKPLab/graph2counsel) with Hugging Face and [TUdatalib](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/5072) links. | Paper, generation method, size and license. |
 | **Eeyore** | English | synthetic profiles | Listed in the Graph2Counsel README (character cards for client simulation); arXiv 2306.09742. | Whether it contains dialogues or only profiles. It may belong outside a transcript registry. |
+| **AugESC** | English | synthetic | [GitHub README](https://github.com/thu-coai/AugESC): Findings of ACL 2023, "Dialogue Augmentation with Large Language Models for Emotional Support Conversation"; data on Hugging Face (thu-coai/augesc). | Size, generation method and license from the Hugging Face card. |
+| **Anno-AugMI / Anno-FairMI** | English | hybrid | [GitHub README](https://github.com/vsrana-ai/Augmenting-AnnoMI): augmented AnnoMI therapist utterances balanced for MI quality, overall or per topic (SDAIH 2023). | Whether the release holds dialogues or isolated utterances. Utterance-level data may fall outside `dialogue_structure`. |
+| **MEMO** | English | unknown | [GitHub README](https://github.com/LCS2-IIITD/MEMO): counseling-summarization dataset from KDD 2022, released through an access agreement form. | Its source conversations (possibly HOPE, from the same group; unconfirmed), size and content. |
 | **MIDAS** | Spanish | unknown | Title found by search, "Examining Spanish Counseling with MIDAS: a Motivational Interviewing Dataset in Spanish" (arXiv 2502.08458). | Everything; its repository was not found. It would be the registry's first Spanish motivational-interviewing resource. |
 
 ## Review flags from this pass
