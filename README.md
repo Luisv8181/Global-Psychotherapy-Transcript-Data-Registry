@@ -69,7 +69,7 @@ Two resources are deliberately kept out of the real-session population:
 - **AnnoMI** is excluded because its repository describes the 133 transcripts as *demonstrations* of high- and low-quality motivational interviewing, not naturally occurring clinical encounters.
 - **IndieMH** is recorded as hybrid, because its LREC 2026 paper describes counseling conversations from publicly available sources that were manually *translated* into code-mixed Hinglish. They are not original Hinglish sessions.
 
-These are seed records. The goal is substantially broader coverage.
+These are seed records. The goal is substantially broader coverage. Leads that are found but not yet verified are tracked in `docs/candidate-queue.md`.
 
 ## Registry functions
 
