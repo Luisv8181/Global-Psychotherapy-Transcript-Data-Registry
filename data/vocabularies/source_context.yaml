@@ -1,0 +1,18 @@
+source_context:
+  real_therapy: Real therapy/counseling interaction
+  clinician_roleplay: Role-play involving trained clinicians
+  human_simulation: Simulated dialogue involving human participants
+  synthetic_llm: Synthetic dialogue generated with AI
+  public_media: Publicly available counseling/therapy media
+  clinical_qa: Clinical or counseling question-answer data
+  therapy_adjacent: Mental-health dialogue adjacent to psychotherapy
+  mixed: Mixed source types
+  unknown: Unknown
+
+geographic_scope:
+  single_country: Single documented country
+  multi_country: Multiple documented countries
+  regional: Regional
+  transnational: Transnational or diaspora context
+  global: Global or multi-region collection
+  unknown: Unknown
