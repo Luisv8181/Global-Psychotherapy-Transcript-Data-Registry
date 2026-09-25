@@ -11,3 +11,4 @@ jobs:
       - run: pip install -r requirements-dev.txt
       - run: PYTHONPATH=. python scripts/validate_registry.py
       - run: PYTHONPATH=. pytest -q
+      - run: PYTHONPATH=. python scripts/build_site.py

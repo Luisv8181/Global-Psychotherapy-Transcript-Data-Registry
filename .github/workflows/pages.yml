@@ -3,9 +3,11 @@ on:
   push:
     branches: [main]
     paths:
-      - 'data/datasets/**'
+      - 'data/**'
+      - 'schema/**'
       - 'site/**'
-      - 'scripts/build_site.py'
+      - 'src/**'
+      - 'scripts/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -25,10 +27,14 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-      - name: Install YAML parser
-        run: pip install pyyaml
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Validate registry
+        run: PYTHONPATH=. python scripts/validate_registry.py
+      - name: Run tests
+        run: PYTHONPATH=. pytest -q
       - name: Build registry data
-        run: python scripts/build_site.py
+        run: PYTHONPATH=. python scripts/build_site.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
