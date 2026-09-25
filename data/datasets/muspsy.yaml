@@ -1,8 +1,9 @@
 id: muspsy
-title: Muspsy: Multi-Session Psychological Counseling Conversation Dataset
+title: "Muspsy: Multi-Session Psychological Counseling Conversation Dataset"
 canonical_url: https://aclanthology.org/2026.findings-acl.818/
 status: partially-verified
 dataset_type: synthetic
+dialogue_structure: multi_turn
 source_context: Multi-session counseling conversations constructed from client profiles in publicly available psychological case reports
 languages:
   - zh

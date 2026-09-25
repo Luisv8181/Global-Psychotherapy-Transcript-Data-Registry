@@ -1,0 +1,25 @@
+id: youtube-dvEAMoDTg9w
+platform: youtube
+video_id: dvEAMoDTg9w
+url: https://www.youtube.com/watch?v=dvEAMoDTg9w
+title_as_listed: The TEACH Project - The Effective Health Practitioner
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing alcohol consumption
+- smoking cessation
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 128
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

@@ -1,0 +1,56 @@
+id: psych8k
+title: "Psych8k (ChatPsychiatrist counseling instruction data)"
+canonical_url: https://github.com/EmoCareAI/ChatPsychiatrist
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+source_context: >-
+  About 260 real counseling conversations from counseling recordings in English, transcribed,
+  cleaned of sensitive information, segmented into ten-round clips, and turned into 8,187
+  query-answer pairs by GPT-4, with a GPT-4 summary per conversation.
+geography: null
+languages: [en]
+language_context: original
+therapy_modalities:
+  - counseling
+clinical_topics:
+  - emotion
+  - family
+  - relationship
+  - career_development
+sessions: 260
+longitudinal: unknown
+transcript:
+  available: unknown
+modalities:
+  - text
+generation:
+  method: llm_query_answer_extraction
+  models:
+    - GPT-4
+  source_type: real_counseling_recording_transcripts
+  synthetic_dialogues: false
+access:
+  level: unknown
+  requirements: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: The repository's Apache 2.0 badge is labelled Code License. No dataset license or download location for Psych8k is stated in the README.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/EmoCareAI/ChatPsychiatrist
+publication_year: null
+historical_significance:
+  - LLM instruction data derived from real counseling recordings rather than generated from scratch
+notes: >-
+  The README gives the session count as approximately 260 real conversations, so the value is
+  approximate. It does not identify where the recordings came from, whether clients consented to
+  derivative use, or whether the 8,187 pairs are downloadable; the source recordings are not
+  released. A separate 229-question Counselling Bench is included for evaluation.
+last_verified: 2026-09-25

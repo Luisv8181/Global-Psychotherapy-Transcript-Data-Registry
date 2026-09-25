@@ -3,6 +3,7 @@ title: Mental Health Counseling Dialogue
 canonical_url: https://aihub.or.kr
 status: verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: mental_health_counseling
 source_context: Actual clients and counselors at accredited domestic mental health counseling centers in the Republic of Korea
 geography:
@@ -24,7 +25,7 @@ annotations:
   - substance_use
   - expert_clinical_labels
 access:
-  level: public
+  level: open
   provider: AI Hub
 redistribution: unknown
 license:

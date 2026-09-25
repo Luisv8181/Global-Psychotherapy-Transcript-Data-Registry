@@ -1,0 +1,51 @@
+id: psyqa
+title: "PsyQA: A Chinese Dataset for Generating Long Counseling Text for Mental Health Support"
+canonical_url: https://github.com/thu-coai/PsyQA
+status: partially-verified
+dataset_type: real
+dialogue_structure: single_turn_qa
+domain: mental_health_support
+source_context: >-
+  Chinese mental-health support questions with long-form counseling answers, annotated with support
+  strategies. Where the questions and answers were collected is not stated in the repository README.
+geography: null
+languages: [zh]
+language_context: original
+therapy_modalities:
+  - mental_health_support
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+annotations:
+  - support_strategies
+access:
+  level: research-agreement
+  requirements: Download and sign the PsyQA user agreement, then email the signed PDF to the maintainers; a download link is sent after review. Only a small sample (PsyQA_example.json) is public.
+redistribution: prohibited
+license:
+  type: research_access_agreement
+  verified: true
+  source: https://github.com/thu-coai/PsyQA/blob/main/README.md
+  notes: The repository has no license file. Access is governed by the signed user agreement described in the README. Redistribution is recorded as prohibited because the full data is released only to individual signatories; confirm against the agreement text.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/thu-coai/PsyQA
+  supporting_publications:
+    - https://arxiv.org/abs/2106.01702
+publication_year: 2021
+historical_significance:
+  - widely used Chinese counseling Q&A resource, cited in the SoulChat README as the common baseline dataset
+notes: >-
+  Accepted to Findings of ACL 2021. The README does not give question or answer counts, or the
+  platform the data came from; these are left unknown until the paper or agreement is reviewed.
+  dataset_type is real on the basis that the questions are posted by help-seekers; confirm how the
+  answers were produced.
+last_verified: 2026-09-25

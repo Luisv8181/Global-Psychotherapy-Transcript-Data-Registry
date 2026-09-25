@@ -1,0 +1,27 @@
+id: youtube-K-zJme3RTzM
+platform: youtube
+video_id: K-zJme3RTzM
+url: https://www.youtube.com/watch?v=K-zJme3RTzM
+title_as_listed: Motivational Interviewing for Adolescent Substance Use - 2
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing drug use
+- unidentifiable
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 73
+  - 122
+  notes: 'AnnoMI MI quality label: high. Also listed under the titles: Motivational Interviewing for Adolescent
+    Substance Use - 1.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

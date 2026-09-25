@@ -3,6 +3,7 @@ title: "Synthetic Empathy: Artificial Psychotherapy Dialogues for Empathy Detect
 canonical_url: https://aclanthology.org/2025.clpsych-1.13/
 status: partially-verified
 dataset_type: synthetic
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: LLM-generated therapeutic interactions created for empathy-detection research
 languages: [en]

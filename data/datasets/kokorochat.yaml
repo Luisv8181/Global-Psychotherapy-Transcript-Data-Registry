@@ -3,6 +3,7 @@ title: KokoroChat
 canonical_url: https://github.com/UEC-InabaLab/KokoroChat
 status: verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 source_context: clinician_roleplay
 geography:
   countries: [Japan]
@@ -21,6 +22,7 @@ redistribution: conditional
 license:
   type: CC-BY-NC-ND-4.0
   verified: true
+  source: https://github.com/UEC-InabaLab/KokoroChat/blob/main/LICENSE
 privacy:
   deidentified: not_applicable_to_roleplay_source
   contextual_reidentification_assessed: unknown

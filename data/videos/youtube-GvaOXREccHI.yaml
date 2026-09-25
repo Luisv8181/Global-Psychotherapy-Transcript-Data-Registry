@@ -1,0 +1,26 @@
+id: youtube-GvaOXREccHI
+platform: youtube
+video_id: GvaOXREccHI
+url: https://www.youtube.com/watch?v=GvaOXREccHI
+title_as_listed: 'Adolescent brief intervention: "Jacob"'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing alcohol consumption
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 46
+  notes: 'AnnoMI MI quality label: high.'
+  source_urls:
+  - https://www.youtube.com/watch?v=GvaOXREccHI&feature=emb_title
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

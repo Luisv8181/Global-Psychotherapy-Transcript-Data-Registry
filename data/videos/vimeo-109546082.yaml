@@ -1,0 +1,24 @@
+id: vimeo-109546082
+platform: vimeo
+video_id: '109546082'
+url: https://vimeo.com/109546082
+title_as_listed: 'Part Two: Motivational Interviewing in an Integrated Care Setting (Counselor Scenario)'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing alcohol consumption
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 38
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

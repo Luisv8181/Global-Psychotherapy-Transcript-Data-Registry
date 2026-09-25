@@ -3,6 +3,7 @@ title: "HighQuality: Therapist Behavior Quality Dialogues"
 canonical_url: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1583739/full
 status: partially-verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: Therapist-patient conversations used to evaluate therapist behavior quality under motivational interviewing principles
 languages: [en]

@@ -11,10 +11,13 @@
   ],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable lowercase identifier; must match the record's file name."
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "canonical_url": {
       "type": "string",
@@ -29,10 +32,22 @@
       ]
     },
     "dataset_type": {
+      "description": "Provenance of the dialogue. See data/vocabularies/dataset-type.yaml for definitions.",
       "enum": [
         "real",
+        "demonstration",
+        "peer_support",
         "synthetic",
         "hybrid",
+        "unknown"
+      ]
+    },
+    "dialogue_structure": {
+      "description": "Shape of the text: multi-turn dialogue, single-turn question-answer pairs, or both.",
+      "enum": [
+        "multi_turn",
+        "single_turn_qa",
+        "mixed",
         "unknown"
       ]
     },
@@ -106,28 +121,74 @@
       }
     },
     "sessions": {
-      "type": [
-        "integer",
-        "null"
-      ],
-      "minimum": 0
+      "description": "Published session count, or 'unknown' when the sources reviewed do not establish it.",
+      "anyOf": [
+        {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        {
+          "const": "unknown"
+        }
+      ]
     },
     "longitudinal": {
-      "type": [
-        "boolean",
-        "null"
+      "description": "true only when repeated observations of the same participant or case are documented. Use 'unknown' rather than inferring.",
+      "enum": [
+        true,
+        false,
+        null,
+        "unknown"
       ]
     },
     "access": {
-      "type": "object"
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requirements": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     },
     "privacy": {
       "type": "object"
     },
     "evidence": {
-      "type": "object"
+      "type": "object",
+      "properties": {
+        "primary_sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supporting_publications": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supporting_sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     },
     "last_verified": {
+      "description": "ISO date (YYYY-MM-DD) of the last check against primary sources.",
       "type": [
         "string",
         "null"
@@ -185,6 +246,42 @@
       "items": {
         "type": "string"
       }
+    },
+    "license": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "source": {
+          "type": "string",
+          "description": "URL of the page where the dataset's own license was read (repository LICENSE file, dataset card, data repository record). Not the article's license page."
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "redistribution": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "additionalProperties": true

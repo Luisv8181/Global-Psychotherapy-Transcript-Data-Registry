@@ -1,0 +1,29 @@
+id: youtube-IqtaW2ufbcw
+platform: youtube
+video_id: IqtaW2ufbcw
+url: https://www.youtube.com/watch?v=IqtaW2ufbcw
+title_as_listed: Motivational Techniques - Daryl interviews Ricky - 3
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing alcohol consumption
+- reducing violence
+- taking medicine / following medical procedure
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 16
+  - 37
+  - 83
+  notes: 'AnnoMI MI quality label: high. Also listed under the titles: Motivational Techniques - Daryl
+    interviews Ricky - 2; Motivational Techniques - Daryl interviews Ricky - 1.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

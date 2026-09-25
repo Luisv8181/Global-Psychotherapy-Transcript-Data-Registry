@@ -3,6 +3,7 @@ title: "HCoT-Corpus: Multi-turn Psychological Support Dialogue Corpus"
 canonical_url: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1733384/full
 status: verified
 dataset_type: synthetic
+dialogue_structure: multi_turn
 domain: psychological_support
 source_context: GPT-4o rewriting of Chinese psychological support source data into multi-turn dialogues
 geography:

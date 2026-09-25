@@ -3,6 +3,7 @@ title: Online Mental Health Counseling Dataset (Westlake/Zhejiang University)
 canonical_url: https://aclanthology.org/2023.acl-long.577/
 status: verified
 dataset_type: real
+dialogue_structure: unknown
 domain: psychotherapy
 source_context: Text-based counseling interactions collected over two years from an online welfare counseling platform
 geography:

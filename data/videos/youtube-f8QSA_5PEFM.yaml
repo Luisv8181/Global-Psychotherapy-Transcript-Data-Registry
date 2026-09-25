@@ -1,0 +1,26 @@
+id: youtube-f8QSA_5PEFM
+platform: youtube
+video_id: f8QSA_5PEFM
+url: https://www.youtube.com/watch?v=f8QSA_5PEFM
+title_as_listed: 'The Effective Dentist: Motivational Interviewing Demonstration'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- smoking cessation
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 109
+  notes: 'AnnoMI MI quality label: high.'
+  source_urls:
+  - https://www.youtube.com/watch?v=f8QSA_5PEFM&t=350s
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

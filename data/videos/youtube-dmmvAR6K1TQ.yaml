@@ -1,0 +1,24 @@
+id: youtube-dmmvAR6K1TQ
+platform: youtube
+video_id: dmmvAR6K1TQ
+url: https://www.youtube.com/watch?v=dmmvAR6K1TQ
+title_as_listed: 'The Ineffective Pharmacist: Non-Motivational Approach'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- smoking cessation
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 15
+  notes: 'AnnoMI MI quality label: low.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

@@ -1,0 +1,27 @@
+id: youtube-M-i6-BNkCTo
+platform: youtube
+video_id: M-i6-BNkCTo
+url: https://www.youtube.com/watch?v=M-i6-BNkCTo
+title_as_listed: Motivational Interviewing in Juvenile Justice Settings - 1
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- compliance with rules
+- reducing recidivism
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 11
+  - 26
+  notes: 'AnnoMI MI quality label: high. Also listed under the titles: Motivational Interviewing in Juvenile
+    Justice Settings - 2.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

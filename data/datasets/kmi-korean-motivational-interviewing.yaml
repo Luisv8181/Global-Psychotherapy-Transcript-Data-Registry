@@ -3,6 +3,7 @@ title: "KMI: A Dataset of Korean Motivational Interviewing Dialogues for Psychot
 canonical_url: https://aclanthology.org/2025.naacl-long.541/
 status: verified
 dataset_type: synthetic
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: LLM-generated Korean motivational interviewing sessions grounded in motivational interviewing theory and professional therapist expertise
 geography:

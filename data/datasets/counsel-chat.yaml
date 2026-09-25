@@ -1,0 +1,66 @@
+id: counsel-chat
+title: "Counsel Chat: Therapist Answers to Help-Seekers' Questions"
+canonical_url: https://github.com/nbertagnolli/counsel-chat
+status: partially-verified
+dataset_type: real
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+source_context: >-
+  Scraped from counselchat.com, where individuals posted questions and licensed therapists posted
+  answers. Each row is one therapist's answer to one question.
+geography: null
+languages: [en]
+language_context: original
+therapy_modalities:
+  - counseling
+clinical_topics:
+  - depression
+  - anxiety
+  - counseling_fundamentals
+  - intimacy
+  - relationships
+  - parenting
+  - family_conflict
+  - self_esteem
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - csv
+modalities:
+  - text
+annotations:
+  - topic
+  - upvotes
+  - views
+access:
+  level: open
+  requirements: None. Data is in the GitHub repository and on Hugging Face (nbertagnolli/counsel-chat).
+redistribution: conditional
+license:
+  type: MIT
+  verified: true
+  source: https://github.com/nbertagnolli/counsel-chat/blob/master/LICENSE
+  notes: >-
+    The repository is MIT-licensed, but the answers were scraped from counselchat.com and written by
+    the therapists who posted them. The MIT license is the repository author's and may not extend
+    to that third-party text, so redistribution is recorded as conditional.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: Rows include each answering therapist's information and profile URL. Questions are posts by members of the public.
+evidence:
+  primary_sources:
+    - https://github.com/nbertagnolli/counsel-chat
+    - https://huggingface.co/datasets/nbertagnolli/counsel-chat
+publication_year: 2020
+release_year: 2020
+historical_significance:
+  - early open English corpus of licensed therapists' written responses, widely used for counseling LLM fine-tuning
+notes: >-
+  Counted from data/20200325_counsel_chat.csv on 2026-09-25, 2,129 answers to 815 distinct
+  questions. The most common topics are depression (330 answers), anxiety (249) and counseling
+  fundamentals (240). The README asks users to cite a 2020 Towards Data Science article rather
+  than a peer-reviewed paper.
+last_verified: 2026-09-25

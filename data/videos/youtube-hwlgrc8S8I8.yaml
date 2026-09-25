@@ -1,0 +1,24 @@
+id: youtube-hwlgrc8S8I8
+platform: youtube
+video_id: hwlgrc8S8I8
+url: https://www.youtube.com/watch?v=hwlgrc8S8I8
+title_as_listed: 'SBIRT in Pediatrics: Teen Alcohol Use Case - Bad Doctor example'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- not getting into a car with someone who is under the influence of drugs or alcohol
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 59
+  notes: 'AnnoMI MI quality label: low.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

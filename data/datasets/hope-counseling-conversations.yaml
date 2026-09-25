@@ -1,8 +1,9 @@
 id: hope-counseling-conversations
-title: HOPE: Counselling Conversations Dataset
+title: "HOPE: Counselling Conversations Dataset"
 canonical_url: https://github.com/LCS2-IIITD/SPARTA_WSDM2022
 status: verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: counseling
 source_context: Naturally occurring therapist-patient counseling conversations from publicly available counseling videos
 languages:
@@ -20,12 +21,13 @@ annotations:
   - speaker_labels
   - timing
 access:
-  level: controlled
+  level: research-agreement
   requirements: Dataset access agreement and researcher request
 redistribution: conditional
 license:
   type: research_access_agreement
   verified: true
+  source: https://github.com/LCS2-IIITD/SPARTA_WSDM2022/blob/main/README.md
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown

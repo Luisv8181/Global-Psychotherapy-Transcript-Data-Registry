@@ -1,10 +1,4 @@
-from pathlib import Path
-import yaml
-
-
-def load_records(root):
-    root = Path(root)
-    return [yaml.safe_load(p.read_text(encoding='utf-8')) for p in sorted((root/'data/datasets').glob('*.yaml')) if not p.name.startswith('_')]
+from src.registry.records import load_records  # noqa: F401  (re-exported for scripts and tests)
 
 
 def _values(record, keys):
@@ -25,7 +19,7 @@ def search(records, query=None, dataset_type=None, language=None, longitudinal=N
         if dataset_type and r.get('dataset_type') != dataset_type: continue
         if language and language.lower() not in [str(x).lower() for x in r.get('languages',[])]: continue
         if longitudinal is not None and r.get('longitudinal') != longitudinal: continue
-        if access and r.get('access',{}).get('level') != access: continue
+        if access and (r.get('access') or {}).get('level') != access: continue
         results.append(r)
     return results
 
@@ -38,6 +32,6 @@ def summarize(record):
         'sessions': record.get('sessions'),
         'languages': record.get('languages',[]),
         'longitudinal': record.get('longitudinal'),
-        'access': record.get('access',{}).get('level'),
+        'access': (record.get('access') or {}).get('level'),
         'canonical_url': record.get('canonical_url'),
     }

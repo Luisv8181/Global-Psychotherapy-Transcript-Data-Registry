@@ -3,6 +3,7 @@ title: "CounseLLMe: A Dataset of Simulated Mental Health Dialogues for Comparing
 canonical_url: https://doi.org/10.1016/j.etdah.2025.100170
 status: verified
 dataset_type: synthetic
+dialogue_structure: multi_turn
 domain: mental_health_counseling
 source_context: LLM-to-LLM simulated psychological counseling dialogues in which one model plays a therapist and another plays a patient
 languages:
@@ -28,12 +29,21 @@ generation:
   human_prompt_development: professional_psychotherapy_input
   real_session_influence: no direct human session generation reported
 access:
-  level: public
-  requirements: none reported
-redistribution: public_release_reported
+  level: open
+  requirements: None. The dataset is a public OSF project (osf.io/2ay8d, DOI 10.17605/OSF.IO/2AY8D) with no registration step.
+redistribution: conditional
 license:
-  type: CC
+  type: none-selected
   verified: true
+  source: https://osf.io/2ay8d/
+  notes: >-
+    The OSF project's License field reads "No License" (checked 2026-09-25), so the authors have
+    not granted an open license and retain copyright. Reuse rests only on the OSF Terms of Use
+    (last updated 2025-01-10, sections 5-6), which let the public use, reproduce and distribute
+    content marked Public, subject to copyright law and those Terms. Redistribution is therefore
+    conditional; ask the authors before republishing the dialogues. The CC BY-NC-ND 4.0 license
+    belongs to the journal article, not the dataset. An earlier secondary report of a CC0 dataset
+    license is contradicted by the project page.
 privacy:
   deidentified: not_applicable
   contextual_reidentification_assessed: not_applicable
@@ -41,10 +51,12 @@ evidence:
   primary_sources:
     - https://doi.org/10.1016/j.etdah.2025.100170
     - https://iris.unitn.it/handle/11572/466408
+    - https://osf.io/2ay8d/
+    - https://doi.org/10.17605/OSF.IO/2AY8D
 publication_year: 2025
 release_year: 2025
 historical_significance:
   - multilingual synthetic counseling corpus
   - multi-model LLM dialogue generation
-notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness.
-last_verified: 2026-09-24
+notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness. Release dates differ by source. The OSF project was created on 2024-05-20, while the journal article appeared in 2025; release_year records the article year.
+last_verified: 2026-09-25

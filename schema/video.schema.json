@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Psychotherapy Video Catalog Entry",
+  "description": "Metadata and a link for one publicly posted video. The catalog never stores video, audio or transcripts.",
+  "type": "object",
+  "required": ["id", "platform", "video_id", "url", "content_type", "used_by", "catalogued_on"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(youtube|vimeo)-[\\w-]+$",
+      "description": "<platform>-<video id>; must match the file name."
+    },
+    "platform": {"enum": ["youtube", "vimeo"]},
+    "video_id": {"type": "string"},
+    "url": {"type": "string", "description": "Canonical video URL without timestamps or playlist parameters."},
+    "title_as_listed": {
+      "type": ["string", "null"],
+      "description": "Title as recorded by the dataset that lists the video. It may differ from the current title on the platform."
+    },
+    "channel": {"type": ["string", "null"]},
+    "content_type": {
+      "enum": ["demonstration", "real_session", "role_play", "lecture", "unknown"],
+      "description": "What the video shows, as far as the evidence establishes."
+    },
+    "content_type_evidence": {"type": ["string", "null"]},
+    "therapy_modalities": {"type": "array", "items": {"type": "string"}},
+    "topics": {"type": "array", "items": {"type": "string"}},
+    "languages": {"type": "array", "items": {"type": "string"}},
+    "used_by": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Registry datasets that transcribe or cite this video.",
+      "items": {
+        "type": "object",
+        "required": ["dataset"],
+        "properties": {
+          "dataset": {"type": "string"},
+          "transcript_ids": {"type": "array", "items": {"type": ["string", "integer"]}},
+          "source_urls": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "availability": {
+      "enum": ["available", "unavailable", "private", "not_checked"],
+      "description": "Whether the video could be played when last checked."
+    },
+    "availability_checked_on": {"type": ["string", "null"], "format": "date"},
+    "catalogued_on": {"type": "string", "format": "date"},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

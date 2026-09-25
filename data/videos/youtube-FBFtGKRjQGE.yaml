@@ -1,0 +1,24 @@
+id: youtube-FBFtGKRjQGE
+platform: youtube
+video_id: FBFtGKRjQGE
+url: https://www.youtube.com/watch?v=FBFtGKRjQGE
+title_as_listed: 'MI: Not So Good - Not so Bad - Part 1'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- more exercise / increasing activity
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 54
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

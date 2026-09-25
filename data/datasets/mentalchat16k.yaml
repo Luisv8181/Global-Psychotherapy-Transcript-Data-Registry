@@ -1,0 +1,65 @@
+id: mentalchat16k
+title: "MentalChat16K: A Benchmark Dataset for Conversational Mental Health Assistance"
+canonical_url: https://huggingface.co/datasets/ShenLab/MentalChat16K
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: mental_health_counseling
+source_context: >-
+  Two components. 6,338 question-answer pairs paraphrased (with Mistral-Instruct) from 378
+  anonymized real interview transcripts of the PISCES clinical trial, between behavioral health
+  coaches and caregivers of patients in palliative or hospice care. 9,775 synthetic question-answer
+  pairs generated with GPT-3.5 Turbo across 33 mental health topics.
+geography: null
+languages: [en]
+language_context: original
+therapy_modalities:
+  - behavioral_health_coaching
+clinical_topics:
+  - caregiver_stress
+  - palliative_and_hospice_caregiving
+sessions: null
+longitudinal: unknown
+transcript:
+  available: true
+modalities:
+  - text
+participants:
+  real_interview_transcripts: 378
+  caregivers_surveyed: 421
+generation:
+  method: paraphrase_of_real_transcripts_plus_llm_synthesis
+  models:
+    - Mistral-Instruct
+    - GPT-3.5 Turbo
+  source_type: anonymized_clinical_trial_interview_transcripts
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: None reported. Published as a Hugging Face dataset.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: The GitHub repository is MIT-licensed, which covers its code. The dataset's own license on Hugging Face has not been read here.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/ChiaPatricia/MentalChat16K
+    - https://huggingface.co/datasets/ShenLab/MentalChat16K
+  supporting_publications:
+    - https://dl.acm.org/doi/10.1145/3711896.3737393
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC12520247/
+publication_year: 2025
+release_year: 2024
+historical_significance:
+  - rare public resource derived from real clinical-trial counseling interviews
+  - pairs real-derived and synthetic components under one benchmark
+notes: >-
+  Of 421 caregivers who completed the information survey, the README reports that most are female
+  and 88% identify as White, with fewer than 1% Hispanic. The real component is paraphrased
+  question-answer pairs, not full session transcripts, so it is not counted as real-session data.
+  The trial's country is not stated in the README. The README's dataset citation is dated 2024; the paper appeared in KDD 2025 (ACM) and on PMC.
+last_verified: 2026-09-25

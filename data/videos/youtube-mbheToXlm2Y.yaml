@@ -1,0 +1,24 @@
+id: youtube-mbheToXlm2Y
+platform: youtube
+video_id: mbheToXlm2Y
+url: https://www.youtube.com/watch?v=mbheToXlm2Y
+title_as_listed: Mismanaging the angry patient
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- diagnosis
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 118
+  notes: 'AnnoMI MI quality label: low.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

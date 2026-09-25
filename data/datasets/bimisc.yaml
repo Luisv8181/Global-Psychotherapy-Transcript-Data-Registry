@@ -3,6 +3,7 @@ title: "BiMISC: Bilingual Motivational Interviewing Conversations"
 canonical_url: https://aclanthology.org/2024.lrec-main.498/
 status: verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: Motivational interviewing conversations sourced from real counseling sessions
 geography:

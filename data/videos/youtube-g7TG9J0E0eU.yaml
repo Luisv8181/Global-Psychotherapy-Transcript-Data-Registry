@@ -1,0 +1,25 @@
+id: youtube-g7TG9J0E0eU
+platform: youtube
+video_id: g7TG9J0E0eU
+url: https://www.youtube.com/watch?v=g7TG9J0E0eU
+title_as_listed: 'Part 1: A Non-Diet Approach with Motivational Interviewing Role Play, Engaging'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- more exercise / increasing activity
+- weight loss
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 35
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

@@ -1,0 +1,25 @@
+id: youtube-fWFPBSTd830
+platform: youtube
+video_id: fWFPBSTd830
+url: https://www.youtube.com/watch?v=fWFPBSTd830
+title_as_listed: 'Part 2: A Non-Diet Approach with Motivational Interviewing Role Play, Sharing a Non-Diet
+  Message'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- weight loss
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 29
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

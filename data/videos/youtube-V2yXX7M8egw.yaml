@@ -1,0 +1,24 @@
+id: youtube-V2yXX7M8egw
+platform: youtube
+video_id: V2yXX7M8egw
+url: https://www.youtube.com/watch?v=V2yXX7M8egw
+title_as_listed: 'Motivational Interviewing: Discussing Alcohol Use With a Pregnant Woman'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing alcohol consumption
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 34
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

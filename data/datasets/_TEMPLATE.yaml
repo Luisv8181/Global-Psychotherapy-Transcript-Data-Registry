@@ -3,7 +3,11 @@ title: Example Dataset
 canonical_url: https://example.org/dataset
 status: unverified
 dataset_type: unknown
+dialogue_structure: unknown
 domain: psychotherapy
+
+# Copy this file to data/datasets/<id>.yaml; the id must match the file name.
+# Leave unknown values as unknown or null. Never fill gaps by inference.
 
 # Optional research metadata
 # collection_start_year: null
@@ -41,6 +45,8 @@ redistribution: unknown
 license:
   type: unknown
   verified: false
+  # Where the dataset's own license was read. An article's open-access license is not the dataset's.
+  # source: https://...
 
 privacy:
   deidentified: unknown
@@ -52,10 +58,11 @@ ethics:
   ethics_review_documented: unknown
   data_use_agreement: unknown
 
-provenance:
+# Primary sources are required before status can be verified or partially-verified.
+evidence:
   primary_sources: []
   supporting_publications: []
 
+# ISO date (YYYY-MM-DD) of the last check against primary sources.
 last_verified: null
-verification_status: unverified
-notes: []
+notes: null

@@ -3,6 +3,7 @@ title: Multilingual KokoroChat
 canonical_url: https://github.com/UEC-InabaLab/MultilingualKokoroChat
 status: verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 source_context: clinician_roleplay
 geography:
   countries: [Japan]
@@ -20,6 +21,7 @@ redistribution: conditional
 license:
   type: CC-BY-NC-ND-4.0
   verified: true
+  source: https://github.com/UEC-InabaLab/MultilingualKokoroChat/blob/main/LICENSE
 privacy:
   contextual_reidentification_assessed: unknown
 evidence:

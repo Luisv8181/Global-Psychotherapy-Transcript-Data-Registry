@@ -1,0 +1,25 @@
+id: youtube-Egh2mHhrUTM
+platform: youtube
+video_id: Egh2mHhrUTM
+url: https://www.youtube.com/watch?v=Egh2mHhrUTM
+title_as_listed: MOTIVATIONAL INTERVIEWING
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- more exercise / increasing activity
+- weight loss
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 120
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

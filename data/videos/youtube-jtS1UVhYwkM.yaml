@@ -1,0 +1,24 @@
+id: youtube-jtS1UVhYwkM
+platform: youtube
+video_id: jtS1UVhYwkM
+url: https://www.youtube.com/watch?v=jtS1UVhYwkM
+title_as_listed: ComMIt Asthma Dialogue without MI
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- asthma management
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 92
+  notes: 'AnnoMI MI quality label: low.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

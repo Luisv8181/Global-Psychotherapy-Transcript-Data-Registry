@@ -1,0 +1,26 @@
+id: youtube-TVlWvUt4EcM
+platform: youtube
+video_id: TVlWvUt4EcM
+url: https://www.youtube.com/watch?v=TVlWvUt4EcM
+title_as_listed: Aviyana Interviews Deborah Regarding Her Values Clarification Handout
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- unidentifiable
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 76
+  notes: 'AnnoMI MI quality label: high.'
+  source_urls:
+  - https://www.youtube.com/watch?v=TVlWvUt4EcM&list=PL08E228806AE7CB30&index=6&t=0s
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

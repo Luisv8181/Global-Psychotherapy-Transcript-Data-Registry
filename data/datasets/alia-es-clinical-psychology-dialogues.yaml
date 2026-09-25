@@ -3,6 +3,7 @@ title: ALIA Spanish Clinical Psychology Dialogues Corpus
 canonical_url: https://huggingface.co/datasets/SINAI/ALIA-es-clinical-psychology-dialogues
 status: verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 source_context: mixed
 geography:
   countries: [Spain]
