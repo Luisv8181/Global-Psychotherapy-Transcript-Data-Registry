@@ -117,6 +117,20 @@ Controlled vocabularies live under `data/vocabularies/`.
 Methodology and governance documentation lives under `docs/`.
 Validation and automation live under `src/`, `scripts/`, `tests/`, and `.github/`.
 
+### Running the checks
+
+```bash
+pip install -r requirements-dev.txt
+PYTHONPATH=. python scripts/validate_registry.py   # schema, identity, evidence, dates
+PYTHONPATH=. python -m pytest -q                   # tests
+PYTHONPATH=. python scripts/audit_registry.py      # which core fields each record has not yet established
+PYTHONPATH=. python scripts/build_site.py          # site/data/*.json for the Pages site
+```
+
+Validation **errors** block merges and deployment: unreadable YAML, schema violations, an `id` that does not match its file name, duplicate IDs or canonical URLs, and `verified`/`partially-verified` records without primary sources or a `last_verified` date. **Warnings** are for a human reviewer: values outside the controlled vocabularies, and verification dates older than a year.
+
+The audit lists evidence gaps, not dataset defects: an unestablished field means the reviewed sources have not documented it yet. The same view is published on the site under *Research views → Evidence gaps*.
+
 ## Published synthetic therapy corpora
 
 Synthetic psychotherapy and counseling dialogue is a first-class part of the registry, while remaining explicitly distinct from real-session corpora. Records can document generation method, source basis, publication, version, license, intended uses, validation, and known limitations.
