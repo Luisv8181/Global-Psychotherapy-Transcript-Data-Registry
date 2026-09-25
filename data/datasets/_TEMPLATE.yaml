@@ -1,0 +1,52 @@
+id: example-dataset
+title: Example Dataset
+canonical_url: https://example.org/dataset
+status: unverified
+dataset_type: unknown
+domain: psychotherapy
+
+# Optional research metadata
+# doi: https://doi.org/...
+# languages:
+#   - en
+# sessions: null
+# participants: null
+# longitudinal: null
+# therapy_modalities:
+#   - unknown
+# clinical_topics:
+#   - unknown
+# annotations:
+#   - unknown
+
+transcript:
+  available: unknown
+audio:
+  available: unknown
+video:
+  available: unknown
+
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: null
+
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+
+provenance:
+  primary_sources: []
+  supporting_publications: []
+
+last_verified: null
+verification_status: unverified
+notes: []
