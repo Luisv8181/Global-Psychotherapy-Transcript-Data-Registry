@@ -1,0 +1,32 @@
+id: annomi
+title: AnnoMI
+canonical_url: https://github.com/uccollab/AnnoMI
+status: verified
+dataset_type: real
+domain: psychotherapy
+therapy_modalities:
+  - motivational_interviewing
+languages:
+  - en
+sessions: 133
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - csv
+annotations:
+  - therapist_strategy
+  - client_change_talk
+access:
+  level: open
+redistribution: conditional
+license:
+  type: CC-BY-4.0
+  verified: true
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/uccollab/AnnoMI
+last_verified: 2026-09-24
