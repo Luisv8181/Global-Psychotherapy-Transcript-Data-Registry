@@ -1,0 +1,37 @@
+id: highquality-therapy-dialogues
+title: "HighQuality: Therapist Behavior Quality Dialogues"
+canonical_url: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1583739/full
+status: partially-verified
+dataset_type: real
+domain: psychotherapy
+source_context: Therapist-patient conversations used to evaluate therapist behavior quality under motivational interviewing principles
+languages: [en]
+language_context: English
+therapy_modalities:
+  - motivational_interviewing
+sessions: 258
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+annotations:
+  - therapist_behavior_quality
+  - motivational_interviewing
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1583739/full
+publication_year: 2025
+notes: A 2025 LLM4CBT study reports the HighQuality dataset as 258 therapist-patient dialogues annotated for therapist behavior quality using motivational interviewing principles; 152 dialogues were the high-quality subset used in that study. The underlying dataset provenance, release mechanism, licensing, and privacy controls require separate verification.
+last_verified: 2026-09-24
