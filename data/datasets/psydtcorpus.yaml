@@ -1,0 +1,54 @@
+id: psydtcorpus
+title: "PsyDTCorpus: Digital-Twin Counseling Dialogues (SoulChat 2.0)"
+canonical_url: https://github.com/scutcyr/SoulChat2.0
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Multi-turn counseling dialogues synthesized by an LLM to imitate one specific counselor's
+  language style and use of therapy techniques, using that counselor's real multi-turn cases as
+  models and 5,000 single-turn consultation samples as seeds.
+geography: null
+languages: [zh]
+language_context: original
+therapy_modalities:
+  - psychological_counseling
+sessions: 5000
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+generation:
+  method: counselor_digital_twin_synthesis
+  source_type: real_counseling_cases_of_one_counselor_plus_single_turn_consultations
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: None reported. The README links the data on ModelScope (modelscope.cn/datasets/YIRONGCHEN/PsyDTCorpus) and gives a git clone command; that page was not opened for this record.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: The GitHub repository is Apache-2.0 licensed, which covers its code. The dataset's own license on ModelScope has not been read.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/scutcyr/SoulChat2.0
+  supporting_publications:
+    - https://aclanthology.org/2025.acl-long.55/
+publication_year: 2025
+historical_significance:
+  - models an individual counselor's style rather than a generic counselor
+notes: >-
+  The README reports 5,000 dialogues and 90,365 turns. The training set is 4,760 dialogues with
+  86,054 turns and the test set 240 dialogues with 4,311 turns, both averaging 18 turns per
+  dialogue. Figures are from the README; the ModelScope files were not reachable from the session
+  that wrote this record. How the real cases of the modelled counselor were obtained, and with what
+  consent, is not described in the README. Published at ACL 2025 (main conference).
+last_verified: 2026-09-25

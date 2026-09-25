@@ -1,0 +1,66 @@
+id: mesc
+title: "MESC: Multimodal Emotional Support Conversation Dataset"
+canonical_url: https://github.com/chuyq/MESC
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Therapy sessions portrayed in the scripted television drama In Treatment, seasons 1 to 3,
+  between the fictional psychotherapist Paul Weston and his patients and his own consultations
+  with a therapist. Scripted drama performed by actors, not real clinical encounters.
+geography: null
+languages: [en]
+language_context: original
+therapy_modalities:
+  - psychotherapy
+sessions: 1019
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - csv
+modalities:
+  - text
+  - audio
+  - video
+annotations:
+  - emotion
+  - therapist_strategy
+  - speaker_role
+  - utterance_timestamps
+access:
+  level: open
+  requirements: None. MESC.csv and the train, validation and test splits are in the GitHub repository; raw video must be obtained separately.
+redistribution: unknown
+license:
+  type: none-selected
+  verified: true
+  source: https://github.com/chuyq/MESC
+  notes: >-
+    The repository contains no license file and its README states no license. MESC.csv reproduces
+    dialogue text from a commercial television series, and the repository does not describe
+    permission from the series' rights holder. Redistribution is recorded as unknown rather than
+    conditional for that reason.
+privacy:
+  deidentified: not_applicable_to_scripted_drama
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://github.com/chuyq/MESC
+    - https://github.com/chuyq/MESC/blob/main/MESC.csv
+  supporting_publications:
+    - https://arxiv.org/abs/2408.03650
+publication_year: 2024
+historical_significance:
+  - multimodal therapy-dialogue corpus with text, audio and video annotation
+  - built from dramatized rather than recorded sessions
+notes: >-
+  Counted from MESC.csv on 2026-09-25, 28,762 utterances in 1,019 dialogues across seasons 1 (11,152
+  utterances), 2 (10,067) and 3 (7,543). There are 18,436 client and 10,326 therapist utterances.
+  Therapist utterances carry strategy labels such as interpretation, open question, restatement
+  and self-disclosure, and every utterance carries one of seven emotion labels. Utterances are
+  English. dataset_type is unknown only because the registry has no category for scripted drama;
+  the provenance itself is established and awaits a classification decision by the registry owner.
+  Year from the arXiv preprint cited in the README.
+last_verified: 2026-09-25
