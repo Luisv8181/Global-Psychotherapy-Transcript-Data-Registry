@@ -1,0 +1,26 @@
+id: alexander-street-cpt-volume-1
+title: Counseling and Psychotherapy Transcripts, Volume I
+canonical_url: https://libraries.usc.edu/databases/alexander-street-press-counseling-and-psychotherapy-transcripts-volume-i
+status: verified
+dataset_type: real
+domain: psychotherapy
+languages:
+  - en
+transcript:
+  available: true
+access:
+  level: institutional
+redistribution: prohibited
+license:
+  type: custom
+  verified: true
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://libraries.usc.edu/databases/alexander-street-press-counseling-and-psychotherapy-transcripts-volume-i
+  supporting_publications:
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC4879602/
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC10835954/
+last_verified: 2026-09-24
