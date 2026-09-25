@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dathive Agent Task",
+  "type": "object",
+  "required": [
+    "task_id",
+    "agent_role",
+    "input",
+    "evidence",
+    "output",
+    "requires_human_review"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_role": {
+      "enum": [
+        "discovery",
+        "verification",
+        "extraction",
+        "linkage",
+        "gap_analysis",
+        "privacy_audit",
+        "provenance_audit",
+        "synthesis"
+      ]
+    },
+    "input": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_url"],
+        "properties": {
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "retrieved_at": {
+            "type": ["string", "null"],
+            "format": "date"
+          },
+          "locator": {
+            "type": ["string", "null"]
+          },
+          "source_type": {
+            "type": ["string", "null"]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "claims": {
+          "type": "array"
+        },
+        "unresolved": {
+          "type": "array"
+        },
+        "proposed_changes": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
+    },
+    "confidence": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "requires_human_review": {
+      "type": "boolean"
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "parent_task": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
