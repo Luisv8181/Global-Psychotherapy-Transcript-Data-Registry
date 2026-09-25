@@ -1,0 +1,47 @@
+id: cuempathy
+title: CUEMPATHY: A Counseling Speech Dataset for Psychotherapy Research
+canonical_url: https://research.cuhk.edu.hk/en/publications/cuempathy-a-counseling-speech-dataset-for-psychotherapy-research-2/
+status: verified
+dataset_type: real
+domain: psychotherapy
+source_context: Actual counseling sessions collected for psychotherapy research
+geography:
+  countries:
+    - Hong Kong
+languages:
+  - en
+therapy_modalities:
+  - counseling
+sessions: 156
+longitudinal: true
+transcript:
+  available: true
+  format:
+    - speech
+    - transcript
+modalities:
+  - audio
+  - text
+participants:
+  therapist_client_dyads: 39
+annotations:
+  - observer_ratings
+  - client_ratings
+  - speaker_turn_timestamps
+access:
+  level: unknown
+  requirements: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://research.cuhk.edu.hk/en/publications/cuempathy-a-counseling-speech-dataset-for-psychotherapy-research-2/
+    - https://arxiv.org/abs/2409.02466
+publication_year: 2022
+notes: 156 actual counseling sessions involving 39 therapist-client dyads. The publication describes speech collection, subjective ratings, transcription, and speaker-turn timestamp processing. Access and redistribution terms require separate verification.
+last_verified: 2026-09-24
