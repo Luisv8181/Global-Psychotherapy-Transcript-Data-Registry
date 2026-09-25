@@ -1,0 +1,32 @@
+# Geographic vocabulary. Geography must be evidence-based and never inferred from language alone.
+coverage_regions:
+  - north_america
+  - latin_america
+  - caribbean
+  - europe
+  - middle_east
+  - north_africa
+  - sub_saharan_africa
+  - south_asia
+  - central_asia
+  - east_asia
+  - southeast_asia
+  - oceania
+  - indigenous_context
+  - diasporic_context
+  - transnational_or_multisite
+  - unknown
+
+geographic_evidence_levels:
+  - documented
+  - reported_by_dataset_provider
+  - reported_in_publication
+  - unknown
+
+language_context_types:
+  - original
+  - translated
+  - parallel
+  - multilingual
+  - code_switched
+  - unknown
