@@ -29,7 +29,10 @@
 - [ ] Track generation method, source basis, model/tooling, human review, and limitations
 - [ ] Track versions and publication lineage
 - [ ] Add license-aware publication/distribution checks
-- [ ] Establish a dedicated published-synthetic-corpus collection
+- [x] Establish a dedicated published-synthetic-corpus collection
+- [x] Define historical lineage and predecessor taxonomy
+- [ ] Add historical computational-therapy records beginning with ELIZA
+- [ ] Add historical-status evidence fields to the canonical schema
 
 ## Phase 5: Research tooling
 - [ ] Registry search CLI
@@ -45,7 +48,6 @@
 - [ ] Scheduled metadata refresh
 - [ ] Contributor provenance
 - [ ] Dataset owner correction requests
-
 
 ## Multi-function infrastructure direction
 
