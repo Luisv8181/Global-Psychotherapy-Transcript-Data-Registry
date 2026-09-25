@@ -2,7 +2,7 @@ id: mesc
 title: "MESC: Multimodal Emotional Support Conversation Dataset"
 canonical_url: https://github.com/chuyq/MESC
 status: partially-verified
-dataset_type: unknown
+dataset_type: dramatized
 dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: >-
@@ -60,7 +60,6 @@ notes: >-
   utterances), 2 (10,067) and 3 (7,543). There are 18,436 client and 10,326 therapist utterances.
   Therapist utterances carry strategy labels such as interpretation, open question, restatement
   and self-disclosure, and every utterance carries one of seven emotion labels. Utterances are
-  English. dataset_type is unknown only because the registry has no category for scripted drama;
-  the provenance itself is established and awaits a classification decision by the registry owner.
+  English.
   Year from the arXiv preprint cited in the README.
 last_verified: 2026-09-25

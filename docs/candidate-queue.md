@@ -2,7 +2,7 @@
 
 Leads found during discovery that are not yet registry records. Each lists what has been confirmed, where, and what is still needed before a record can be written. A candidate becomes a record only when its primary source has been read. Promote it by copying `data/datasets/_TEMPLATE.yaml`.
 
-Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch.
+Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch, and `dramatized` was added as a dataset type for MESC.
 
 | Candidate | Language | Type (provisional) | Confirmed so far | Still needed |
 |---|---|---|---|---|
@@ -22,10 +22,6 @@ Now that `demonstration` is a dataset type, three existing records built from pu
 - **HOPE** (`real`): built from publicly available counseling videos. Check whether these were real sessions or demonstrations.
 - **MindDialog** (`real`, partially verified): its source is described as demonstration videos featuring real therapists.
 - **HighQuality** (`real`, partially verified): 258 therapist-patient dialogues annotated for MI quality. Check whether this is the high- and low-quality MI video collection from Pérez-Rosas et al., which overlaps AnnoMI's sources.
-
-## Classification decision needed
-
-- **MESC** (added 2026-09-25) is transcribed from the scripted television drama *In Treatment*. It is recorded as `dataset_type: unknown` because no current type fits: it is not real, not a teaching demonstration, and not model-generated. The owner should decide whether to add a type such as `dramatized`, or fold it into `demonstration`. Film and television corpora of therapy scenes are likely to recur.
 
 ## Video catalog leads
 
