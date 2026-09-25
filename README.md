@@ -56,12 +56,14 @@ The registry deliberately separates access, license, redistribution rights, rese
 The registry now includes verified or provisionally verified real-session resources spanning North America, Europe, and Asia:
 
 - **Counseling and Psychotherapy Transcripts**, an institutional/licensed collection of real psychotherapy and counseling transcripts.
-- **AVATAR Therapy Dialogue Corpus**, a longitudinal specialized therapy dialogue corpus.
+- **AVATAR Therapy Dialogue Corpus**, a specialized therapy dialogue corpus.
 - **IndieMH**, gated English-Hindi real mental-health therapy sessions with code-mixing/code-switching annotations.
 - **HOPE**, 212 real counseling conversations from publicly available counseling videos, with dialogue-act annotations and controlled research access.
 - **CUEMPATHY**, 156 actual counseling sessions involving 39 therapist-client dyads, with speech, transcripts, and ratings.
 - **BiMISC**, bilingual English-Dutch motivational-interviewing conversations sourced from real counseling sessions.
 - **Mental Health Counseling Dialogue**, 1,661 Korean counseling-session transcripts collected at accredited mental-health counseling centers.
+- **Online Mental Health Counseling Dataset (Westlake/Zhejiang University)**, a large-scale text-based counseling resource collected over two years from an online welfare counseling platform.
+- **MindDialog**, a 2026 corpus built from more than 325 hours of publicly available psychotherapy demonstration videos featuring real therapists; it remains provisionally verified because the distinction between clinical encounters and educational demonstrations requires further provenance review.
 
 **AnnoMI is intentionally not counted in the verified real-session population yet.** Its provenance is being kept separate until source evidence establishes whether the dialogues are naturally occurring clinical encounters or demonstrations/role-play.
 
@@ -114,7 +116,6 @@ The schema is maintained under `schema/`.
 Controlled vocabularies live under `data/vocabularies/`.
 Methodology and governance documentation lives under `docs/`.
 Validation and automation live under `src/`, `scripts/`, `tests/`, and `.github/`.
-
 
 ## Published synthetic therapy corpora
 
