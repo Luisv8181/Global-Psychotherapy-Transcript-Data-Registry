@@ -1,0 +1,37 @@
+id: hope-counseling-conversations
+title: HOPE: Counselling Conversations Dataset
+canonical_url: https://github.com/LCS2-IIITD/SPARTA_WSDM2022
+status: verified
+dataset_type: real
+domain: counseling
+source_context: Naturally occurring therapist-patient counseling conversations from publicly available counseling videos
+languages:
+  - en
+therapy_modalities:
+  - counseling
+sessions: 212
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - text
+annotations:
+  - dialogue_acts
+  - speaker_labels
+  - timing
+access:
+  level: controlled
+  requirements: Dataset access agreement and researcher request
+redistribution: conditional
+license:
+  type: research_access_agreement
+  verified: true
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://github.com/LCS2-IIITD/SPARTA_WSDM2022
+    - https://dl.acm.org/doi/10.1145/3488560.3498509
+notes: 12900 utterances, approximately balanced between therapist and patient speech; sessions average about 59 utterances. Public video availability does not by itself establish transcript redistribution rights.
+last_verified: 2026-09-24
