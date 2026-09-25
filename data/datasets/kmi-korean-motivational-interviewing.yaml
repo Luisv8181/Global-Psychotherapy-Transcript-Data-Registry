@@ -1,0 +1,47 @@
+id: kmi-korean-motivational-interviewing
+title: "KMI: A Dataset of Korean Motivational Interviewing Dialogues for Psychotherapy"
+canonical_url: https://aclanthology.org/2025.naacl-long.541/
+status: verified
+dataset_type: synthetic
+domain: psychotherapy
+source_context: LLM-generated Korean motivational interviewing sessions grounded in motivational interviewing theory and professional therapist expertise
+geography:
+  countries: [South Korea]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: documented
+languages: [ko]
+language_context: Korean
+therapy_modalities:
+  - motivational_interviewing
+sessions: 1000
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+generation:
+  method: llm_simulation
+  theory: motivational_interviewing
+  expert_grounding: professional_therapist_expertise
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: not_applicable
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2025.naacl-long.541/
+publication_year: 2025
+release_year: 2025
+historical_significance:
+  - Korean synthetic psychotherapy dialogue corpus
+  - theory-grounded motivational interviewing simulation
+notes: The authors describe KMI as a synthetic dataset of 1,000 Korean motivational interviewing dialogues generated with LLMs and grounded in professional therapist expertise. It should be analyzed separately from observed clinical-session corpora.
+last_verified: 2026-09-24
