@@ -38,3 +38,10 @@
 - [ ] Scheduled metadata refresh
 - [ ] Contributor provenance
 - [ ] Dataset owner correction requests
+
+
+## Multi-function infrastructure direction
+
+The roadmap now treats discovery, historical mapping, modality research, longitudinal research, clinical-process research, cultural/linguistic research, privacy research, AI evaluation, research-gap mapping, and therapy-knowledge evolution as first-class registry functions.
+
+Temporal metadata and evidence provenance are foundational dependencies for these functions.
