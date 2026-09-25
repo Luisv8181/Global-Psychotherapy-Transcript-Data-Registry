@@ -1,0 +1,24 @@
+name: Dataset correction
+description: Report an error or outdated field in a registry record.
+title: '[CORRECTION] '
+body:
+  - type: input
+    id: dataset
+    attributes:
+      label: Dataset ID
+    validations:
+      required: true
+  - type: textarea
+    id: field
+    attributes:
+      label: Field requiring correction
+      description: State the current value and proposed value.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link the authoritative source supporting the correction.
+    validations:
+      required: true
