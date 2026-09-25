@@ -1,0 +1,14 @@
+access_levels:
+  - open
+  - registration
+  - research-agreement
+  - institutional
+  - restricted
+  - metadata-only
+  - unknown
+
+redistribution:
+  - allowed
+  - prohibited
+  - conditional
+  - unknown
