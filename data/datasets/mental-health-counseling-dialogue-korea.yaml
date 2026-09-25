@@ -24,7 +24,7 @@ annotations:
   - substance_use
   - expert_clinical_labels
 access:
-  level: public
+  level: open
   provider: AI Hub
 redistribution: unknown
 license:

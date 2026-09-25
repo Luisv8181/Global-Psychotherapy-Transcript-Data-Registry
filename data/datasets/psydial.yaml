@@ -24,7 +24,7 @@ generation:
   source_type: real_world_counseling_dialogues
   average_turns_per_dialogue: 37.8
 access:
-  level: public
+  level: open
   requirements: none reported
 redistribution: unknown
 license:

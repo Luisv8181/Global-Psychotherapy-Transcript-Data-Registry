@@ -28,9 +28,9 @@ generation:
   human_prompt_development: professional_psychotherapy_input
   real_session_influence: no direct human session generation reported
 access:
-  level: public
+  level: open
   requirements: none reported
-redistribution: public_release_reported
+redistribution: conditional
 license:
   type: CC
   verified: true
@@ -46,5 +46,5 @@ release_year: 2025
 historical_significance:
   - multilingual synthetic counseling corpus
   - multi-model LLM dialogue generation
-notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness.
+notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness. The authors report a public release under a Creative Commons license whose exact variant is not recorded here, so redistribution is conditional on that license's terms.
 last_verified: 2026-09-24

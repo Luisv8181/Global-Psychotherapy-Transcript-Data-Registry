@@ -93,8 +93,11 @@ def test_stale_verification_is_a_warning(registry):
     assert any("more than 365 days ago" in w for w in report.warnings)
 
 
-def test_off_vocabulary_access_is_a_warning(registry):
+def test_off_vocabulary_access_is_an_error(registry):
     rewrite(registry, "level: open", "level: public")
-    report = validate_registry(registry, today=TODAY)
-    assert report.errors == []
-    assert any("access.level 'public'" in w for w in report.warnings)
+    assert any("access.level 'public'" in e for e in validate_registry(registry, today=TODAY).errors)
+
+
+def test_off_vocabulary_redistribution_is_an_error(registry):
+    rewrite(registry, "redistribution: conditional", "redistribution: public_release_reported")
+    assert any("redistribution 'public_release_reported'" in e for e in validate_registry(registry, today=TODAY).errors)

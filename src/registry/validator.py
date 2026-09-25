@@ -1,11 +1,12 @@
 """Registry validation.
 
 Errors block a merge: unreadable files, schema violations, identity problems,
-and verification claims without evidence.
+access/redistribution values outside the controlled vocabularies, and
+verification claims without evidence.
 
-Warnings are editorial signals for a human reviewer: values outside the
-controlled vocabularies and verification dates that have gone stale. They
-never rewrite a record, because the registry does not infer missing facts.
+Warnings are editorial signals for a human reviewer: verification dates that
+have gone stale. Validation never rewrites a record, because the registry does
+not infer missing facts.
 """
 
 import json
@@ -132,5 +133,5 @@ def _check_vocabulary(name, record, vocab, report):
     for key, value in values.items():
         if value is not None and value not in vocab[key]:
             allowed = ", ".join(sorted(vocab[key]))
-            report.warnings.append(f"{name}: {key} '{value}' is not in the controlled vocabulary ({allowed})")
+            report.errors.append(f"{name}: {key} '{value}' is not in the controlled vocabulary ({allowed})")
 

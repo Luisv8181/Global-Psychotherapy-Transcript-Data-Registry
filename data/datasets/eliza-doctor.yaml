@@ -30,7 +30,8 @@ historical:
     - 1965 archive evidence
     - 1966 CACM publication
 access:
-  level: historical_archive
+  level: institutional
+  requirements: Historical materials held in the MIT archive and the 1966 CACM publication
 redistribution: unknown
 license:
   type: source_specific

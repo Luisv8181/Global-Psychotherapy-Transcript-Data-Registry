@@ -20,7 +20,7 @@ annotations:
   - speaker_labels
   - timing
 access:
-  level: controlled
+  level: research-agreement
   requirements: Dataset access agreement and researcher request
 redistribution: conditional
 license:
