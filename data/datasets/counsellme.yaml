@@ -1,0 +1,50 @@
+id: counsellme
+title: "CounseLLMe: A Dataset of Simulated Mental Health Dialogues for Comparing LLMs"
+canonical_url: https://doi.org/10.1016/j.etdah.2025.100170
+status: verified
+dataset_type: synthetic
+domain: mental_health_counseling
+source_context: LLM-to-LLM simulated psychological counseling dialogues in which one model plays a therapist and another plays a patient
+languages:
+  - en
+  - it
+language_context: English and Italian
+therapy_modalities:
+  - psychological_counseling
+sessions: 400
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+generation:
+  method: llm_to_llm_simulation
+  models:
+    - GPT-3.5 Turbo
+    - Claude-3 Haiku
+    - LLaMAntino
+  human_prompt_development: professional_psychotherapy_input
+  real_session_influence: no direct human session generation reported
+access:
+  level: public
+  requirements: none reported
+redistribution: public_release_reported
+license:
+  type: CC
+  verified: true
+privacy:
+  deidentified: not_applicable
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://doi.org/10.1016/j.etdah.2025.100170
+    - https://iris.unitn.it/handle/11572/466408
+publication_year: 2025
+release_year: 2025
+historical_significance:
+  - multilingual synthetic counseling corpus
+  - multi-model LLM dialogue generation
+notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness.
+last_verified: 2026-09-24
