@@ -1,0 +1,48 @@
+id: graph2counsel
+title: "Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generation"
+canonical_url: https://huggingface.co/datasets/UKPLab/Graph2Counsel
+status: verified
+dataset_type: hybrid
+domain: mental_health_counseling
+source_context: Synthetic counseling sessions generated from psychological graphs derived from anonymized real counseling sessions
+languages: [en]
+language_context: English
+therapy_modalities:
+  - counseling
+sessions: 760
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+annotations:
+  - client_psychological_graphs
+  - counselor_strategies
+generation:
+  method: graph_grounded_synthetic_generation
+  source_type: anonymized_real_counseling_sessions
+  synthetic_profiles: true
+  synthetic_dialogues: true
+access:
+  level: open
+redistribution: conditional
+license:
+  type: CC-BY-SA-4.0
+  verified: true
+privacy:
+  deidentified: true
+  method: anonymized_source_graphs
+  contextual_reidentification_assessed: reported_by_source
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/UKPLab/Graph2Counsel
+    - https://github.com/UKPLab/emnlp2026-graph2counsel
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - synthetic counseling generation grounded in structured psychological representations
+  - hybrid linkage between anonymized real-session structure and synthetic dialogue
+notes: Graph2Counsel contains 760 synthetic records according to its dataset card. Client psychological graphs and counselor strategies are derived from anonymized real counseling sessions, while client profiles and dialogue sessions are synthetically generated. The record is therefore classified as hybrid rather than direct real-session evidence.
+last_verified: 2026-09-24
