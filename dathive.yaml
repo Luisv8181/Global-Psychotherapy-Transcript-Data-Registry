@@ -1,0 +1,70 @@
+name: global-psychotherapy-transcript-dathive
+version: 0.1.0
+status: conceptual-prototype
+type: research_dathive
+
+definition: >
+  A Dathive is an evidence-grounded, continuously maintained research structure
+  in which specialized agents discover, verify, extract, connect, and audit
+  knowledge from distributed sources while preserving provenance and human
+  authority over consequential decisions.
+
+mission: >
+  Build a global, multilingual, multicultural, historically aware map of
+  psychotherapy and counseling dialogue resources without redistributing
+  restricted or sensitive source data.
+
+canonical_unit: dataset_record
+
+authoritative_layer:
+  - evidence
+  - canonical_dataset_record
+  - verification_state
+
+derived_layers:
+  - search_index
+  - evidence_graph
+  - coverage_map
+  - historical_timeline
+  - research_gap_map
+  - benchmark_catalog
+
+agent_roles:
+  - discovery
+  - verification
+  - extraction
+  - linkage
+  - gap_analysis
+  - privacy_audit
+  - provenance_audit
+  - synthesis
+
+agent_rules:
+  - never invent missing metadata
+  - preserve source provenance
+  - distinguish reported facts from inference
+  - do not copy restricted transcripts
+  - do not treat public discoverability as redistribution permission
+  - escalate uncertain or consequential decisions to human review
+
+human_authority:
+  dataset_verification: human_required
+  license_interpretation: human_required
+  ethics_or_irb_determination: human_required
+  privacy_certification: prohibited
+  final_publication_of_record: human_required
+
+core_loop:
+  - discover
+  - capture_evidence
+  - extract
+  - reconcile
+  - verify
+  - connect
+  - audit
+  - publish
+  - revisit
+
+design_principle: >
+  A database stores records. A Dathive maintains an evidence-grounded map
+  of knowledge as the underlying world changes.
