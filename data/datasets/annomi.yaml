@@ -1,9 +1,10 @@
 id: annomi
 title: AnnoMI
 canonical_url: https://github.com/uccollab/AnnoMI
-status: verified
-dataset_type: real
+status: partially-verified
+dataset_type: unknown
 domain: psychotherapy
+source_context: Publicly released motivational interviewing demonstrations; the project documentation does not establish these as naturally occurring real therapy sessions
 therapy_modalities:
   - motivational_interviewing
 languages:
@@ -29,4 +30,5 @@ privacy:
 evidence:
   primary_sources:
     - https://github.com/uccollab/AnnoMI
+notes: Kept in the registry as a therapy-dialogue resource, but excluded from the verified real-session population until source provenance is established as actual clinical encounters rather than demonstrations or role-play.
 last_verified: 2026-09-24
