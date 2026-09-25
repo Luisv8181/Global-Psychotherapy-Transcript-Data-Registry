@@ -60,6 +60,24 @@ The initial registry includes:
 
 These are seed records. The goal is substantially broader coverage.
 
+## Registry functions
+
+The registry is designed to support multiple functions from the same evidence-backed records:
+
+- dataset discovery
+- historical and temporal mapping
+- therapy-modality research
+- longitudinal research
+- clinical-process research
+- cultural and linguistic research
+- privacy and de-identification research
+- AI benchmark discovery
+- research-gap mapping
+- therapy-knowledge evolution
+- provenance-aware systematic review and meta-research
+
+See `docs/functions.md`, `docs/historical-analysis.md`, and `docs/research-functions.md`.
+
 ## Search vision
 
 The registry should eventually support queries such as:
