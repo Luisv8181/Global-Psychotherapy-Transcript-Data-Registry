@@ -178,7 +178,7 @@ The term is intentionally conceptual and is not presented as an established tech
 
 Submit **metadata and official links**, not restricted transcripts. If a dataset is controlled, copyrighted, or otherwise unavailable for redistribution, record its access pathway and restrictions rather than copying the data.
 
-See `CONTRIBUTING.md`, `docs/verification-protocol.md`, `docs/access-taxonomy.md`, `docs/ethics-and-governance.md`, and `docs/project-charter.md`.
+See `AGENTS.md` (the protocol for AI agents working in this repository), `CONTRIBUTING.md`, `docs/verification-protocol.md`, `docs/access-taxonomy.md`, `docs/ethics-and-governance.md`, and `docs/project-charter.md`.
 
 ## Safety and privacy
 
