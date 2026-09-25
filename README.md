@@ -53,10 +53,17 @@ The registry deliberately separates access, license, redistribution rights, rese
 
 ## Current records
 
-The initial registry includes:
-- **AnnoMI**, an open research corpus of motivational interviewing demonstrations.
-- **Counseling and Psychotherapy Transcripts, Volume I**, an institutional/licensed collection of real psychotherapy and counseling transcripts.
-- **AVATAR Therapy Dialogue Corpus**, a specialized therapy dialogue corpus.
+The registry now includes verified or provisionally verified real-session resources spanning North America, Europe, and Asia:
+
+- **Counseling and Psychotherapy Transcripts**, an institutional/licensed collection of real psychotherapy and counseling transcripts.
+- **AVATAR Therapy Dialogue Corpus**, a longitudinal specialized therapy dialogue corpus.
+- **IndieMH**, gated English-Hindi real mental-health therapy sessions with code-mixing/code-switching annotations.
+- **HOPE**, 212 real counseling conversations from publicly available counseling videos, with dialogue-act annotations and controlled research access.
+- **CUEMPATHY**, 156 actual counseling sessions involving 39 therapist-client dyads, with speech, transcripts, and ratings.
+- **BiMISC**, bilingual English-Dutch motivational-interviewing conversations sourced from real counseling sessions.
+- **Mental Health Counseling Dialogue**, 1,661 Korean counseling-session transcripts collected at accredited mental-health counseling centers.
+
+**AnnoMI is intentionally not counted in the verified real-session population yet.** Its provenance is being kept separate until source evidence establishes whether the dialogues are naturally occurring clinical encounters or demonstrations/role-play.
 
 These are seed records. The goal is substantially broader coverage.
 
