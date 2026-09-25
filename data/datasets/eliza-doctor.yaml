@@ -1,0 +1,54 @@
+id: eliza-doctor
+title: "ELIZA / DOCTOR: Historical Computational Therapeutic Dialogue System"
+canonical_url: https://doi.org/10.1145/365153.365168
+status: partially-verified
+dataset_type: unknown
+domain: computational_therapy_history
+source_context: Human-computer therapeutic dialogue system using the DOCTOR script to simulate a Rogerian psychotherapist
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_institution
+  evidence_level: documented
+languages: [en]
+language_context: English
+therapy_modalities:
+  - simulated_therapeutic_dialogue
+sessions: null
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+historical:
+  generation_start_year: 1965
+  publication_year: 1966
+  historical_status: early_computational_therapeutic_dialogue
+  source_versions:
+    - 1965 archive evidence
+    - 1966 CACM publication
+access:
+  level: historical_archive
+redistribution: unknown
+license:
+  type: source_specific
+  verified: false
+privacy:
+  deidentified: not_applicable_to_historical_system
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://doi.org/10.1145/365153.365168
+    - https://hdl.handle.net/1721.3/201699
+  supporting_sources:
+    - https://sites.google.com/view/elizagen-org/original-eliza
+publication_year: 1966
+collection_start_year: 1965
+historical_significance:
+  - early documented computational therapeutic dialogue
+  - DOCTOR script simulated a Rogerian psychotherapist
+  - multiple contemporaneous ELIZA versions and scripts are documented
+notes: ELIZA is included as a historical predecessor to modern computational therapy and synthetic dialogue corpora, not as a modern psychotherapy dataset. Primary evidence documents the 1966 publication, while recovered MIT archive material supports earlier 1965 versions. The registry should preserve version-specific evidence rather than treating ELIZA as a single immutable artifact.
+last_verified: 2026-09-24
