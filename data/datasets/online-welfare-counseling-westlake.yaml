@@ -1,0 +1,43 @@
+id: online-welfare-counseling-westlake
+title: Online Mental Health Counseling Dataset (Westlake/Zhejiang University)
+canonical_url: https://aclanthology.org/2023.acl-long.577/
+status: verified
+dataset_type: real
+domain: psychotherapy
+source_context: Text-based counseling interactions collected over two years from an online welfare counseling platform
+geography:
+  countries:
+    - China
+languages:
+  - zh
+therapy_modalities:
+  - online_counseling
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+annotations:
+  - counselor_strategies
+  - client_reactions
+  - client_states
+  - counseling_outcomes
+access:
+  level: unknown
+  requirements: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2023.acl-long.577/
+publication_year: 2023
+notes: The authors report a large-scale, high-quality text-based counseling dataset collected over two years from an online welfare counseling platform. The cited paper studies counselor strategies, client reaction behaviors, and counseling outcomes. Session count, exact platform identity, access terms, licensing, and privacy controls require separate verification.
+last_verified: 2026-09-24
