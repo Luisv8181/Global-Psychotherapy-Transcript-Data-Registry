@@ -3,6 +3,7 @@ title: "HOPE: Counselling Conversations Dataset"
 canonical_url: https://github.com/LCS2-IIITD/SPARTA_WSDM2022
 status: verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: counseling
 source_context: Naturally occurring therapist-patient counseling conversations from publicly available counseling videos
 languages:

@@ -3,6 +3,7 @@ title: "IndieMH: Code-Mixed Mental Health Counseling Conversations"
 canonical_url: https://huggingface.co/datasets/as3eem/IndieMH
 status: partially-verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: Counseling conversations from publicly available sources, manually translated into code-mixed Hinglish (English-Hindi) and annotated for emotion. The dialogues are translations, not original Hinglish sessions.
 geography:

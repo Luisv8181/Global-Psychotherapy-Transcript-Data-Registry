@@ -3,6 +3,7 @@ title: "ELIZA / DOCTOR: Historical Computational Therapeutic Dialogue System"
 canonical_url: https://doi.org/10.1145/365153.365168
 status: partially-verified
 dataset_type: unknown
+dialogue_structure: multi_turn
 domain: computational_therapy_history
 source_context: Human-computer therapeutic dialogue system using the DOCTOR script to simulate a Rogerian psychotherapist
 geography:

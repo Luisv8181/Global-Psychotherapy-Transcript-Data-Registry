@@ -32,10 +32,22 @@
       ]
     },
     "dataset_type": {
+      "description": "Provenance of the dialogue. See data/vocabularies/dataset-type.yaml for definitions.",
       "enum": [
         "real",
+        "demonstration",
+        "peer_support",
         "synthetic",
         "hybrid",
+        "unknown"
+      ]
+    },
+    "dialogue_structure": {
+      "description": "Shape of the text: multi-turn dialogue, single-turn question-answer pairs, or both.",
+      "enum": [
+        "multi_turn",
+        "single_turn_qa",
+        "mixed",
         "unknown"
       ]
     },

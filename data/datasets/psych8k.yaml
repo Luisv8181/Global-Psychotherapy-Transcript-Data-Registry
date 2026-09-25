@@ -3,6 +3,7 @@ title: "Psych8k (ChatPsychiatrist counseling instruction data)"
 canonical_url: https://github.com/EmoCareAI/ChatPsychiatrist
 status: partially-verified
 dataset_type: hybrid
+dialogue_structure: single_turn_qa
 domain: psychotherapy
 source_context: >-
   About 260 real counseling conversations from counseling recordings in English, transcribed,

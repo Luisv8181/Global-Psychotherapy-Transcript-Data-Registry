@@ -3,6 +3,7 @@ title: Example Dataset
 canonical_url: https://example.org/dataset
 status: unverified
 dataset_type: unknown
+dialogue_structure: unknown
 domain: psychotherapy
 
 # Copy this file to data/datasets/<id>.yaml; the id must match the file name.

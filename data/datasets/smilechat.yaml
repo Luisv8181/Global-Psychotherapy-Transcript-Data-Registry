@@ -3,6 +3,7 @@ title: "SmileChat: Chinese Multi-turn Mental Health Support Dialogues (SMILE)"
 canonical_url: https://github.com/qiuhuachuan/smile
 status: partially-verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 domain: mental_health_support
 source_context: >-
   Real single-turn mental-health mutual-help question-answer posts, expanded by ChatGPT into

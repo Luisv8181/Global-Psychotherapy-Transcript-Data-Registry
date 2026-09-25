@@ -3,6 +3,7 @@ title: "MindDialog: A Large-Scale Benchmark for Counseling Dialogue Understandin
 canonical_url: https://doi.org/10.1016/j.patcog.2026.113766
 status: partially-verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: Psychotherapy demonstration videos featuring real therapists; the authors describe the source material as authentic counseling sessions
 geography:

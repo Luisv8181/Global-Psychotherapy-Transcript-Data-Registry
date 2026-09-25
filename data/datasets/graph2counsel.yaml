@@ -3,6 +3,7 @@ title: "Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generat
 canonical_url: https://huggingface.co/datasets/UKPLab/Graph2Counsel
 status: verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 domain: mental_health_counseling
 source_context: Synthetic counseling sessions generated from psychological graphs derived from anonymized real counseling sessions
 languages: [en]

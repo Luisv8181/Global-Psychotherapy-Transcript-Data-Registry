@@ -3,6 +3,7 @@ title: "CUEMPATHY: A Counseling Speech Dataset for Psychotherapy Research"
 canonical_url: https://research.cuhk.edu.hk/en/publications/cuempathy-a-counseling-speech-dataset-for-psychotherapy-research-2/
 status: verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: Actual counseling sessions collected for psychotherapy research
 geography:

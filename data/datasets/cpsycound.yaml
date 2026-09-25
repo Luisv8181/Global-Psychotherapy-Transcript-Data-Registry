@@ -3,6 +3,7 @@ title: "CPsyCounD: Report-based Reconstructed Chinese Psychological Counseling D
 canonical_url: https://github.com/CAS-SIAT-XinHai/CPsyCoun
 status: partially-verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: >-
   Multi-turn counseling dialogues reconstructed by a large language model from psychological

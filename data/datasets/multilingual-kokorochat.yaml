@@ -3,6 +3,7 @@ title: Multilingual KokoroChat
 canonical_url: https://github.com/UEC-InabaLab/MultilingualKokoroChat
 status: verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 source_context: clinician_roleplay
 geography:
   countries: [Japan]

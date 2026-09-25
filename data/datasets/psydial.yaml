@@ -3,6 +3,7 @@ title: "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Healt
 canonical_url: https://aclanthology.org/2025.acl-long.1049/
 status: verified
 dataset_type: hybrid
+dialogue_structure: multi_turn
 domain: mental_health_support
 source_context: Privacy-preserving reconstruction of real-world client-counselor dialogues rather than direct release of the original conversations
 languages:

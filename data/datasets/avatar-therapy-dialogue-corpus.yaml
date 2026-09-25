@@ -3,6 +3,7 @@ title: AVATAR Therapy Dialogue Corpus
 canonical_url: https://kclpure.kcl.ac.uk/portal/en/datasets/avatar-therapy-dialogue-corpus/
 status: verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: psychotherapy
 access:
   level: institutional

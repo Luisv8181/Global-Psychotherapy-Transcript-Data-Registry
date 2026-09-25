@@ -3,6 +3,7 @@ title: "MentalChat16K: A Benchmark Dataset for Conversational Mental Health Assi
 canonical_url: https://huggingface.co/datasets/ShenLab/MentalChat16K
 status: partially-verified
 dataset_type: hybrid
+dialogue_structure: single_turn_qa
 domain: mental_health_counseling
 source_context: >-
   Two components. 6,338 question-answer pairs paraphrased (with Mistral-Instruct) from 378

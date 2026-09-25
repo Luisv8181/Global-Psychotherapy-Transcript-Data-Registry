@@ -2,7 +2,8 @@ id: esconv
 title: "ESConv: Emotional Support Conversation Dataset"
 canonical_url: https://github.com/thu-coai/Emotional-Support-Conversation
 status: partially-verified
-dataset_type: unknown
+dataset_type: peer_support
+dialogue_structure: multi_turn
 domain: emotional_support
 source_context: >-
   Crowdsourced text conversations between help-seekers describing their own current or past
@@ -54,7 +55,5 @@ historical_significance:
 notes: >-
   Counted from ESConv.json on 2026-09-25, 1,300 conversations and 38,365 turns, of which 991
   concern a current experience and 309 a previous one. In 2024 the authors added FailedESConv.json
-  with 196 conversations dropped during collection. dataset_type stays unknown because the
-  registry's vocabulary has no category for crowdsourced peer emotional support, which is neither
-  real therapy nor synthetic dialogue. The collection method is described in the ACL 2021 paper.
+  with 196 conversations dropped during collection. The collection method is described in the ACL 2021 paper.
 last_verified: 2026-09-25

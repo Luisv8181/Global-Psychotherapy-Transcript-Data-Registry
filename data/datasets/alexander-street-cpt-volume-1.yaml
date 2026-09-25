@@ -3,6 +3,7 @@ title: Counseling and Psychotherapy Transcripts, Volume I
 canonical_url: https://libraries.usc.edu/databases/alexander-street-press-counseling-and-psychotherapy-transcripts-volume-i
 status: verified
 dataset_type: real
+dialogue_structure: multi_turn
 domain: psychotherapy
 languages:
   - en

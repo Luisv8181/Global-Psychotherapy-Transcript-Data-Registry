@@ -3,6 +3,7 @@ title: "CounseLLMe: A Dataset of Simulated Mental Health Dialogues for Comparing
 canonical_url: https://doi.org/10.1016/j.etdah.2025.100170
 status: verified
 dataset_type: synthetic
+dialogue_structure: multi_turn
 domain: mental_health_counseling
 source_context: LLM-to-LLM simulated psychological counseling dialogues in which one model plays a therapist and another plays a patient
 languages:
