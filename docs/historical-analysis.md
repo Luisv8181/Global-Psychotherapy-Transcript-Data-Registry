@@ -15,9 +15,9 @@ These timelines should be connected where evidence supports the relationship, bu
 
 ## Computational therapeutic dialogue timeline
 
-ELIZA provides an important historical predecessor for synthetic therapy research. Joseph Weizenbaum developed the ELIZA system at MIT in the mid-1960s. Its DOCTOR script was designed to simulate a Rogerian psychotherapist using keyword matching, decomposition rules, and response-reassembly rules. The 1966 *Communications of the ACM* paper documented the system. citeturn0search7
+ELIZA provides an important historical predecessor for synthetic therapy research. Joseph Weizenbaum developed the ELIZA system at MIT in the mid-1960s. Its DOCTOR script was designed to simulate a Rogerian psychotherapist using keyword matching, decomposition rules, and response-reassembly rules. The 1966 *Communications of the ACM* paper documented the system.
 
-Recovered archival evidence indicates multiple ELIZA versions beginning in 1965, including an early 1965 version and the 1966 version described in the ACM paper. The historical record therefore should not treat "ELIZA" as a single immutable artifact. citeturn0search2turn0search4
+Recovered archival evidence indicates multiple ELIZA versions beginning in 1965, including an early 1965 version and the 1966 version described in the ACM paper. The historical record therefore should not treat "ELIZA" as a single immutable artifact.
 
 ELIZA is not classified as a modern synthetic therapy corpus. It is classified as a **computational therapeutic dialogue system / historical predecessor**. Its human-machine interactions may be recorded as historical dialogue artifacts when primary evidence supports them.
 
