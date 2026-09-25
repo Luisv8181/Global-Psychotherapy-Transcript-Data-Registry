@@ -1,0 +1,25 @@
+id: youtube-soBpcZUdSf4
+platform: youtube
+video_id: soBpcZUdSf4
+url: https://www.youtube.com/watch?v=soBpcZUdSf4
+title_as_listed: Anatomy of a Brief Intervention
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- following medical procedure
+- reducing drug use
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 111
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

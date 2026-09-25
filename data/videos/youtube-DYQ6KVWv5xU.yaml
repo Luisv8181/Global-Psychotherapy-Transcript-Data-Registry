@@ -1,0 +1,24 @@
+id: youtube-DYQ6KVWv5xU
+platform: youtube
+video_id: DYQ6KVWv5xU
+url: https://www.youtube.com/watch?v=DYQ6KVWv5xU
+title_as_listed: MI-Change Plan
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- compliance with rules
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 88
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

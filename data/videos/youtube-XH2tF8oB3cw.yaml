@@ -1,0 +1,27 @@
+id: youtube-XH2tF8oB3cw
+platform: youtube
+video_id: XH2tF8oB3cw
+url: https://www.youtube.com/watch?v=XH2tF8oB3cw
+title_as_listed: 'Case study clinical example: First session with a client with symptoms of social anxiety
+  (CBT model)'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- anxiety management
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 23
+  notes: 'AnnoMI MI quality label: high.'
+  source_urls:
+  - https://youtu.be/XH2tF8oB3cw
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

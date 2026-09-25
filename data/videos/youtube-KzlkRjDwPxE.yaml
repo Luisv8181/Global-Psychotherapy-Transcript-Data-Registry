@@ -1,0 +1,26 @@
+id: youtube-KzlkRjDwPxE
+platform: youtube
+video_id: KzlkRjDwPxE
+url: https://www.youtube.com/watch?v=KzlkRjDwPxE
+title_as_listed: Motivational Interviewing & lifestyle
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- diabetes management
+- diet
+- reducing alcohol consumption
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 132
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

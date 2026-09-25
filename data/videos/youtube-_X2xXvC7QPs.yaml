@@ -1,0 +1,24 @@
+id: youtube-_X2xXvC7QPs
+platform: youtube
+video_id: _X2xXvC7QPs
+url: https://www.youtube.com/watch?v=_X2xXvC7QPs
+title_as_listed: Dr. Peter Selby - MI Skills - Tobacco Cessation - 1st Follow-up Visit - www.teachproject.ca
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- smoking cessation
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 80
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

@@ -1,0 +1,24 @@
+id: youtube-XyqPdDB4dZk
+platform: youtube
+video_id: XyqPdDB4dZk
+url: https://www.youtube.com/watch?v=XyqPdDB4dZk
+title_as_listed: MI Scenario 3 web training
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- more exercise / increasing activity
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 56
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

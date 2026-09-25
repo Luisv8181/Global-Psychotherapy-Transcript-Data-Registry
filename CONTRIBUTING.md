@@ -6,6 +6,10 @@ Do not upload copyrighted or controlled-access transcripts, therapy recordings, 
 
 Submit metadata and official source links only.
 
+## Adding videos
+
+Video catalog entries hold metadata and links only. Read `docs/video-catalog.md` first, especially the rules for videos that show real clients.
+
 ## Adding or updating a record
 
 1. Copy `data/datasets/_TEMPLATE.yaml` to `data/datasets/<id>.yaml`. The `id` must be lowercase words joined by hyphens and match the file name.

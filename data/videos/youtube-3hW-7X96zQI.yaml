@@ -1,0 +1,24 @@
+id: youtube-3hW-7X96zQI
+platform: youtube
+video_id: 3hW-7X96zQI
+url: https://www.youtube.com/watch?v=3hW-7X96zQI
+title_as_listed: Monkey on My Back - Part 4
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- smoking cessation
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 60
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

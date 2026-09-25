@@ -1,0 +1,27 @@
+id: youtube-3_KZkxveh70
+platform: youtube
+video_id: 3_KZkxveh70
+url: https://www.youtube.com/watch?v=3_KZkxveh70
+title_as_listed: Motivational Techniques - Margaret interview Billy - 3
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing recidivism
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 5
+  - 71
+  - 84
+  notes: 'AnnoMI MI quality label: high. Also listed under the titles: Motivational Techniques - Margaret
+    interview Billy - 2; Motivational Techniques - Margaret interview Billy - 1.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

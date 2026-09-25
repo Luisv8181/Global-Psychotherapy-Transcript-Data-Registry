@@ -1,0 +1,24 @@
+id: vimeo-109594861
+platform: vimeo
+video_id: '109594861'
+url: https://vimeo.com/109594861
+title_as_listed: 'Part Three: Motivational Interviewing in an Integrated Care Setting (Social Worker Scenario)'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- taking steps towards getting help with day-care
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 108
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

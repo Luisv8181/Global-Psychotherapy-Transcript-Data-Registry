@@ -19,6 +19,7 @@ import yaml
 from jsonschema import Draft202012Validator, FormatChecker
 
 from src.registry.records import RecordLoadError, is_template, load_record, record_paths
+from src.registry.videos import validate_videos
 
 __all__ = ["Report", "validate_registry", "STALE_AFTER_DAYS"]
 
@@ -93,6 +94,7 @@ def validate_registry(root, today=None):
         _check_dates(name, record, today, report)
         _check_vocabulary(name, record, vocab, report)
 
+    validate_videos(root, {i for i in ids if i}, report)
     return report
 
 

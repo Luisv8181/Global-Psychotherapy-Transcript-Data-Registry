@@ -1,0 +1,34 @@
+id: youtube-wcu8oqHIsbc
+platform: youtube
+video_id: wcu8oqHIsbc
+url: https://www.youtube.com/watch?v=wcu8oqHIsbc
+title_as_listed: How to Do Motivational Interviewing (MI) Role Play -1
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- engaging in community activities
+- problem recognition
+- reducing coffee consumption
+- reducing drug use
+- reducing recidivism
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 3
+  - 19
+  - 40
+  - 50
+  - 103
+  notes: 'AnnoMI MI quality label: high. Also listed under the titles: How to Do Motivational Interviewing
+    (MI) Role Play - 3; How to Do Motivational Interviewing (MI) Role Play - 5; How to Do Motivational
+    Interviewing (MI) Role Play - 2; How to Do Motivational Interviewing (MI) Role Play - 4.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

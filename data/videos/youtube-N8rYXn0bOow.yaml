@@ -1,0 +1,26 @@
+id: youtube-N8rYXn0bOow
+platform: youtube
+video_id: N8rYXn0bOow
+url: https://www.youtube.com/watch?v=N8rYXn0bOow
+title_as_listed: ComMIt Diabetes Dialogue without MI
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- diabetes management
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 10
+  notes: 'AnnoMI MI quality label: low.'
+  source_urls:
+  - https://www.youtube.com/watch?v=N8rYXn0bOow&feature=youtu.be
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

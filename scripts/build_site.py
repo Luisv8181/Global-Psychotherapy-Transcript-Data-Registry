@@ -9,6 +9,7 @@ from pathlib import Path
 from src.registry.audit import audit, completeness
 from src.registry.records import load_record, record_paths
 from src.registry.validator import validate_registry
+from src.registry.videos import load_videos
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "site" / "data"
@@ -29,4 +30,7 @@ with (OUT / "datasets.json").open("w", encoding="utf-8") as f:
     json.dump(records, f, ensure_ascii=False, indent=2, sort_keys=True)
 with (OUT / "audit.json").open("w", encoding="utf-8") as f:
     json.dump(audit(records), f, ensure_ascii=False, indent=2)
-print(f"Built {len(records)} dataset records")
+videos = load_videos(ROOT)
+with (OUT / "videos.json").open("w", encoding="utf-8") as f:
+    json.dump(videos, f, ensure_ascii=False, indent=2, sort_keys=True)
+print(f"Built {len(records)} dataset records and {len(videos)} video catalog entries")

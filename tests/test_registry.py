@@ -15,7 +15,8 @@ TODAY = date(2026, 9, 25)
 def test_registry_records_validate():
     report = validate_registry(ROOT, today=TODAY)
     assert report.errors == []
-    assert report.checked == len(list((ROOT / "data" / "datasets").glob("*.yaml")))
+    files = list((ROOT / "data" / "datasets").glob("*.yaml")) + list((ROOT / "data" / "videos").glob("*.yaml"))
+    assert report.checked == len(files)
 
 
 def test_template_is_skipped_by_loader():
@@ -75,7 +76,7 @@ def test_verified_status_requires_primary_sources(registry):
 
 
 def test_schema_rejects_bad_enum(registry):
-    rewrite(registry, "dataset_type: unknown", "dataset_type: realistic")
+    rewrite(registry, "dataset_type: demonstration", "dataset_type: realistic")
     assert any("dataset_type" in e for e in validate_registry(registry, today=TODAY).errors)
 
 

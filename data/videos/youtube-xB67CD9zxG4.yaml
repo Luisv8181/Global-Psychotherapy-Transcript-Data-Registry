@@ -1,0 +1,26 @@
+id: youtube-xB67CD9zxG4
+platform: youtube
+video_id: xB67CD9zxG4
+url: https://www.youtube.com/watch?v=xB67CD9zxG4
+title_as_listed: 'SBIRT: Sprained Ankle Case - Average Medical Resident example - PART I'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing alcohol consumption
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 17
+  notes: 'AnnoMI MI quality label: low.'
+  source_urls:
+  - https://youtu.be/xB67CD9zxG4
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

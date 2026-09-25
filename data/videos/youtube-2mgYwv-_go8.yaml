@@ -1,0 +1,26 @@
+id: youtube-2mgYwv-_go8
+platform: youtube
+video_id: 2mgYwv-_go8
+url: https://www.youtube.com/watch?v=2mgYwv-_go8
+title_as_listed: ComMIt High Cholesterol Dialogue without MI
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- taking medicine / following medical procedure
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 57
+  notes: 'AnnoMI MI quality label: low.'
+  source_urls:
+  - https://www.youtube.com/watch?v=2mgYwv-_go8&feature=youtu.be
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

@@ -1,0 +1,24 @@
+id: youtube--RXy8Li3ZaE
+platform: youtube
+video_id: -RXy8Li3ZaE
+url: https://www.youtube.com/watch?v=-RXy8Li3ZaE
+title_as_listed: Motivational Interviewing A conversation with "Sal" about managing his asthma
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- asthma management
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 127
+  notes: 'AnnoMI MI quality label: high.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null

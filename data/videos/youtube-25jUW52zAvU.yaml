@@ -1,0 +1,24 @@
+id: youtube-25jUW52zAvU
+platform: youtube
+video_id: 25jUW52zAvU
+url: https://www.youtube.com/watch?v=25jUW52zAvU
+title_as_listed: 'The Ineffective Youth Minister With a High-Risk Teen: Non-Motivational Approach'
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by AnnoMI, whose repository README describes its transcripts
+  as demonstrations of high- and low-quality motivational interviewing.
+therapy_modalities:
+- motivational_interviewing
+topics:
+- reducing alcohol consumption
+languages:
+- en
+used_by:
+- dataset: annomi
+  transcript_ids:
+  - 90
+  notes: 'AnnoMI MI quality label: low.'
+availability: not_checked
+availability_checked_on: null
+catalogued_on: '2026-09-25'
+notes: null
