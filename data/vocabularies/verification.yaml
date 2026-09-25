@@ -1,0 +1,13 @@
+verification_status:
+  - verified
+  - partially-verified
+  - unverified
+  - deprecated
+
+source_priority:
+  - dataset-provider
+  - institutional-repository
+  - publisher
+  - doi-metadata
+  - peer-reviewed-publication
+  - secondary-catalog
