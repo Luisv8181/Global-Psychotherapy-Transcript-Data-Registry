@@ -1,0 +1,39 @@
+id: bimisc
+title: BiMISC: Bilingual Motivational Interviewing Conversations
+canonical_url: https://aclanthology.org/2024.lrec-main.498/
+status: verified
+dataset_type: real
+domain: psychotherapy
+source_context: Motivational interviewing conversations sourced from real counseling sessions
+geography:
+  countries:
+    - Netherlands
+languages:
+  - en
+  - nl
+language_context: Bilingual English-Dutch motivational interviewing
+therapy_modalities:
+  - motivational_interviewing
+sessions: null
+longitudinal: null
+transcript:
+  available: true
+annotations:
+  - motivational_interviewing_skill_code
+access:
+  level: unknown
+  requirements: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2024.lrec-main.498/
+    - https://ir.cwi.nl/pub/34266
+publication_year: 2024
+notes: The publication explicitly describes BiMISC as a bilingual English-Dutch dataset sourced from real counseling sessions and expert-annotated using the MISC scheme. Session count and access terms are not asserted here because the cited primary sources do not establish them.
+last_verified: 2026-09-24
