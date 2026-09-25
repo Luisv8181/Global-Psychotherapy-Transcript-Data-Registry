@@ -6,6 +6,8 @@ Do not upload copyrighted or controlled-access transcripts, therapy recordings, 
 
 Submit metadata and official source links only.
 
+**AI agents and automated contributors must follow `AGENTS.md`.** People are encouraged to read it too; it records the evidence and licensing mistakes this registry has already made.
+
 ## Adding videos
 
 Video catalog entries hold metadata and links only. Read `docs/video-catalog.md` first, especially the rules for videos that show real clients.

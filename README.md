@@ -132,7 +132,7 @@ PYTHONPATH=. python scripts/build_site.py          # site/data/*.json for the Pa
 
 Validation **errors** block merges and deployment: unreadable YAML, schema violations, an `id` that does not match its file name, duplicate IDs or canonical URLs, `access.level` or `redistribution` values outside `data/vocabularies/access.yaml`, and `verified`/`partially-verified` records without primary sources or a `last_verified` date. **Warnings** are for a human reviewer: verification dates older than a year, and licenses marked verified without a `license.source` saying where the dataset's own license was read.
 
-The audit lists evidence gaps, not dataset defects: an unestablished field means the reviewed sources have not documented it yet. The same view is published on the site under *Research views → Evidence gaps*.
+The audit lists evidence gaps, not dataset defects: an unestablished field means the reviewed sources have not documented it yet. The same view is published on the site as Figure 3 of the *Atlas*, and on each dataset's page under *Not yet established*.
 
 ## Dataset types and Q&A
 
@@ -178,7 +178,7 @@ The term is intentionally conceptual and is not presented as an established tech
 
 Submit **metadata and official links**, not restricted transcripts. If a dataset is controlled, copyrighted, or otherwise unavailable for redistribution, record its access pathway and restrictions rather than copying the data.
 
-See `CONTRIBUTING.md`, `docs/verification-protocol.md`, `docs/access-taxonomy.md`, `docs/ethics-and-governance.md`, and `docs/project-charter.md`.
+See `AGENTS.md` (the protocol for AI agents working in this repository), `CONTRIBUTING.md`, `docs/verification-protocol.md`, `docs/access-taxonomy.md`, `docs/ethics-and-governance.md`, and `docs/project-charter.md`.
 
 ## Safety and privacy
 
