@@ -32,7 +32,8 @@ redistribution: conditional
 license:
   type: CC-BY-SA-4.0
   verified: true
-  notes: The license is recorded from the Hugging Face dataset card. The GitHub repository is licensed Apache 2.0, which covers the code, not the dataset.
+  source: https://huggingface.co/datasets/UKPLab/Graph2Counsel
+  notes: The license is recorded from the Hugging Face dataset card (license tag cc-by-sa-4.0, dataset not gated), confirmed through the Hugging Face API on 2026-09-25. The GitHub repository is licensed Apache 2.0, which covers the code, not the dataset.
 privacy:
   deidentified: true
   method: anonymized_source_graphs

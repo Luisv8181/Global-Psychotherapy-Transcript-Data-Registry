@@ -5,16 +5,40 @@ status: verified
 dataset_type: real
 dialogue_structure: multi_turn
 domain: psychotherapy
+source_context: >-
+  Orthographic transcriptions of AVATAR therapy session recordings from a multi-centre clinical
+  trial. AVATAR therapy treats distressing voice-hearing through three-way dialogues between the
+  participant, a digital simulation (avatar) of their most distressing voice, and a therapist.
+therapy_modalities:
+  - avatar_therapy
+longitudinal: true
+transcript:
+  available: true
+annotations:
+  - para_linguistic_features
+  - non_speech_features
 access:
-  level: institutional
+  level: research-agreement
+  requirements: Files are embargoed and confidential on King's College London's research data repository; access is through the King's Data Access Agreement.
 redistribution: prohibited
 license:
   type: custom
   verified: true
+  source: https://kcl.figshare.com/articles/dataset/AVATAR_Therapy_Dialogue_Corpus/28334615
+  notes: The repository record lists the license as King's Data Access Agreement (https://www.kcl.ac.uk/researchsupport/assets/DataAccessAgreement-Description.pdf), with files under embargo and marked confidential.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://kclpure.kcl.ac.uk/portal/en/datasets/avatar-therapy-dialogue-corpus/
-last_verified: 2026-09-24
+    - https://doi.org/10.18742/28334615
+release_year: 2025
+notes: >-
+  The repository describes a one-million-word specialised corpus built with a five-step
+  semi-automated transcription process, with mark-up for para-linguistic and non-speech features,
+  and calls it a longitudinal dataset of therapeutic interactions. Made available 2025-02-17. Access
+  level changed from institutional to research-agreement because access is governed by a data
+  access agreement rather than an institutional subscription. Session count, language and trial
+  sites are not stated in the repository description.
+last_verified: 2026-09-25

@@ -10,5 +10,8 @@ def test_search_finds_annomi():
 
 def test_access_filter():
     root=Path(__file__).resolve().parents[1]
-    results=search(load_records(root),access='institutional')
-    assert {r['id'] for r in results} >= {'alexander-street-cpt-volume-1','avatar-therapy-dialogue-corpus'}
+    records=load_records(root)
+    for level in ('institutional', 'research-agreement', 'open'):
+        expected={r['id'] for r in records if (r.get('access') or {}).get('level') == level}
+        assert expected, f'no records with access level {level}'
+        assert {r['id'] for r in search(records, access=level)} == expected

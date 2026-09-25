@@ -15,6 +15,8 @@ redistribution: prohibited
 license:
   type: custom
   verified: true
+  source: https://libraries.usc.edu/databases/alexander-street-press-counseling-and-psychotherapy-transcripts-volume-i
+  notes: A proprietary database licensed to institutions by subscription; the USC Libraries page marks it "Proxy Required". The subscription license terms themselves were not read.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
@@ -24,4 +26,10 @@ evidence:
   supporting_publications:
     - https://pmc.ncbi.nlm.nih.gov/articles/PMC4879602/
     - https://pmc.ncbi.nlm.nih.gov/articles/PMC10835954/
-last_verified: 2026-09-24
+notes: >-
+  The USC Libraries page describes "Counseling and Psychotherapy Transcripts, Client Narratives, and
+  Reference Works" as containing real transcripts of counseling and therapy sessions, with more than
+  2,000 session transcripts, 44,000 pages of client narratives and 25,000 pages of reference
+  material. Those figures describe the combined collection; the Volume I share is not stated, so
+  sessions is left unknown for this record.
+last_verified: 2026-09-25
