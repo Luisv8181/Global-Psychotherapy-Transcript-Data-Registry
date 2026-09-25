@@ -2,18 +2,190 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Psychotherapy Dataset Registry Record",
   "type": "object",
-  "required": ["id", "title", "canonical_url", "status", "dataset_type"],
+  "required": [
+    "id",
+    "title",
+    "canonical_url",
+    "status",
+    "dataset_type"
+  ],
   "properties": {
-    "id": {"type": "string"}, "title": {"type": "string"}, "canonical_url": {"type": "string", "format": "uri"},
-    "status": {"enum": ["verified", "partially-verified", "unverified", "deprecated"]},
-    "dataset_type": {"enum": ["real", "synthetic", "hybrid", "unknown"]},
-    "source_context": {"type": ["string", "null"]},
-    "geography": {"type": ["object", "null"], "properties": {"countries": {"type": "array", "items": {"type": "string"}}, "regions": {"type": "array", "items": {"type": "string"}}, "scope": {"type": ["string", "null"]}, "evidence_level": {"type": ["string", "null"]}}, "additionalProperties": true},
-    "languages": {"type": "array", "items": {"type": "string"}}, "language_context": {"type": ["string", "null"]},
-    "dialects": {"type": "array", "items": {"type": "string"}}, "cultural_contexts": {"type": "array", "items": {"type": "string"}},
-    "therapy_modalities": {"type": "array", "items": {"type": "string"}}, "sessions": {"type": ["integer", "null"], "minimum": 0},
-    "longitudinal": {"type": ["boolean", "null"]}, "access": {"type": "object"}, "privacy": {"type": "object"}, "evidence": {"type": "object"},
-    "last_verified": {"type": ["string", "null"], "format": "date"}
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "status": {
+      "enum": [
+        "verified",
+        "partially-verified",
+        "unverified",
+        "deprecated"
+      ]
+    },
+    "dataset_type": {
+      "enum": [
+        "real",
+        "synthetic",
+        "hybrid",
+        "unknown"
+      ]
+    },
+    "source_context": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "geography": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scope": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_level": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language_context": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dialects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cultural_contexts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "therapy_modalities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sessions": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "longitudinal": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "access": {
+      "type": "object"
+    },
+    "privacy": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "last_verified": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "collection_start_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1800
+    },
+    "collection_end_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1800
+    },
+    "publication_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1800
+    },
+    "release_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1800
+    },
+    "historical_period": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "therapy_era": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "historical_significance": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
   },
   "additionalProperties": true
 }
