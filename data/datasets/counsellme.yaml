@@ -29,11 +29,12 @@ generation:
   real_session_influence: no direct human session generation reported
 access:
   level: open
-  requirements: none reported
-redistribution: conditional
+  requirements: None reported. The dataset is published on OSF (osf.io/2ay8d) with no registration step described.
+redistribution: unknown
 license:
-  type: CC
-  verified: true
+  type: unknown
+  verified: false
+  notes: The article is published open access under CC BY-NC-ND 4.0, but that license covers the paper, not necessarily the dataset. A secondary summary reports CC0 for the OSF dataset; this has not been confirmed on the OSF project page. Set license and redistribution once the OSF license field is checked.
 privacy:
   deidentified: not_applicable
   contextual_reidentification_assessed: not_applicable
@@ -41,10 +42,11 @@ evidence:
   primary_sources:
     - https://doi.org/10.1016/j.etdah.2025.100170
     - https://iris.unitn.it/handle/11572/466408
+    - https://osf.io/2ay8d/
 publication_year: 2025
 release_year: 2025
 historical_significance:
   - multilingual synthetic counseling corpus
   - multi-model LLM dialogue generation
-notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness. The authors report a public release under a Creative Commons license whose exact variant is not recorded here, so redistribution is conditional on that license's terms.
+notes: The published dataset contains 400 simulated mental-health counseling dialogues, with English and Italian conversations generated between LLMs. Each conversation contains 20 conversational quips. The authors compare the synthetic dialogues with human counseling conversations from HOPE. Synthetic scale and similarity to human dialogue should not be interpreted as clinical representativeness.
 last_verified: 2026-09-24

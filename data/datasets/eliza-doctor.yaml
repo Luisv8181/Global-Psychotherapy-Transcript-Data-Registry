@@ -30,12 +30,13 @@ historical:
     - 1965 archive evidence
     - 1966 CACM publication
 access:
-  level: institutional
-  requirements: Historical materials held in the MIT archive and the 1966 CACM publication
-redistribution: unknown
+  level: open
+  requirements: None for reading. The 1966 CACM paper is free in the ACM Digital Library's open 1951-2000 backfile, and the 1965 MAD-SLIP listing with the DOCTOR script is published through ELIZAGEN. The physical originals are held in the Weizenbaum papers at MIT.
+redistribution: conditional
 license:
   type: source_specific
   verified: false
+  notes: Reported as released under CC0 in May 2021 with permission of the Weizenbaum estate (source code and DOCTOR script). The 1966 paper, including its example conversation, remains under ACM's terms, which allow free reading but do not by themselves grant redistribution. The CC0 release is reported by ELIZAGEN and secondary sources and has not been confirmed on the release page itself.
 privacy:
   deidentified: not_applicable_to_historical_system
   contextual_reidentification_assessed: not_applicable
@@ -45,6 +46,7 @@ evidence:
     - https://hdl.handle.net/1721.3/201699
   supporting_sources:
     - https://sites.google.com/view/elizagen-org/original-eliza
+    - https://www.acm.org/media-center/2022/april/50-years-backfile
 publication_year: 1966
 collection_start_year: 1965
 historical_significance:
