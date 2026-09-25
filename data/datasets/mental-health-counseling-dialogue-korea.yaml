@@ -1,0 +1,45 @@
+id: mental-health-counseling-dialogue-korea
+title: Mental Health Counseling Dialogue
+canonical_url: https://aihub.or.kr
+status: verified
+dataset_type: real
+domain: mental_health_counseling
+source_context: Actual clients and counselors at accredited domestic mental health counseling centers in the Republic of Korea
+geography:
+  countries:
+    - South Korea
+languages:
+  - ko
+therapy_modalities:
+  - mental_health_counseling
+sessions: 1661
+longitudinal: null
+transcript:
+  available: true
+  format:
+    - text
+annotations:
+  - depression
+  - anxiety
+  - substance_use
+  - expert_clinical_labels
+access:
+  level: public
+  provider: AI Hub
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  evidence_note: The published study describes the transcripts as de-identified.
+evidence:
+  primary_sources:
+    - https://aihub.or.kr
+    - https://www.mdpi.com/2075-0383/16/12/1817
+collection_start_year: 2021
+collection_end_year: 2023
+publication_year: 2026
+notes: 1661 Korean counseling-session transcripts, averaging about 30 minutes or 5000 Korean characters per session. Two clinical psychology experts reviewed records and assigned depression, anxiety, and substance-use labels. Verify current AI Hub access and terms before use.
+last_verified: 2026-09-24
