@@ -6,6 +6,15 @@ dataset_type: unknown
 domain: psychotherapy
 
 # Optional research metadata
+# collection_start_year: null
+# collection_end_year: null
+# publication_year: null
+# release_year: null
+# historical_period: null
+# therapy_era:
+#   - unknown
+# historical_significance:
+#   - unknown
 # doi: https://doi.org/...
 # languages:
 #   - en
