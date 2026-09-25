@@ -1,0 +1,52 @@
+id: hcot-corpus
+title: "HCoT-Corpus: Multi-turn Psychological Support Dialogue Corpus"
+canonical_url: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1733384/full
+status: verified
+dataset_type: synthetic
+domain: psychological_support
+source_context: GPT-4o rewriting of Chinese psychological support source data into multi-turn dialogues
+geography:
+  countries: [China]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: documented
+languages: [zh]
+language_context: Chinese
+therapy_modalities:
+  - psychological_support
+sessions: 22341
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+annotations:
+  - helping_strategy
+  - exploration_comfort_action_stages
+generation:
+  method: llm_rewriting
+  model: GPT-4o
+  source_dataset: CounselDialog-CN
+  strategy_annotations: 211473
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: true
+  method: source_data_auditing_and_desensitization
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1733384/full
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - large-scale multi-turn synthetic psychological support corpus
+  - explicit analysis of simulation-reality gap
+notes: HCoT-Corpus contains 22,341 dialogues and 211,473 strategy annotations. The source explicitly notes that both roles are simulated by LLMs and that the corpus lacks many forms of resistance and ambiguity found in real clinical transcripts. It is therefore kept separate from observed counseling-session evidence.
+last_verified: 2026-09-24
