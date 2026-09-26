@@ -1,0 +1,93 @@
+id: daic-woz
+title: "DAIC-WOZ: Distress Analysis Interview Corpus, Wizard-of-Oz Interviews"
+canonical_url: https://dcapswoz.ict.usc.edu/
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: clinical_interview
+source_context: >-
+  Semi-structured clinical interviews designed to support the diagnosis of depression, PTSD and
+  anxiety, conducted in English by Ellie, an animated virtual interviewer controlled by a human in
+  another room. Participants were recruited through online ads and at a US veterans' facility and
+  include both distressed and non-distressed people. These are screening interviews, not therapy
+  sessions.
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_country
+  evidence_level: reported_in_publication
+languages: [en]
+language_context: original
+therapy_modalities: []
+clinical_topics:
+  - depression
+  - ptsd
+  - anxiety
+sessions: 189
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - csv
+audio:
+  available: true
+video:
+  available: false
+modalities:
+  - text
+  - audio
+  - facial_features
+annotations:
+  - phq8_scores
+  - depression_labels
+  - speaker_labels
+  - acoustic_features
+  - facial_action_units
+access:
+  level: research-agreement
+  requirements: >-
+    Request through the DAIC-WOZ site with a signed agreement. The 2014 paper says the corpus is
+    shared case by case, on request, for research purposes. The current request page could not be
+    read (see notes).
+redistribution: unknown
+license:
+  type: research_access_agreement
+  verified: false
+  source: https://www.ihp-lab.org/downloads/Extended-DAIC-BLANK_EULA.pdf
+  notes: >-
+    The DAIC-WOZ agreement itself could not be read. The agreement for the related Extended DAIC,
+    read on 2026-09-26, allows research use only, forbids commercial use and distribution to third
+    parties, allows illustrative use in publications with subjects' identities protected, and
+    requires citing the 2014 LREC paper. Whether DAIC-WOZ's agreement is identical is unconfirmed.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The documentation says identifiable utterances are scrubbed from transcripts and zeroed out in
+    the audio and derived features. Raw video is not in the package; facial features derived from
+    it are.
+ethics:
+  consent_documented: true
+  ethics_review_documented: unknown
+  data_use_agreement: true
+evidence:
+  primary_sources:
+    - https://aclanthology.org/L14-1421/
+    - https://dcapswoz.ict.usc.edu/wp-content/uploads/2022/02/DAICWOZDepression_Documentation.pdf
+    - https://www.ihp-lab.org/downloads/Extended-DAIC-BLANK_EULA.pdf
+publication_year: 2014
+historical_significance:
+  - widely used benchmark for automatic depression detection from interviews (AVEC challenges)
+notes: >-
+  The LREC 2014 paper (Gratch et al.) describes the wider DAIC, with face-to-face, teleconference,
+  Wizard-of-Oz and automated interviews; participants completed a consent form that included
+  optional consent to share their data for research. DAIC-WOZ is the Wizard-of-Oz part. Its
+  documentation (read 2026-09-26) says the package holds 189 session folders numbered 300 to 492,
+  with sessions 342, 394, 398 and 460 excluded, and gives per-session scrubbed audio, a scrubbed
+  transcript, facial and acoustic features, and PHQ-8 labels and train/dev/test splits from AVEC
+  2017. Sessions 451, 458 and 480 lack the interviewer's side of the transcript. The DAIC-WOZ site
+  and its download pages returned HTTP 403 (Cloudflare) from this session; the documentation PDF
+  was reachable. A web search summary says the data is released only to academic and non-profit
+  researchers; reported by a secondary source, unconfirmed. The Extended DAIC is a separate, larger
+  release not recorded here.
+last_verified: 2026-09-26

@@ -1,0 +1,64 @@
+id: psychotherapy-net-library
+title: Psychotherapy.net Training Video Library
+canonical_url: https://www.psychotherapy.net/
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  A commercial library of psychotherapy and counseling training videos, founded in 1995, streamed to
+  individuals and to universities, clinics and training institutes. The publisher describes both
+  sessions between expert clinicians and real clients and demonstrations. Many titles include a
+  training manual with a complete transcript. Recorded here at collection level only; individual
+  titles are not catalogued.
+languages:
+  - unknown
+language_context: unknown
+therapy_modalities:
+  - mixed
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - unknown
+video:
+  available: true
+modalities:
+  - video
+  - text
+access:
+  level: institutional
+  requirements: >-
+    Paid. Individual purchases or memberships for a single user; organisational licences for group
+    viewing, quoted by the sales team.
+redistribution: prohibited
+license:
+  type: custom
+  verified: false
+  source: https://www.psychotherapy.net/about/frequently-asked/
+  notes: >-
+    The FAQ says individual products may not be used by more than one user and that group viewing
+    needs an organisational licence. The licence terms themselves were not read.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The publisher says some videos show real clients. How their consent was obtained is not stated
+    on the pages read. No title or client information is recorded here.
+evidence:
+  primary_sources:
+    - https://www.psychotherapy.net/about/
+    - https://www.psychotherapy.net/about/frequently-asked/
+    - https://www.psychotherapy.net/for-organizations/universities/
+historical_significance:
+  - long-running commercial source of recorded psychotherapy sessions used in clinical training
+notes: >-
+  Read on 2026-09-26. The home and about pages describe "master clinicians working with real
+  clients" and "renowned clinicians in session with real clients"; the FAQ describes "real client
+  sessions, demonstrations, and guided reflection". Which titles are real-client sessions and which
+  are demonstrations is not stated, so the repository owner set dataset_type to unknown. The
+  universities page gives "350+ titles" in its plan table and "450+ streaming videos" elsewhere; both
+  are recorded. The FAQ says "many" products offer a training manual with a complete transcript.
+  Languages and modalities per title are not established.
+last_verified: 2026-09-26

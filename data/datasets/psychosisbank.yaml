@@ -1,0 +1,70 @@
+id: psychosisbank
+title: PsychosisBank
+canonical_url: https://psychosis.talkbank.org/
+status: partially-verified
+dataset_type: real
+dialogue_structure: unknown
+domain: clinical_interview
+source_context: >-
+  Speech and discourse recordings with transcripts from people with psychosis and comparison
+  participants, pooled in TalkBank from several research groups' protocols, including at least one
+  interview corpus. A joint initiative of the DISCOURSE in Psychosis project and TalkBank. Clinical
+  and research conversations, not therapy sessions.
+languages: [hr, en, pt, es, tr]
+language_context: original
+therapy_modalities: []
+clinical_topics:
+  - psychosis
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - unknown
+audio:
+  available: true
+modalities:
+  - text
+  - audio
+access:
+  level: research-agreement
+  requirements: >-
+    Membership application by email, a description of the planned analyses consistent with the
+    original ethics approval and without commercial use, a review call on confidentiality,
+    human-subjects training certificates for everyone with access, and a signed data use agreement.
+    Transcripts are open to members for browsing but not yet for analysis.
+redistribution: prohibited
+license:
+  type: research_access_agreement
+  verified: true
+  source: https://psychosis.talkbank.org/agreement.pdf
+  notes: >-
+    The PsychosisBank data use agreement, read on 2026-09-26, forbids sharing password-protected
+    data (metadata, transcripts, audio) beyond the member's directly supervised group, requires
+    contributor approval for corpora with special restrictions, attribution, breach reporting, and
+    deletion on request, for example when a participant withdraws consent. The site links a
+    CC BY-NC-SA 4.0 license, whose scope is not stated; it is not taken as the data's license.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: true
+evidence:
+  primary_sources:
+    - https://psychosis.talkbank.org/
+    - https://psychosis.talkbank.org/access/index.html
+    - https://psychosis.talkbank.org/membership.html
+    - https://psychosis.talkbank.org/agreement.pdf
+  supporting_publications:
+    - https://doi.org/10.1093/schbul/sbac058
+notes: >-
+  The corpus index, read on 2026-09-26, lists eight contributed corpora by language: Croatian
+  (Perisa protocol), English (Dauvermann, TOPSY, Discourse-UWO and Tang protocols), Portuguese
+  (C-ORAL-ESQ interview), Spanish (Santander protocol) and Turkish (Bora protocol). Sizes,
+  participant counts and task types per corpus are not stated on the public pages, and whether
+  each protocol is conversational is not established, so dialogue_structure is unknown. Access
+  requires analyses to be consistent with the original ethics approval, which is recorded as a
+  documented ethics review. The transcript format is not stated on the PsychosisBank pages read.
+last_verified: 2026-09-26

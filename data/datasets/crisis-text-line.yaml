@@ -1,0 +1,68 @@
+id: crisis-text-line
+title: Crisis Text Line Research Data
+canonical_url: https://www.crisistextline.org/data-philosophy/
+status: partially-verified
+dataset_type: peer_support
+dialogue_structure: multi_turn
+domain: crisis_support
+source_context: >-
+  Text-message conversations between people in crisis and Crisis Text Line's volunteer crisis
+  counselors in the United States, held in a de-identified research database that the organisation
+  analyses in house and opens to vetted academic research collaborators. Crisis support, not therapy.
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_country
+  evidence_level: reported_by_dataset_provider
+languages:
+  - unknown
+language_context: unknown
+therapy_modalities:
+  - crisis_counseling
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - unknown
+modalities:
+  - text
+access:
+  level: research-agreement
+  requirements: >-
+    Research collaboration only. Researchers must complete the 30-hour Crisis Counselor training,
+    obtain Institutional Review Board approval, have a principal investigator who is a full-time
+    employee of the institution, and have written approval from the institution's Office of
+    Research or equivalent. Aggregated trends are public through CrisisTrends.org.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  source: https://www.crisistextline.org/data-philosophy/
+  notes: The public pages describe access conditions, not the terms of the research agreement, which were not read.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The data philosophy page says data is encrypted and, when submitted to the research database,
+    fully de-identified and anonymized.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://www.crisistextline.org/data-philosophy/
+    - https://www.crisistextline.org/research/
+historical_significance:
+  - large text-based crisis-support conversation archive used in peer-reviewed research
+notes: >-
+  Read on 2026-09-26. The data philosophy page says the service has supported "over 8 million
+  conversations" and that research based on the de-identified exchanges has produced "over 26
+  peer-reviewed articles"; the research page says "over 10 million conversations with texters in
+  the United States". The two figures are recorded as stated; which is current is not established.
+  Counselors are trained volunteers, hence peer_support. The language of the conversations is not
+  stated on the pages read. IRB approval is a stated condition of research access, recorded as a
+  documented ethics review; consent terms for texters were not read (the Privacy Policy is linked
+  but was not opened).
+last_verified: 2026-09-26
