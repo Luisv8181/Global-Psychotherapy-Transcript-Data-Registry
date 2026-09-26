@@ -56,7 +56,8 @@ notes: >-
   only HOPE's English transcripts, collected no videos, and report 190 dyadic conversations with
   about 11.5K utterances (5.7K patient, 5.8K therapist). The Hugging Face access gate describes the
   data as "transcripts of real mental-health therapy sessions", which refers to HOPE's source
-  material; whether HOPE's videos are real sessions or demonstrations is an open review question on
-  the HOPE record. The India geography reflects the Hinglish translation, not where the original
+  material. The HOPE paper does not establish that its clients were real, and many of HOPE's listed
+  source videos are titled as role-plays, so the HOPE record's type is unknown (changed from real on
+  2026-09-26). The India geography reflects the Hinglish translation, not where the original
   sessions took place.
 last_verified: 2026-09-25
