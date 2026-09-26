@@ -1,0 +1,47 @@
+id: augusta-mental-health-patient-records
+title: "Augusta Mental Health Institute Patient Medical Records"
+canonical_url: https://digitalmaine.com/amhi/
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: unknown
+domain: psychotherapy
+collection_start_year: 1840
+collection_end_year: 1910
+historical_period: 1800s
+historical_significance:
+  - long-running digitized institutional patient-record collection from a nineteenth-century state hospital
+languages:
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The collection contains historical patient medical records. The registry has not established
+    whether all records are deidentified or whether contextual re-identification risks have been assessed.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - "https://digitalmaine.com/amhi/"
+  supporting_publications: []
+last_verified: 2026-09-26
+notes: >-
+  Digital Maine identifies Patient Medical Records covering 1840-1910 within the Augusta Mental
+  Health Institute collections. The institution began in 1840 as the Maine Insane Hospital and
+  later changed names. The registry records this as a historical clinical-record resource, not as
+  a verified psychotherapy dialogue corpus; individual volumes require screening for dialogue or
+  patient quotations.

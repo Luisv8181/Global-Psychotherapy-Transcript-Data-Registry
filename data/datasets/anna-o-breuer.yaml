@@ -1,0 +1,51 @@
+id: anna-o-breuer
+title: "Observation I. Miss Anna O. (Breuer)"
+canonical_url: https://www.freudedition.net/werke/observation-i-miss-anna-o/druckschrift
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+collection_start_year: 1880
+collection_end_year: 1882
+publication_year: 1895
+historical_period: 1800s
+therapy_era:
+  - early-psychoanalysis
+historical_significance:
+  - foundational published case history associated with the early history of psychoanalytic treatment and the "talking cure"
+languages:
+  - de
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The published case uses the pseudonym Anna O. The surviving source is a published case history
+    describing treatment and reported interactions, not a contemporaneous session recording or
+    independently verified verbatim transcript.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - "https://www.freudedition.net/werke/observation-i-miss-anna-o/druckschrift"
+  supporting_publications: []
+last_verified: 2026-09-26
+notes: >-
+  The digital scholarly edition identifies the case as "Observation I. Miss Anna O. (Breuer)"
+  and dates the illness from 1880, with the described course continuing through June 1882.
+  The registry treats the resource as a reconstructed/published clinical case rather than as a
+  surviving raw therapy transcript. Later translations and editions may have separate rights.

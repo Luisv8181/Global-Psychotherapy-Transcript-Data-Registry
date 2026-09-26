@@ -1,0 +1,52 @@
+id: gartnavel-dynamic-case-notes
+title: "Gartnavel Royal Hospital dynamic case notes and staff meeting transcripts"
+canonical_url: https://wellcomecollection.org/works/phj9s4hj
+status: partially-verified
+dataset_type: real
+dialogue_structure: mixed
+domain: psychotherapy
+collection_start_year: 1921
+collection_end_year: 1932
+historical_period: 1900s
+therapy_era:
+  - early-psychotherapy
+historical_significance:
+  - early institutional record of patient-psychiatrist dialogue transcribed during clinical staff meetings
+languages:
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: institutional
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The Wellcome catalogue states that patient records from 1914 onwards have not been digitised
+    in that collection and that item-level access restrictions may apply. The registry does not
+    treat historical status as proof of unrestricted reuse or anonymity.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - "https://wellcomecollection.org/works/phj9s4hj"
+  supporting_publications:
+    - "https://pmc.ncbi.nlm.nih.gov/articles/PMC4847391/"
+last_verified: 2026-09-26
+notes: >-
+  The Wellcome archival description states that some Gartnavel case files contain staff meeting
+  or case conference notes in which a patient was questioned by psychiatrists and the whole meeting,
+  including questions, answers and diagnostic discussion, was transcribed and typed. Hazel Morrison's
+  historical study identifies Henderson's 1921-1932 "dynamic" approach and describes staff meetings
+  where a stenographer recorded the conversation. This is real clinical interaction, but the archive
+  is a broader case-note collection rather than a purpose-built psychotherapy transcript dataset.

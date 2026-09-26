@@ -1,0 +1,52 @@
+id: crichton-royal-case-books
+title: "Crichton Royal Hospital Case Books"
+canonical_url: https://wellcomecollection.org/works/vbqzb7wf
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: unknown
+domain: psychotherapy
+collection_start_year: 1839
+collection_end_year: 1937
+historical_period: 1800s
+historical_significance:
+  - large nineteenth- and early-twentieth-century psychiatric case-note archive with longitudinal patient records
+languages:
+  - en
+sessions: null
+longitudinal: unknown
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The collection contains historical patient records. The Wellcome description notes that the
+    original papers are subject to archival and data-protection conditions; the registry has not
+    established a collection-wide de-identification method.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - "https://wellcomecollection.org/works/vbqzb7wf"
+    - "https://wellcomecollection.org/works/wpbpjymq"
+  supporting_publications: []
+last_verified: 2026-09-26
+notes: >-
+  The Wellcome collection contains Crichton Royal Institution Case Books, Southern Counties Asylum
+  Case Books, Male Case Books, Female Case Books, Chronic Case Books and Other Case Books covering
+  1839-1937. The records contain admission and history information followed by case-note entries
+  describing attitude, treatment and response. Individual volumes are available online, including
+  the 1839-1840 first Crichton Royal Institution case book. This is a psychiatric case-note archive,
+  not a verified psychotherapy transcript corpus.
