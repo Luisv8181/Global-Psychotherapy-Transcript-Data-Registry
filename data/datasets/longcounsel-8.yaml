@@ -1,0 +1,52 @@
+id: longcounsel-8
+title: "LongCounsel-8: A Benchmark Suite for Longitudinal Depression Tracking from Multi-Session Counseling Dialogues"
+canonical_url: https://arxiv.org/abs/2609.03507
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: counseling
+source_context: Synthetic multi-session counseling trajectories generated from real-world client profiles, empirical depression trajectories, symptom compositions and counseling patterns
+languages:
+  - unknown
+language_context: unknown
+therapy_modalities:
+  - counseling
+sessions: unknown
+longitudinal: true
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+annotations:
+  - session_level_phq8_states
+  - simulated_self_reports
+  - trajectory_labels
+access:
+  level: unknown
+  requirements: The arXiv paper links the public dataset at https://huggingface.co/datasets/hiddensev/LongCounsel-8.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2609.03507
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - longitudinal_synthetic_counseling_benchmark
+notes: >-
+  The September 2026 arXiv paper introduces a suite of three independently generated datasets
+  totaling 7,749 five-session counseling trajectories. The benchmark uses profile-grounded simulation,
+  empirically informed depression-state construction and indirect behavioral realization, with
+  session-level PHQ-8 states used as controlled evaluation targets. The paper describes the data as
+  generated from real-world client profiles and related empirical sources, so it is synthetic rather
+  than observed counseling-session evidence. The reviewed primary source does not establish the
+  dataset license, redistribution terms, or exact released data-access conditions; those fields
+  remain unknown.
+last_verified: 2026-09-26

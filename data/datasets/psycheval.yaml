@@ -1,0 +1,69 @@
+id: psycheval
+title: "PsychEval: A Multi-Session and Multi-Therapy Benchmark for High-Realism and Comprehensive AI Psychological Counselor"
+canonical_url: https://github.com/ECNU-ICALK/PsychEval
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: Multi-session counseling benchmark dialogues reconstructed and generated from empirically grounded clinical case reports
+languages:
+  - unknown
+language_context: unknown
+therapy_modalities:
+  - psychodynamic
+  - behaviorism
+  - cognitive_behavioral_therapy
+  - humanistic_existential
+  - postmodernist
+  - integrative
+sessions: unknown
+longitudinal: true
+transcript:
+  available: true
+  format:
+    - text
+modalities:
+  - text
+annotations:
+  - therapeutic_meta_skills
+  - therapeutic_atomic_skills
+  - therapy_stage_labels
+  - client_level_evaluation
+  - counselor_level_evaluation
+access:
+  level: open
+  requirements: The public GitHub repository contains a data directory and releases the benchmark repository.
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://github.com/ECNU-ICALK/PsychEval/blob/main/LICENSE
+  notes: The repository root LICENSE is CC BY-NC 4.0. The reviewed sources do not separately state whether every data file is covered by the root license, so the record does not treat the license as permission to redistribute any third-party source material embedded in the generated data.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: The benchmark is generated from clinical case reports and includes verbatim 3–5 turn excerpts from source reports as generation exemplars; privacy treatment of those source excerpts is not established by the reviewed documentation.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://github.com/ECNU-ICALK/PsychEval
+    - https://arxiv.org/abs/2601.01802
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - multi_session_multi_therapy_synthetic_reconstruction
+notes: >-
+  The arXiv paper describes PsychEval as a generated benchmark built from 369 empirically sourced
+  clinical case reports. The construction uses GPT-5 to synthesize and reconstruct multi-session
+  dialogues, with 6–10 sessions per client, across five named therapy approaches plus an integrative
+  category. The paper reports more than 2,000 client profiles, 677 meta-skills and 4,577 atomic
+  skills. It explicitly states that the benchmark simulates the full counseling trajectory rather
+  than providing naturally observed session transcripts. The record is classified hybrid because
+  human-derived case-report material is transformed into generated dialogue. The root repository
+  was inspected on 2026-09-26 and contains the dataset directories and a CC BY-NC 4.0 LICENSE.
+  Exact released record counts by therapy and the scope of the root license over all data files
+  remain to be audited.
+last_verified: 2026-09-26
