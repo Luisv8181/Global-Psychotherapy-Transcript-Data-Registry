@@ -61,12 +61,13 @@ The registry now includes verified or provisionally verified real-session resour
 - **BiMISC**, bilingual English-Dutch motivational-interviewing conversations sourced from real counseling sessions.
 - **Mental Health Counseling Dialogue**, 1,661 Korean counseling-session transcripts collected at accredited mental-health counseling centers.
 - **Online Mental Health Counseling Dataset (Westlake/Zhejiang University)**, a large-scale text-based counseling resource collected over two years from an online welfare counseling platform.
-- **MindDialog**, a 2026 corpus built from more than 325 hours of publicly available psychotherapy demonstration videos featuring real therapists; it remains provisionally verified because the distinction between clinical encounters and educational demonstrations requires further provenance review.
 
-Two resources are deliberately kept out of the real-session population:
+These resources are deliberately kept out of the real-session population:
 
 - **AnnoMI** is excluded because its repository describes the 133 transcripts as *demonstrations* of high- and low-quality motivational interviewing, not naturally occurring clinical encounters.
 - **IndieMH** is recorded as hybrid, because its LREC 2026 paper describes counseling conversations from publicly available sources that were manually *translated* into code-mixed Hinglish. They are not original Hinglish sessions.
+- **HighQuality** (Pérez-Rosas et al., 2019) is recorded as demonstration: its README and paper describe MI demonstrations by professional counselors and role-plays by psychology students. 42 of its source videos are also AnnoMI's.
+- **HOPE** and **MindDialog** are recorded as unknown. Both come from public counseling videos, and neither paper establishes that the clients were real; many of HOPE's listed source videos are titled as role-plays.
 
 These are seed records. The goal is substantially broader coverage. Leads that are found but not yet verified are tracked in `docs/candidate-queue.md`.
 

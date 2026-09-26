@@ -1,38 +1,79 @@
 id: highquality-therapy-dialogues
-title: "HighQuality: Therapist Behavior Quality Dialogues"
-canonical_url: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1583739/full
-status: partially-verified
-dataset_type: real
+title: "High- and Low-Quality Counseling Conversations (HighQuality)"
+canonical_url: https://web.eecs.umich.edu/~mihalcea/downloads/HighLowQualityCounseling.zip
+status: verified
+dataset_type: demonstration
 dialogue_structure: multi_turn
-domain: psychotherapy
-source_context: Therapist-patient conversations used to evaluate therapist behavior quality under motivational interviewing principles
+domain: counseling
+source_context: >-
+  Motivational-interviewing counseling videos from YouTube, Vimeo and other public websites,
+  consisting of MI demonstrations by professional counselors and MI role-plays by psychology
+  students, each labelled as high- or low-quality counseling. Transcribed with YouTube automatic
+  captioning, or Mechanical Turk where captions were unavailable.
 languages: [en]
-language_context: English
+language_context: original
 therapy_modalities:
   - motivational_interviewing
-sessions: 258
-longitudinal: unknown
+clinical_topics:
+  - smoking_cessation
+  - alcohol_consumption
+  - substance_abuse
+  - weight_management
+  - medication_adherence
+sessions: 259
+longitudinal: false
 transcript:
   available: true
   format:
     - text
+    - csv
 modalities:
   - text
 annotations:
-  - therapist_behavior_quality
-  - motivational_interviewing
+  - counseling_quality_labels
+  - speaker_labels
+  - source_video_urls
 access:
-  level: unknown
-redistribution: unknown
+  level: open
+  requirements: None. The zip archive is linked from the University of Michigan LIT lab downloads page.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: none-selected
+  verified: true
+  source: https://web.eecs.umich.edu/~mihalcea/downloads/HighLowQualityCounseling.zip
+  notes: >-
+    The archive's README.txt (version 1.0, July 2019), read on 2026-09-26, states no license or terms
+    of use and asks users to cite the ACL 2019 paper. The transcripts derive from third-party videos
+    whose owners are not the dataset authors.
 privacy:
-  deidentified: unknown
+  deidentified: not_applicable_to_demonstrations
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The source videos are public and urls.csv links transcripts to them, so each transcript can be
+    traced to its video.
 evidence:
   primary_sources:
+    - https://web.eecs.umich.edu/~mihalcea/downloads/HighLowQualityCounseling.zip
+    - https://aclanthology.org/P19-1088/
+    - https://lit.eecs.umich.edu/downloads.html
+  supporting_publications:
     - https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1583739/full
-publication_year: 2025
-notes: A 2025 LLM4CBT study reports the HighQuality dataset as 258 therapist-patient dialogues annotated for therapist behavior quality using motivational interviewing principles; 152 dialogues were the high-quality subset used in that study. The underlying dataset provenance, release mechanism, licensing, and privacy controls require separate verification.
-last_verified: 2026-09-24
+publication_year: 2019
+release_year: 2019
+historical_significance:
+  - early public corpus contrasting high- and low-quality motivational interviewing
+notes: >-
+  The ACL 2019 paper by Pérez-Rosas, Wu, Resnicow and Mihalcea and the archive README both state
+  that the videos are "MI counseling demonstrations by professional counselors and MI role-play
+  counseling by psychology students", and the paper adds that some conversations "do not portray
+  real patients". Both report 259 conversations, 155 high-quality and 104 low-quality, lasting 5 to
+  20 minutes. Counted from the archive on 2026-09-26, labels.csv and urls.csv list 259 ids, but the
+  transcripts folder holds 258 files (154 high, 104 low); high_022 has a label and no transcript.
+  urls.csv gives a URL for 239 ids and NA for 20; the 239 point to 199 distinct videos, some split
+  into two or three transcripts. 42 of those videos are also among AnnoMI's 119 source videos.
+  All 258 transcripts are in English, by a function-word count of each file. The name HighQuality
+  comes from a 2025 Frontiers in Psychiatry study (LLM4CBT), which reports 258 dialogues and uses
+  152 high-quality ones; the archive holds 154 high-quality transcripts, and the two figures have
+  not been reconciled. The repository owner changed dataset_type from real to demonstration on
+  2026-09-26 on the strength of the authors' statement.
+last_verified: 2026-09-26
