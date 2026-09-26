@@ -20,6 +20,12 @@ used_by:
   notes: 'AnnoMI MI quality label: low.'
   source_urls:
   - https://youtu.be/NAHJRdKY4dI
+- dataset: highquality-therapy-dialogues
+  transcript_ids:
+  - low_076
+  notes: 'Quality label: low. The dataset lists no video title.'
+  source_urls:
+  - https://youtu.be/NAHJRdKY4dI
 availability: available
 availability_checked_on: '2026-09-26'
 catalogued_on: '2026-09-25'

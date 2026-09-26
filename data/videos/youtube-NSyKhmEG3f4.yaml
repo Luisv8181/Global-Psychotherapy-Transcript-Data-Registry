@@ -23,6 +23,12 @@ used_by:
     Approach to Student Conduct - 2.'
   source_urls:
   - https://youtu.be/NSyKhmEG3f4
+- dataset: highquality-therapy-dialogues
+  transcript_ids:
+  - high_055
+  notes: 'Quality label: high. The dataset lists no video title.'
+  source_urls:
+  - https://youtu.be/NSyKhmEG3f4
 availability: available
 availability_checked_on: '2026-09-26'
 catalogued_on: '2026-09-25'

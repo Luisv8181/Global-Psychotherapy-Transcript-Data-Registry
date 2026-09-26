@@ -52,9 +52,10 @@ Run `PYTHONPATH=. python scripts/validate_registry.py` afterwards. It checks the
 
 ## Current contents
 
-182 videos:
+339 videos:
 
 - **119 from AnnoMI's source list** (English), all `demonstration`, catalogued on 2026-09-25 (116 on YouTube, 3 on Vimeo). Availability checked on 2026-09-26: 117 available, 1 unavailable (transcript 89), 1 not settled (HTTP 403, transcript 118).
 - **63 from MIDAS** (Spanish), catalogued on 2026-09-26 by `scripts/import_midas_videos.py`. MIDAS's 74 conversations come from 63 distinct videos; eight videos yield two or three conversations each. One conversation key, `voBvNMYEB.html`, is not a well-formed YouTube ID and was skipped rather than guessed. MIDAS lists no titles, so `title_as_listed` is empty. All 63 are typed `demonstration`, but the MIDAS paper says its videos are either demonstrations by professional counselors or role-plays by psychology students without saying which is which, so any of them may be a student role-play. Availability checked on 2026-09-26: 58 available, 4 unavailable, 1 not settled (HTTP 403).
+- **199 from HighQuality** (Pérez-Rosas et al., 2019; English), catalogued on 2026-09-26 by `scripts/import_highquality_videos.py` from the archive's `urls.csv`. 157 are new entries; the other 42 were already catalogued from AnnoMI, and their entries now list both datasets. 20 of the 259 transcript ids have no URL (`NA`) and are not linked. The dataset lists no titles. All are typed `demonstration` on the authors' statement that the videos are demonstrations by professional counselors or role-plays by psychology students. Availability of the 157 new entries, checked on 2026-09-26: 132 available, 18 unavailable, 7 not settled (HTTP 401 or 403).
 
-No video appears in both lists.
+AnnoMI and HighQuality share 42 source videos, so results reported on both corpora are not fully independent. MIDAS shares none.

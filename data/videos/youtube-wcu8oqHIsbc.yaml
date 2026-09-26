@@ -28,6 +28,10 @@ used_by:
   notes: 'AnnoMI MI quality label: high. Also listed under the titles: How to Do Motivational Interviewing
     (MI) Role Play - 3; How to Do Motivational Interviewing (MI) Role Play - 5; How to Do Motivational
     Interviewing (MI) Role Play - 2; How to Do Motivational Interviewing (MI) Role Play - 4.'
+- dataset: highquality-therapy-dialogues
+  transcript_ids:
+  - high_153
+  notes: 'Quality label: high. The dataset lists no video title.'
 availability: available
 availability_checked_on: '2026-09-26'
 catalogued_on: '2026-09-25'
