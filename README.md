@@ -149,6 +149,8 @@ Each record separates **provenance** (`dataset_type`) from **shape** (`dialogue_
 
 `dialogue_structure` is `multi_turn`, `single_turn_qa`, `mixed` or `utterance_level`. Single-turn counseling Q&A, such as PsyQA and Counsel Chat, is in scope, and so are utterance-level resources such as Anno-AugMI, which release isolated turns without their conversations.
 
+Adjacent materials are in scope too: clinical interviews, crisis-line and peer-support platforms, corpora described in papers but never released, and training video libraries. `docs/search-protocol.md` explains how each is recorded, where the registry searches, how searches are logged in `docs/search-log.md`, and how the total number of resources can be estimated.
+
 ## Video catalog
 
 Many corpora are transcribed from public therapy videos. `data/videos/` lists those videos, with metadata and links only, and records which datasets use each one. That makes shared source material across corpora visible. It currently holds 339 videos: the source videos behind AnnoMI (119), HighQuality (199, of which 42 are also AnnoMI's) and MIDAS (63). See `docs/video-catalog.md` for scope and the rules for videos showing real clients.

@@ -1,5 +1,7 @@
 # Global Discovery Strategy
 
+This file sets principles. The operational steps (sources, queries, the search log, screening and estimation) are in `docs/search-protocol.md`.
+
 The registry should search for psychotherapy and counseling dialogue across languages and regions rather than relying on English-language search terms.
 
 ## Discovery principle
