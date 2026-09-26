@@ -1,0 +1,50 @@
+id: balmanno-asylum-anecdotes
+title: "John Balmanno's Asylum Anecdotes"
+canonical_url: https://heritage.rcpsg.ac.uk/items/browse?tags=John+Balmanno
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: mixed
+domain: psychotherapy
+collection_start_year: 1821
+collection_end_year: 1840
+historical_period: 1800s
+historical_significance:
+  - early asylum case material containing documented doctor-patient exchanges and patient quotations
+languages:
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The archive concerns historical patients and includes names in the surviving case material.
+    The registry has not established a corpus-wide de-identification or contextual
+    re-identification assessment.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - "https://heritage.rcpsg.ac.uk/items/browse?tags=John+Balmanno"
+  supporting_publications:
+    - "https://heritageblog.rcpsg.ac.uk/2020/11/02/dr-john-balmannos-asylum-anecdotes/"
+last_verified: 2026-09-26
+notes: >-
+  The Royal College of Physicians and Surgeons of Glasgow archive identifies case notes from
+  the Glasgow Asylum for Lunatics with further notes by John Balmanno and Balmanno's anecdotes
+  at the rear of the volume (RCPSG 1/20/2/2). The College's historical article reports that
+  the anecdotes were written between 1821 and 1840 and often record interaction between patients
+  and the doctor using patient quotations. This is asylum clinical material, not a verified
+  psychotherapy-session corpus; dataset type remains unknown.
