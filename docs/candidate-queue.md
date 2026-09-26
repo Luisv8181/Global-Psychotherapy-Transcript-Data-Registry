@@ -2,19 +2,17 @@
 
 Leads found during discovery that are not yet registry records. Each lists what has been confirmed, where, and what is still needed before a record can be written. A candidate becomes a record only when its primary source has been read. Promote it by copying `data/datasets/_TEMPLATE.yaml`.
 
-Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch, and `dramatized` was added as a dataset type for MESC. On 2026-09-26 CACTUS, AugESC, SoulChatCorpus, MAGneT and MIDAS were promoted to records, and MIDAS's 63 source videos were added to the video catalog.
+Last reviewed: 2026-09-26. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch, and `dramatized` was added as a dataset type for MESC. On 2026-09-26 CACTUS, AugESC, SoulChatCorpus, MAGneT and MIDAS were promoted to records, and MIDAS's 63 source videos were added to the video catalog. Later that day MEMO and Eeyore were promoted to records, and Anno-AugMI was checked and held for an owner decision.
 
 | Candidate | Language | Type (provisional) | Confirmed so far | Still needed |
 |---|---|---|---|---|
-| **Eeyore** | English | synthetic profiles | Listed in the Graph2Counsel README (character cards for client simulation). The Hugging Face dataset `liusiyang/eeyore_profile` is gated (auto-approval), states no license, and its card needs a login to read. | Whether it contains dialogues or only profiles; its license. It may belong outside a transcript registry. |
-| **Anno-AugMI / Anno-FairMI** | English | hybrid | [GitHub README](https://github.com/vsrana-ai/Augmenting-AnnoMI): augmented AnnoMI therapist utterances balanced for MI quality, overall or per topic (SDAIH 2023). | The repository's file list (not readable without repository access in the 2026-09-26 session) and whether the release holds dialogues or isolated utterances. Utterance-level data may fall outside `dialogue_structure`. |
-| **MEMO** | English | unknown | [GitHub README](https://github.com/LCS2-IIITD/MEMO): counseling-summarization dataset from KDD 2022, released through an access agreement form. | Data sits behind an access-request form. Its source conversations (possibly HOPE, from the same group; unconfirmed), size and content. |
+| **Anno-AugMI / Anno-FairMI** | English | hybrid | [GitHub repository](https://github.com/vsrana-ai/Augmenting-AnnoMI), cloned on 2026-09-26: `Anno-AugMI.csv` has 5,302 rows and `Anno-FairMI.csv` 9,154, each row one therapist utterance with an MI-quality label (0 or 1) and a topic, and no conversation ID or turn order. The preprint says the rows are AnnoMI therapist utterances augmented with NL-Augmenter (noising, paraphrasing and similar), to balance quality overall or per topic. No license file. | **Owner decision.** These are isolated utterances, not dialogues, so no `dialogue_structure` term fits. Registering them would need a new term (AGENTS.md section 9), or they could stay out of scope as an AnnoMI derivative. |
 
 ## Review flags from this pass
 
 Now that `demonstration` is a dataset type, three existing records built from public counseling videos should be re-read against their sources:
 
-- **HOPE** (`real`): built from publicly available counseling videos. Check whether these were real sessions or demonstrations. This also decides IndieMH, which the LREC 2026 paper confirms is HOPE translated into Hinglish.
+- **HOPE** (`real`): built from publicly available counseling videos. Check whether these were real sessions or demonstrations. This also bears on IndieMH, which the LREC 2026 paper confirms is HOPE translated into Hinglish, on MEMO, which extends HOPE with annotations and summaries (recorded as `unknown` type until HOPE is settled), and on Eeyore, which draws on HOPE among other sources.
 - **MindDialog** (`real`, partially verified): its source is described as demonstration videos featuring real therapists.
 - **HighQuality** (`real`, partially verified): 258 therapist-patient dialogues annotated for MI quality. Check whether this is the high- and low-quality MI video collection from Pérez-Rosas et al., which overlaps AnnoMI's sources.
 
