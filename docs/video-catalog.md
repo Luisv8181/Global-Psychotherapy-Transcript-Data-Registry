@@ -38,7 +38,7 @@ Videos showing real clients need the most care.
 1. Catalog a `real_session` video only when the evidence says the client consented to public posting, for example a statement by the channel or the dataset authors. Record that evidence.
 2. Never add information about a client beyond what the published title already shows. Do not add names, locations or diagnoses drawn from watching the video.
 3. When a dataset links a video that appears to show an identifiable client without documented consent, do not create an entry. Note the concern in the dataset record instead.
-4. Anyone who appears in or owns a video can ask for its entry to be removed through the correction issue template. Removal requests are honoured without debate.
+4. Anyone who appears in or owns a video can ask for its entry to be removed through the removal request issue form (`.github/ISSUE_TEMPLATE/removal.yml`). Removal requests are honoured without debate.
 
 ## Adding videos
 
