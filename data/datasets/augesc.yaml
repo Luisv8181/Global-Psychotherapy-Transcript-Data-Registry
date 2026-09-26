@@ -1,0 +1,56 @@
+id: augesc
+title: "AugESC: LLM-Augmented Emotional Support Conversations"
+canonical_url: https://huggingface.co/datasets/thu-coai/augesc
+status: verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: emotional_support
+source_context: >-
+  Emotional-support dialogues completed by a fine-tuned GPT-J model from the opening of real
+  dialogue posts on various topics, then post-processed with heuristics, to extend the scale and
+  topic coverage of the crowdsourced ESConv corpus.
+geography: null
+languages: [en]
+language_context: original
+therapy_modalities:
+  - emotional_support
+sessions: 65077
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - jsonl
+modalities:
+  - text
+generation:
+  method: llm_dialogue_completion_from_posts
+  models:
+    - GPT-J (fine-tuned)
+  source_type: real_dialogue_posts
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: None. Hugging Face dataset, not gated.
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/thu-coai/augesc
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/thu-coai/augesc
+    - https://github.com/thu-coai/AugESC
+  supporting_publications:
+    - https://arxiv.org/abs/2202.13047
+publication_year: 2023
+historical_significance:
+  - early LLM augmentation of an emotional-support corpus (ESConv), scaling it by about 50 times
+notes: >-
+  Counted from augesc.txt on 2026-09-26, 65,077 dialogues with 1,738,446 turns (26.7 per dialogue
+  on average). Per the paper, the completing model starts from available dialogue posts, so each
+  dialogue is seeded by real text and completed by the model; the source of the posts is described
+  in the paper and not reviewed here. Published in Findings of ACL 2023.
+last_verified: 2026-09-26

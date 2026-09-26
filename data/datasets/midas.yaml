@@ -1,0 +1,61 @@
+id: midas
+title: "MIDAS: Motivational Interviewing Dataset in Spanish"
+canonical_url: https://github.com/MichiganNLP/MIDAS
+status: verified
+dataset_type: demonstration
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Spanish motivational-interviewing conversations transcribed from educational YouTube videos: MI
+  demonstrations by professional counselors and MI role-plays by psychology students, annotated
+  for counselor questions and reflections under the MITI scheme.
+geography:
+  countries: []
+  regions: [latin_america, europe]
+  scope: multi_country
+  evidence_level: reported_in_publication
+languages: [es]
+language_context: original
+therapy_modalities:
+  - motivational_interviewing
+sessions: 74
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+annotations:
+  - counselor_questions
+  - counselor_reflections
+  - speaker_labels
+  - english_machine_translation
+access:
+  level: open
+  requirements: None. Spanish_MI.json is in the public GitHub repository.
+redistribution: conditional
+license:
+  type: none-selected
+  verified: true
+  source: https://github.com/MichiganNLP/MIDAS
+  notes: The repository has no license file and its README states no license. Transcripts derive from third-party YouTube videos, some of which the README notes are no longer public.
+privacy:
+  deidentified: not_applicable_to_demonstrations
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://github.com/MichiganNLP/MIDAS
+  supporting_publications:
+    - https://arxiv.org/abs/2502.08458
+publication_year: 2025
+historical_significance:
+  - first Spanish motivational-interviewing dataset in the registry
+  - enables English-Spanish comparison of counselor behavior
+notes: >-
+  Counted from Spanish_MI.json on 2026-09-26, 74 conversations and 3,018 turns (1,506 counselor,
+  1,468 patient, 44 unclear), each with a Google Translate English translation. The paper (NAACL
+  2025) states the videos were created for educational purposes and may be partly scripted, and
+  that speakers come from Spanish-speaking countries in Latin America and from Spain. The README
+  says conversation IDs are the original YouTube video IDs, which could seed video-catalog entries.
+last_verified: 2026-09-26

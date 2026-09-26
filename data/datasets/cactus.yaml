@@ -1,0 +1,61 @@
+id: cactus
+title: "Cactus: Counseling and Cognitive Restructuring Simulation"
+canonical_url: https://huggingface.co/datasets/LangAGI-Lab/cactus
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Multi-turn counseling dialogues generated with large language models, in which simulated clients
+  with designed personas meet counselors who apply Cognitive Behavioral Therapy techniques
+  following a structured plan.
+geography: null
+languages: [en]
+language_context: original
+therapy_modalities:
+  - cognitive_behavioral_therapy
+sessions: 31577
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+annotations:
+  - client_intake_form
+  - cognitive_distortion_patterns
+  - cbt_technique
+  - cbt_plan
+  - client_attitude
+generation:
+  method: llm_client_counselor_simulation
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: None. Hugging Face dataset, not gated.
+redistribution: conditional
+license:
+  type: GPL
+  verified: true
+  source: https://huggingface.co/datasets/LangAGI-Lab/cactus
+  notes: The dataset card's license field reads "gpl" without a version. The GitHub code repository (coding-groot/cactus) is GPL-2.0. A GPL license applied to data carries copyleft conditions on redistribution.
+privacy:
+  deidentified: not_applicable_to_synthetic_data
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/LangAGI-Lab/cactus
+    - https://github.com/coding-groot/cactus
+    - https://aclanthology.org/2024.findings-emnlp.832/
+publication_year: 2024
+historical_significance:
+  - large CBT-structured synthetic counseling corpus with explicit treatment plans
+  - source of client profiles reused by later corpora such as MAGneT
+notes: >-
+  Counted from cactus.json on 2026-09-26, 31,577 dialogues. Each carries the client's intake form,
+  thought and cognitive-distortion pattern, the chosen CBT technique and plan, and a client
+  attitude label (11,226 positive, 10,882 neutral, 9,469 negative). The text is English. Published
+  in Findings of EMNLP 2024. The GitHub README links the data through a DLI-Lab collection; the
+  dataset itself is hosted under LangAGI-Lab.
+last_verified: 2026-09-26
