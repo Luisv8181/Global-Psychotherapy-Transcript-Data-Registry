@@ -4,7 +4,10 @@ canonical_url: https://huggingface.co/datasets/SINAI/ALIA-es-clinical-psychology
 status: verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
-source_context: mixed
+source_context: >-
+  Two subsets. clinic-roleplay has 66 multi-turn Spanish dialogues role-played by mental health
+  professionals at a university psychology clinic. TerapIA has 320 anonymized real-world multi-turn
+  conversations between users and Pía, the AI assistant in the TerapIA app.
 geography:
   countries: [Spain]
   regions: [europe]
@@ -23,10 +26,21 @@ redistribution: conditional
 license:
   type: mixed
   verified: true
+  source: https://huggingface.co/datasets/SINAI/ALIA-es-clinical-psychology-dialogues
+  notes: >-
+    Per the dataset card, clinic-roleplay is CC BY-SA 4.0 (SINAI Research Group) and TerapIA is
+    CC BY-NC-SA 4.0 (Inteligencia Artificial Generativa y Procesamiento de Lenguaje Natural, S.L.).
+    The card's overall license tag is cc-by-nc-sa-4.0. Not gated.
 privacy:
   deidentified: documented_for_terapia_subset
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://huggingface.co/datasets/SINAI/ALIA-es-clinical-psychology-dialogues
-last_verified: 2026-09-24
+notes: >-
+  The 386 sessions are 66 role-played (about 30 turns each) plus 320 TerapIA app conversations
+  (about 44 turns each), per the dataset card. Neither subset is a human therapist with a real
+  client: one is professional role-play and the other is real users talking to an AI assistant.
+  dataset_type stays hybrid for now; the mix is described here rather than reclassified. The card
+  states the dataset is not clinically validated.
+last_verified: 2026-09-25

@@ -28,18 +28,20 @@ generation:
   synthetic_dialogues: true
 access:
   level: open
-  requirements: None reported. The README links the data on ModelScope (modelscope.cn/datasets/YIRONGCHEN/PsyDTCorpus) and gives a git clone command; that page was not opened for this record.
-redistribution: unknown
+  requirements: None. Public on ModelScope (YIRONGCHEN/PsyDTCorpus), with a git clone command in the README.
+redistribution: allowed
 license:
-  type: unknown
-  verified: false
-  notes: The GitHub repository is Apache-2.0 licensed, which covers its code. The dataset's own license on ModelScope has not been read.
+  type: Apache-2.0
+  verified: true
+  source: https://modelscope.cn/datasets/YIRONGCHEN/PsyDTCorpus
+  notes: The ModelScope dataset record lists the license as Apache License 2.0, confirmed through the ModelScope API on 2026-09-25. The GitHub repository is also Apache-2.0.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://github.com/scutcyr/SoulChat2.0
+    - https://modelscope.cn/datasets/YIRONGCHEN/PsyDTCorpus
   supporting_publications:
     - https://aclanthology.org/2025.acl-long.55/
 publication_year: 2025
@@ -48,7 +50,7 @@ historical_significance:
 notes: >-
   The README reports 5,000 dialogues and 90,365 turns. The training set is 4,760 dialogues with
   86,054 turns and the test set 240 dialogues with 4,311 turns, both averaging 18 turns per
-  dialogue. Figures are from the README; the ModelScope files were not reachable from the session
-  that wrote this record. How the real cases of the modelled counselor were obtained, and with what
+  dialogue. Figures are from the README; the ModelScope record's own description reports more than
+  90,000 turns, consistent with it. How the real cases of the modelled counselor were obtained, and with what
   consent, is not described in the README. Published at ACL 2025 (main conference).
 last_verified: 2026-09-25

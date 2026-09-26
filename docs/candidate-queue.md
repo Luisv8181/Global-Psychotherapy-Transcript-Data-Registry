@@ -19,7 +19,7 @@ Last reviewed: 2026-09-25. PsyQA and Counsel Chat were promoted to records, and 
 
 Now that `demonstration` is a dataset type, three existing records built from public counseling videos should be re-read against their sources:
 
-- **HOPE** (`real`): built from publicly available counseling videos. Check whether these were real sessions or demonstrations.
+- **HOPE** (`real`): built from publicly available counseling videos. Check whether these were real sessions or demonstrations. This also decides IndieMH, which the LREC 2026 paper confirms is HOPE translated into Hinglish.
 - **MindDialog** (`real`, partially verified): its source is described as demonstration videos featuring real therapists.
 - **HighQuality** (`real`, partially verified): 258 therapist-patient dialogues annotated for MI quality. Check whether this is the high- and low-quality MI video collection from Pérez-Rosas et al., which overlaps AnnoMI's sources.
 
@@ -28,6 +28,6 @@ Now that `demonstration` is a dataset type, three existing records built from pu
 - MindDialog reports more than 325 hours of public psychotherapy demonstration videos. If the authors publish a video list, import it as AnnoMI's was.
 - HOPE's video list is released only under its access agreement and must not be catalogued (see `docs/video-catalog.md`).
 
-## Access notes for this environment
+## Access notes
 
-Hugging Face, arXiv, the ACL Anthology, OSF, MDPI and ModelScope were not reachable from the cloud session that built this queue. GitHub repositories were readable. Candidates hosted outside GitHub need a check from a browser, or from a session whose network policy allows those hosts.
+Until 2026-09-25, cloud sessions on this repository could reach only GitHub. The network policy now allows Hugging Face, arXiv, the ACL Anthology, OSF, Zenodo, ModelScope, Crossref and PubMed Central. MDPI still refuses automated requests (HTTP 403), so the AnnoMI data availability statement remains unconfirmed.

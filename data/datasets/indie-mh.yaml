@@ -1,11 +1,11 @@
 id: indie-mh
 title: "IndieMH: Code-Mixed Mental Health Counseling Conversations"
 canonical_url: https://huggingface.co/datasets/as3eem/IndieMH
-status: partially-verified
+status: verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
 domain: psychotherapy
-source_context: Counseling conversations from publicly available sources, manually translated into code-mixed Hinglish (English-Hindi) and annotated for emotion. The dialogues are translations, not original Hinglish sessions.
+source_context: The HOPE counseling corpus (English transcripts of publicly available counseling videos), manually cleaned and translated into code-mixed Hinglish by an expert team and annotated with 13 emotional states. Translations, not original Hinglish sessions.
 geography:
   countries:
     - India
@@ -15,7 +15,7 @@ languages:
 language_context: translated; English-Hindi code-mixed (Hinglish)
 therapy_modalities:
   - mental_health_counseling
-sessions: null
+sessions: 190
 longitudinal: null
 transcript:
   available: true
@@ -33,6 +33,12 @@ redistribution: prohibited
 license:
   type: CC-BY-NC-4.0
   verified: true
+  source: https://huggingface.co/datasets/as3eem/IndieMH
+  notes: >-
+    License tag cc-by-nc-4.0 on the Hugging Face card, confirmed through the Hugging Face API on
+    2026-09-25. The dataset is gated with automatic approval; the gate requires non-commercial
+    research use, no re-identification, secure storage, no redistribution without permission, and
+    citation.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
@@ -46,10 +52,11 @@ evidence:
     - https://huggingface.co/datasets/as3eem/IndieMH
     - https://aclanthology.org/2026.lrec-1.226/
 notes: >-
-  The India geography reflects the Hinglish translation; where the original conversations took place
-  is not established. The LREC 2026 paper describes IndieMH as counseling conversations from publicly available sources,
-  manually translated into Hinglish and annotated with 13 emotional states in 3 categories. It was
-  previously recorded as real, originally code-mixed therapy sessions. Which source corpus was
-  translated is not established here; the same group released HOPE, built from public counseling
-  videos, but that link is unconfirmed. Status is partially verified until the source is confirmed.
-last_verified: 2026-09-24
+  The LREC 2026 paper states IndieMH is derived from HOPE (Malhotra et al., 2022); the authors used
+  only HOPE's English transcripts, collected no videos, and report 190 dyadic conversations with
+  about 11.5K utterances (5.7K patient, 5.8K therapist). The Hugging Face access gate describes the
+  data as "transcripts of real mental-health therapy sessions", which refers to HOPE's source
+  material; whether HOPE's videos are real sessions or demonstrations is an open review question on
+  the HOPE record. The India geography reflects the Hinglish translation, not where the original
+  sessions took place.
+last_verified: 2026-09-25
