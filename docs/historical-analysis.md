@@ -117,3 +117,25 @@ The historical evidence layer includes published case-dialogue resources and dig
 - **American Journal of Insanity historical archive**: HathiTrust preserves volumes beginning in 1904 through the early 1920s. The archive contains asylum case reports and clinical discussions, with some patient quotations. It is an archival discovery source, not a verified psychotherapy transcript corpus.
 
 The attached historical search did not establish an openly accessible full-session psychotherapy transcript corpus for 1900-1950. That is recorded as a search result and research gap, not as evidence that no such material exists anywhere. Institutional archival collections may contain restricted notes or recordings and require separate provenance, access, privacy, and permissions review.
+
+
+## Historical psychotherapy and clinical dialogue sources, 1814-1937
+
+The historical layer now includes several archival resources that extend the registry before and beyond the previously indexed 1900-1950 sources. They are deliberately separated by evidence type.
+
+### Early nineteenth-century clinical dialogue and case material
+
+- **John Balmanno's Asylum Anecdotes (1821-1840)**: the Royal College of Physicians and Surgeons of Glasgow identifies Balmanno's anecdotes at the rear of Robert Cleghorn's case notes from the Glasgow Asylum for Lunatics. The College describes patient-doctor interactions and patient quotations in the anecdotes. This is asylum clinical material, not established psychotherapy-session data.
+- **Crichton Royal Hospital Case Books (1839-1937)**: the Wellcome Collection catalogues a large series of patient case books containing admission histories and subsequent notes on attitude, treatment and response. Individual volumes are digitized, but the collection is not a verified psychotherapy transcript corpus.
+- **Augusta Mental Health Institute Patient Medical Records (1840-1910)**: Digital Maine provides a digitized patient-record collection covering 1840-1910. The registry records it as a historical clinical-record resource requiring item-level screening for dialogue.
+- **Manhattan State Hospital patient case books (1859-1898)**: the New York State Archives describes 120 volumes covering 1859-1898 with patient histories, behavioral observations, treatment procedures and other notes. The finding aid does not establish a psychotherapy transcript corpus or unrestricted access to the underlying records.
+
+### Early psychoanalytic case dialogue
+
+- **Anna O. / Observation I. Miss Anna O. (Breuer)**: the Freud Edition digital scholarly text presents the 1895 published case history and describes treatment from 1880 through 1882. It contains reported interactions and dialogue-like clinical material, but the published case should not be treated as a surviving raw session recording or independently verified verbatim transcript.
+
+### Recorded clinical dialogue in the 1920s
+
+- **Gartnavel Royal Hospital dynamic case notes and staff meeting transcripts (1921-1932)**: the Wellcome archival description states that some patient case files contain staff meeting or case conference notes in which psychiatrists questioned patients and the whole meeting, including questions, answers and diagnostic discussion, was transcribed and typed. Hazel Morrison's historical study describes Henderson's 1921-1932 dynamic approach and stenographic recording of these encounters. This is real clinical interaction, but the archive is broader than psychotherapy and patient records from 1914 onward were not digitized in the Wellcome collection.
+
+These resources strengthen the historical bridge from published case histories toward recorded clinical dialogue. They should not be treated as interchangeable: published psychoanalytic cases, asylum anecdotes, psychiatric case books and transcribed staff meetings represent different forms of evidence with different provenance, recording and access conditions.
