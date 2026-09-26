@@ -17,6 +17,7 @@ Read this whole file before your first change. `CONTRIBUTING.md`, `docs/dataset-
 1. Start from the latest `main`: `git fetch origin main && git checkout -b <your-branch> origin/main`.
 2. Before adding a dataset, search for it: `grep -ril "<name or URL>" data/`. Also check open pull requests, so two agents do not write the same record.
 3. Check `docs/candidate-queue.md`. It may already hold what is known about your dataset, and what is missing.
+   When searching for new resources, follow `docs/search-protocol.md` and log every query in `docs/search-log.md`, including searches that find nothing.
 4. Make one coherent change per pull request, for example "add three Korean records" or "fix AVATAR license". Keep record changes separate from code changes.
 5. Run the checks (section 7) and make them pass locally before pushing.
 6. Open a pull request and fill in the template. Do not merge your own pull request unless the repository owner has asked you to.
@@ -61,6 +62,8 @@ Choose `dataset_type` from `data/vocabularies/dataset-type.yaml`, using the most
 - Crowdworkers or volunteers supporting help-seekers: `peer_support`.
 - Human material transformed by translation, paraphrase, LLM expansion or reconstruction: `hybrid`. For example, IndieMH was translated from public counseling conversations and is not an original Hinglish corpus.
 - Fully model-generated: `synthetic`.
+
+Adjacent materials are in scope: clinical interviews, crisis-line and peer-support platforms, unreleased corpora (recorded with `access.level: metadata-only`) and training video libraries (one collection-level record each). `docs/search-protocol.md` section 1 says how to record each.
 
 Set `dialogue_structure` separately: `multi_turn`, `single_turn_qa`, `mixed` or `utterance_level`. Single-turn counseling Q&A is in scope, and so are isolated utterances released without their conversations (`utterance_level`).
 
