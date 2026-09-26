@@ -1,0 +1,45 @@
+id: jnmd-historical-archive
+title: "Journal of Nervous and Mental Disease historical archive"
+canonical_url: https://catalog.hathitrust.org/Record/006707054
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: unknown
+domain: psychotherapy
+collection_start_year: 1900
+collection_end_year: 1999
+historical_period: 1900s
+languages:
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The archive contains historical clinical literature, including case histories and clinical
+    discussions. The registry has not established from a source-level review which individual
+    articles contain dialogue or what patient-identification practices apply across the archive.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - "https://catalog.hathitrust.org/Record/006707054"
+  supporting_publications: []
+last_verified: 2026-09-26
+notes: >-
+  Treat as a historical archive/resource rather than a psychotherapy transcript dataset.
+  The historical search established HathiTrust full-view volumes beginning in 1900 and extending
+  through the twentieth century; individual papers need to be inspected before classifying them
+  as therapeutic dialogue resources. Do not infer that the archive as a whole is psychotherapy data.
