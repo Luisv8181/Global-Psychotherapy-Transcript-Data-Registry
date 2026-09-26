@@ -19,3 +19,5 @@ One row per query and channel, as described in `docs/search-protocol.md` section
 ## Channels that could not be searched on 2026-09-26
 
 From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (HTTP 403), the DAIC-WOZ site and its download pages at dcapswoz.ict.usc.edu (HTTP 403, Cloudflare; its documentation PDF was reachable) and the Ulmer Textbank site (TLS handshake failure). Searches there need another route or a person.
+
+| 2026-09-26 | Deep Research / web archives | psychotherapy transcripts 1900 1950 historical case dialogue Freud Jung Ferenczi journals | en/de | multiple primary/archival leads reviewed | freud-dora; freud-little-hans; jnmd-historical-archive; american-journal-insanity-archive | Claude session |
