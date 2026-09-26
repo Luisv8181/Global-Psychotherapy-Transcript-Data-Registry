@@ -1,0 +1,55 @@
+id: storymi
+title: "StoryMI: Steerable Multi-Agent Therapeutic Dialogue Generation"
+canonical_url: https://github.com/Beren-sds/StoryMI
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: Simulated motivational-interviewing dialogues generated from questionnaire-based client profiles and situational stories
+languages:
+  - unknown
+language_context: unknown
+therapy_modalities:
+  - motivational_interviewing
+sessions: 6000
+longitudinal: unknown
+transcript:
+  available: unknown
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+annotations:
+  - motivational_interviewing_codes
+  - symptom_domains
+  - counseling_strategy_metrics
+  - human_expert_evaluation
+access:
+  level: unknown
+  requirements: unknown
+redistribution: conditional
+license:
+  type: none-selected
+  verified: true
+  source: https://github.com/Beren-sds/StoryMI
+  notes: The public project root inspected on 2026-09-26 contains no LICENSE file. Dataset-specific redistribution terms are not stated.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: Simulated data, not observed therapy sessions.
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://github.com/Beren-sds/StoryMI
+    - https://aclanthology.org/2026.findings-acl.468/
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - controllable_synthetic_motivational_interviewing
+notes: The ACL 2026 paper reports 6,000 simulated multi-turn MI dialogues grounded in 1,000 questionnaire-story pairs, covering 12 MI codes and 13 symptom domains. The workflow uses therapist, client and interaction-manager agents and includes human expert evaluation. The exact dataset distribution and dataset-specific access terms were not established from the reviewed primary sources.
+last_verified: 2026-09-26
