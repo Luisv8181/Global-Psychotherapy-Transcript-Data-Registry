@@ -1,0 +1,42 @@
+id: american-journal-insanity-archive
+title: "American Journal of Insanity historical archive"
+canonical_url: https://catalog.hathitrust.org/Record/000681155
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: unknown
+domain: psychotherapy
+collection_start_year: 1904
+collection_end_year: 1921
+historical_period: 1900s
+languages:
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The historical review reports asylum case reports and clinical discussions, sometimes with
+    patient quotations. The registry has not established a corpus-wide de-identification method.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - "https://catalog.hathitrust.org/Record/000681155"
+  supporting_publications: []
+last_verified: 2026-09-26
+notes: >-
+  Historical clinical archive, not a verified psychotherapy transcript corpus. Individual issues
+  and articles should be screened for dialogue before use in transcript-oriented research.
