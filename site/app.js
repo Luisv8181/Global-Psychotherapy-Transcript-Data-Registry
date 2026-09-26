@@ -21,7 +21,7 @@
     dramatized: 'Scripted fictional sessions performed by actors for film or television.',
     unknown: 'The sources reviewed do not yet establish where the dialogue came from.',
   };
-  const STRUCTURE = { multi_turn: 'Multi-turn dialogue', single_turn_qa: 'Single-turn Q&A', mixed: 'Mixed', unknown: 'Structure unknown' };
+  const STRUCTURE = { multi_turn: 'Multi-turn dialogue', single_turn_qa: 'Single-turn Q&A', mixed: 'Mixed', utterance_level: 'Isolated utterances', unknown: 'Structure unknown' };
   const ACCESS = { open: 'Open', registration: 'Registration', 'research-agreement': 'Research agreement', institutional: 'Institutional', restricted: 'Restricted', 'metadata-only': 'Metadata only', unknown: 'Unknown' };
   const STATUS = { verified: 'Verified', 'partially-verified': 'Partially verified', unverified: 'Unverified', deprecated: 'Deprecated' };
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];

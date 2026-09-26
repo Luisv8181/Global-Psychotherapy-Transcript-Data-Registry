@@ -12,7 +12,7 @@ Each file in `data/datasets/` represents one dataset or collection. The registry
 
 ## Dialogue structure
 
-`dialogue_structure` records the shape of the text, separately from its provenance: `multi_turn`, `single_turn_qa`, `mixed`, or `unknown`. Single-turn counseling Q&A, such as a help-seeker's post with therapists' answers, is in scope. A real Q&A corpus is `dataset_type: real` with `dialogue_structure: single_turn_qa`.
+`dialogue_structure` records the shape of the text, separately from its provenance: `multi_turn`, `single_turn_qa`, `mixed`, `utterance_level`, or `unknown`. Single-turn counseling Q&A, such as a help-seeker's post with therapists' answers, is in scope. Use `utterance_level` when a release holds isolated utterances with no conversation id or turn order, so the exchanges cannot be reconstructed. A real Q&A corpus is `dataset_type: real` with `dialogue_structure: single_turn_qa`.
 
 ## Evidence fields
 

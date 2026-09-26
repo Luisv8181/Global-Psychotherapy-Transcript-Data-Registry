@@ -62,7 +62,7 @@ Choose `dataset_type` from `data/vocabularies/dataset-type.yaml`, using the most
 - Human material transformed by translation, paraphrase, LLM expansion or reconstruction: `hybrid`. For example, IndieMH was translated from public counseling conversations and is not an original Hinglish corpus.
 - Fully model-generated: `synthetic`.
 
-Set `dialogue_structure` separately: `multi_turn`, `single_turn_qa` or `mixed`. Single-turn counseling Q&A is in scope.
+Set `dialogue_structure` separately: `multi_turn`, `single_turn_qa`, `mixed` or `utterance_level`. Single-turn counseling Q&A is in scope, and so are isolated utterances released without their conversations (`utterance_level`).
 
 ## 6. Writing records safely
 

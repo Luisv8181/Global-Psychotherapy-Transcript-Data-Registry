@@ -13,4 +13,5 @@ dialogue_structures:
   multi_turn: Sessions or conversations with several exchanges.
   single_turn_qa: One question or post and one or more standalone answers, without a continuing exchange.
   mixed: Contains both multi-turn dialogue and single-turn question-answer pairs.
+  utterance_level: Isolated utterances released without the conversations around them (no conversation id or turn order), for example labelled therapist turns for classification.
   unknown: Not established.
