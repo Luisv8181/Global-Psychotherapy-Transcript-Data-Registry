@@ -1,0 +1,49 @@
+id: manhattan-state-hospital-case-books
+title: "Manhattan State Hospital patient case books"
+canonical_url: https://findingaids.nysed.gov/do/46061472-14a2-5857-b402-837e080d604e
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: unknown
+domain: psychotherapy
+collection_start_year: 1859
+collection_end_year: 1898
+historical_period: 1800s
+historical_significance:
+  - extensive nineteenth-century state-hospital patient case-book series
+languages:
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: metadata-only
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The New York State Archives finding aid describes patient records containing names and other
+    clinical details. The registry has not established a collection-wide de-identification method
+    or unrestricted access to the underlying volumes.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - "https://findingaids.nysed.gov/do/46061472-14a2-5857-b402-837e080d604e"
+  supporting_publications: []
+last_verified: 2026-09-26
+notes: >-
+  The New York State Archives finding aid identifies 120 volumes, 60 cubic feet, covering 1859-1898.
+  It describes typical entries as including names, admissions, ages, origins, physical conditions,
+  observations of behavior, treatment procedures and other notes. The registry treats this as a
+  historical clinical-record archive, not a verified psychotherapy transcript corpus. The finding
+  aid was reachable through web search but returned an access error when opened directly in this session,
+  so access and license remain unconfirmed.
