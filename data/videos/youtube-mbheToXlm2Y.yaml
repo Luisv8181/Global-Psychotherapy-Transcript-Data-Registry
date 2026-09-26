@@ -18,7 +18,12 @@ used_by:
   transcript_ids:
   - 118
   notes: 'AnnoMI MI quality label: low.'
+- dataset: highquality-therapy-dialogues
+  transcript_ids:
+  - low_013
+  notes: 'Quality label: low. The dataset lists no video title.'
 availability: not_checked
 availability_checked_on: null
 catalogued_on: '2026-09-25'
-notes: YouTube's oEmbed endpoint returned HTTP 403 on 2026-09-26, which it gives both for private videos and for videos with embedding disabled, so availability is not settled.
+notes: YouTube's oEmbed endpoint returned HTTP 403 on 2026-09-26, which it gives both for private videos
+  and for videos with embedding disabled, so availability is not settled.

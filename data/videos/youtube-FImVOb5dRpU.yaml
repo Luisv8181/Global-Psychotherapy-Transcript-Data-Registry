@@ -19,6 +19,10 @@ used_by:
   - 69
   - 70
   notes: 'AnnoMI MI quality label: low, high. Also listed under the titles: Provider Counseling-2.'
+- dataset: highquality-therapy-dialogues
+  transcript_ids:
+  - low_069
+  notes: 'Quality label: low. The dataset lists no video title.'
 availability: available
 availability_checked_on: '2026-09-26'
 catalogued_on: '2026-09-25'

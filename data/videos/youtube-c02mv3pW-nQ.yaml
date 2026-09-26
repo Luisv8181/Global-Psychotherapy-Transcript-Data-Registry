@@ -1,0 +1,25 @@
+id: youtube-c02mv3pW-nQ
+platform: youtube
+video_id: c02mv3pW-nQ
+url: https://www.youtube.com/watch?v=c02mv3pW-nQ
+title_as_listed: null
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by the High- and Low-Quality Counseling dataset (Pérez-Rosas
+  et al., ACL 2019), whose README and paper describe its videos as MI counseling demonstrations by professional
+  counselors and MI role-play counseling by psychology students. The dataset does not record which of
+  the two a given video is.
+therapy_modalities:
+- motivational_interviewing
+topics: []
+languages:
+- en
+used_by:
+- dataset: highquality-therapy-dialogues
+  transcript_ids:
+  - low_021
+  notes: 'Quality label: low. The dataset lists no video title.'
+availability: available
+availability_checked_on: '2026-09-26'
+catalogued_on: '2026-09-26'
+notes: null

@@ -2,7 +2,7 @@
 
 Leads found during discovery that are not yet registry records. Each lists what has been confirmed, where, and what is still needed before a record can be written. A candidate becomes a record only when its primary source has been read. Promote it by copying `data/datasets/_TEMPLATE.yaml`.
 
-Last reviewed: 2026-09-26. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch, and `dramatized` was added as a dataset type for MESC. On 2026-09-26 CACTUS, AugESC, SoulChatCorpus, MAGneT and MIDAS were promoted to records, and MIDAS's 63 source videos were added to the video catalog. Later that day MEMO and Eeyore were promoted to records, Anno-AugMI was checked and held for an owner decision, HOPE was reviewed and reclassified as `unknown`, HighQuality was reclassified as `demonstration`, and MindDialog as `unknown`.
+Last reviewed: 2026-09-26. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch, and `dramatized` was added as a dataset type for MESC. On 2026-09-26 CACTUS, AugESC, SoulChatCorpus, MAGneT and MIDAS were promoted to records, and MIDAS's 63 source videos were added to the video catalog. Later that day MEMO and Eeyore were promoted to records, Anno-AugMI was checked and held for an owner decision, HOPE was reviewed and reclassified as `unknown`, HighQuality was reclassified as `demonstration` and its 199 source videos were added to the video catalog, and MindDialog was reclassified as `unknown`.
 
 | Candidate | Language | Type (provisional) | Confirmed so far | Still needed |
 |---|---|---|---|---|
@@ -19,7 +19,6 @@ Now that `demonstration` is a dataset type, existing records built from public c
 ## Video catalog leads
 
 - MindDialog reports more than 325 hours of public psychotherapy demonstration videos. If the authors publish a video list, import it as AnnoMI's was.
-- The HighQuality archive's urls.csv links 239 transcripts to 199 distinct YouTube and Vimeo videos, which its authors describe as demonstrations and role-plays. The owner approved importing them into the video catalog in a separate pull request.
 - HOPE's public repository includes a list of 348 source-video links (`HOPE_data/HOPE_data_source/URL_sources.txt`). It is not catalogued. The list maps to no sessions, the paper documents no consent, and some videos may show real clients, so cataloguing it needs a decision by the repository owner (AGENTS.md section 9).
 
 ## Access notes

@@ -70,7 +70,8 @@ notes: >-
   20 minutes. Counted from the archive on 2026-09-26, labels.csv and urls.csv list 259 ids, but the
   transcripts folder holds 258 files (154 high, 104 low); high_022 has a label and no transcript.
   urls.csv gives a URL for 239 ids and NA for 20; the 239 point to 199 distinct videos, some split
-  into two or three transcripts. 42 of those videos are also among AnnoMI's 119 source videos.
+  into two or three transcripts. 42 of those videos are also among AnnoMI's 119 source videos; all 199 are in the video catalog
+  (data/videos, used_by highquality-therapy-dialogues).
   All 258 transcripts are in English, by a function-word count of each file. The name HighQuality
   comes from a 2025 Frontiers in Psychiatry study (LLM4CBT), which reports 258 dialogues and uses
   152 high-quality ones; the archive holds 154 high-quality transcripts, and the two figures have
