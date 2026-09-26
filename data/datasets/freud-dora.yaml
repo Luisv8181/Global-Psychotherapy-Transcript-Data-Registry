@@ -1,0 +1,52 @@
+id: freud-dora
+title: "Fragment of an Analysis of a Case of Hysteria (Dora)"
+canonical_url: https://www.gutenberg.org/ebooks/37065
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+collection_start_year: 1900
+publication_year: 1905
+historical_period: 1900s
+therapy_era:
+  - early-psychoanalysis
+historical_significance:
+  - canonical early psychoanalytic case record with substantial patient-analyst dialogue
+languages:
+  - de
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The published case uses the pseudonym Dora. This is a historical published
+    case record, not a verbatim recording transcript. The archival report describes
+    substantial patient-analyst dialogue, but the English Standard Edition translation
+    has separate rights considerations from the historical German publication.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - "https://www.gutenberg.org/ebooks/37065"
+  supporting_publications:
+    - "https://doi.org/10.1145/365153.365168"
+last_verified: 2026-09-26
+notes: >-
+  Added as a historical dialogue resource rather than a modern dataset. The attached
+  historical research identifies Dora as a 1905 published case containing patient-therapist
+  dialogue. The registry should not treat the surviving published case as equivalent to
+  a contemporaneous verbatim session recording.
