@@ -1,0 +1,83 @@
+id: eeyore
+title: "Eeyore: Depression Client-Simulation Training Data"
+canonical_url: https://huggingface.co/datasets/liusiyang/eeyore_depression_sft
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: mental_health_support
+source_context: >-
+  Depression-related conversations selected from four human corpora (RED Reddit threads from
+  r/depression and r/depressed, HOPE counseling-video transcripts, ESConv crowdsourced emotional
+  support, and AnnoMI-Full motivational-interviewing demonstrations), filtered and rebalanced with
+  GPT-4o, and reformatted to train a model that role-plays a depressed client. Each conversation
+  carries a GPT-4o-extracted psychological profile in its system prompt, and some long conversations
+  were split into sessions with LLM-written summaries of the earlier ones.
+languages: [en]
+language_context: original
+therapy_modalities:
+  - counseling
+  - emotional_support
+  - motivational_interviewing
+clinical_topics:
+  - depression
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: true
+  format:
+    - parquet
+modalities:
+  - text
+annotations:
+  - psychological_profiles
+  - depression_symptom_severity
+  - cognitive_distortions
+  - source_dataset_ids
+  - preference_pairs
+access:
+  level: registration
+  requirements: >-
+    Hugging Face login and acceptance of the dataset's access gate, which approves requests
+    automatically. The gate's conditions were not read because they are shown only after login.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  source: https://huggingface.co/api/datasets/liusiyang/eeyore_depression_sft
+  notes: >-
+    The dataset card metadata of all four Eeyore datasets, read through the Hugging Face API on
+    2026-09-26, declares no license. The card text needs a login and was not read, so a license
+    stated only in the text cannot be ruled out. The released conversations derive from corpora with
+    their own terms, including HOPE, which the registry's HOPE record lists as released only under an access
+    agreement.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/api/datasets/liusiyang/eeyore_depression_sft
+    - https://huggingface.co/api/datasets/liusiyang/eeyore_profile
+    - https://aclanthology.org/2025.findings-acl.707/
+  supporting_publications:
+    - https://arxiv.org/abs/2503.00018
+publication_year: 2025
+historical_significance:
+  - expert-in-the-loop training data for simulated depressed clients in counselor training
+notes: >-
+  The Findings of ACL 2025 paper (read as arXiv HTML v1) reports 5,618 candidate conversations,
+  of which 3,042 were kept after GPT-4o labelling and rebalancing, and 453 of those given a
+  counseling history by segmenting long conversations. The Hugging Face metadata lists 3,209 rows
+  in eeyore_depression_sft (fields messages, source, id_source) and 3,209 in eeyore_profile (the
+  same plus profile), 1,605 model-generated preference pairs in eeyore_depression_generated_preference
+  and 317 expert preference pairs in eeyore_depression_expert_preference. The 3,042 and 3,209 figures
+  have not been reconciled; the extra rows may come from the segmentation, which is unconfirmed.
+  The paper says the instruction-tuning data places the profile in the system prompt and uses the
+  client's turns as the assistant messages, so the files likely contain source-corpus text,
+  including HOPE's; this was not checked because the files are gated. English is taken from the
+  four source corpora named in the paper; the files were not opened. The paper reports IRB approval
+  for its user studies with experts; it says nothing on review of the source data.
+last_verified: 2026-09-26

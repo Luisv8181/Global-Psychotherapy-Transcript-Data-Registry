@@ -1,0 +1,82 @@
+id: memo
+title: "MEMO: Mental Health Summarization Dataset"
+canonical_url: https://github.com/LCS2-IIITD/MEMO
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: multi_turn
+domain: counseling
+source_context: >-
+  The HOPE counseling conversations (English transcripts of counseling videos on public platforms
+  such as YouTube), extended with utterance-level labels for counseling components and a reference
+  summary for each conversation, written for counseling-summarization research. The dialogue itself
+  is HOPE's, not newly collected.
+languages: [en]
+language_context: original
+therapy_modalities:
+  - counseling
+sessions: 212
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - unknown
+modalities:
+  - text
+annotations:
+  - counseling_components
+  - symptom_and_history
+  - patient_discovery
+  - reflecting
+  - discussion_filler
+  - abstractive_summaries
+  - speaker_labels
+access:
+  level: research-agreement
+  requirements: >-
+    Sign the MEMO Dataset Access Request Form (a Google Form linked from the README), then forward
+    the form's confirmation email to the address given in the README to request the data.
+redistribution: prohibited
+license:
+  type: research_access_agreement
+  verified: true
+  source: https://forms.gle/RarCVxAdmGUP3Pmh7
+  notes: >-
+    The access request form, read on 2026-09-26, limits use to non-commercial research, forbids
+    distributing the database or parts of it to any third party, allows illustrative use in
+    publications only with subjects' identities protected, requires citation of the KDD 2022 paper,
+    and lets LCS2, IIIT Delhi change the terms, after which users must sign a new agreement. The
+    GitHub repository holds only a README and states no license of its own.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  restrictions:
+    - no_redistribution
+    - no_commercial_use
+    - protect_subject_identity_in_publications
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: true
+evidence:
+  primary_sources:
+    - https://github.com/LCS2-IIITD/MEMO
+    - https://forms.gle/RarCVxAdmGUP3Pmh7
+    - https://arxiv.org/abs/2206.03886
+  supporting_publications:
+    - https://doi.org/10.1145/3534678.3539187
+doi: https://doi.org/10.1145/3534678.3539187
+publication_year: 2022
+historical_significance:
+  - counseling-summarization benchmark with expert-developed utterance labels
+notes: >-
+  The KDD 2022 paper (read on arXiv, 2206.03886) states that MEMO extends HOPE and contains 12.9K
+  utterances from 212 dyadic therapist-patient conversations, split 152, 39 and 21 for train, test
+  and validation (70-20-10). Each utterance is labelled as one of four counseling components
+  (symptom and history, patient discovery, reflecting, discussion filler), and each conversation has
+  a reference summary. Labels and guidelines were developed with and validated by clinicians at
+  mpathic.ai. The paper does not say whether the source videos show real sessions or
+  demonstrations, so dataset_type is unknown here even though the HOPE record says real, a
+  classification that is itself under review (docs/candidate-queue.md). The data sits behind the
+  access form and was not seen, so its file format is unknown. The ACM Digital Library returned
+  HTTP 403, so the paper was read through arXiv.
+last_verified: 2026-09-26
