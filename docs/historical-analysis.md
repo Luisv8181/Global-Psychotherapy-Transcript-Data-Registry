@@ -101,3 +101,19 @@ A pattern in the registry is evidence about indexed resources, not automatically
 - generation-method timeline
 
 The registry should store evidence first and generate these views second.
+
+## Historical psychotherapy dialogue sources, 1900-1950
+
+The historical evidence layer includes published case-dialogue resources and digitized clinical archives. These should not be conflated with modern verbatim therapy-session datasets.
+
+### Published case dialogue
+
+- **Dora / Fragment of an Analysis of a Case of Hysteria (1905)**: published psychoanalytic case containing substantial patient-analyst dialogue. The registry records this as a historical case-dialogue resource rather than a contemporaneous session recording.
+- **Little Hans / Analysis of a Phobia in a Five-Year-Old Boy (1909)**: published child-analysis case containing dialogue involving a child patient. It is likewise a published case record, not a modern session corpus.
+
+### Digitized clinical archives
+
+- **Journal of Nervous and Mental Disease historical archive**: HathiTrust preserves twentieth-century volumes including 1900 onward. The archive contains clinical case histories and discussions. Individual articles must be screened before classifying any item as therapeutic dialogue.
+- **American Journal of Insanity historical archive**: HathiTrust preserves volumes beginning in 1904 through the early 1920s. The archive contains asylum case reports and clinical discussions, with some patient quotations. It is an archival discovery source, not a verified psychotherapy transcript corpus.
+
+The attached historical search did not establish an openly accessible full-session psychotherapy transcript corpus for 1900-1950. That is recorded as a search result and research gap, not as evidence that no such material exists anywhere. Institutional archival collections may contain restricted notes or recordings and require separate provenance, access, privacy, and permissions review.
