@@ -18,7 +18,7 @@ used_by:
   transcript_ids:
   - 77
   notes: 'AnnoMI MI quality label: high.'
-availability: not_checked
-availability_checked_on: null
+availability: available
+availability_checked_on: '2026-09-26'
 catalogued_on: '2026-09-25'
 notes: null

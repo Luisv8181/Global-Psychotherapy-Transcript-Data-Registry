@@ -1,4 +1,4 @@
-"""Check whether catalogued YouTube videos are still publicly viewable, using YouTube's oEmbed endpoint.
+"""Check whether catalogued videos are still publicly viewable, using YouTube's and Vimeo's oEmbed endpoints.
 
 Usage: PYTHONPATH=. python scripts/check_video_availability.py [--dataset ID] [--all]
 
@@ -8,8 +8,8 @@ By default only entries still marked `not_checked` are checked; --all re-checks 
 oEmbed answers without playing the video. The responses are recorded as follows:
   200       -> available.
   404       -> unavailable (removed, or never public).
-  other     -> left unchanged. YouTube returns 401 or 403 both for private videos and for videos
-               whose owner has disabled embedding, so those codes do not settle availability.
+  other     -> left unchanged. YouTube and Vimeo return 401 or 403 both for private videos and for
+               videos whose owner restricts embedding, so those codes do not settle availability.
 Only the status is recorded. The response also carries the uploader's name and the current title,
 but many uploaders are private individuals (for example students posting class role-plays), so
 this script does not copy them into the catalog. Nothing else is fetched: no video, audio,
@@ -27,13 +27,16 @@ import yaml
 from src.registry.records import load_record
 from src.registry.videos import video_paths
 
-OEMBED = "https://www.youtube.com/oembed?format=json&url="
+OEMBED = {
+    "youtube": "https://www.youtube.com/oembed?format=json&url=",
+    "vimeo": "https://vimeo.com/api/oembed.json?url=",
+}
 
 
-def oembed_status(url):
-    """Return the HTTP status of YouTube's oEmbed response for a video URL."""
+def oembed_status(platform, url):
+    """Return the HTTP status of the platform's oEmbed response for a video URL."""
     try:
-        with urllib.request.urlopen(OEMBED + urllib.parse.quote(url, safe=""), timeout=30) as resp:
+        with urllib.request.urlopen(OEMBED[platform] + urllib.parse.quote(url, safe=""), timeout=30) as resp:
             return resp.status
     except urllib.error.HTTPError as err:
         return err.code
@@ -50,13 +53,13 @@ def main():
     tally = {}
     for path in video_paths(root):
         entry = load_record(path)
-        if entry.get("platform") != "youtube":
+        if entry.get("platform") not in OEMBED:
             continue
         if args.dataset and not any(u.get("dataset") == args.dataset for u in entry.get("used_by") or []):
             continue
         if not args.all and entry.get("availability") != "not_checked":
             continue
-        status = oembed_status(entry["url"])
+        status = oembed_status(entry["platform"], entry["url"])
         tally[status] = tally.get(status, 0) + 1
         if status == 200:
             entry["availability"] = "available"

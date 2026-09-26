@@ -39,5 +39,5 @@ evidence:
   primary_sources:
     - https://github.com/uccollab/AnnoMI
     - https://www.mdpi.com/1999-5903/15/3/110
-notes: The repository describes the dialogues as demonstrations, so AnnoMI is excluded from the real-session population. Its 119 source videos are listed in the video catalog (data/videos/). Whether demonstrations used real clients or actors is not established per video.
+notes: The repository describes the dialogues as demonstrations, so AnnoMI is excluded from the real-session population. Its 119 source videos are listed in the video catalog (data/videos/). On 2026-09-26, 117 were still online, the video behind transcript 89 was gone, and the one behind transcript 118 returned an unsettled response. Whether demonstrations used real clients or actors is not established per video.
 last_verified: 2026-09-24

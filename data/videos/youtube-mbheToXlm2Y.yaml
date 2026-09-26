@@ -21,4 +21,4 @@ used_by:
 availability: not_checked
 availability_checked_on: null
 catalogued_on: '2026-09-25'
-notes: null
+notes: YouTube's oEmbed endpoint returned HTTP 403 on 2026-09-26, which it gives both for private videos and for videos with embedding disabled, so availability is not settled.
