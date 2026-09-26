@@ -1,30 +1,59 @@
 id: muspsy
 title: "Muspsy: Multi-Session Psychological Counseling Conversation Dataset"
-canonical_url: https://aclanthology.org/2026.findings-acl.818/
+canonical_url: https://github.com/Rener2005/MusPsy
 status: partially-verified
-dataset_type: synthetic
+dataset_type: hybrid
 dialogue_structure: multi_turn
-source_context: Multi-session counseling conversations constructed from client profiles in publicly available psychological case reports
+source_context: Multi-session counseling dialogues constructed from client profiles in publicly available psychological case reports
 languages:
-  - zh
+  - unknown
+language_context: unknown
 therapy_modalities:
   - simulated_counseling
 longitudinal: true
 sessions: unknown
+transcript:
+  available: true
+  format:
+    - text
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
 access:
-  level: unknown
+  level: open
+  requirements: The authors' public GitHub repository exposes dataset directories; dataset-specific use terms remain unconfirmed.
+redistribution: unknown
 license:
   type: unknown
   verified: false
-redistribution: unknown
 privacy:
   deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: The source profiles come from publicly available psychological case reports; the reviewed sources do not establish a formal de-identification or re-identification assessment for the released dataset.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
 evidence:
   primary_sources:
+    - https://github.com/Rener2005/MusPsy
     - https://aclanthology.org/2026.findings-acl.818/
 publication_year: 2026
 release_year: 2026
 historical_significance:
   - longitudinal_simulated_counseling
-notes: The ACL paper describes Muspsy as a multi-session dataset built from client profiles in public psychological case reports. The exact generation model, dataset size, licensing, and repository release terms are not established by the surfaced abstract, so those fields remain unknown. It is not counted as direct observed psychotherapy-session evidence.
-last_verified: 2026-09-25
+notes: >-
+  The ACL 2026 paper describes MusPsy as counseling dialogues constructed from real client profiles
+  in publicly available psychological case reports, rather than observed counseling-session
+  transcripts. It reports 1,400 client profiles for training and 100 for testing, with an average of
+  6.17 counseling sessions per client, 28.55 turns per session and 26.99 words per turn. The public
+  GitHub repository, opened on 2026-09-26, contains dataset directories for dialogues, memories and
+  user cards and has an MIT LICENSE file. The MIT file is a repository/software license and is not
+  treated as proof that the dataset itself has the same license. This record changes the earlier
+  synthetic classification to hybrid because the generated dialogues are constructed from
+  human-derived case-report profiles; owner review is required before treating that reclassification
+  as settled.
+last_verified: 2026-09-26

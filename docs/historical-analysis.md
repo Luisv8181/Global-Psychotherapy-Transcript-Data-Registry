@@ -15,23 +15,33 @@ These timelines should be connected where evidence supports the relationship, bu
 
 ## Computational therapeutic dialogue timeline
 
-ELIZA provides an important historical predecessor for synthetic therapy research. Joseph Weizenbaum developed the ELIZA system at MIT in the mid-1960s. Its DOCTOR script was designed to simulate a Rogerian psychotherapist using keyword matching, decomposition rules, and response-reassembly rules. The 1966 *Communications of the ACM* paper documented the system.
+### ELIZA: historical predecessor
 
-Recovered archival evidence indicates multiple ELIZA versions beginning in 1965, including an early 1965 version and the 1966 version described in the ACM paper. The historical record therefore should not treat "ELIZA" as a single immutable artifact.
+ELIZA is an important historical predecessor for synthetic therapy research, but it should not be treated as a modern synthetic corpus. Joseph Weizenbaum's 1966 Communications of the ACM paper describes ELIZA as a program running on MIT's MAC time-sharing system that enabled natural-language conversation between a person and a computer. Its DOCTOR script simulated a Rogerian psychotherapist through keyword-triggered decomposition and response-reassembly rules.
 
-ELIZA is not classified as a modern synthetic therapy corpus. It is classified as a **computational therapeutic dialogue system / historical predecessor**. Its human-machine interactions may be recorded as historical dialogue artifacts when primary evidence supports them.
+Primary source:
+- Weizenbaum, J. (1966), “ELIZA—a computer program for the study of natural language communication between man and machine,” Communications of the ACM, 9(1), 36–45. https://doi.org/10.1145/365153.365168
 
-The registry should then trace later simulated, generated, and published therapeutic dialogue resources, including modern synthetic corpora such as CACTUS, while preserving the distinctions among:
+The historical object should be treated as versioned rather than singular. Archival reconstruction documents multiple ELIZA versions beginning in 1965, including the 1965a and 1965b versions, the 1966 CACM version, and later versions. The recovered archive also documents multiple contemporaneous DOCTOR scripts. These archival claims are useful for historical mapping, but the registry should preserve the distinction between the original surviving evidence and later reconstruction.
 
-- therapeutic dialogue system
-- human-machine interaction transcript
-- human roleplay/simulation
-- machine-generated synthetic dialogue
-- published synthetic corpus
-- real-session psychotherapy corpus
-- hybrid or derived corpus
+Archival source:
+- Finding ELIZA, “The versions.” https://findingeliza.org/versions.html
+- Finding ELIZA, “The DOCTOR script.” https://findingeliza.org/doctor.html
 
-### Historical claim policy
+ELIZA therefore occupies the taxonomy position computational therapeutic dialogue system / historical predecessor, not synthetic in the modern corpus sense. Its human-machine interactions may be represented as historical dialogue artifacts when primary evidence supports the specific artifact.
+
+### Later synthetic and simulated dialogue resources
+
+The registry can now trace a documented modern progression from early rule-based therapeutic dialogue systems to published synthetic counseling corpora. Current examples include:
+
+- **CACTUS (2024)**: a published synthetic psychotherapy corpus generated around CBT-oriented client personas and counselor behavior.
+- **MusPsy (2026)**: multi-session counseling dialogues constructed from client profiles in publicly available psychological case reports. The dataset is longitudinal in design but is not observed therapy-session evidence.
+- **StoryMI (2026)**: 6,000 simulated motivational-interviewing dialogues grounded in 1,000 questionnaire-story pairs, with explicit MI coding and multi-agent strategy control.
+- **PhaseMI (2026)**: a phase-structured MI dataset generated with therapist, client and supervisor LLMs to control transitions across counseling phases.
+
+These are not a single linear technological lineage. They represent different research designs: rule-based therapeutic simulation, persona-seeded longitudinal reconstruction/simulation, multi-agent MI generation, and phase-controlled MI generation.
+
+## Historical claim policy
 
 The registry should avoid unsupported "first" claims.
 
@@ -52,18 +62,18 @@ A historical lineage is revisable when earlier primary evidence is discovered.
 
 A dataset may have several distinct dates:
 
-- `collection_start_year`
-- `collection_end_year`
-- `publication_year`
-- `release_year`
-- `last_verified`
+- collection_start_year
+- collection_end_year
+- publication_year
+- release_year
+- last_verified
 
 For computational systems and synthetic corpora, add where available:
 
-- `generation_start_year`
-- `generation_end_year`
-- `first_public_release_year`
-- `historical_status`
+- generation_start_year
+- generation_end_year
+- first_public_release_year
+- historical_status
 
 Collection or interaction period is the primary temporal variable for studying observed clinical interaction.
 

@@ -1,0 +1,52 @@
+id: phasemi
+title: "PhaseMI: A Motivational Interviewing Dataset for Enhancing Phase Progression in LLM-based Counseling"
+canonical_url: https://github.com/regina-kim/phase_mi
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: counseling
+source_context: Simulated motivational-interviewing counseling dialogues generated with therapist, client and supervisor LLMs to control progression across MI phases
+languages:
+  - unknown
+language_context: unknown
+therapy_modalities:
+  - motivational_interviewing
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: unknown
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+annotations:
+  - motivational_interviewing_phases
+  - phase_progression
+  - counseling_quality_evaluation
+access:
+  level: open
+  requirements: The official repository links the public dataset at https://huggingface.co/datasets/jina005/phase_mi.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: The dataset is generated rather than an observed clinical-session corpus.
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://github.com/regina-kim/phase_mi
+    - https://aclanthology.org/2026.findings-acl.1970/
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - phase_structured_synthetic_motivational_interviewing
+notes: The ACL 2026 paper introduces PhaseMI as a phase-structured MI dataset and describes a generation framework using therapist, client and supervisor LLMs to control phase transitions. The official repository, opened on 2026-09-26, links the public dataset and the ACL paper. The reviewed primary sources do not establish the dataset's exact size, language, license, or redistribution terms, so those fields remain unknown. It is not counted as direct observed psychotherapy-session evidence.
+last_verified: 2026-09-26
