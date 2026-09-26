@@ -13,7 +13,8 @@ TODAY = date(2026, 9, 25)
 
 
 def test_registry_records_validate():
-    report = validate_registry(ROOT, today=TODAY)
+    # The real registry is checked against the real date; fixtures below use the fixed TODAY.
+    report = validate_registry(ROOT, today=date.today())
     assert report.errors == []
     files = list((ROOT / "data" / "datasets").glob("*.yaml")) + list((ROOT / "data" / "videos").glob("*.yaml"))
     assert report.checked == len(files)

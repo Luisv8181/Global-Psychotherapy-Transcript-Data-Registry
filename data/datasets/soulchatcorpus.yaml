@@ -1,0 +1,69 @@
+id: soulchatcorpus
+title: "SoulChatCorpus: Multi-turn Empathetic Counseling Conversations"
+canonical_url: https://modelscope.cn/datasets/YIRONGCHEN/SoulChatCorpus
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: mental_health_support
+source_context: >-
+  Multi-turn empathetic counseling dialogues generated with ChatGPT and GPT-4 from more than
+  150,000 single-turn long-text psychological counseling questions and their answers.
+geography: null
+languages: [zh]
+language_context: original
+therapy_modalities:
+  - psychological_counseling
+sessions: 258354
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+annotations:
+  - topic
+generation:
+  method: llm_multi_turn_expansion
+  models:
+    - ChatGPT
+    - GPT-4
+  source_type: single_turn_counseling_qa
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: None. Public on ModelScope.
+redistribution: conditional
+license:
+  type: Apache-2.0
+  verified: true
+  source: https://modelscope.cn/datasets/YIRONGCHEN/SoulChatCorpus
+  notes: >-
+    The ModelScope dataset record lists Apache License 2.0, but the same page's README states that
+    the project uses ChatGLM-6B weights and may be used only for non-commercial research. The two
+    statements conflict, so redistribution is recorded as conditional and commercial use should not
+    be assumed.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: The README reports that about 90,000 dialogues were withheld from the open release over privacy, safety, political and quality concerns.
+evidence:
+  primary_sources:
+    - https://modelscope.cn/datasets/YIRONGCHEN/SoulChatCorpus
+    - https://github.com/scutcyr/SoulChat
+  supporting_publications:
+    - https://aclanthology.org/2023.findings-emnlp.83/
+publication_year: 2023
+release_year: 2024
+historical_significance:
+  - among the largest open Chinese multi-turn counseling corpora
+  - predecessor of PsyDTCorpus (SoulChat 2.0)
+notes: >-
+  The ModelScope README reports that the open version released on 2024-06-06 keeps 258,354
+  multi-turn dialogues and 1,517,344 turns, after about 90,000 were filtered out. The GitHub README
+  describes the multi-turn data as generated with ChatGPT and GPT-4 from single-turn long-text
+  counseling Q&A. The EMNLP 2023 Findings paper describes a dataset of more than 2 million samples,
+  counting training samples rather than dialogues. Where the single-turn questions came from is not
+  stated in the sources read. Status is partially verified because the license statements on the
+  dataset's own page conflict.
+last_verified: 2026-09-26
