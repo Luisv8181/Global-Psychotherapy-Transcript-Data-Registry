@@ -151,7 +151,7 @@ Each record separates **provenance** (`dataset_type`) from **shape** (`dialogue_
 
 ## Video catalog
 
-Many corpora are transcribed from public therapy videos. `data/videos/` lists those videos, with metadata and links only, and records which datasets use each one. That makes shared source material across corpora visible. It currently holds the 119 source videos behind AnnoMI. See `docs/video-catalog.md` for scope and the rules for videos showing real clients.
+Many corpora are transcribed from public therapy videos. `data/videos/` lists those videos, with metadata and links only, and records which datasets use each one. That makes shared source material across corpora visible. It currently holds 182 videos: the 119 English source videos behind AnnoMI and 63 Spanish source videos behind MIDAS. See `docs/video-catalog.md` for scope and the rules for videos showing real clients.
 
 ## Published synthetic therapy corpora
 

@@ -57,5 +57,8 @@ notes: >-
   1,468 patient, 44 unclear), each with a Google Translate English translation. The paper (NAACL
   2025) states the videos were created for educational purposes and may be partly scripted, and
   that speakers come from Spanish-speaking countries in Latin America and from Spain. The README
-  says conversation IDs are the original YouTube video IDs, which could seed video-catalog entries.
+  says conversation IDs are the original YouTube video IDs. The 74 conversations come from 63
+  distinct videos, now in the video catalog (data/videos, used_by midas). One key, voBvNMYEB.html,
+  is not a well-formed YouTube ID and could not be linked. On 2026-09-26 YouTube's oEmbed endpoint
+  reported 58 of the 63 videos public, 4 gone and 1 unsettled.
 last_verified: 2026-09-26

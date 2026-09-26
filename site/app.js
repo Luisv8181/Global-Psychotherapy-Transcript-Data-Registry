@@ -294,16 +294,18 @@
   // ---------- Videos ----------
   const vs = { q: '', dataset: '', page: 0 };
   const PER = 20;
+  const PLATFORM = { youtube: 'YouTube', vimeo: 'Vimeo' };
+  const AVAIL = { available: 'online when checked', unavailable: 'no longer online', private: 'private', not_checked: 'not checked' };
   function renderVideos() {
-    const rows = videos.filter(v => (!vs.q || [v.title_as_listed, arr(v.topics).join(' ')].join(' ').toLowerCase().includes(vs.q))
+    const rows = videos.filter(v => (!vs.q || [v.title_as_listed, v.video_id, arr(v.topics).join(' ')].join(' ').toLowerCase().includes(vs.q))
       && (!vs.dataset || arr(v.used_by).some(u => u.dataset === vs.dataset)));
     const pages = Math.max(1, Math.ceil(rows.length / PER));
     vs.page = Math.min(vs.page, pages - 1);
     const slice = rows.slice(vs.page * PER, vs.page * PER + PER);
     const play = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg>';
     $('#v-list').innerHTML = slice.length ? slice.map(v => `<div class="vrow"><span class="play">${play}</span>
-      <div><a class="title" href="${esc(v.url)}" target="_blank" rel="noreferrer">${esc(v.title_as_listed || v.id)} ↗</a>
-      <div class="sub">${esc(humanize(v.platform))} · used by ${arr(v.used_by).map(u => byId[u.dataset] ? `<a href="#/dataset/${esc(u.dataset)}" style="color:var(--accent)">${esc(byId[u.dataset].title.split(':')[0])}</a>` : esc(u.dataset)).join(', ')}</div></div>
+      <div><a class="title" href="${esc(v.url)}" target="_blank" rel="noreferrer">${v.title_as_listed ? esc(v.title_as_listed) : `<span class="muted">Untitled in source list</span>`} ↗</a>
+      <div class="sub">${esc(PLATFORM[v.platform] || humanize(v.platform))}${v.title_as_listed ? '' : ` ${esc(v.video_id)}`} · ${esc(AVAIL[v.availability] || 'not checked')} · used by ${arr(v.used_by).map(u => byId[u.dataset] ? `<a href="#/dataset/${esc(u.dataset)}" style="color:var(--accent)">${esc(byId[u.dataset].title.split(':')[0])}</a>` : esc(u.dataset)).join(', ')}</div></div>
       <div class="tags">${arr(v.topics).slice(0, 2).map(t => `<span class="tag">${esc(t)}</span>`).join('')}<span class="tag">${esc(humanize(v.content_type))}</span></div></div>`).join('')
       : '<div class="empty"><h3>No videos match.</h3></div>';
     $('#v-paging').innerHTML = `<span>${rows.length ? `${vs.page * PER + 1}–${Math.min(rows.length, vs.page * PER + PER)} of ${rows.length}` : '0 videos'}</span>
@@ -311,11 +313,14 @@
   }
   function videoPage() {
     const used = [...new Set(videos.flatMap(v => arr(v.used_by).map(u => u.dataset)))];
+    const checked = videos.filter(v => v.availability && v.availability !== 'not_checked');
+    const gone = checked.filter(v => v.availability !== 'available').length;
+    const availNote = checked.length ? `Availability has been checked for ${checked.length} of ${videos.length} videos; ${gone} of those are no longer online.` : 'Availability has not yet been checked.';
     page(`
       <header class="wrap"><div class="page-head"><div><p class="smallcaps">Section III</p><h1>Video catalog</h1><p>Public videos that registry corpora are transcribed from. Links and metadata only: no video, audio or transcripts are held here.</p></div><div class="side">${videos.length} videos<br>from ${used.length} dataset${used.length === 1 ? '' : 's'}</div></div></header>
       <section class="wrap">
-        <p class="notice">Titles are as listed by the source dataset and may have changed on the platform. Availability has not yet been checked. Videos showing real clients are catalogued only with documented consent, and any entry is removed on request.</p>
-        <div class="controls"><label class="sr-only" for="v-q">Search videos</label><input class="field" id="v-q" type="search" placeholder="Search titles and topics" value="${esc(vs.q)}" autocomplete="off">
+        <p class="notice">Titles are as listed by the source dataset and may have changed on the platform. ${availNote} Videos showing real clients are catalogued only with documented consent, and any entry is removed on request.</p>
+        <div class="controls"><label class="sr-only" for="v-q">Search videos</label><input class="field" id="v-q" type="search" placeholder="Search titles, topics and video IDs" value="${esc(vs.q)}" autocomplete="off">
           <label class="sr-only" for="v-ds">Dataset</label><select class="field" id="v-ds"><option value="">All datasets</option>${used.map(u => `<option value="${esc(u)}"${u === vs.dataset ? ' selected' : ''}>${esc(byId[u] ? byId[u].title.split(':')[0] : u)}</option>`).join('')}</select></div>
         <div class="vlist" id="v-list"></div><div class="paging" id="v-paging"></div>
       </section>`);
