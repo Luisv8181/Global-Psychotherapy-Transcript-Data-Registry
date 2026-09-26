@@ -75,8 +75,8 @@ notes: >-
   (symptom and history, patient discovery, reflecting, discussion filler), and each conversation has
   a reference summary. Labels and guidelines were developed with and validated by clinicians at
   mpathic.ai. The paper does not say whether the source videos show real sessions or
-  demonstrations, so dataset_type is unknown here even though the HOPE record says real, a
-  classification that is itself under review (docs/candidate-queue.md). The data sits behind the
+  demonstrations, so dataset_type is unknown, matching the HOPE record, which was changed from
+  real to unknown on 2026-09-26. The data sits behind the
   access form and was not seen, so its file format is unknown. The ACM Digital Library returned
   HTTP 403, so the paper was read through arXiv.
 last_verified: 2026-09-26

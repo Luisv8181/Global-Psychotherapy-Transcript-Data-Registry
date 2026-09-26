@@ -57,7 +57,6 @@ The registry now includes verified or provisionally verified real-session resour
 
 - **Counseling and Psychotherapy Transcripts**, an institutional/licensed collection of real psychotherapy and counseling transcripts.
 - **AVATAR Therapy Dialogue Corpus**, a specialized therapy dialogue corpus.
-- **HOPE**, 212 real counseling conversations from publicly available counseling videos, with dialogue-act annotations and controlled research access.
 - **CUEMPATHY**, 156 actual counseling sessions involving 39 therapist-client dyads, with speech, transcripts, and ratings.
 - **BiMISC**, bilingual English-Dutch motivational-interviewing conversations sourced from real counseling sessions.
 - **Mental Health Counseling Dialogue**, 1,661 Korean counseling-session transcripts collected at accredited mental-health counseling centers.

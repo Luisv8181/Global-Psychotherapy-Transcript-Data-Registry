@@ -1,39 +1,81 @@
 id: hope-counseling-conversations
 title: "HOPE: Counselling Conversations Dataset"
 canonical_url: https://github.com/LCS2-IIITD/SPARTA_WSDM2022
-status: verified
-dataset_type: real
+status: partially-verified
+dataset_type: unknown
 dialogue_structure: multi_turn
 domain: counseling
-source_context: Naturally occurring therapist-patient counseling conversations from publicly available counseling videos
+source_context: >-
+  Transcripts of 212 dyadic therapist-patient sessions from publicly available, pre-recorded
+  counseling videos on YouTube, transcribed with Otter and manually corrected, and annotated with 12
+  dialogue-act labels. The paper does not say whether the clients were real or actors; many of the
+  listed source videos are titled as role-plays or demonstrations (see notes).
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: majority
+  evidence_level: reported_in_publication
 languages:
   - en
+language_context: original
 therapy_modalities:
   - counseling
+  - cognitive_behavioral_therapy
+  - child_therapy
+  - family_therapy
 sessions: 212
 longitudinal: false
 transcript:
   available: true
   format:
-    - text
+    - csv
 annotations:
   - dialogue_acts
   - speaker_labels
-  - timing
 access:
   level: research-agreement
-  requirements: Dataset access agreement and researcher request
-redistribution: conditional
+  requirements: >-
+    Sign the HOPE Dataset Access Request Form (a Google Form linked from the README), then forward
+    the form's confirmation email to the address given in the README to request the data. The public
+    repository itself holds eight sample sessions and the list of source video links.
+redistribution: prohibited
 license:
   type: research_access_agreement
   verified: true
-  source: https://github.com/LCS2-IIITD/SPARTA_WSDM2022/blob/main/README.md
+  source: https://forms.gle/WGm2BMxQpzKsNE5Y9
+  notes: >-
+    The access request form, read on 2026-09-26, limits use to non-commercial research, forbids
+    distributing the database or parts of it to any third party, allows illustrative use in
+    publications only with subjects' identities protected, requires citation of the WSDM 2022 paper,
+    and lets LCS2, IIIT Delhi change the terms. The repository states no separate license.
 privacy:
-  deidentified: unknown
+  deidentified: documented
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper states that patient and therapist names were replaced with synthetic names. The
+    source videos remain public, so the sessions can be traced to them.
 evidence:
   primary_sources:
     - https://github.com/LCS2-IIITD/SPARTA_WSDM2022
+    - https://forms.gle/WGm2BMxQpzKsNE5Y9
+    - https://arxiv.org/abs/2111.06647
+  supporting_publications:
     - https://dl.acm.org/doi/10.1145/3488560.3498509
-notes: 12900 utterances, approximately balanced between therapist and patient speech; sessions average about 59 utterances. Public video availability does not by itself establish transcript redistribution rights.
-last_verified: 2026-09-24
+publication_year: 2022
+notes: >-
+  The WSDM 2022 paper (read on arXiv, 2111.06647) reports about 12.9K utterances (6.38K patient,
+  6.47K therapist) across 212 sessions, about 59 utterances per session, split 70-20-10, covering
+  CBT, child therapy, family therapy and other approaches, with the majority of therapists and
+  patients based in the United States. It calls the sources publicly available pre-recorded
+  counselling videos and never says whether the clients were real or actors. The README says
+  HOPE_data/ contains the complete dataset, but on 2026-09-26 it held eight session files (columns
+  ID, Type, Utterance, Dialog_Act) and HOPE_data/HOPE_data_source/URL_sources.txt, a list of 348
+  distinct YouTube links. That is more links than sessions, and nothing maps links to sessions. On
+  2026-09-26 YouTube's oEmbed endpoint returned titles for 314 of the 348 videos (34 were removed,
+  private or not embeddable). Of those 314, 110 titles contain role play, demonstration, mock or
+  simulated (89 say role play), 2 contain real, actual or live, and the rest indicate neither. Only
+  these aggregate counts were recorded; no titles or links were copied. Because a substantial share
+  of the listed videos are titled as role-plays and the paper does not establish that any client was
+  real, the repository owner changed dataset_type from real to unknown on 2026-09-26. Titles are the
+  uploaders' descriptions and weaker evidence than a statement by the dataset authors.
+last_verified: 2026-09-26

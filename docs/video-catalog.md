@@ -45,7 +45,8 @@ Videos showing real clients need the most care.
 - **From a dataset:** write an import script like `scripts/import_annomi_videos.py`. It should read the dataset's own published video list, normalize URLs with `parse_video_url`, and merge into existing entries without overwriting other datasets' `used_by` items or hand-edited fields.
 - **Availability:** `scripts/check_video_availability.py [--dataset ID]` asks YouTube's or Vimeo's oEmbed endpoint whether each unchecked video is still public, and records only `available` (HTTP 200) or `unavailable` (HTTP 404) with the date. It does not copy the uploader's name or the current title: many uploaders are private individuals, such as students posting class role-plays, and the catalog does not need their names. Other responses, such as 401 or 403 (private or embedding restricted), leave the entry `not_checked`.
 - **By hand:** copy an existing entry, set every field from evidence, and leave `availability: not_checked` until checked.
-- Do not catalog video lists that a dataset releases only under an access agreement, such as HOPE's. Publishing them here would circumvent that agreement.
+- Do not catalog video lists that a dataset releases only under an access agreement. Publishing them here would circumvent that agreement.
+- HOPE's source-video list is in its public repository, but it is not catalogued: it maps to no sessions, the paper documents no consent, and some videos may show real clients. Cataloguing it needs a decision by the repository owner.
 
 Run `PYTHONPATH=. python scripts/validate_registry.py` afterwards. It checks the schema, the canonical URL and file name, and that every `used_by` dataset has a registry record.
 
