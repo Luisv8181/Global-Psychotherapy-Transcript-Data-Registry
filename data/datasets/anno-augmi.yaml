@@ -1,0 +1,60 @@
+id: anno-augmi
+title: "Anno-AugMI and Anno-FairMI: Augmented AnnoMI Therapist Utterances"
+canonical_url: https://github.com/vsrana-ai/Augmenting-AnnoMI
+status: verified
+dataset_type: hybrid
+dialogue_structure: utterance_level
+domain: psychotherapy
+source_context: >-
+  Therapist utterances from AnnoMI's motivational-interviewing demonstration transcripts, augmented
+  with NL-Augmenter (noising, paraphrasing and similar transformations) to balance high- and
+  low-quality MI labels, either across the whole set (Anno-AugMI) or within each topic
+  (Anno-FairMI). Released as isolated labelled utterances, without conversation ids or turn order.
+languages: [en]
+language_context: original
+therapy_modalities:
+  - motivational_interviewing
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - csv
+modalities:
+  - text
+annotations:
+  - mi_quality_labels
+  - topic_labels
+access:
+  level: open
+  requirements: None. Both CSV files are in the public GitHub repository.
+redistribution: conditional
+license:
+  type: none-selected
+  verified: true
+  source: https://github.com/vsrana-ai/Augmenting-AnnoMI
+  notes: >-
+    The repository has no license file and its README states no license. The utterances derive from
+    AnnoMI, whose own release terms are recorded on the AnnoMI record and remain partly unconfirmed.
+privacy:
+  deidentified: not_applicable_to_demonstrations
+  contextual_reidentification_assessed: not_applicable
+evidence:
+  primary_sources:
+    - https://github.com/vsrana-ai/Augmenting-AnnoMI
+  supporting_publications:
+    - https://doi.org/10.5220/0011531400003523
+publication_year: 2023
+historical_significance:
+  - augmentation for label balance and topic-wise fairness in counseling-quality classification
+notes: >-
+  Counted from the repository on 2026-09-26 (commit 2bdecfa). Anno-AugMI.csv has 5,302 rows (5,182
+  distinct utterances), 2,938 with mi_quality 0 and 2,364 with mi_quality 1, over 43 topics.
+  Anno-FairMI.csv has 9,154 rows (5,369 distinct utterances), 4,556 with 0 and 4,598 with 1, over
+  10 topics. Topic counts treat labels that differ only by a trailing space as one; the raw files
+  hold 44 and 11 distinct strings. Which of 0 and 1 means high quality is not stated in the files or
+  README. Each row holds only the utterance, its label and its topic, so conversations cannot be
+  reconstructed, hence dialogue_structure utterance_level. The bundled preprint describes an 11-step
+  NL-Augmenter pipeline applied to single therapist utterances. The README cites the SDAIH 2023
+  workshop paper (SciTePress, DOI above). AnnoMI itself is recorded separately as demonstration.
+last_verified: 2026-09-26

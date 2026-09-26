@@ -44,11 +44,12 @@
       ]
     },
     "dialogue_structure": {
-      "description": "Shape of the text: multi-turn dialogue, single-turn question-answer pairs, or both.",
+      "description": "Shape of the text: multi-turn dialogue, single-turn question-answer pairs, both, or isolated utterances without their conversations.",
       "enum": [
         "multi_turn",
         "single_turn_qa",
         "mixed",
+        "utterance_level",
         "unknown"
       ]
     },
