@@ -1,0 +1,25 @@
+id: youtube-EvsVabzAjtA
+platform: youtube
+video_id: EvsVabzAjtA
+url: https://www.youtube.com/watch?v=EvsVabzAjtA
+title_as_listed: null
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by MIDAS. Its paper (NAACL 2025, arXiv 2502.08458) describes
+  the videos as educational, possibly scripted to some extent, and showing either MI demonstrations by
+  professional counselors or MI role-play counseling by psychology students. MIDAS does not record which
+  of the two a given video is, so a video may be a student role-play.
+therapy_modalities:
+- motivational_interviewing
+topics: []
+languages:
+- es
+used_by:
+- dataset: midas
+  transcript_ids:
+  - EvsVabzAjtA.html
+  notes: MIDAS lists no video title.
+availability: available
+availability_checked_on: '2026-09-26'
+catalogued_on: '2026-09-26'
+notes: null

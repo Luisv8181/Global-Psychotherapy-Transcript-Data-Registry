@@ -323,6 +323,7 @@ a.finding:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .vrow .play svg { width: 14px; height: 14px; }
 .vrow a.title { font: 500 18px/1.3 var(--serif); }
 .vrow a.title:hover { color: var(--accent); }
+.vrow a.title .muted { color: var(--muted); font-style: italic; }
 .vrow .sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
 .vrow .tags { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
 .tag { font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); white-space: nowrap; }

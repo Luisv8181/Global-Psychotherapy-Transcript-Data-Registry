@@ -78,3 +78,24 @@ def test_video_url_must_be_canonical(registry):
 def test_video_content_type_is_controlled(registry):
     edit_video(registry, content_type="therapy")
     assert any("content_type" in e for e in validate_registry(registry, today=TODAY).errors)
+
+
+def _load_script(name):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(name, ROOT / "scripts" / f"{name}.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+@pytest.mark.parametrize("key, expected", [
+    ("vC7_Wrv-AME.html", "vC7_Wrv-AME"),
+    ("6uqC49iSopg_c.html", "6uqC49iSopg"),
+    ("u_gpwZLpQXs_a.html", "u_gpwZLpQXs"),
+    ("VsHYx66XegE_todo_remove.html", "VsHYx66XegE"),
+    ("voBvNMYEB.html", None),
+    ("6uqC49iSopg", None),
+])
+def test_midas_key_to_video_id(key, expected):
+    assert _load_script("import_midas_videos").video_id_from_key(key) == expected
+

@@ -1,0 +1,27 @@
+id: youtube-6uqC49iSopg
+platform: youtube
+video_id: 6uqC49iSopg
+url: https://www.youtube.com/watch?v=6uqC49iSopg
+title_as_listed: null
+channel: null
+content_type: demonstration
+content_type_evidence: Listed as a source video by MIDAS. Its paper (NAACL 2025, arXiv 2502.08458) describes
+  the videos as educational, possibly scripted to some extent, and showing either MI demonstrations by
+  professional counselors or MI role-play counseling by psychology students. MIDAS does not record which
+  of the two a given video is, so a video may be a student role-play.
+therapy_modalities:
+- motivational_interviewing
+topics: []
+languages:
+- es
+used_by:
+- dataset: midas
+  transcript_ids:
+  - 6uqC49iSopg_a.html
+  - 6uqC49iSopg_b.html
+  - 6uqC49iSopg_c.html
+  notes: MIDAS lists no video title. MIDAS holds 3 conversations from this video.
+availability: unavailable
+availability_checked_on: '2026-09-26'
+catalogued_on: '2026-09-26'
+notes: null
