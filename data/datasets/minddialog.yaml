@@ -2,10 +2,13 @@ id: minddialog
 title: "MindDialog: A Large-Scale Benchmark for Counseling Dialogue Understanding and Generation"
 canonical_url: https://doi.org/10.1016/j.patcog.2026.113766
 status: partially-verified
-dataset_type: real
+dataset_type: unknown
 dialogue_structure: multi_turn
 domain: psychotherapy
-source_context: Psychotherapy demonstration videos featuring real therapists; the authors describe the source material as authentic counseling sessions
+source_context: >-
+  Publicly available psychotherapy videos, which the paper describes both as demonstration videos
+  featuring real therapists and as authentic counseling sessions. Whether the clients were real is
+  not established.
 geography:
   countries:
     - unknown
@@ -44,5 +47,14 @@ evidence:
   primary_sources:
     - https://www.sciencedirect.com/science/article/pii/S0031320326007314
 publication_year: 2026
-notes: The paper reports processing more than 325 hours of publicly available psychotherapy demonstration videos and describes them as authentic counseling sessions featuring real therapists. Because the source is described as demonstration videos, the registry keeps this record partially verified until the underlying videos and the dataset's provenance are reviewed closely enough to distinguish naturally occurring clinical encounters from educational demonstrations or role-play. The paper reports automated subtitle extraction, LLM-assisted transcript processing, expert review, and multi-round manual verification.
+notes: >-
+  As read on 2026-09-24, the paper reports processing more than 325 hours of publicly available
+  psychotherapy demonstration videos, describes them as authentic counseling sessions featuring real
+  therapists, and reports automated subtitle extraction, LLM-assisted transcript processing, expert
+  review and multi-round manual verification. Real therapists do not establish real clients, and
+  demonstration videos are usually made to teach, so on 2026-09-26 the repository owner changed
+  dataset_type from real to unknown. The review could not re-read the paper that day, because
+  ScienceDirect refused automated access (HTTP 403), and no preprint, dataset card or code
+  repository was found; the change rests on the description recorded on 2026-09-24. The review
+  stays open until someone reads the paper's data section and any data release.
 last_verified: 2026-09-24
