@@ -1,0 +1,47 @@
+id: freud-little-hans
+title: "Analysis of a Phobia in a Five-Year-Old Boy (Little Hans)"
+canonical_url: https://www.gutenberg.org/ebooks/43256
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+publication_year: 1909
+historical_period: 1900s
+therapy_era:
+  - early-psychoanalysis
+historical_significance:
+  - early published child-analysis case containing dialogue involving a child patient
+languages:
+  - de
+  - en
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The published case uses the pseudonym Little Hans. This is a published case record,
+    not a contemporaneous verbatim recording transcript. Historical-source review identifies
+    dialogue involving the child patient.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - "https://www.gutenberg.org/ebooks/43256"
+  supporting_publications: []
+last_verified: 2026-09-26
+notes: >-
+  Historical dialogue resource. Rights for a digitized public-domain edition and rights for
+  later scholarly translations should be evaluated separately before redistribution.
