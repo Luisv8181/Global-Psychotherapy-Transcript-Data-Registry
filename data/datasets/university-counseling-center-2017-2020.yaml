@@ -10,7 +10,9 @@ source_context: >-
   from September 2017 through March 2020. Treatment was provided by licensed staff and clinical
   trainees. The corpus was collected for automated psychotherapy-skill assessment and is not publicly
   shareable under the study's data-use restrictions.
-geography: United States
+geography:
+  countries:
+    - United States
 languages:
   - en
 language_context: original

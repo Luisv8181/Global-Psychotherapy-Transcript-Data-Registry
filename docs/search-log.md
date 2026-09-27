@@ -4,6 +4,12 @@ One row per query and channel, as described in `docs/search-protocol.md` section
 
 "Screened" is how many results were read at title or description level. "Relevant hits" names registry ids, new leads, or "none".
 
+## Channels that could not be searched on 2026-09-26
+
+From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (HTTP 403), the DAIC-WOZ site and its download pages at dcapswoz.ict.usc.edu (HTTP 403, Cloudflare; its documentation PDF was reachable) and the Ulmer Textbank site (TLS handshake failure). Searches there need another route or a person.
+
+## Log
+
 | Date | Channel | Query (exact) | Language | Screened | Relevant hits | By |
 |---|---|---|---|---|---|---|
 | 2026-09-26 | Harvard Dataverse API (datasets) | psychotherapy transcripts | en | 10 of 2,240 | none | Claude Code session |
@@ -15,14 +21,8 @@ One row per query and channel, as described in `docs/search-protocol.md` section
 | 2026-09-26 | TalkBank, PsychosisBank access, membership and agreement pages | (browsed) | en | 3 pages | psychosisbank | Claude Code session |
 | 2026-09-26 | Crisis Text Line data philosophy and research pages | (browsed) | en | 2 pages | crisis-text-line | Claude Code session |
 | 2026-09-26 | Psychotherapy.net about, FAQ and universities pages | (browsed) | en | 3 pages | psychotherapy-net-library | Claude Code session |
-
-## Channels that could not be searched on 2026-09-26
-
-From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (HTTP 403), the DAIC-WOZ site and its download pages at dcapswoz.ict.usc.edu (HTTP 403, Cloudflare; its documentation PDF was reachable) and the Ulmer Textbank site (TLS handshake failure). Searches there need another route or a person.
-
 | 2026-09-26 | Deep Research / web archives | psychotherapy transcripts 1900 1950 historical case dialogue Freud Jung Ferenczi journals | en/de | multiple primary/archival leads reviewed | freud-dora; freud-little-hans; jnmd-historical-archive; american-journal-insanity-archive | Claude session |
 | 2026-09-26 | Web search / institutional archives | historical psychotherapy dialogue 1800 1900 Anna O Balmanno Gartnavel Crichton Augusta Manhattan | en/de | multiple primary institutional and scholarly sources reviewed | anna-o-breuer; balmanno-asylum-anecdotes; gartnavel-dynamic-case-notes; crichton-royal-case-books; augusta-mental-health-patient-records; manhattan-state-hospital-case-books | Claude session |
-
 | 2026-09-27 | Web search / primary research papers | Alexander Street psychotherapy transcript corpus 1398 2354 sessions | en | 4 | alexander-street-general-psychotherapy-corpus | Claude session |
 | 2026-09-27 | Web search / primary research papers | UCLA UW couples therapy corpus 134 couples 574 sessions | en | 4 | couples-therapy-corpus | Claude session |
 | 2026-09-27 | Web search / primary research papers | motivational interviewing clinical trials corpus 145 real patient interactions | en | 4 | mi-clinical-trials-corpus | Claude session |
