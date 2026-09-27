@@ -1,0 +1,66 @@
+id: cflowpsyd
+title: "CFlowPsyD: An Analysis-Enhanced Dataset for Asynchronous Psychological Counseling"
+canonical_url: https://aclanthology.org/2026.findings-acl.328/
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Generated Chinese asynchronous psychological counseling conversations produced by the CFlowPsy
+  self-optimizing multi-agent framework. The paper states that a small amount of real anonymized
+  counseling cases were used as seed data, while the released CFlowPsyD dialogues were synthesized
+  through large language models.
+geography:
+  countries:
+    - China
+languages:
+  - zh
+language_context: original
+sessions: 1700
+participants: unknown
+longitudinal: unknown
+annotations:
+  - client basic information
+  - real-time emotion tracking
+  - counseling progress
+  - generated intervention analysis
+transcript:
+  available: unknown
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+generation:
+  method: self_optimizing_multi_agent_generation
+  source_type: small_seed_set_of_real_anonymized_counseling_cases
+  synthetic_dialogues: true
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: The paper describes the small seed set of real counseling cases as anonymized; this claim applies to the seed material described by the authors and is not a guarantee about the generated corpus.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2026.findings-acl.328/
+publication_year: 2026
+historical_significance:
+  - asynchronous psychological counseling generation from a seed set of real anonymized cases
+notes: >-
+  The ACL 2026 Findings paper reports 1,700 extended Chinese asynchronous psychological counseling
+  conversations and says the CFlowPsy framework uses a small amount of real anonymized counseling
+  cases as seed data before synthesizing the released conversations through large language models.
+  Access, redistribution, dataset license and release location were not established in this pass, so
+  those fields remain unknown. The corpus should remain synthetic rather than real or hybrid at the
+  dialogue level.
+last_verified: 2026-09-27

@@ -1,0 +1,73 @@
+id: theraphase
+title: "TheraPhase: A Multi-Session Treatment Outcome Evaluation Dataset"
+canonical_url: https://huggingface.co/datasets/UTSNLPGroup/TheraPhase
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Paired initial-stage and completion-stage client records derived from CPsyCoun, using GPT-4
+  prompting to extract initial-stage information from comprehensive client information. The result
+  supports comparison of client information across treatment stages and should not be treated as
+  raw observed longitudinal therapy transcripts.
+geography:
+  countries:
+    - China
+languages:
+  - zh
+language_context: original
+sessions: 800
+participants: 400
+longitudinal: true
+annotations:
+  - initial-stage/completion-stage client pairing
+  - symptom and treatment-outcome evaluation fields
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+generation:
+  method: LLM_based_stage_extraction
+  source_type: CPsyCounD / CPsyCoun
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: Public Hugging Face dataset page.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/UTSNLPGroup/TheraPhase
+    - https://aclanthology.org/2026.lrec-1.231/
+  supporting_publications:
+    - https://openreview.net/pdf?id=hQKXQf8Xo3
+relationships:
+  - type: derived_from
+    target: cpsycound
+    notes: The TheraPhase paper states that the dataset was constructed based on CPsyCoun; GPT-4 was used to extract initial-stage information from the comprehensive client information.
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - explicit treatment-stage pairing built from an existing reconstructed counseling resource
+notes: >-
+  The dataset card reports 400 clients and 800 sessions, with each client paired across an initial
+  and completion stage. The TheraPhase paper states that the dataset was constructed from CPsyCoun
+  and that GPT-4 was used in a 5-shot prompt to extract initial-stage information from comprehensive
+  client information. This establishes a derived relationship to CPsyCounD, but does not establish
+  that the 800 sessions are observed real therapy encounters. The current Hugging Face page reports
+  9,216 rows and 1.36 MB total file size. Dataset-specific license and privacy terms were not
+  established in this pass.
+last_verified: 2026-09-27
