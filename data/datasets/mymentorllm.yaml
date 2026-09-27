@@ -1,0 +1,77 @@
+id: mymentorllm
+title: "MyMentorLLM: A Psychotherapy GenAI Environment with Multimodal Voice/Text Patients, Trainees and Experts"
+canonical_url: https://huggingface.co/datasets/RodolfoRizzi/mymentorllm-viewer-test
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Simulated CBT training sessions with three LLM-instantiated roles: a simulated patient grounded in
+  DSM-5-TR clinical cases, a therapist-in-training, and an expert supervisor. The published dataset
+  card describes both text dialogue and synthetic speech audio.
+geography:
+  countries:
+    - Italy
+languages:
+  - it
+language_context: original
+therapy_modalities:
+  - cognitive_behavioral_therapy
+clinical_topics:
+  - major_depressive_disorder
+  - generalized_anxiety_disorder
+  - borderline_personality_disorder
+sessions: 2100
+participants: unknown
+longitudinal: false
+annotations:
+  - Cognitive Therapy Rating Scale supervision
+  - diagnostic and symptom-identification debriefs
+  - emotional dynamics
+  - therapeutic competence
+transcript:
+  available: true
+audio:
+  available: true
+  format:
+    - flac
+video:
+  available: false
+modalities:
+  - text
+  - audio
+generation:
+  method: multi_role_llm_simulation
+  source_type: DSM-5-TR-grounded clinical vignettes
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: Public Hugging Face dataset card; the currently reachable card used for verification is a test/viewer dataset page and the underlying full audio artifact is very large.
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+  notes: The accompanying arXiv record is openly available, but a dataset-specific license was not independently verified from the authoritative data-host page in this pass.
+privacy:
+  deidentified: not_applicable
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: not_applicable
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/RodolfoRizzi/mymentorllm-viewer-test
+    - https://arxiv.org/abs/2607.25667
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - multimodal deliberate-practice simulation integrating trainee supervision
+notes: >-
+  The dataset card reports 2,100 simulated CBT sessions, 65,100 dialogue turns and 27,900 FLAC
+  audio clips, with 263.4 hours of synthetic speech audio. The accompanying paper describes a
+  multimodal voice/text simulation environment linking a DSM-5-TR-grounded simulated patient,
+  therapist-in-training and expert supervisor. Seven model/modality conditions are described in the
+  dataset card. The accessible dataset page used for verification is a test/viewer page, so the
+  definitive release location should be rechecked. No real patient sessions are claimed.
+last_verified: 2026-09-27
