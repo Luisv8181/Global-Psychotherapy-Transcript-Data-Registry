@@ -28,3 +28,7 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-09-27 | Web search / ACL Anthology and dataset card | TheraPhase CPsyCoun 400 pairs 800 sessions | zh | 3 | theraphase | Claude session |
 | 2026-09-27 | Web search / ACL Anthology | CFlowPsyD 1700 Chinese asynchronous counseling conversations | zh | 2 | cflowpsyd | Claude session |
 | 2026-09-27 | Web search / ACL Anthology | PsyChainD 10456 Chinese counseling dialogues | zh | 3 | psychaind | Claude session |
+| 2026-09-27 | Web search / primary research papers | Alexander Street psychotherapy transcript corpus 1398 2354 sessions | en | 4 | alexander-street-general-psychotherapy-corpus | Claude session |
+| 2026-09-27 | Web search / primary research papers | UCLA UW couples therapy corpus 134 couples 574 sessions | en | 4 | couples-therapy-corpus | Claude session |
+| 2026-09-27 | Web search / primary research papers | motivational interviewing clinical trials corpus 145 real patient interactions | en | 4 | mi-clinical-trials-corpus | Claude session |
+| 2026-09-27 | Web search / primary research papers | university counseling center psychotherapy corpus 2017 2020 5097 recordings | en | 4 | university-counseling-center-2017-2020 | Claude session |

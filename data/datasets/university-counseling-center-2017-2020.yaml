@@ -1,0 +1,83 @@
+id: university-counseling-center-2017-2020
+title: "University Counseling Center Psychotherapy Corpus, 2017-2020"
+canonical_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8810915/
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Real-world psychotherapy sessions recorded at a large western U.S. university counseling center
+  from September 2017 through March 2020. Treatment was provided by licensed staff and clinical
+  trainees. The recordings were collected for research on automated psychotherapy-skill assessment
+  and have not been released.
+geography:
+  countries:
+    - United States
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - psychotherapy
+clinical_topics:
+  - depression
+  - anxiety
+  - substance_use
+  - relationship_concerns
+sessions: 4268
+participants: 1040
+longitudinal: true
+annotations:
+  - therapist_skill_assessment
+  - automated_performance_feedback
+transcript:
+  available: true
+audio:
+  available: true
+video:
+  available: false
+modalities:
+  - text
+  - audio
+access:
+  level: metadata-only
+  requirements: >-
+    No access route is published. The 2021 PLOS One paper that used these sessions says its data,
+    recordings and transcripts of psychotherapy sessions, cannot be shared publicly.
+redistribution: prohibited
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No license or access agreement for this corpus was read. The 2021 PLOS One paper's data
+    availability statement describes a Data Use Agreement imposed by the University of Pennsylvania
+    ethics committee. That paper's main data were CBT training sessions from Pennsylvania; it used
+    these counseling-center sessions, approved by the University of Utah IRB, only for domain
+    adaptation. Whether that agreement covers this corpus is not stated.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: documented
+ethics:
+  consent_documented: documented
+  ethics_review_documented: documented
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC8810915/
+    - https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258639
+publication_year: 2021
+collection_start_year: 2017
+collection_end_year: 2020
+historical_significance:
+  - large longitudinal real-world psychotherapy corpus with explicit consent and restricted data sharing
+notes: >-
+  The study reports 5,097 recordings, of which 4,268 sessions were successfully processed, with a
+  mean duration of 49.77 minutes, more than 2.8 million utterances and 28 million words, and at
+  least 59 therapists and 1,040 clients. A later analysis of the same counseling-center dataset
+  reports 610 clients, 48 therapists and 2,974 sessions after excluding intake-only clients and
+  recording/processing errors. The differing counts reflect analysis subsets, not necessarily
+  separate datasets. The 2021 PLOS One paper, read on 2026-09-27, confirms 4,268 automatically
+  transcribed sessions from a university counseling center, University of Utah IRB approval (protocol
+  83132) and participants' written consent to recording for research. The 2022 Behavior Research
+  Methods paper (PMC8810915) could not be opened on 2026-09-27, because both PMC and the publisher
+  returned a browser check, so the figures above attributed to it were not re-checked.
+last_verified: 2026-09-27

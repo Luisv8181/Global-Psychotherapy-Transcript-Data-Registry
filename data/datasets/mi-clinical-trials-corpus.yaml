@@ -1,0 +1,64 @@
+id: mi-clinical-trials-corpus
+title: "Motivational Interviewing Clinical-Trials Corpus"
+canonical_url: https://www.isca-archive.org/interspeech_2019/nasir19_interspeech.pdf
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: counseling
+source_context: >-
+  Real therapist-patient Motivational Interviewing interactions from five independent clinical
+  studies of addiction counseling. Sessions were recorded and manually transcribed.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - motivational_interviewing
+clinical_topics:
+  - alcohol_use
+  - marijuana_use
+  - polysubstance_use
+sessions: 145
+participants: unknown
+longitudinal: unknown
+annotations:
+  - speaker_labels
+  - turn_timings
+  - back_channels
+  - disfluencies
+  - therapist_empathy_rating
+transcript:
+  available: true
+audio:
+  available: true
+video:
+  available: false
+modalities:
+  - text
+  - audio
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: documented
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://www.isca-archive.org/interspeech_2019/nasir19_interspeech.pdf
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC9940777/
+publication_year: 2019
+historical_significance:
+  - real addiction-counseling sessions combining transcript, audio and MI-process annotation
+notes: >-
+  The corpus contains 145 therapist-patient interactions from ARC, ESPSB, ESB21, iCHAMP and HMCBI.
+  The published description says the interactions lasted 20 minutes to one hour, involved real
+  patients seeking treatment for substance addiction, and were recorded on tape and manually
+  transcribed. Therapist empathy was rated at the session level using the MITI framework.
+  The reviewed sources do not establish a public download route or dataset-specific license.
+last_verified: 2026-09-27
