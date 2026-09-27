@@ -1,0 +1,33 @@
+name: Removal request
+description: Ask for a record, video entry or detail to be removed. Requests from rights holders, dataset authors and anyone who appears in a listed resource are honoured without debate.
+title: '[REMOVAL] '
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        This form is public. Do not include personal details you do not want published; a short
+        description of your connection to the resource is enough. The registry holds metadata and
+        links only, so removal takes the entry out of the registry, not the resource off its host.
+  - type: input
+    id: item
+    attributes:
+      label: What should be removed
+      description: A dataset id, a video catalog id (for example youtube-XXXXXXXXXXX), or the page link.
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your connection to it
+      options:
+        - I appear in the resource
+        - I own or published the resource
+        - I am a dataset author
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else we should know
+      description: Optional. For example, whether a whole record or only one field should go.

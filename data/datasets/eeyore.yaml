@@ -47,9 +47,9 @@ license:
   notes: >-
     The dataset card metadata of all four Eeyore datasets, read through the Hugging Face API on
     2026-09-26, declares no license. The card text needs a login and was not read, so a license
-    stated only in the text cannot be ruled out. The released conversations derive from corpora with
-    their own terms, including HOPE, which the registry's HOPE record lists as released only under an access
-    agreement.
+    stated only in the text cannot be ruled out. The paper names four source corpora, each with its
+    own terms (see the HOPE, ESConv and AnnoMI records); how those terms apply to this release is not
+    stated on the pages read.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
@@ -75,9 +75,9 @@ notes: >-
   same plus profile), 1,605 model-generated preference pairs in eeyore_depression_generated_preference
   and 317 expert preference pairs in eeyore_depression_expert_preference. The 3,042 and 3,209 figures
   have not been reconciled; the extra rows may come from the segmentation, which is unconfirmed.
-  The paper says the instruction-tuning data places the profile in the system prompt and uses the
-  client's turns as the assistant messages, so the files likely contain source-corpus text,
-  including HOPE's; this was not checked because the files are gated. English is taken from the
+  The paper describes the instruction-tuning format as the profile in the system prompt with the
+  client's turns as the assistant messages. What text the released files contain was not checked,
+  because the files are gated. English is taken from the
   four source corpora named in the paper; the files were not opened. The paper reports IRB approval
   for its user studies with experts; it says nothing on review of the source data.
 last_verified: 2026-09-26

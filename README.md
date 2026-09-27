@@ -189,6 +189,13 @@ Do not submit therapy transcripts, PHI, participant identifiers, therapy recordi
 
 See `SECURITY.md`.
 
+## Notice
+
+- The registry is an independent research index. It is not affiliated with, endorsed by or acting for any dataset, publisher, platform or institution it lists, and names them only to describe them.
+- It holds metadata and links, never the resources themselves. Recording a resource here grants no right to use it; its own license or agreement governs any use.
+- Nothing here is legal advice. Check a resource's current terms, and your own ethics and legal obligations, before obtaining or using it.
+- Rights holders, dataset authors and anyone who appears in a listed resource can ask for a correction or removal through the [correction](https://github.com/Luisv8181/Global-Psychotherapy-Transcript-Data-Registry/issues/new?template=correction.yml) or [removal request](https://github.com/Luisv8181/Global-Psychotherapy-Transcript-Data-Registry/issues/new?template=removal.yml) forms. Removal requests are honoured without debate.
+
 ## Status
 
 **Early research infrastructure.** The registry is not a certification authority, privacy certification, legal opinion, IRB determination, or guarantee that a listed dataset remains available under the recorded terms.
