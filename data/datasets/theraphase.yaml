@@ -10,7 +10,9 @@ source_context: >-
   prompting to extract initial-stage information from comprehensive client information. The result
   supports comparison of client information across treatment stages and should not be treated as
   raw observed longitudinal therapy transcripts.
-geography: China
+geography:
+  countries:
+    - China
 languages:
   - zh
 language_context: original

@@ -9,7 +9,9 @@ source_context: >-
   Simulated CBT training sessions with three LLM-instantiated roles: a simulated patient grounded in
   DSM-5-TR clinical cases, a therapist-in-training, and an expert supervisor. The published dataset
   card describes both text dialogue and synthetic speech audio.
-geography: Italy
+geography:
+  countries:
+    - Italy
 languages:
   - it
 language_context: original

@@ -10,7 +10,9 @@ source_context: >-
   self-optimizing multi-agent framework. The paper states that a small amount of real anonymized
   counseling cases were used as seed data, while the released CFlowPsyD dialogues were synthesized
   through large language models.
-geography: China
+geography:
+  countries:
+    - China
 languages:
   - zh
 language_context: original
