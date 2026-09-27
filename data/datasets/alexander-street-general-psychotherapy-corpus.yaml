@@ -1,0 +1,73 @@
+id: alexander-street-general-psychotherapy-corpus
+title: "Alexander Street Counseling and Psychotherapy Transcripts: General Psychotherapy Corpus"
+canonical_url: https://alexanderstreet.com/products/counseling-and-psychotherapy-transcripts-series
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  An institutional subscription corpus of transcripts from real therapy and counseling sessions,
+  spanning multiple therapeutic approaches and including medication-management encounters.
+  Published computational studies describe the corpus as containing anonymized session transcripts.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - cognitive_behavioral_therapy
+  - psychoanalytic
+  - psychodynamic
+  - motivational_interviewing
+  - humanistic
+  - brief_relational
+  - medication_management
+sessions: 2354
+participants: unknown
+longitudinal: true
+annotations:
+  - patient_demographics
+  - session_numbers_when_available
+  - therapy_approach
+  - symptoms
+  - subjects
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+access:
+  level: institutional
+  requirements: Library subscription to Alexander Street's Counseling and Psychotherapy Transcripts series.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: Published studies describe the transcripts as anonymized; dataset-specific privacy and redistribution terms were not independently verified.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://alexanderstreet.com/products/counseling-and-psychotherapy-transcripts-series
+  supporting_publications:
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC4245387/
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC8455714/
+publication_year: 2014
+historical_significance:
+  - major subscription corpus used in early computational psychotherapy research
+notes: >-
+  Imel et al. describe a general corpus of 1,398 psychotherapy and drug-therapy transcripts,
+  approximately 2.0 million talk turns and 8.3 million word tokens, available by library
+  subscription. A later study reports 2,354 session transcripts and 514,118 talk turns in the
+  Alexander Street corpus. The count changed as the commercial collection expanded, so this record
+  preserves both reported snapshots rather than treating them as contradictory. The collection
+  includes sessions conducted across multiple approaches and may include more than one session for
+  some patients. Published descriptions indicate real therapy sessions, but the registry does not
+  infer exact collection dates for every transcript.
+last_verified: 2026-09-27
