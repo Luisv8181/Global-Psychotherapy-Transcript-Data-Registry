@@ -1,0 +1,71 @@
+id: university-counseling-center-2017-2020
+title: "University Counseling Center Psychotherapy Corpus, 2017-2020"
+canonical_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8810915/
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Real-world psychotherapy sessions recorded at a large western U.S. university counseling center
+  from September 2017 through March 2020. Treatment was provided by licensed staff and clinical
+  trainees. The corpus was collected for automated psychotherapy-skill assessment and is not publicly
+  shareable under the study's data-use restrictions.
+geography: United States
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - psychotherapy
+clinical_topics:
+  - depression
+  - anxiety
+  - substance_use
+  - relationship_concerns
+sessions: 4268
+participants: 1040
+longitudinal: true
+annotations:
+  - therapist_skill_assessment
+  - automated_performance_feedback
+transcript:
+  available: true
+audio:
+  available: true
+video:
+  available: false
+modalities:
+  - text
+  - audio
+access:
+  level: metadata-only
+  requirements: The published study states that the recordings and transcripts cannot be shared publicly because of confidentiality and consent restrictions; they were shared under a Data Use Agreement for the study.
+redistribution: prohibited
+license:
+  type: restricted_data_use_agreement
+  verified: true
+  source: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258639
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: documented
+ethics:
+  consent_documented: documented
+  ethics_review_documented: documented
+  data_use_agreement: true
+evidence:
+  primary_sources:
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC8810915/
+    - https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258639
+publication_year: 2021
+collection_start_year: 2017
+collection_end_year: 2020
+historical_significance:
+  - large longitudinal real-world psychotherapy corpus with explicit consent and restricted data sharing
+notes: >-
+  The study reports 5,097 recordings, of which 4,268 sessions were successfully processed, with a
+  mean duration of 49.77 minutes, more than 2.8 million utterances and 28 million words, and at
+  least 59 therapists and 1,040 clients. A later analysis of the same counseling-center dataset
+  reports 610 clients, 48 therapists and 2,974 sessions after excluding intake-only clients and
+  recording/processing errors. The differing counts reflect analysis subsets, not necessarily
+  separate datasets. The primary source states that the data cannot be shared publicly and were
+  shared under a study-specific Data Use Agreement.
+last_verified: 2026-09-27
