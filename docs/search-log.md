@@ -22,3 +22,8 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 
 | 2026-09-26 | Deep Research / web archives | psychotherapy transcripts 1900 1950 historical case dialogue Freud Jung Ferenczi journals | en/de | multiple primary/archival leads reviewed | freud-dora; freud-little-hans; jnmd-historical-archive; american-journal-insanity-archive | Claude session |
 | 2026-09-26 | Web search / institutional archives | historical psychotherapy dialogue 1800 1900 Anna O Balmanno Gartnavel Crichton Augusta Manhattan | en/de | multiple primary institutional and scholarly sources reviewed | anna-o-breuer; balmanno-asylum-anecdotes; gartnavel-dynamic-case-notes; crichton-royal-case-books; augusta-mental-health-patient-records; manhattan-state-hospital-case-books | Claude session |
+
+| 2026-09-27 | Web search / primary research papers | Alexander Street psychotherapy transcript corpus 1398 2354 sessions | en | 4 | alexander-street-general-psychotherapy-corpus | Claude session |
+| 2026-09-27 | Web search / primary research papers | UCLA UW couples therapy corpus 134 couples 574 sessions | en | 4 | couples-therapy-corpus | Claude session |
+| 2026-09-27 | Web search / primary research papers | motivational interviewing clinical trials corpus 145 real patient interactions | en | 4 | mi-clinical-trials-corpus | Claude session |
+| 2026-09-27 | Web search / primary research papers | university counseling center psychotherapy corpus 2017 2020 5097 recordings | en | 4 | university-counseling-center-2017-2020 | Claude session |
