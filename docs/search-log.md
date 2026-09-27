@@ -22,3 +22,10 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 
 | 2026-09-26 | Deep Research / web archives | psychotherapy transcripts 1900 1950 historical case dialogue Freud Jung Ferenczi journals | en/de | multiple primary/archival leads reviewed | freud-dora; freud-little-hans; jnmd-historical-archive; american-journal-insanity-archive | Claude session |
 | 2026-09-26 | Web search / institutional archives | historical psychotherapy dialogue 1800 1900 Anna O Balmanno Gartnavel Crichton Augusta Manhattan | en/de | multiple primary institutional and scholarly sources reviewed | anna-o-breuer; balmanno-asylum-anecdotes; gartnavel-dynamic-case-notes; crichton-royal-case-books; augusta-mental-health-patient-records; manhattan-state-hospital-case-books | Claude session |
+
+
+| 2026-09-27 | Web search / official project pages and dataset cards | MyMentorLLM psychotherapy dataset Italian 2100 sessions | it | 3 | mymentorllm | Claude session |
+| 2026-09-27 | Web search / official project pages and dataset cards | CPCD Psy-Chronicle 90000 counseling dialogue units 100 student profiles | zh | 4 | cpcd | Claude session |
+| 2026-09-27 | Web search / ACL Anthology and dataset card | TheraPhase CPsyCoun 400 pairs 800 sessions | zh | 3 | theraphase | Claude session |
+| 2026-09-27 | Web search / ACL Anthology | CFlowPsyD 1700 Chinese asynchronous counseling conversations | zh | 2 | cflowpsyd | Claude session |
+| 2026-09-27 | Web search / ACL Anthology | PsyChainD 10456 Chinese counseling dialogues | zh | 3 | psychaind | Claude session |
