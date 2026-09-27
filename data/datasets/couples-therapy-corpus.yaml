@@ -1,0 +1,62 @@
+id: couples-therapy-corpus
+title: "UCLA/UW Couples Therapy Corpus"
+canonical_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9940777/
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Real couples participating in a longitudinal marital-therapy clinical study. The corpus contains
+  recorded problem-solving interactions between spouses at multiple points during treatment; these
+  interactions were conducted without a therapist or research staff present during the recorded task.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - couples_therapy
+sessions: 574
+participants: 268
+longitudinal: true
+annotations:
+  - Social Support Interaction Rating System codes
+  - Couples Interaction Rating System codes
+  - session-level behavioral ratings
+  - longitudinal therapy outcome ratings
+transcript:
+  available: true
+audio:
+  available: true
+video:
+  available: true
+modalities:
+  - text
+  - audio
+  - video
+access:
+  level: unknown
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: documented
+  ethics_review_documented: documented
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC9940777/
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC5608311/
+publication_year: 2004
+historical_significance:
+  - longitudinal multimodal couples-therapy corpus with behavioral annotations and treatment outcomes
+notes: >-
+  The corpus originated in the UCLA/UW Couple Therapy Research Project. A later methodological
+  description reports 134 seriously and chronically distressed heterosexual couples and 574 recorded
+  sessions at three points over two years. The sessions contain spouse-to-spouse problem discussions,
+  with manual transcripts and audio-visual recordings, plus behavioral coding and treatment-outcome
+  measures. The recorded interaction is part of a therapy study but is not a therapist-client
+  dialogue in the narrow sense.
+last_verified: 2026-09-27
