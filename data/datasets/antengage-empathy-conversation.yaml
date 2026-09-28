@@ -1,0 +1,67 @@
+id: antengage-empathy-conversation
+title: "AntEngage Empathy Conversation Dataset"
+canonical_url: https://data.mendeley.com/datasets/c7d2mcp99w/1
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: counseling
+source_context: AI-synthesized empathy-focused emotional-support conversations generated for conversational AI and mental-health NLP research.
+languages:
+  - en
+language_context: original
+clinical_topics:
+  - caregiver_burnout
+  - grief
+  - loneliness
+  - workplace_stress
+  - parenting_challenges
+  - emotional_exhaustion
+sessions: 4008
+longitudinal: unknown
+annotations:
+  - automated_quality_verification
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+generation:
+  method: structured_synthetic_generation_pipeline
+  source_type: synthetic
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: The Mendeley Data record provides downloadable files and describes the dataset as open access.
+redistribution: conditional
+license:
+  type: CC-BY-SA-4.0
+  verified: true
+  source: https://huggingface.co/datasets/AntEngage/empathy-conversations
+  notes: The Mendeley record's description says CC BY 4.0, while its licence section displays CC BY-SA 4.0 and the linked Hugging Face dataset currently labels cc-by-sa-4.0. The conflict is preserved rather than silently reconciled.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: The Mendeley record states that no conversations were collected from real individuals and that the dataset contains no PII.
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://data.mendeley.com/datasets/c7d2mcp99w/1
+    - https://huggingface.co/datasets/AntEngage/empathy-conversations
+  supporting_publications: []
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - synthetic empathy-focused emotional-support corpus
+notes: >-
+  The Mendeley Data record, published 2026-08-07, reports 4,008 AI-synthesized multi-turn conversations
+  and 79,616 dialogue turns. It explicitly says no conversations were collected from real individuals.
+  This is an adjacent emotional-support resource rather than evidence of psychotherapy sessions with
+  clinicians. Because the Mendeley description and licence section disagree on the Creative Commons
+  variant, the registry preserves the conflict and does not treat redistribution as unconditionally allowed.
+last_verified: 2026-09-28
