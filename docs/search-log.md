@@ -32,3 +32,6 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-09-27 | Web search / primary research papers | UCLA UW couples therapy corpus 134 couples 574 sessions | en | 4 | couples-therapy-corpus | Claude session |
 | 2026-09-27 | Web search / primary research papers | motivational interviewing clinical trials corpus 145 real patient interactions | en | 4 | mi-clinical-trials-corpus | Claude session |
 | 2026-09-27 | Web search / primary research papers | university counseling center psychotherapy corpus 2017 2020 5097 recordings | en | 4 | university-counseling-center-2017-2020 | Claude session |
+| 2026-09-28 | ACL Anthology / OSF | German Counseling Grounding-Act Corpus GRACO 196 German counseling conversations | de | 1 paper; OSF blocked | graco | Claude session |
+| 2026-09-28 | Hugging Face / official GitHub / arXiv | Graph2Counsel 760 synthetic counseling sessions psychological graphs | en | 3 | graph2counsel | Claude session |
+| 2026-09-28 | Mendeley Data / Hugging Face | AntEngage Empathy Conversation Dataset 4008 synthetic conversations | en | 2 | antengage-empathy-conversation | Claude session |
