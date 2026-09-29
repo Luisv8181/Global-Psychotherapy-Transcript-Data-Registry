@@ -1,7 +1,7 @@
 id: esconv
 title: "ESConv: Emotional Support Conversation Dataset"
 canonical_url: https://github.com/thu-coai/Emotional-Support-Conversation
-status: partially-verified
+status: verified
 dataset_type: peer_support
 dialogue_structure: multi_turn
 domain: emotional_support
@@ -14,7 +14,7 @@ languages: [en]
 language_context: original
 therapy_modalities:
   - emotional_support
-sessions: 1300
+sessions: 1053
 longitudinal: false
 transcript:
   available: true
@@ -31,13 +31,13 @@ annotations:
   - post_conversation_survey
 access:
   level: open
-  requirements: None. Data file is in the public GitHub repository.
+  requirements: Academic research use only, according to the official repository.
 redistribution: conditional
 license:
   type: CC-BY-NC-4.0
   verified: true
   source: https://github.com/thu-coai/Emotional-Support-Conversation/blob/main/LICENSE
-  notes: The repository LICENSE file is CC BY-NC 4.0, while the README states "Copyright 2021 CoAI Group, Tsinghua University. All rights reserved. Data and codes are for academic research use only." Treat use as non-commercial research only.
+  notes: The repository license is CC BY-NC 4.0. Its README also states that data and code are for academic research use only.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
@@ -50,10 +50,17 @@ evidence:
 publication_year: 2021
 release_year: 2021
 historical_significance:
-  - widely used benchmark for emotional support dialogue generation
-  - strategy-annotated supporter turns based on a helping-skills framework
+  - early large-scale emotional-support dialogue benchmark with explicit supporter-strategy annotation
+  - important adjacent peer-support resource distinct from professional psychotherapy corpora
 notes: >-
-  Counted from ESConv.json on 2026-09-25, 1,300 conversations and 38,365 turns, of which 991
-  concern a current experience and 309 a previous one. In 2024 the authors added FailedESConv.json
-  with 196 conversations dropped during collection. The collection method is described in the ACL 2021 paper.
-last_verified: 2026-09-25
+  The 2021 paper reports 1,053 qualified conversations from 2,472 initially collected, 31,410 utterances,
+  and 854 workers. The current official repository README, checked on 2026-09-29, reports that ESConv
+  now contains 1,300 conversations and 10 topic problems after later collection updates; this record
+  uses the 1,053 conversations documented in the original paper because that is the primary publication's
+  quality-controlled release. The repository also contains 196 failed conversations added in 2024, but
+  those are not counted in the main sessions field. The paper explicitly defines the task as social
+  emotional support rather than professional counseling, so the registry classifies ESConv as
+  peer_support rather than real psychotherapy. Help-seekers reported that 75.2 percent of conversations
+  originated from their current experiences. The repository states that data and code are for academic
+  research use only.
+last_verified: 2026-09-29
