@@ -4,50 +4,65 @@ canonical_url: https://huggingface.co/datasets/UKPLab/Graph2Counsel
 status: verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
-domain: mental_health_counseling
-source_context: Synthetic counseling sessions generated from psychological graphs derived from anonymized real counseling sessions
-languages: [en]
+domain: psychotherapy
+source_context: Synthetic counseling sessions generated from Client Psychological Graphs derived from anonymised real counseling sessions, with synthetic client profiles and dialogues.
+languages:
+  - en
 language_context: English
 therapy_modalities:
   - counseling
 sessions: 760
-longitudinal: false
+longitudinal: true
 transcript:
   available: true
-  format:
-    - text
+audio:
+  available: false
+video:
+  available: false
 modalities:
   - text
 annotations:
   - client_psychological_graphs
   - counselor_strategies
+  - expert_clinician_evaluation
 generation:
   method: graph_grounded_synthetic_generation
-  source_type: anonymized_real_counseling_sessions
+  source_type: anonymised_real_counseling_sessions
   synthetic_profiles: true
   synthetic_dialogues: true
 access:
   level: open
+  requirements: The dataset is publicly loadable from Hugging Face. The official project repository also points to TUdatalib.
 redistribution: conditional
 license:
   type: CC-BY-SA-4.0
   verified: true
   source: https://huggingface.co/datasets/UKPLab/Graph2Counsel
-  notes: The license is recorded from the Hugging Face dataset card (license tag cc-by-sa-4.0, dataset not gated), confirmed through the Hugging Face API on 2026-09-25. The GitHub repository is licensed Apache 2.0, which covers the code, not the dataset.
+  notes: The Hugging Face dataset card labels the dataset cc-by-sa-4.0. The GitHub repository's Apache-2.0 license applies to the code and is not treated as the dataset license.
 privacy:
   deidentified: true
-  method: anonymized_source_graphs
-  contextual_reidentification_assessed: reported_by_source
+  contextual_reidentification_assessed: unknown
+  notes: The dataset card states that the underlying CPGs are derived from real counseling sessions and have been anonymised, while all client profiles and session dialogues are synthetically generated and do not correspond to real individuals.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
 evidence:
   primary_sources:
     - https://huggingface.co/datasets/UKPLab/Graph2Counsel
     - https://github.com/UKPLab/emnlp2026-graph2counsel
-    - https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/5071
     - https://arxiv.org/abs/2604.20382
+  supporting_publications: []
 publication_year: 2026
 release_year: 2026
 historical_significance:
-  - synthetic counseling generation grounded in structured psychological representations
-  - hybrid linkage between anonymized real-session structure and synthetic dialogue
-notes: Graph2Counsel contains 760 synthetic records according to its dataset card. Client psychological graphs and counselor strategies are derived from anonymized real counseling sessions, while client profiles and dialogue sessions are synthetically generated. The record is therefore classified as hybrid rather than direct real-session evidence.
-last_verified: 2026-09-24
+  - graph-grounded synthetic counseling generation using structured psychological representations
+notes: >-
+  The current Hugging Face dataset card reports 760 rows and describes each record as a synthetic
+  counseling session containing a Client Psychological Graph, a synthetically generated client profile,
+  counselor strategies and a generated dialogue. The card states that CPGs and counselor strategies
+  come from anonymised real counseling sessions, while profiles and dialogues are synthetic. The
+  dataset is therefore classified as hybrid under the registry taxonomy rather than real-session evidence.
+  The same primary dataset card currently labels the dataset CC BY-SA 4.0 and makes it loadable without
+  a gate. This supersedes the earlier registry entry's stale 2026-09-24 verification.
+last_verified: 2026-09-28

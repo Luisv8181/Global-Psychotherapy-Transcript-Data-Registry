@@ -1,0 +1,61 @@
+id: graco
+title: "German Counseling Grounding-Act Corpus (GRACO)"
+canonical_url: https://osf.io/6k275/overview
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: counseling
+source_context: Naturally occurring German counseling conversations between advice seekers and counselors, collected across nine counseling domains.
+languages:
+  - de
+language_context: original
+sessions: 196
+longitudinal: unknown
+annotations:
+  - grounding_acts
+  - acknowledgments
+  - repairs
+  - conversation_advancement_attempts
+  - conversation_advancement_success
+  - conversation_phases
+transcript:
+  available: true
+audio:
+  available: unknown
+video:
+  available: unknown
+modalities:
+  - text
+access:
+  level: open
+  requirements: The paper states that code and data are available through the linked OSF project; the OSF page itself could not be fetched during this verification pass.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: The reviewed primary publication establishes naturally occurring conversations but does not establish a dataset-specific privacy or de-identification claim.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2026.lrec-1.495/
+    - https://osf.io/6k275/overview
+  supporting_publications: []
+publication_year: 2026
+release_year: 2026
+historical_significance:
+  - German naturally occurring counseling dialogue with grounding-act and conversation-phase annotation
+notes: >-
+  The LREC 2026 paper reports 196 German counseling conversations totaling approximately 25,000 turns.
+  A subset of approximately 11,500 turns was double-annotated for grounding acts, attempts to advance
+  the conversation, advancement success, and conversation phases. The paper describes the conversations
+  as naturally occurring and says code and data are available at the linked OSF project. The OSF page
+  returned HTTP 403 in this verification pass, so dataset-specific license, redistribution, privacy,
+  consent, and ethics details remain unknown. The registry does not treat the ACL publication license
+  as a license for the dataset.
+last_verified: 2026-09-28
