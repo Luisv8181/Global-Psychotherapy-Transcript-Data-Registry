@@ -35,3 +35,4 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-09-28 | ACL Anthology / OSF | German Counseling Grounding-Act Corpus GRACO 196 German counseling conversations | de | 1 paper; OSF blocked | graco | Claude session |
 | 2026-09-28 | Hugging Face / official GitHub / arXiv | Graph2Counsel 760 synthetic counseling sessions psychological graphs | en | 3 | graph2counsel | Claude session |
 | 2026-09-28 | Mendeley Data / Hugging Face | AntEngage Empathy Conversation Dataset 4008 synthetic conversations | en | 2 | antengage-empathy-conversation | Claude session |
+| 2026-09-29 | GitHub official repository / ACL Anthology | ESConv Emotional Support Conversation dataset current 1300 conversations original 1053 qualified conversations | en | 2 | esconv | Codex |
