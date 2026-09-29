@@ -30,6 +30,15 @@ Archival source:
 
 ELIZA therefore occupies the taxonomy position computational therapeutic dialogue system / historical predecessor, not synthetic in the modern corpus sense. Its human-machine interactions may be represented as historical dialogue artifacts when primary evidence supports the specific artifact.
 
+### PARRY: computational simulation of a psychiatric patient
+
+PARRY is a distinct next step in the computational therapeutic-dialogue timeline. Kenneth Mark Colby, Franklin Dennis Hilf, Sylvia Weber and Helena C. Kraemer published a 1972 validation study of a computer simulation of paranoid processes. The study treated the system as a dialogue algorithm and evaluated it with Turing-like indistinguishability tests involving psychiatrists and comparisons with naturally occurring paranoid processes.
+
+Primary publication:
+- Colby, K. M., Hilf, F. D., Weber, S., & Kraemer, H. C. (1972), “Turing-like indistinguishability tests for the validation of a computer simulation of paranoid processes,” Artificial Intelligence, 3, 199–221. https://doi.org/10.1016/0004-3702(72)90049-5
+
+This should not be collapsed into the psychotherapy-dataset timeline. PARRY simulated a psychiatric patient rather than a therapist and therefore belongs in the computational-psychiatric-dialogue branch of the historical map. The primary publication is the evidence for the 1972 validation study; broader claims about later PARRY-ELIZA exchanges or source-code preservation require separate primary-source verification.
+
 ### Later synthetic and simulated dialogue resources
 
 The registry can now trace a documented modern progression from early rule-based therapeutic dialogue systems to published synthetic counseling corpora. Current examples include:
