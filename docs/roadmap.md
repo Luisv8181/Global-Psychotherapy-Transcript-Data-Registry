@@ -54,3 +54,19 @@
 The roadmap now treats discovery, historical mapping, modality research, longitudinal research, clinical-process research, cultural/linguistic research, privacy research, AI evaluation, research-gap mapping, and therapy-knowledge evolution as first-class registry functions.
 
 Temporal metadata and evidence provenance are foundational dependencies for these functions.
+## Privacy and metadata-linkage safety
+
+The registry is metadata-only, but metadata can become identifying through aggregation and external linkage. The long-term design must therefore treat re-identification risk as a property of the **map and its relationships**, not only of the underlying datasets.
+
+- [ ] Define a metadata-linkage risk framework for registry records
+- [ ] Distinguish dataset-level metadata from session-level and participant-level metadata
+- [ ] Document a minimum-necessary-metadata principle for sensitive clinical resources
+- [ ] Add review guidance for combinations that could create a mosaic/linkage risk (for example institution + dates + geography + unusual population + source media)
+- [ ] Audit dataset-to-publication, source-video, derived-corpus, institution, and geography links for unnecessary identity amplification
+- [ ] Define when granular metadata should remain unknown, be generalized, or be omitted
+- [ ] Add automated checks for prohibited direct identifiers and high-risk metadata patterns where practical
+- [ ] Develop a privacy/linkage-risk audit that complements, rather than replaces, source-level de-identification evidence
+- [ ] Document that public discoverability does not establish low re-identification risk
+- [ ] Explore the registry itself as a research testbed for metadata mosaic risk and privacy-preserving dataset discovery
+
+Design principle: **make the research landscape more discoverable without making individual clinical participants more discoverable.**
