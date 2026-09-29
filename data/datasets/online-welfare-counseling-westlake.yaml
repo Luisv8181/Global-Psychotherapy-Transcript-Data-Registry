@@ -27,18 +27,22 @@ annotations:
   - client_states
   - counseling_outcomes
 access:
-  level: unknown
-  requirements: unknown
+  level: restricted
+  requirements: >-
+    The authors' repository dll-wu/Client-Reactions (commit 4dcdb44) says the dataset cannot currently be
+    made public and that access requests go to the first author by email.
 redistribution: unknown
 license:
   type: unknown
   verified: false
+  notes: No license is stated in the repository README, and the dataset itself is not released.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
+    - https://github.com/dll-wu/Client-Reactions
     - https://aclanthology.org/2023.acl-long.577/
 publication_year: 2023
 notes: The authors report a large-scale, high-quality text-based counseling dataset collected over two years from an online welfare counseling platform. The cited paper studies counselor strategies, client reaction behaviors, and counseling outcomes. Session count, exact platform identity, access terms, licensing, and privacy controls require separate verification.
-last_verified: 2026-09-24
+last_verified: 2026-09-29

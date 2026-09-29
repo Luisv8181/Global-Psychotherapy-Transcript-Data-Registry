@@ -32,11 +32,19 @@ generation:
   source_dataset: CounselDialog-CN
   strategy_annotations: 211473
 access:
-  level: unknown
-redistribution: unknown
+  level: open
+  requirements: >-
+    The paper's data availability statement points to the ModelScope repository dlq1998/HCoT-Corpus,
+    a model repository that also holds All_merged_data.json (about 109 MB).
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: none-selected
+  verified: true
+  source: https://modelscope.cn/models/dlq1998/HCoT-Corpus
+  notes: >-
+    The ModelScope repository metadata (read through its API on 2026-09-29) has an empty license field,
+    and the README only asks users to follow this repository's and the base model's license agreements
+    without naming one. The repository mainly holds a LoRA adapter for Qwen2.5-7B-Instruct.
 privacy:
   deidentified: true
   method: source_data_auditing_and_desensitization
@@ -50,4 +58,4 @@ historical_significance:
   - large-scale multi-turn synthetic psychological support corpus
   - explicit analysis of simulation-reality gap
 notes: HCoT-Corpus contains 22,341 dialogues and 211,473 strategy annotations. The source explicitly notes that both roles are simulated by LLMs and that the corpus lacks many forms of resistance and ambiguity found in real clinical transcripts. It is therefore kept separate from observed counseling-session evidence.
-last_verified: 2026-09-24
+last_verified: 2026-09-29

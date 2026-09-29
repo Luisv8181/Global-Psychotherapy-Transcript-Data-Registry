@@ -1,6 +1,6 @@
 id: freud-little-hans
 title: "Analysis of a Phobia in a Five-Year-Old Boy (Little Hans)"
-canonical_url: https://www.gutenberg.org/ebooks/43256
+canonical_url: https://www.freudedition.net/werke/freud-sigmund/analyse-der-phobie-eines-funfjahrigen-knaben
 status: partially-verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
@@ -22,10 +22,15 @@ video:
   available: false
 access:
   level: open
-redistribution: conditional
+redistribution: prohibited
 license:
-  type: unknown
-  verified: false
+  type: custom
+  verified: true
+  source: https://www.freudedition.net/index.php/node/252490
+  notes: >-
+    The Sigmund Freud Edition's rights page, read on 2026-09-29, allows searching, quoting and linking
+    for personal and research use and forbids copying or republishing the edition's data. Freud's
+    writings themselves have been public domain since 2010, and later translations have their own rights.
 privacy:
   deidentified: true
   contextual_reidentification_assessed: unknown
@@ -39,9 +44,13 @@ ethics:
   data_use_agreement: false
 evidence:
   primary_sources:
-    - "https://www.gutenberg.org/ebooks/43256"
+    - https://www.freudedition.net/werke/freud-sigmund/analyse-der-phobie-eines-funfjahrigen-knaben
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 notes: >-
-  Historical dialogue resource. Rights for a digitized public-domain edition and rights for
-  later scholarly translations should be evaluated separately before redistribution.
+  Historical dialogue resource. Rights for a digitized public-domain edition and rights for later
+  scholarly translations should be evaluated separately before redistribution. Correction on
+  2026-09-29. The record previously linked Project Gutenberg ebook 43256, which is an unrelated
+  novel (Witches Cove); Project Gutenberg's list of Freud's works has no edition of this case. The
+  link now points to the Sigmund Freud Edition's page for the 1909 work, which on 2026-09-29 offered
+  a finished facsimile but no edited text.

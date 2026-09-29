@@ -37,11 +37,15 @@ generation:
 access:
   level: open
   requirements: None reported. Published as a Hugging Face dataset.
-redistribution: unknown
+redistribution: allowed
 license:
-  type: unknown
-  verified: false
-  notes: The GitHub repository is MIT-licensed, which covers its code. The dataset's own license on Hugging Face has not been read here.
+  type: MIT
+  verified: true
+  source: https://huggingface.co/datasets/ShenLab/MentalChat16K
+  notes: >-
+    The Hugging Face dataset card declares license mit (read through the Hub API and the card's
+    front matter on 2026-09-29). The GitHub repository's MIT LICENSE (copyright PennShenLab) covers its
+    code. The interview component is paraphrased from a clinical trial's caregiver interviews.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
@@ -62,4 +66,4 @@ notes: >-
   and 88% identify as White, with fewer than 1% Hispanic. The real component is paraphrased
   question-answer pairs, not full session transcripts, so it is not counted as real-session data.
   The trial's country is not stated in the README. The README's dataset citation is dated 2024; the paper appeared in KDD 2025 (ACM) and on PMC.
-last_verified: 2026-09-25
+last_verified: 2026-09-29

@@ -28,10 +28,12 @@ annotations:
 access:
   level: open
   requirements: The official repository links the public dataset at https://huggingface.co/datasets/jina005/phase_mi.
-redistribution: unknown
+redistribution: allowed
 license:
-  type: unknown
-  verified: false
+  type: Apache-2.0
+  verified: true
+  source: https://huggingface.co/datasets/jina005/phase_mi
+  notes: The Hugging Face dataset card declares apache-2.0 (read on 2026-09-29). The GitHub repository has no license file.
 privacy:
   deidentified: not_applicable_to_synthetic_generation
   contextual_reidentification_assessed: unknown
@@ -48,5 +50,11 @@ publication_year: 2026
 release_year: 2026
 historical_significance:
   - phase_structured_synthetic_motivational_interviewing
-notes: The ACL 2026 paper introduces PhaseMI as a phase-structured MI dataset and describes a generation framework using therapist, client and supervisor LLMs to control phase transitions. The official repository, opened on 2026-09-26, links the public dataset and the ACL paper. The reviewed primary sources do not establish the dataset's exact size, language, license, or redistribution terms, so those fields remain unknown. It is not counted as direct observed psychotherapy-session evidence.
-last_verified: 2026-09-26
+notes: >-
+  The ACL 2026 paper introduces PhaseMI as a phase-structured MI dataset and describes a generation
+  framework using therapist, client and supervisor LLMs to control phase transitions. The official
+  repository, opened on 2026-09-26, links the public dataset and the ACL paper. The reviewed primary
+  sources do not establish the dataset's exact size, language or redistribution terms, so those
+  fields remain unknown. It is not counted as direct observed psychotherapy-session evidence. The
+  license was read from the dataset card on 2026-09-29.
+last_verified: 2026-09-29

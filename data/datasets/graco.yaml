@@ -5,7 +5,12 @@ status: partially-verified
 dataset_type: real
 dialogue_structure: multi_turn
 domain: counseling
-source_context: Naturally occurring German counseling conversations between advice seekers and counselors, collected across nine counseling domains.
+source_context: >-
+  Naturally occurring German institutional counseling conversations between advice seekers and
+  counselors, transcribed from existing spoken-German corpora. The OSF data statement lists nine
+  domains (immigration office, financial, sales, legal, medical, health insurance, social and
+  private counseling, and study advising), so most conversations are advice-giving encounters rather
+  than psychotherapy or mental-health counseling.
 languages:
   - de
 language_context: original
@@ -28,15 +33,26 @@ modalities:
   - text
 access:
   level: open
-  requirements: The paper states that code and data are available through the linked OSF project; the OSF page itself could not be fetched during this verification pass.
-redistribution: unknown
+  requirements: >-
+    Public OSF project. Per its data statement, only transcripts from the non-DGD subset are
+    distributed; transcripts from the Datenbank für Gesprochenes Deutsch stay under that source's
+    own access terms.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: mixed
+  verified: true
+  source: https://osf.io/download/k6cma/
+  notes: >-
+    LICENSE.txt on the OSF project, read on 2026-09-29, applies CC BY 4.0 only to the annotation
+    layers, metadata and documentation. It states that the underlying source transcripts remain under
+    their original corpora's licenses and access conditions (for example DGD) and are not relicensed.
 privacy:
-  deidentified: unknown
+  deidentified: documented
   contextual_reidentification_assessed: unknown
-  notes: The reviewed primary publication establishes naturally occurring conversations but does not establish a dataset-specific privacy or de-identification claim.
+  notes: >-
+    The OSF data statement says the original source corpora were anonymized by their curators, that
+    age, gender and first language were anonymized and not systematically collected, and that audio and
+    video are not shared for privacy and legal reasons.
 ethics:
   consent_documented: unknown
   ethics_review_documented: unknown
@@ -51,11 +67,13 @@ release_year: 2026
 historical_significance:
   - German naturally occurring counseling dialogue with grounding-act and conversation-phase annotation
 notes: >-
-  The LREC 2026 paper reports 196 German counseling conversations totaling approximately 25,000 turns.
-  A subset of approximately 11,500 turns was double-annotated for grounding acts, attempts to advance
-  the conversation, advancement success, and conversation phases. The paper describes the conversations
-  as naturally occurring and says code and data are available at the linked OSF project. The OSF page
-  returned HTTP 403 in this verification pass, so dataset-specific license, redistribution, privacy,
-  consent, and ethics details remain unknown. The registry does not treat the ACL publication license
-  as a license for the dataset.
-last_verified: 2026-09-28
+  The LREC 2026 paper reports 196 German counseling conversations totaling approximately 25,000
+  turns. A subset of approximately 11,500 turns was double-annotated for grounding acts, attempts to
+  advance the conversation, advancement success, and conversation phases. The paper describes the
+  conversations as naturally occurring and says code and data are available at the linked OSF
+  project. On 2026-09-29 the OSF project was read through the OSF API (README.md, LICENSE.txt and
+  DATA_STATEMENT_GRACO.md). The data statement confirms the counts, says the conversations are
+  mainly face-to-face with some telephone, radio and video counseling, and says each involves at
+  least one counselor and one client. Consent and ethics review are not stated in the files read.
+  The registry does not treat the ACL publication license as a license for the dataset.
+last_verified: 2026-09-29

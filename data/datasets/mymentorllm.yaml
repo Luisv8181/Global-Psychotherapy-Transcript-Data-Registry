@@ -45,8 +45,10 @@ generation:
   source_type: DSM-5-TR-grounded clinical vignettes
   synthetic_dialogues: true
 access:
-  level: open
-  requirements: Public Hugging Face dataset card; the currently reachable card used for verification is a test/viewer dataset page and the underlying full audio artifact is very large.
+  level: unknown
+  requirements: >-
+    The Hugging Face page recorded as canonical returned HTTP 401 on 2026-09-29 and the Hub API returned
+    no dataset, so it is private, moved or removed. No other release location was found.
 redistribution: conditional
 license:
   type: unknown
@@ -68,10 +70,12 @@ release_year: 2026
 historical_significance:
   - multimodal deliberate-practice simulation integrating trainee supervision
 notes: >-
-  The dataset card reports 2,100 simulated CBT sessions, 65,100 dialogue turns and 27,900 FLAC
-  audio clips, with 263.4 hours of synthetic speech audio. The accompanying paper describes a
-  multimodal voice/text simulation environment linking a DSM-5-TR-grounded simulated patient,
-  therapist-in-training and expert supervisor. Seven model/modality conditions are described in the
-  dataset card. The accessible dataset page used for verification is a test/viewer page, so the
-  definitive release location should be rechecked. No real patient sessions are claimed.
+  The dataset card reports 2,100 simulated CBT sessions, 65,100 dialogue turns and 27,900 FLAC audio
+  clips, with 263.4 hours of synthetic speech audio. The accompanying paper describes a multimodal
+  voice/text simulation environment linking a DSM-5-TR-grounded simulated patient, therapist-in-
+  training and expert supervisor. Seven model/modality conditions are described in the dataset card.
+  The accessible dataset page used for verification is a test/viewer page, so the definitive release
+  location should be rechecked. No real patient sessions are claimed. On 2026-09-29 the recorded
+  Hugging Face page was no longer publicly reachable (HTTP 401), so access is now unknown and the
+  license could not be read.
 last_verified: 2026-09-27

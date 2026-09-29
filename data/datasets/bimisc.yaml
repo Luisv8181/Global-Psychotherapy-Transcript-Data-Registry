@@ -33,8 +33,15 @@ privacy:
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
+    - https://github.com/XIN-von-SUN/Eliciting-MISC-in-Psychotherapy-with-LLMs
     - https://aclanthology.org/2024.lrec-main.498/
     - https://ir.cwi.nl/pub/34266
 publication_year: 2024
-notes: The publication explicitly describes BiMISC as a bilingual English-Dutch dataset sourced from real counseling sessions and expert-annotated using the MISC scheme. Session count and access terms are not asserted here because the cited primary sources do not establish them.
+notes: >-
+  The publication explicitly describes BiMISC as a bilingual English-Dutch dataset sourced from real
+  counseling sessions and expert-annotated using the MISC scheme. Session count and access terms are
+  not asserted here because the cited primary sources do not establish them. The repository named in
+  the paper (XIN-von-SUN/Eliciting-MISC-in-Psychotherapy-with-LLMs, last commit 2024-04-01, checked
+  on 2026-09-29) contains only a README saying more content will come soon, so no data or license
+  has been released there.
 last_verified: 2026-09-24

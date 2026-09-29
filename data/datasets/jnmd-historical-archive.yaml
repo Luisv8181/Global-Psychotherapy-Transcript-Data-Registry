@@ -18,10 +18,17 @@ video:
   available: false
 access:
   level: open
+  requirements: >-
+    Mixed. Per HathiTrust rights data on 2026-09-29, 245 of 315 digitized volumes are full view and 70
+    are search-only.
 redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: mixed
+  verified: true
+  source: https://catalog.hathitrust.org/api/volumes/brief/recordnumber/006707054.json
+  notes: >-
+    HathiTrust's rights codes for the 315 volumes, read on 2026-09-29, are pd for 243, pdus (public
+    domain in the US only) for 2, und (undetermined) for 61 and ic (in copyright) for 9.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
@@ -37,7 +44,7 @@ evidence:
   primary_sources:
     - "https://catalog.hathitrust.org/Record/006707054"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 notes: >-
   Treat as a historical archive/resource rather than a psychotherapy transcript dataset.
   The historical search established HathiTrust full-view volumes beginning in 1900 and extending

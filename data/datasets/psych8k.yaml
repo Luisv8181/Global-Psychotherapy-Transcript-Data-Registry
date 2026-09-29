@@ -32,18 +32,27 @@ generation:
   source_type: real_counseling_recording_transcripts
   synthetic_dialogues: false
 access:
-  level: unknown
-  requirements: unknown
-redistribution: unknown
+  level: registration
+  requirements: >-
+    Hugging Face dataset EmoCareAI/Psych8k, gated with manual approval by the dataset owner. The card
+    text is behind the gate and was not read.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
-  notes: The repository's Apache 2.0 badge is labelled Code License. No dataset license or download location for Psych8k is stated in the README.
+  type: CC-BY-NC-SA-4.0
+  verified: true
+  source: https://huggingface.co/api/datasets/EmoCareAI/Psych8k
+  notes: >-
+    The Hugging Face card metadata declares cc-by-nc-sa-4.0 (read through the Hub API on 2026-09-29).
+    The GitHub repository's Apache 2.0 license is labelled as the code license. The only data file is
+    named Alexander_Street_shareGPT_2.0.json. Whether the conversations come from Alexander Street's
+    subscription transcripts, and whether those terms permit this release, was not confirmed from any
+    page read here.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
+    - https://huggingface.co/datasets/EmoCareAI/Psych8k
     - https://github.com/EmoCareAI/ChatPsychiatrist
 publication_year: null
 historical_significance:
@@ -52,5 +61,7 @@ notes: >-
   The README gives the session count as approximately 260 real conversations, so the value is
   approximate. It does not identify where the recordings came from, whether clients consented to
   derivative use, or whether the 8,187 pairs are downloadable; the source recordings are not
-  released. A separate 229-question Counselling Bench is included for evaluation.
-last_verified: 2026-09-25
+  released. A separate 229-question Counselling Bench is included for evaluation. The
+  ChatPsychiatrist README (2024-03-12 update) says Psych8k is available on Hugging Face, where it
+  was found gated with manual approval on 2026-09-29.
+last_verified: 2026-09-29

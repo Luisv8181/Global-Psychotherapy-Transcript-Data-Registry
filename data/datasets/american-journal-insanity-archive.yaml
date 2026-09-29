@@ -20,8 +20,13 @@ access:
   level: open
 redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: public-domain-reported
+  verified: true
+  source: https://catalog.hathitrust.org/api/volumes/brief/recordnumber/000681155.json
+  notes: >-
+    HathiTrust's rights data, read through its volumes API on 2026-09-29, gives all 217 digitized
+    volumes the rights code pd (public domain) with full view. HathiTrust's own terms for downloading
+    Google-digitized volumes were not read.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
@@ -36,7 +41,7 @@ evidence:
   primary_sources:
     - "https://catalog.hathitrust.org/Record/000681155"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 notes: >-
   Historical clinical archive, not a verified psychotherapy transcript corpus. Individual issues
   and articles should be screened for dialogue before use in transcript-oriented research.

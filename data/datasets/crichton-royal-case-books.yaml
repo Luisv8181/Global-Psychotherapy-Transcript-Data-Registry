@@ -24,8 +24,13 @@ access:
   level: open
 redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://api.wellcomecollection.org/catalogue/v2/works/vbqzb7wf
+  notes: >-
+    Counted through the Wellcome Collection catalogue API on 2026-09-29. Of 236 volumes in the six
+    case-book series, 121 are digitized under CC BY-NC 4.0 (97 open to view online and 24 open with an
+    advisory); the other 115 have no digital copy or license and are listed as not requestable online.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
@@ -42,7 +47,7 @@ evidence:
     - "https://wellcomecollection.org/works/vbqzb7wf"
     - "https://wellcomecollection.org/works/wpbpjymq"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 notes: >-
   The Wellcome collection contains Crichton Royal Institution Case Books, Southern Counties Asylum
   Case Books, Male Case Books, Female Case Books, Chronic Case Books and Other Case Books covering

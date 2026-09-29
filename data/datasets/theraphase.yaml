@@ -37,10 +37,15 @@ generation:
 access:
   level: open
   requirements: Public Hugging Face dataset page.
-redistribution: unknown
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: none-selected
+  verified: true
+  source: https://huggingface.co/datasets/UTSNLPGroup/TheraPhase
+  notes: >-
+    The dataset card, read in full on 2026-09-29, has no license field and no license text. The data
+    are derived from CPsyCounD, which is CC BY 4.0 (see the cpsycound record); how that applies to this
+    derivative is not stated.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
@@ -68,6 +73,6 @@ notes: >-
   and that GPT-4 was used in a 5-shot prompt to extract initial-stage information from comprehensive
   client information. This establishes a derived relationship to CPsyCounD, but does not establish
   that the 800 sessions are observed real therapy encounters. The current Hugging Face page reports
-  9,216 rows and 1.36 MB total file size. Dataset-specific license and privacy terms were not
-  established in this pass.
-last_verified: 2026-09-27
+  9,216 rows and 1.36 MB total file size. Privacy terms were not established. No license was
+  selected on the dataset card as of 2026-09-29.
+last_verified: 2026-09-29

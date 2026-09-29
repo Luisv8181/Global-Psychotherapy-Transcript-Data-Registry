@@ -24,10 +24,17 @@ video:
   available: false
 access:
   level: open
-redistribution: conditional
+redistribution: prohibited
 license:
-  type: unknown
-  verified: false
+  type: custom
+  verified: true
+  source: https://www.freudedition.net/index.php/node/252490
+  notes: >-
+    The Sigmund Freud Edition's rights page (Rechte, version of 2026-06-11), read on 2026-09-29, says
+    Freud's writings have been public domain since 2010 but the edition's transcriptions, apparatus and
+    registers are copyrighted by its editors. It allows searching, quoting and linking for personal and
+    research use, and forbids copying and republishing its data or building another edition from it.
+    Breuer's original 1895 text is a separate question from this edition's rights.
 privacy:
   deidentified: true
   contextual_reidentification_assessed: unknown
@@ -43,7 +50,7 @@ evidence:
   primary_sources:
     - "https://www.freudedition.net/werke/observation-i-miss-anna-o/druckschrift"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 notes: >-
   The digital scholarly edition identifies the case as "Observation I. Miss Anna O. (Breuer)"
   and dates the illness from 1880, with the described course continuing through June 1882.

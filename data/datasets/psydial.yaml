@@ -26,11 +26,19 @@ generation:
   average_turns_per_dialogue: 37.8
 access:
   level: open
-  requirements: none reported
-redistribution: unknown
+  requirements: >-
+    PsyDial-D1 to D4 and D101 are open on Hugging Face. PsyDial-D0_m is gated with manual approval by
+    the dataset owner.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: Apache-2.0
+  verified: true
+  source: https://huggingface.co/datasets/qiuhuachuan/PsyDial-D1
+  notes: >-
+    Sources disagree. All six Hugging Face dataset cards (D0_m, D1, D2, D3, D4, D101) declare
+    apache-2.0, read through the Hub API on 2026-09-29. The GitHub repository qiuhuachuan/PsyDial
+    (commit ac09445) carries a CC0 1.0 LICENSE file. The dataset cards, where the data lives, are
+    recorded here; the conflict is unresolved.
 privacy:
   deidentified: true
   method: privacy_preserving_reconstruction
@@ -45,4 +53,4 @@ historical_significance:
   - privacy-preserving reconstruction of long-term counseling dialogue
   - derived mental-health dialogue corpus
 notes: PsyDial is explicitly described by the authors as a semi-real Chinese-language dataset created by reconstructing real-world, long-term counseling dialogues. It should not be counted as a direct real-session transcript corpus because the released dialogue is reconstructed rather than the original observed interaction. The registry therefore keeps it in a derived/hybrid population and links it to the real-world source context.
-last_verified: 2026-09-24
+last_verified: 2026-09-29

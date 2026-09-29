@@ -24,12 +24,17 @@ annotations:
   - simulated_self_reports
   - trajectory_labels
 access:
-  level: unknown
-  requirements: The arXiv paper links the public dataset at https://huggingface.co/datasets/hiddensev/LongCounsel-8.
-redistribution: unknown
+  level: open
+  requirements: None. Public Hugging Face dataset hiddensev/LongCounsel-8, not gated.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/hiddensev/LongCounsel-8/blob/main/LICENSE
+  notes: >-
+    The dataset's LICENSE file and card, read on 2026-09-29, license the authors' original contributions
+    under CC BY-NC 4.0. The card says third-party source material stays under its own terms and that raw
+    RealCBT sessions are not redistributed.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
@@ -49,4 +54,4 @@ notes: >-
   than observed counseling-session evidence. The reviewed primary source does not establish the
   dataset license, redistribution terms, or exact released data-access conditions; those fields
   remain unknown.
-last_verified: 2026-09-26
+last_verified: 2026-09-29

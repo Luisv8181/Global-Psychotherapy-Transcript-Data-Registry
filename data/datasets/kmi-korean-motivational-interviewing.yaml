@@ -28,11 +28,14 @@ generation:
   theory: motivational_interviewing
   expert_grounding: professional_therapist_expertise
 access:
-  level: unknown
-redistribution: unknown
+  level: open
+  requirements: None. kmi.json is in the public GitHub repository hjkim811/KMI.
+redistribution: allowed
 license:
-  type: unknown
-  verified: false
+  type: CC-BY-4.0
+  verified: true
+  source: https://github.com/hjkim811/KMI/blob/main/LICENSE
+  notes: The repository's LICENSE file (commit 1134c98, read on 2026-09-29) is CC BY 4.0, copyright Hyunjong Kim. The repository holds the data file kmi.json and no code, so the license covers the data.
 privacy:
   deidentified: not_applicable
   contextual_reidentification_assessed: not_applicable
@@ -45,4 +48,4 @@ historical_significance:
   - Korean synthetic psychotherapy dialogue corpus
   - theory-grounded motivational interviewing simulation
 notes: The authors describe KMI as a synthetic dataset of 1,000 Korean motivational interviewing dialogues generated with LLMs and grounded in professional therapist expertise. It should be analyzed separately from observed clinical-session corpora.
-last_verified: 2026-09-24
+last_verified: 2026-09-29
