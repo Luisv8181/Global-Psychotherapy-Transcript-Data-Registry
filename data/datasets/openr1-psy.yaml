@@ -1,0 +1,77 @@
+id: openr1-psy
+title: "OpenR1-Psy"
+canonical_url: https://github.com/Emo-gml/PsyLLM
+status: verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: mental_health_counseling
+source_context: >-
+  Multi-turn psychological counseling dialogues generated from real-world mental-health posts drawn from
+  three publicly available research datasets. The pipeline transforms source posts with LLM-based diagnostic
+  and therapeutic reasoning, producing counseling dialogues with reasoning traces rather than preserving the
+  original human counseling interaction as a session transcript.
+geography: null
+languages:
+  - zh
+language_context: Chinese
+therapy_modalities:
+  - cognitive_behavioral_therapy
+  - acceptance_commitment_therapy
+  - psychodynamic
+  - humanistic
+  - integrative
+sessions: 19302
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+audio:
+  available: false
+video:
+  available: false
+annotations:
+  - diagnostic_reasoning
+  - therapeutic_reasoning
+  - dsm_icd_alignment
+  - therapy_framework
+  - quality_filtering
+access:
+  level: open
+  requirements: Public dataset repository
+redistribution: conditional
+license:
+  type: MIT
+  verified: true
+  source: https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy
+  notes: The dataset host identifies the released OpenR1-Psy dataset as MIT. The source Reddit-derived research datasets retain their own licenses and usage requirements.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The project states that source posts come from public research datasets and that OpenR1-Psy is generated from
+    those posts. The checked sources do not establish a separate participant-level de-identification method or
+    contextual re-identification assessment for the resulting corpus.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://github.com/Emo-gml/PsyLLM
+    - https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy
+    - https://arxiv.org/abs/2505.15715
+  supporting_publications: []
+publication_year: 2025
+release_year: 2025
+historical_significance:
+  - large Chinese counseling resource combining generated dialogue with explicit diagnostic and therapeutic reasoning traces
+  - example of hybrid corpus construction from existing public mental-health datasets
+notes: >-
+  The official project repository states that OpenR1-Psy is constructed from Reddit posts derived from the LRF,
+  Identifying Depression and Dreaddit research datasets, then transformed with LLM-based diagnostic and therapeutic
+  reasoning. The current dataset host reports 19,302 rows/dialogues, with 18.9k train and 450 test examples. The
+  dataset host reports Chinese language and an MIT license. Because the corpus is generated from human-source posts,
+  it is classified as hybrid rather than synthetic under the registry's provenance taxonomy. The source datasets'
+  individual licenses and terms remain relevant to downstream use.
+last_verified: 2026-09-30
