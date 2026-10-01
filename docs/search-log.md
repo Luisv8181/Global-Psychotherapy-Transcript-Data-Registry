@@ -40,3 +40,6 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-09-30 | Web search / primary paper | Psy-Insight Chinese English counseling dialogue dataset psychotherapy annotations | zh/en | 1 paper; dataset host not established | psy-insight lead only; not added | Codex |
 | 2026-09-30 | Web search / primary paper | MEDIC multimodal counseling empathy video dataset 771 clips provenance | en | 1 paper; provenance/classification unresolved | medic lead only; not added | Codex |
 | 2026-09-30 | Web search / primary paper | CALM-IT synthetic motivational interviewing dataset generation framework | en | 1 paper; released dataset access/license not established | calm-it lead only; not added | Codex |
+| 2026-10-01 | Web search / official GitHub repository | CPsDD Chinese psychological support dialogue 68,136 dialogues PGSim | zh | 1 | cpsdd | Codex |
+| 2026-10-01 | Web search / ACL Anthology + official GitHub repository | StoryMI 6K simulated motivational interviewing dialogues; rechecked existing registry record | en/unknown | 2 | storymi | Codex |
+| 2026-10-01 | Web search / official GitHub repository | SocialSim 3,229 emotional support dialogues; provenance/generation method not explicit enough for classification | zh/unknown | 1 | socialsim lead only; not added | Codex |
