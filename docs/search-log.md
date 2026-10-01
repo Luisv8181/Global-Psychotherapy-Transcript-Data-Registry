@@ -35,3 +35,8 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-09-28 | ACL Anthology / OSF | German Counseling Grounding-Act Corpus GRACO 196 German counseling conversations | de | 1 paper; OSF blocked | graco | Claude session |
 | 2026-09-28 | Hugging Face / official GitHub / arXiv | Graph2Counsel 760 synthetic counseling sessions psychological graphs | en | 3 | graph2counsel | Claude session |
 | 2026-09-28 | Mendeley Data / Hugging Face | AntEngage Empathy Conversation Dataset 4008 synthetic conversations | en | 2 | antengage-empathy-conversation | Claude session |
+| 2026-09-30 | Web search / official project repository and paper | OnCoCo German synthetic psychosocial counseling dataset human review license | de/en | 2 | oncoco | Codex |
+| 2026-09-30 | Web search / official project repository and dataset host | OpenR1-Psy Chinese counseling dialogues derived from research datasets LLM generation MIT | zh | 2 | openr1-psy | Codex |
+| 2026-09-30 | Web search / primary paper | Psy-Insight Chinese English counseling dialogue dataset psychotherapy annotations | zh/en | 1 paper; dataset host not established | psy-insight lead only; not added | Codex |
+| 2026-09-30 | Web search / primary paper | MEDIC multimodal counseling empathy video dataset 771 clips provenance | en | 1 paper; provenance/classification unresolved | medic lead only; not added | Codex |
+| 2026-09-30 | Web search / primary paper | CALM-IT synthetic motivational interviewing dataset generation framework | en | 1 paper; released dataset access/license not established | calm-it lead only; not added | Codex |
