@@ -1,0 +1,30 @@
+id: cpsdd
+title: "CPsDD: Chinese Psychological Support Dialogue Dataset"
+canonical_url: https://github.com/FakerBoom/CPsDD
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+languages:
+  - zh
+sessions: 68136
+transcript:
+  available: true
+access:
+  level: open
+redistribution: unknown
+license:
+  type: none-selected
+  verified: true
+  source: https://github.com/FakerBoom/CPsDD
+evidence:
+  primary_sources:
+    - https://github.com/FakerBoom/CPsDD
+publication_year: 2026
+release_year: 2026
+last_verified: 2026-10-01
+notes: >-
+  Official repository reports 68,136 Chinese psychological support dialogues and
+  describes PGSim path-guided generation using expert-annotated seed material,
+  model-based dialogue generation and filtering. The repository states research-only
+  release but does not select a standard license. Redistribution remains unknown.
