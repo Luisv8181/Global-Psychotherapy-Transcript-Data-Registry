@@ -40,3 +40,5 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-09-30 | Web search / primary paper | Psy-Insight Chinese English counseling dialogue dataset psychotherapy annotations | zh/en | 1 paper; dataset host not established | psy-insight lead only; not added | Codex |
 | 2026-09-30 | Web search / primary paper | MEDIC multimodal counseling empathy video dataset 771 clips provenance | en | 1 paper; provenance/classification unresolved | medic lead only; not added | Codex |
 | 2026-09-30 | Web search / primary paper | CALM-IT synthetic motivational interviewing dataset generation framework | en | 1 paper; released dataset access/license not established | calm-it lead only; not added | Codex |
+| 2026-10-02 | GitHub official project repository / ACL Anthology | KokoroChat Japanese counseling dialogue role-play provenance 6589 | ja | 2 | kokorochat | Codex |
+| 2026-10-02 | GitHub official derivative repository | Multilingual KokoroChat translation lineage English and Chinese | ja/en/zh | 1 | multilingual-kokorochat lead; not added because current primary repository identity/license evidence was not sufficiently resolved | Codex |
