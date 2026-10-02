@@ -2,7 +2,7 @@ id: kokorochat
 title: KokoroChat
 canonical_url: https://github.com/UEC-InabaLab/KokoroChat
 status: verified
-dataset_type: hybrid
+dataset_type: demonstration
 dialogue_structure: multi_turn
 source_context: clinician_roleplay
 geography:
@@ -16,6 +16,13 @@ dialects: []
 cultural_contexts: [Japanese counseling context]
 sessions: 6589
 longitudinal: false
+therapy_modalities:
+  - psychological_counseling
+annotations:
+  - 20-dimension client feedback
+  - ethical concern flags
+  - speaker role labels
+  - message timestamps
 access:
   level: open
 redistribution: conditional
@@ -31,4 +38,12 @@ evidence:
     - https://github.com/UEC-InabaLab/KokoroChat
   supporting_publications:
     - https://aclanthology.org/2025.acl-long.608/
-last_verified: 2026-09-24
+last_verified: 2026-10-02
+notes: >-
+  Corrected from hybrid to demonstration after re-reading the official repository and ACL 2025
+  publication. The project describes KokoroChat as a Japanese counseling dialogue dataset collected
+  through role-play, with trained counselors simulating counselor-client interactions. The paper
+  likewise describes the interactions as role-playing rather than naturally occurring clinical
+  sessions. The 6,589 dialogue count is the project-reported collection size. The repository license
+  is CC BY-NC-ND 4.0, and redistribution remains conditional. Privacy contextual re-identification,
+  consent and ethics-review evidence remain unknown.
