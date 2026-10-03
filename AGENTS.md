@@ -19,8 +19,9 @@ Read this whole file before your first change. `CONTRIBUTING.md`, `docs/dataset-
 3. Check `docs/candidate-queue.md`. It may already hold what is known about your dataset, and what is missing.
    When searching for new resources, follow `docs/search-protocol.md` and log every query in `docs/search-log.md`, including searches that find nothing.
 4. Make one coherent change per pull request, for example "add three Korean records" or "fix AVATAR license". Keep record changes separate from code changes.
-5. Run the checks (section 7) and make them pass locally before pushing.
+5. Run the checks (section 7) and make them pass locally before pushing. If your environment cannot run them, say so in the pull request and do not call it ready until GitHub's checks pass. On 2026-09-27 two pull requests that skipped the checks failed on the same field.
 6. Open a pull request and fill in the template. Do not merge your own pull request unless the repository owner has asked you to.
+7. Before asking for a merge, bring your branch up to date with `main`. Shared files such as `docs/search-log.md` conflict when several branches append to them at once.
 
 ## 3. Evidence standards
 
@@ -38,6 +39,12 @@ Search summaries are often wrong. On 2026-09-25 a summary reported a CC0 license
 - `verified`: identity, provenance (`dataset_type`), access and license are each confirmed from a primary source.
 - `partially-verified`: the dataset exists and some core facts are confirmed from a primary source; the rest are `unknown` or marked unconfirmed.
 - `unverified`: only secondary evidence so far.
+
+**Links:** open every URL you record and confirm the page is the work you name, by title, author and year. On 2026-09-26 two historical records were added with links to unrelated Project Gutenberg books, and the error stood for a week. If a page you recorded later goes private or disappears, update `access` and say when in `notes`; do not leave an old "open" standing.
+
+**Read the statement for the right dataset:** a paper's data availability statement may cover several datasets. Confirm which one it describes before using it for access or licensing. On 2026-09-27 a counseling-center record cited a data use agreement that belonged to a different corpus in the same paper.
+
+**Hints are not evidence:** file names, repository names and folder structure are leads. A data file named after a source does not prove the data came from it; record such a hint as unconfirmed.
 
 **Counts:** record the published figure with its source, or count the data file yourself and write "Counted from `<file>` on `<date>`" in `notes`. If sources disagree, record the disagreement instead of picking one. An approximate figure ("about 260") must be described as approximate.
 
@@ -65,6 +72,8 @@ Choose `dataset_type` from `data/vocabularies/dataset-type.yaml`, using the most
 
 Adjacent materials are in scope: clinical interviews, crisis-line and peer-support platforms, unreleased corpora (recorded with `access.level: metadata-only`) and training video libraries (one collection-level record each). `docs/search-protocol.md` section 1 says how to record each.
 
+Check scope against the conversations themselves, not the word used to describe them. "Counseling" (and *Beratung*, *consejería* and similar terms) often means legal, financial, administrative or academic advice. GRACO's "counseling conversations" come from nine institutional settings, among them immigration offices and financial, sales and insurance advice, and its data statement says immigration counseling dominates. Say so in `source_context`, and ask the repository owner before adding a corpus whose conversations are not about mental health.
+
 Set `dialogue_structure` separately: `multi_turn`, `single_turn_qa`, `mixed` or `utterance_level`. Single-turn counseling Q&A is in scope, and so are isolated utterances released without their conversations (`utterance_level`).
 
 ## 6. Writing records safely
@@ -72,6 +81,7 @@ Set `dialogue_structure` separately: `multi_turn`, `single_turn_qa`, `mixed` or 
 - Start from `data/datasets/_TEMPLATE.yaml`. The `id` is lowercase words joined by hyphens and must match the file name.
 - **Quote any value containing a colon followed by a space.** `title: "HOPE: Counselling Conversations Dataset"`. Unquoted, it is invalid YAML. This has broken the registry twice.
 - Use `>-` block scalars for long `notes` and `source_context`, and still avoid `": "` inside them, or quote the whole value.
+- Use only the fields and shapes shown in the template or `schema/dataset.schema.json`. If a field is not in the template, read its definition in the schema before using it; for example, `geography` is a mapping with `countries`, `regions`, `scope` and `evidence_level`, never a plain country name.
 - `access.level` and `redistribution` must use terms from `data/vocabularies/access.yaml`. Put nuance in `access.requirements` or `notes`.
 - Write notes for a researcher deciding whether to use the data. State what is known, what is not, and why.
 - Video catalog entries follow `docs/video-catalog.md`, especially its rules on videos showing real clients. Do not catalog video lists that a dataset releases only under an access agreement.
