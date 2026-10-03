@@ -22,6 +22,14 @@ domain: psychotherapy
 # doi: https://doi.org/...
 # languages:
 #   - en
+# geography is a mapping, never a plain string. Region terms are in data/vocabularies/geography.yaml.
+# geography:
+#   countries:
+#     - Spain
+#   regions:
+#     - europe
+#   scope: single_country
+#   evidence_level: documented
 # sessions: null
 # participants: null
 # longitudinal: null
