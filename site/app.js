@@ -67,6 +67,7 @@
   const facts = rows => '<dl class="facts">' + rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${value(v)}</dd></div>`).join('') + '</dl>';
   const kicker = d => `<span class="dot ${typeOf(d)}"></span><span class="smallcaps">${esc(TYPE_ONE[typeOf(d)])}${arr(d.languages).filter(l => l !== 'unknown').length ? ' · ' + esc(arr(d.languages).filter(l => l !== 'unknown').map(lang).join(', ')) : ''}</span>`;
   const page = html => { view.innerHTML = `<div class="page">${html}</div>`; };
+  const badge = d => { const s = STATUS[d.status] ? d.status : 'unverified'; return `<span class="status ${s}">${s === 'verified' ? '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 6.2 5 8.6l4.5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>' : ''}${esc(STATUS[s])}</span>`; };
 
   // ---------- Cover ----------
   function cover() {
@@ -125,7 +126,7 @@
     const c = d._completeness || { documented: 0, total: 12, ratio: 0 };
     const acc = d.access && d.access.level, lic = d.license && d.license.type;
     return `<a class="entry" href="#/dataset/${esc(d.id)}">
-      <div class="kicker">${kicker(d)}</div>
+      <div class="kicker">${kicker(d)}${badge(d)}</div>
       <h3>${esc(d.title)}</h3>
       <p>${esc(d.source_context || 'No source-context summary recorded yet.')}</p>
       <div class="meta">
@@ -165,7 +166,7 @@
       <header class="wrap"><div class="page-head"><div><p class="smallcaps">Section I</p><h1>Index of datasets</h1><p>Every corpus in the registry, grouped by where its dialogue comes from. Open any entry for its full dossier.</p></div><div class="side">${data.length} datasets<br>${languages.length} languages</div></div></header>
       <section class="wrap">
         <div class="controls">
-          <label class="sr-only" for="ix-q">Search</label><input class="field" id="ix-q" type="search" placeholder="Search titles, languages, modalities, countries" value="${esc(ix.q)}" autocomplete="off">
+          <label class="sr-only" for="ix-q">Search</label><input class="field" id="ix-q" type="search" placeholder="Search titles, languages, topics" value="${esc(ix.q)}" autocomplete="off">
           <label class="sr-only" for="ix-structure">Dialogue structure</label><select class="field" id="ix-structure">${opts(structures, v => STRUCTURE[v] || v, ix.structure, 'Any structure')}</select>
           <label class="sr-only" for="ix-access">Access</label><select class="field" id="ix-access">${opts(accesses, v => ACCESS[v] || v, ix.access, 'Any access')}</select>
           <label class="sr-only" for="ix-lang">Language</label><select class="field" id="ix-lang">${opts(languages.sort((a, b) => lang(a).localeCompare(lang(b))), lang, ix.lang, 'Any language')}</select>
@@ -211,7 +212,7 @@
         <div class="kicker" style="display:flex;align-items:center;gap:8px">${kicker(d)}</div>
         <h1>${esc(d.title)}</h1>
         ${d.source_context ? `<p class="standfirst">${esc(d.source_context)}</p>` : ''}
-        <div class="byline"><span>${esc(STATUS[d.status] || d.status || 'Unverified')}</span>${d.last_verified ? `<span>Last verified ${esc(fmtDate(d.last_verified))}</span>` : ''}${/^https?:/.test(d.canonical_url || '') ? `<a href="${esc(d.canonical_url)}" target="_blank" rel="noreferrer">Canonical source ↗</a>` : ''}${d._source_file ? `<a href="${esc(REPO + '/blob/main/' + d._source_file)}" target="_blank" rel="noreferrer">Record on GitHub ↗</a>` : ''}</div>
+        <div class="byline">${badge(d)}${d.last_verified ? `<span>Last verified ${esc(fmtDate(d.last_verified))}</span>` : ''}${/^https?:/.test(d.canonical_url || '') ? `<a href="${esc(d.canonical_url)}" target="_blank" rel="noreferrer">Canonical source ↗</a>` : ''}${d._source_file ? `<a href="${esc(REPO + '/blob/main/' + d._source_file)}" target="_blank" rel="noreferrer">Record on GitHub ↗</a>` : ''}</div>
       </div></header>
       <section class="wrap dossier">
         <article class="article">
@@ -254,8 +255,8 @@
   function hbars(rows, total, dots) {
     const max = Math.max(1, ...rows.map(r => r[1]));
     return '<div class="hbars">' + rows.map(([label, v, key], i) => `<div class="hbar" tabindex="0" data-tip="${esc(label)}: ${v} of ${total} datasets" aria-label="${esc(label)}: ${v} of ${total} datasets">
-      <span class="lab">${dots ? `<span class="dot ${esc(key)}"></span>` : ''}${esc(label)}</span>
-      <span class="track"><span class="fill" style="width:${(v / max * 100).toFixed(1)}%;animation-delay:${i * 40}ms"></span></span><span class="val">${v}</span></div>`).join('') + '</div>';
+      <span class="lab" title="${esc(label)}">${dots ? `<span class="dot ${esc(key)}"></span>` : ''}${esc(label)}</span>
+      <span class="track"><span class="fill" style="width:${(v / max * 100).toFixed(1)}%;animation-delay:${i * 40}ms${dots ? `;background:var(--t-${esc(key)})` : ''}"></span></span><span class="val">${v}</span></div>`).join('') + '</div>';
   }
   const table = (head, rows) => `<table class="datatable"><thead><tr><th>${esc(head)}</th><th class="num">Datasets</th></tr></thead><tbody>${rows.map(r => `<tr><td>${esc(r[0])}</td><td class="num">${r[1]}</td></tr>`).join('')}</tbody></table>`;
   function atlas() {
@@ -269,7 +270,7 @@
     const years = data.map(yearOf).filter(Boolean);
     const undated = n - years.length;
     const modern = years.filter(y => y >= 2015);
-    const early = years.filter(y => y < 2015);
+    const early = years.filter(y => y < 2015).sort((a, b) => a - b);
     const span = modern.length ? [Math.min(...modern), Math.max(...modern)] : [];
     const yrs = [];
     for (let y = span[0]; y <= span[1]; y++) yrs.push([String(y), modern.filter(x => x === y).length]);
@@ -281,7 +282,7 @@
         ${figure(1, 'Where the dialogue comes from', `Datasets by provenance. ${types.find(r => r[2] === 'real') ? types.find(r => r[2] === 'real')[1] : 0} of ${n} document naturally occurring sessions.`, hbars(types, n, true), table('Provenance', types))}
         ${figure(2, 'Languages covered', `Datasets per language; multilingual corpora count once per language. ${languages.length} languages in total.`, hbars(langs, n, false), table('Language', langs))}
         ${figure(3, 'Where the evidence is thin', 'Number of datasets whose sources do not yet establish each core field. Unknown means not yet documented here, not absent from the dataset.', hbars(gaps, n, false), table('Field not yet established', gaps), true)}
-        ${figure(4, 'Datasets by year of publication', `Publication or release year, ${span[0] || ''}–${span[1] || ''}.${early.length ? ` ${early.length} earlier historical record${early.length === 1 ? '' : 's'} (${early.join(', ')}) not shown.` : ''}${undated ? ` ${undated} undated.` : ''}`, cols, table('Year', yrs), true)}
+        ${figure(4, 'Datasets by year of publication', `Publication or release year, ${span[0] || ''}–${span[1] || ''}.${early.length ? ` ${early.length} record${early.length === 1 ? '' : 's'} published before 2015 (${early.join(', ')}) not shown.` : ''}${undated ? ` ${undated} undated.` : ''}`, cols, table('Year', yrs), true)}
       </section>`);
     view.addEventListener('click', e => {
       const b = e.target.closest('[data-toggle]'); if (!b) return;
