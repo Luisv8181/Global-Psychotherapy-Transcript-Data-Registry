@@ -1,6 +1,6 @@
 id: freud-little-hans
 title: "Analysis of a Phobia in a Five-Year-Old Boy (Little Hans)"
-canonical_url: https://www.gutenberg.org/ebooks/43256
+canonical_url: https://archive.org/details/jb119091
 status: partially-verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
@@ -22,10 +22,14 @@ video:
   available: false
 access:
   level: open
-redistribution: conditional
+redistribution: allowed
 license:
-  type: unknown
-  verified: false
+  type: public-domain-reported
+  verified: true
+  source: https://archive.org/metadata/jb119091
+  notes: >-
+    The Internet Archive item for the 1909 Jahrbuch, read on 2026-10-03, carries the Creative Commons
+    Public Domain Mark. Later translations, such as English editions, have their own rights.
 privacy:
   deidentified: true
   contextual_reidentification_assessed: unknown
@@ -39,9 +43,15 @@ ethics:
   data_use_agreement: false
 evidence:
   primary_sources:
-    - "https://www.gutenberg.org/ebooks/43256"
+    - https://archive.org/details/jb119091
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-10-03
 notes: >-
-  Historical dialogue resource. Rights for a digitized public-domain edition and rights for
-  later scholarly translations should be evaluated separately before redistribution.
+  Historical dialogue resource. Rights for a digitized public-domain edition and rights for later
+  scholarly translations should be evaluated separately before redistribution. Correction on
+  2026-10-03. The record previously linked Project Gutenberg ebook 43256, which is an unrelated
+  novel (Witches Cove); Project Gutenberg's list of Freud's works has no edition of this case. The
+  link now points to the case's first printing, in the Jahrbuch für psychoanalytische und
+  psychopathologische Forschungen, volume 1, first half (Leipzig and Vienna, Deuticke, 1909),
+  digitized by the Internet Archive. Its table of contents, read on 2026-10-03, lists Freud's
+  Analyse der Phobie eines fünfjährigen Knaben.
