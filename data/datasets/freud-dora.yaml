@@ -1,6 +1,6 @@
 id: freud-dora
 title: "Fragment of an Analysis of a Case of Hysteria (Dora)"
-canonical_url: https://www.gutenberg.org/ebooks/37065
+canonical_url: https://archive.org/details/freud-1942-gw-5
 status: partially-verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
@@ -25,8 +25,14 @@ access:
   level: open
 redistribution: conditional
 license:
-  type: unknown
+  type: public-domain-reported
   verified: false
+  source: https://www.freudedition.net/index.php/node/252490
+  notes: >-
+    The Sigmund Freud Edition's rights page, read on 2026-10-03, states that Freud's writings have been
+    public domain since 2010. The Internet Archive item for the 1942 Gesammelte Werke volume states no
+    license, and the rights in that edition were not confirmed, so this is not marked verified. Later
+    translations, such as English editions, have their own rights.
 privacy:
   deidentified: true
   contextual_reidentification_assessed: unknown
@@ -41,12 +47,17 @@ ethics:
   data_use_agreement: false
 evidence:
   primary_sources:
-    - "https://www.gutenberg.org/ebooks/37065"
+    - https://archive.org/details/freud-1942-gw-5
   supporting_publications:
     - "https://doi.org/10.1145/365153.365168"
-last_verified: 2026-09-26
+last_verified: 2026-10-03
 notes: >-
-  Added as a historical dialogue resource rather than a modern dataset. The attached
-  historical research identifies Dora as a 1905 published case containing patient-therapist
-  dialogue. The registry should not treat the surviving published case as equivalent to
-  a contemporaneous verbatim session recording.
+  Added as a historical dialogue resource rather than a modern dataset. The attached historical
+  research identifies Dora as a 1905 published case containing patient-therapist dialogue. The
+  registry should not treat the surviving published case as equivalent to a contemporaneous verbatim
+  session recording. Correction on 2026-10-03. The record previously linked Project Gutenberg ebook
+  37065, which is Totem und Tabu, a different work; Project Gutenberg's list of Freud's works has no
+  edition of this case. The link now points to volume 5 of Freud's Gesammelte Werke (1942, works of
+  1904-1905), digitized by the Internet Archive, whose text includes Bruchstück einer
+  Hysterie-Analyse. The 1905 first printing in the Monatsschrift für Psychiatrie und Neurologie was
+  not found in a reachable digital copy.
