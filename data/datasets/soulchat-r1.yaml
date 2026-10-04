@@ -1,0 +1,69 @@
+id: soulchat-r1
+title: "SoulChat-R1"
+canonical_url: https://github.com/scutcyr/SoulChat-R1
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: mental_health_counseling
+source_context: >-
+  Multi-turn psychological counseling dialogues synthesized with the CATCH
+  framework and Progressive Dialogue Synthesis. The method uses authentic client
+  self-reports as inputs, extracts stage-specific therapeutic elements, and
+  incrementally generates counseling dialogue across Goal Identification,
+  Working, and Ending stages. The released corpus also includes
+  memory-driven dynamic planning chain-of-thought annotations for counselor
+  responses.
+geography:
+  countries:
+    - China
+  regions:
+    - east_asia
+  scope: single_country
+  evidence_level: documented
+languages:
+  - zh
+language_context: Chinese
+dialects: []
+cultural_contexts:
+  - Chinese psychological counseling context
+therapy_modalities:
+  - single_session_therapy
+annotations:
+  - counseling stage
+  - memory-driven dynamic planning chain-of-thought
+  - counselor response reasoning
+  - counseling skills
+access:
+  level: open
+  requirements: Public ModelScope dataset link provided by the project repository
+redistribution: conditional
+license:
+  type: Apache-2.0
+  verified: true
+  source: https://github.com/scutcyr/SoulChat-R1/blob/main/LICENSE
+  notes: The repository itself is Apache-2.0. The project repository points to the public SoulChat-R1 dataset on ModelScope; dataset-specific redistribution terms should still be checked before reuse.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://github.com/scutcyr/SoulChat-R1/blob/main/README.md
+    - https://github.com/scutcyr/SoulChat-R1
+  supporting_publications:
+    - https://aclanthology.org/2025.findings-emnlp.543/
+last_verified: 2026-10-03
+notes: >-
+  The official project repository describes SoulChat-R1 as a synthesized dataset
+  and states that the released data were constructed with CATCH. The CATCH
+  workflow uses authentic client self-reports as source material but generates
+  new counseling dialogues through stage-controlled LLM synthesis. The README
+  says the dataset contains structured multi-turn counseling dialogue plus
+  explicit MDP CoT annotations, and points to ModelScope for download. The
+  repository is Apache-2.0; separate dataset redistribution conditions should
+  be treated independently from the code license. The registry therefore
+  classifies the dialogue corpus as synthetic while preserving the human-source
+  lineage in notes.

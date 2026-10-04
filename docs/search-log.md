@@ -42,3 +42,7 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-09-30 | Web search / primary paper | CALM-IT synthetic motivational interviewing dataset generation framework | en | 1 paper; released dataset access/license not established | calm-it lead only; not added | Codex |
 | 2026-10-02 | GitHub official project repository / ACL Anthology | KokoroChat Japanese counseling dialogue role-play provenance 6589 | ja | 2 | kokorochat | Codex |
 | 2026-10-02 | GitHub official derivative repository | Multilingual KokoroChat translation lineage English and Chinese | ja/en/zh | 1 | multilingual-kokorochat lead; not added because current primary repository identity/license evidence was not sufficiently resolved | Codex |
+| 2026-10-03 | GitHub official project repository / AAAI paper | CPsDD Chinese Psychological Support Dialogue Dataset 68136 PGSim synthetic counseling | zh | 2 | cpsdd | Codex |
+| 2026-10-03 | GitHub official project repository / EMNLP paper / ModelScope | SoulChat-R1 SST multi-turn psychological counseling CoT synthetic dataset | zh | 2 | soulchat-r1 | Codex |
+| 2026-10-03 | GitHub official project repository / LREC paper | Multilingual KokoroChat English Chinese translation lineage 6565 6582 | ja/en/zh | 2 | multilingual-kokorochat | Codex |
+| 2026-10-03 | ScienceDirect primary publication | PARRY 1972 psychiatric simulation dialogue algorithm Colby | en | 2 | historical computational-therapy timeline | Codex |
