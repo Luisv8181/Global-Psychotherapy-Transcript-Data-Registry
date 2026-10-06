@@ -1,0 +1,63 @@
+id: mentalbench-100k
+title: "MentalBench-100k"
+canonical_url: https://github.com/abeerbadawi/MentalBench-Align
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: mental_health_counseling
+source_context: >-
+  Benchmark built from 10,000 one-turn conversations drawn from three real
+  mental-health dialogue resources, with each context paired with one human
+  response and nine LLM-generated responses. The official repository identifies
+  the source resources as MentalChat16K, EmoCare/Psych8k, and CounselChat.
+languages: [en]
+language_context: original
+clinical_topics:
+  - anxiety
+  - depression
+  - relationships
+  - grief
+  - mental_health_support
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Public GitHub repository; dataset files are included in the repository.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: The repository's MIT LICENSE was read and covers the repository software. The dataset's own redistribution license was not established.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://github.com/abeerbadawi/MentalBench-Align
+  supporting_publications:
+    - https://arxiv.org/abs/2510.19032
+publication_year: 2025
+generation:
+  method: LLM_response_generation_from_real_dialogue_contexts
+  source_type: real_mental_health_dialogue_resources
+  synthetic_dialogues: true
+notes: >-
+  The official repository reports 10,000 conversations, 100,000 total responses,
+  23 clinically relevant categories, and nine LLMs used for response generation.
+  The benchmark is classified hybrid because it combines real dialogue contexts
+  with newly generated model responses. Its underlying evidence is not fully
+  independent of the source resources: MentalChat16K, EmoCare/Psych8k and
+  CounselChat are reused as source material. MentalAlign-70k is a related
+  evaluation resource in the same repository and is not treated as a separate
+  dialogue corpus here. Dataset-specific license terms remain unknown.
+last_verified: 2026-10-06
