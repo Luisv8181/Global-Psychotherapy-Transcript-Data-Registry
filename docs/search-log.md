@@ -46,3 +46,4 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-10-03 | GitHub official project repository / EMNLP paper / ModelScope | SoulChat-R1 SST multi-turn psychological counseling CoT synthetic dataset | zh | 2 | soulchat-r1 | Codex |
 | 2026-10-03 | GitHub official project repository / LREC paper | Multilingual KokoroChat English Chinese translation lineage 6565 6582 | ja/en/zh | 2 | multilingual-kokorochat | Codex |
 | 2026-10-03 | ScienceDirect primary publication | PARRY 1972 psychiatric simulation dialogue algorithm Colby | en | 2 | historical computational-therapy timeline | Codex |
+| 2026-10-06 | GitHub official project repository / primary paper | MentalBench-100k mental health dialogue benchmark 10000 conversations 100000 responses | en | 2 | mentalbench-100k | Codex |
