@@ -1,0 +1,62 @@
+id: psy-insight
+title: "Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling"
+canonical_url: https://github.com/ckqqqq/Psy-Insight
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: multi_turn
+domain: mental_health_counseling
+source_context: >-
+  Bilingual multi-turn mental health counseling dataset with session- and
+  turn-level annotations for psychotherapy type, topic, stage, strategy,
+  emotion, observation, reasoning, and summaries. The project's public data
+  documentation describes English and Chinese counseling sessions and states
+  that the dataset is anonymous. The project page also exposes the underlying
+  dialogue content, so the registry records metadata and official links only.
+languages:
+  - en
+  - zh
+language_context: bilingual
+clinical_topics: null
+sessions: unknown
+longitudinal: unknown
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Public project repository with dataset links.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: The project repository's own license for the dataset was not established. A processed derivative on Hugging Face states that rights and licensing follow the upstream sources, so redistribution should not be inferred from repository availability.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://github.com/ckqqqq/Psy-Insight
+    - https://github.com/ckqqqq/Psy-Insight/blob/main/data/README.md
+  supporting_publications:
+    - https://psy-insight.anonymous-demo.fun/
+publication_year: 2025
+notes: >-
+  The official repository reports 520 English counseling sessions and 521
+  Chinese counseling sessions in its data documentation, while the project
+  README describes 6,208 English dialogue rounds and 5,776 Chinese rounds.
+  Because the source materials expose conflicting counts across repository
+  pages and do not establish a single consistent session total in the reviewed
+  primary sources, sessions is left unknown. Provenance is also left unknown:
+  the repository describes counseling dialogues and examples, but the reviewed
+  sources do not establish whether the conversations are naturally occurring,
+  demonstrations, role-play, synthetic, or a mixture. Third-party processed
+  derivatives describe the data as following upstream source licenses, which
+  reinforces that dataset-specific redistribution terms need separate verification.
+last_verified: 2026-10-07
