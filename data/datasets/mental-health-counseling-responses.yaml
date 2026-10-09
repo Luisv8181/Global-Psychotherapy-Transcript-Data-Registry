@@ -1,0 +1,57 @@
+id: mental-health-counseling-responses
+title: "Mental Health Counseling Responses"
+canonical_url: https://huggingface.co/datasets/tcabanski/mental_health_counseling_responses
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: mental_health_counseling
+source_context: >-
+  Response-comparison resource built from mental-health question-and-answer
+  prompts. The dataset card states that each example contains either a human
+  answer from the original source or an LLM-generated answer, with empathy,
+  appropriateness, and relevance ratings and explanations from LLM raters.
+  Four rating/generation models are listed: Llama 3.2 1B, Llama 3.2 3B,
+  Llama 3.1 8B, and Qwen 2.5 7B.
+languages:
+  - en
+language_context: original
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Public Hugging Face dataset page; content is available through the dataset host.
+redistribution: unknown
+license:
+  type: MIT
+  verified: false
+  source: https://huggingface.co/datasets/tcabanski/mental_health_counseling_responses
+  notes: The dataset card displays MIT, but the dataset is derived from upstream human-response content; the upstream source's rights and any limits on inherited use need to be checked before treating redistribution as permitted.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/tcabanski/mental_health_counseling_responses
+  supporting_sources:
+    - https://huggingface.co/datasets/Amod/mental_health_counseling_conversations
+publication_year: 2025
+notes: >-
+  The dataset card reports 26,140 rows and describes the response field as
+  either a human response from the original source or a generated response.
+  It also includes a boolean human/generated indicator, model identity, three
+  0-5 LLM ratings, and a natural-language explanation. This is useful as a
+  response-quality evaluation resource, but the displayed MIT metadata is not
+  treated as sufficient to settle rights in reused upstream text. The upstream
+  page reports a separate RAIL-D license and commercial-use conditions; rights
+  compatibility between the two repositories has not been established.
+last_verified: 2026-10-08
