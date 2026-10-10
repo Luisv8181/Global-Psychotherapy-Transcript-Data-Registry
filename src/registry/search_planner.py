@@ -79,51 +79,35 @@ def _tokenize(value: object) -> set[str]:
     return set(normalize_name(value).split())
 
 
-def _log_queries(search_log: str) -> list[str]:
-    """Extract exact queries from the current pipe-delimited Markdown log."""
-    queries: list[str] = []
-    in_table = False
-    for line in search_log.splitlines():
-        if not line.strip().startswith("|"):
-            if in_table:
-                break
-            continue
-        if "Query (exact)" not in line and not in_table:
-            continue
-        in_table = True
-        continue
-    # Locate the header and then read the third table cell from following rows.
+def _markdown_table_rows(search_log: str, header_name: str) -> list[list[str]]:
     lines = search_log.splitlines()
-    header_index = next((i for i, line in enumerate(lines) if "Query (exact)" in line), None)
+    header_index = next((i for i, line in enumerate(lines) if header_name in line), None)
     if header_index is None:
         return []
+    rows: list[list[str]] = []
     for line in lines[header_index + 1:]:
         if not line.strip().startswith("|"):
             break
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-        if len(cells) >= 7 and set(cells[0]) <= {"-", ":", " "}:
+        if cells and set(cells[0]) <= {"-", ":", " "}:
             continue
-        if len(cells) >= 6 and cells[2] not in ("Query (exact)", "---"):
-            queries.append(cells[2])
-    return queries
+        if cells and cells[0].casefold() == "date":
+            continue
+        rows.append(cells)
+    return rows
 
+
+def _log_queries(search_log: str) -> list[str]:
+    """Extract exact queries from the current pipe-delimited Markdown log."""
+    return [row[2] for row in _markdown_table_rows(search_log, "Query (exact)") if len(row) >= 7 and row[2]]
 
 def _log_channels(search_log: str) -> Counter:
-    channels: Counter = Counter()
-    lines = search_log.splitlines()
-    header_index = next((i for i, line in enumerate(lines) if "Query (exact)" in line), None)
-    if header_index is None:
-        return channels
-    for line in lines[header_index + 1:]:
-        if not line.strip().startswith("|"):
-            break
-        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-        if len(cells) >= 7 and set(cells[0]) <= {"-", ":", " "}:
-            continue
-        if len(cells) >= 7 and cells[0] and cells[0] != "Date":
-            channels[cells[1]] += 1
-    return channels
-
+    """Count logged searches per channel for a transparent diversity nudge."""
+    counts: Counter = Counter()
+    for row in _markdown_table_rows(search_log, "Query (exact)"):
+        if len(row) >= 7 and row[1]:
+            counts[row[1]] += 1
+    return counts
 
 def score_query(query: dict, covered_tokens: set[str], prior_queries: list[str],
                 channel_counts: Counter | None = None) -> dict:
