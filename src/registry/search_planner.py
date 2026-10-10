@@ -189,7 +189,7 @@ def plan_queries(proposals: list[dict], records: list[dict], search_log: str) ->
     known_keys: set[str] = set()
     for record in records:
         known_keys.update(candidate_keys(record))
-    ranked = [score_query(item, set(), prior, channels) for item in proposals]
+    ranked = [score_query(item, _tokenize(" ".join(item.get("gap_tokens", []))), prior, channels) for item in proposals]
     ranked.sort(key=lambda item: (-item["score"], item["query"].casefold()))
     return {
         "algorithm_version": "1.0",
