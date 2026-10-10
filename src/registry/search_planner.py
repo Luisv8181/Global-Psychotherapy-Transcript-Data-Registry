@@ -139,7 +139,6 @@ def score_query(query: dict, covered_tokens: set[str], prior_queries: list[str],
     gap_tokens = _tokenize(" ".join(query.get("gap_tokens", [])))
     if not gap_tokens:
         gap_tokens = tokens
-    gap_fit = min(2, len(tokens & gap_tokens) >= 1 + (len(tokens & gap_tokens) > 2)) if gap_tokens else 0
     # Keep integer values and the rubric explicit for agents to audit.
     gap_fit = 2 if len(tokens & gap_tokens) >= 3 else 1 if tokens & gap_tokens else 0
     max_prior_overlap = 0.0
@@ -163,7 +162,7 @@ def score_query(query: dict, covered_tokens: set[str], prior_queries: list[str],
     if max_prior_overlap >= 0.65:
         penalty -= 1
     # A channel that dominates past searches gets a small diversity penalty.
-    if channel_counts and channel_counts[channel] >= max(channel_counts.values()):
+    if channel_counts and channel in channel_counts and channel_counts[channel] >= max(channel_counts.values()):
         penalty -= 1
     score = gap_fit + novelty + inspectability + lineage + coverage + penalty
     return {
