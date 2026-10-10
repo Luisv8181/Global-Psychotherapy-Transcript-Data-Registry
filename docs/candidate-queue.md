@@ -4,7 +4,7 @@ Leads found during discovery that are not yet registry records. Each lists what 
 
 Last reviewed: 2026-09-27. CPCD, MyMentorLLM, TheraPhase, CFlowPsyD and PsyChainD were added after primary-source review. PsyQA and Counsel Chat were promoted to records, and the Q&A and dataset-type scope questions were settled. MESC, SimPsyDial and PsyDTCorpus were added in the next batch, and dramatized was added as a dataset type for MESC. On 2026-09-26 CACTUS, AugESC, SoulChatCorpus, MAGneT and MIDAS were promoted to records, and MIDAS's 63 source videos were added to the video catalog. Later that day MEMO and Eeyore were promoted to records, Anno-AugMI was checked and, after the repository owner added the `utterance_level` dialogue structure, recorded as anno-augmi, HOPE was reviewed and reclassified as unknown, HighQuality was reclassified as demonstration and its 199 source videos were added to the video catalog, MindDialog was reclassified as unknown, and MusPsy was audited against its author repository and ACL 2026 paper and confirmed as hybrid. StoryMI and PhaseMI were added as new synthetic records from their official repositories and ACL 2026 papers.
 
-No candidates are waiting. Add new leads as rows of this table:
+New leads from the 2026-10-09 search pass are pending primary-source follow-up. These are leads only, not verified records. Add new leads as rows of this table:
 
 | Candidate | Language | Type (provisional) | Confirmed so far | Still needed |
 |---|---|---|---|---|
@@ -26,3 +26,6 @@ Now that demonstration is a dataset type, existing records built from public cou
 ## Access notes
 
 Until 2026-09-25, cloud sessions on this repository could reach only GitHub. The network policy now allows Hugging Face, arXiv, the ACL Anthology, OSF, Zenodo, ModelScope, Crossref and PubMed Central. MDPI still refuses automated requests (HTTP 403), so the AnnoMI data availability statement remains unconfirmed.
+
+| GeCCo (German e-counseling conversations) | German | unknown pending scope review | Prior review reported an official project page and public repository with a CC BY 4.0 data license; repository page could not be re-opened through the GitHub connector in the current pass, so treat those details as previously reported, not re-verified. | Re-open the official project page and data repository; confirm dataset scope, counts, provenance, privacy/consent, license scope and whether conversations are mental-health counseling rather than other advice. Owner approval required if scope remains ambiguous. |
+| GEMCo (German counseling proxy corpus; arXiv 2607.23621) | German | hybrid/unknown | Prior search reported 86 email conversations and 728 messages, with 124 real conversations as a reference set; this pass could not access arXiv through the GitHub connector. | Locate and open the paper and official data host; establish provenance, release/access route, dataset license, consent/ethics, and whether the reported counts refer to the released dataset. |
