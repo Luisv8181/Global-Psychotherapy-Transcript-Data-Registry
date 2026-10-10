@@ -51,6 +51,6 @@ The score is a transparent heuristic for allocating research effort. It is not a
 
 - It never reads transcript content or any licensed/gated corpus.
 - It never alters, verifies, or assigns evidence status to canonical records.
-- It relies on manually entered expectations; it does not yet learn calibrated probabilities from prior outcomes.
+- It relies on manually entered expectations; it does not yet learn calibrated probabilities from prior outcomes. Query overlap and title/URL/DOI matching are transparent review hints, not identity proofs.
 - It parses the current Markdown log table. If the table format changes, update parser tests.
 - Before any registry record is added, continue to follow `AGENTS.md`, especially primary-source checks, data-license verification, privacy/ethics review, and owner escalation rules.
