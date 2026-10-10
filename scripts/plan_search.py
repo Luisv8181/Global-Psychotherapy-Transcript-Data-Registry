@@ -61,16 +61,9 @@ def main():
         })
     if not proposals:
         raise SystemExit("Supply at least one --query or --proposals JSON file")
-    report = plan_queries(load_records(root), load_records(root), log_path.read_text(encoding="utf-8"))
-    # Use record objects as the first argument and pass user proposals separately.
-    # Remove the report's placeholder rankings and compute the requested proposal rankings.
-    from collections import Counter
-    from src.registry.search_planner import _log_channels, _log_queries, score_query
-    prior_queries = _log_queries(log_path.read_text(encoding="utf-8"))
-    channels = _log_channels(log_path.read_text(encoding="utf-8"))
-    ranked = [score_query(item, set(), prior_queries, channels) for item in proposals]
-    ranked.sort(key=lambda item: (-item["score"], item["query"].casefold()))
-    report["ranked_queries"] = ranked
+    records = load_records(root)
+    report = plan_queries(proposals, records, log_path.read_text(encoding="utf-8"))
+    ranked = report["ranked_queries"]
     if args.json:
         print(json.dumps(report, indent=2, ensure_ascii=False))
     else:
