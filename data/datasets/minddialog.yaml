@@ -56,5 +56,11 @@ notes: >-
   dataset_type from real to unknown. The review could not re-read the paper that day, because
   ScienceDirect refused automated access (HTTP 403), and no preprint, dataset card or code
   repository was found; the change rests on the description recorded on 2026-09-24. The review
-  stays open until someone reads the paper's data section and any data release.
+  stays open until someone reads the paper's data section and any data release. Follow-up on
+  2026-10-10 confirmed the block is unchanged. Web search found no author preprint and no
+  official code or dataset repository. The only related repository located is the third-party
+  inference reproduction PuLing0/minddialog_infer on GitHub, which carries no paper link or
+  dataset release and is not an author source. ScienceDirect still returns HTTP 403 to automated
+  fetch, and the live browser was served a Cloudflare human-verification challenge that could not
+  be resolved in an unattended run. The review stays open.
 last_verified: 2026-09-24
