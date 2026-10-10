@@ -167,13 +167,16 @@ def score_query(query: dict, covered_tokens: set[str], prior_queries: list[str],
 
 
 def plan_queries(proposals: list[dict], records: list[dict], search_log: str) -> dict:
-    """Rank queries and flag exact known-identity matches as review hints."""
+    """Rank proposed queries and count known registry identities."""
     prior = _log_queries(search_log)
     channels = _log_channels(search_log)
     known_keys: set[str] = set()
     for record in records:
         known_keys.update(candidate_keys(record))
-    ranked = [score_query(item, _tokenize(" ".join(item.get("gap_tokens", []))), prior, channels) for item in proposals]
+    ranked = [
+        score_query(item, _tokenize(" ".join(item.get("gap_tokens", []))), prior, channels)
+        for item in proposals
+    ]
     ranked.sort(key=lambda item: (-item["score"], item["query"].casefold()))
     return {
         "algorithm_version": "1.0",
