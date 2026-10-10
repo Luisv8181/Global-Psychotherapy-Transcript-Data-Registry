@@ -183,12 +183,12 @@ def score_query(query: dict, covered_tokens: set[str], prior_queries: list[str],
 
 
 def plan_queries(proposals: list[dict], records: list[dict], search_log: str) -> dict:
-    """Rank proposed queries and summarize known-registry identity keys."""
+    """Rank queries and flag exact known-identity matches as review hints."""
     prior = _log_queries(search_log)
+    channels = _log_channels(search_log)
     known_keys: set[str] = set()
     for record in records:
         known_keys.update(candidate_keys(record))
-    channels = _log_channels(search_log)
     ranked = [score_query(item, set(), prior, channels) for item in proposals]
     ranked.sort(key=lambda item: (-item["score"], item["query"].casefold()))
     return {
@@ -198,7 +198,7 @@ def plan_queries(proposals: list[dict], records: list[dict], search_log: str) ->
         "channels_seen": dict(sorted(channels.items())),
         "ranked_queries": ranked,
         "known_identity_keys": len(known_keys),
-        "duplicate_detection": "review-only; no automatic merge or verification",
+        "duplicate_detection": "use detect_duplicates on candidate metadata; exact matches are review-only",
     }
 
 
