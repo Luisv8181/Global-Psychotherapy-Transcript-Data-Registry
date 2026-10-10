@@ -1,0 +1,70 @@
+id: gecco
+title: "GeCCo 1.0"
+canonical_url: https://github.com/th-nuernberg/gecco-dataset
+status: verified
+dataset_type: synthetic
+dialogue_structure: utterance_level
+domain: psychosocial_counseling
+source_context: >-
+  Expert-created and annotated German online-counselling text passages from a joint project
+  of the TH Nürnberg Faculty of Computer Science and the Institute for E-Counselling.
+  The release holds individually coded passages rather than complete conversations.
+geography:
+  countries:
+    - Germany
+languages:
+  - de
+sessions: null
+longitudinal: false
+annotations:
+  - hierarchical_category_codes
+transcript:
+  available: true
+  format:
+    - csv
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Public GitHub repository
+redistribution: conditional
+license:
+  type: CC-BY-4.0
+  verified: true
+  source: https://github.com/th-nuernberg/gecco-dataset/blob/main/LICENSE.md
+  notes: >-
+    The repository LICENSE.md file states the dataset is provided under CC BY 4.0.
+    GitHub's automatic license detection reports NOASSERTION; the license text was read
+    directly from the file.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: false
+  notes: >-
+    Expert-created passages; the repository describes the data as expert created and
+    annotated, with no naturally occurring client sessions behind the passages. No
+    independent re-identification assessment documented.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://github.com/th-nuernberg/gecco-dataset
+    - https://e-beratungsinstitut.de/
+  supporting_publications: []
+publication_year: 2023
+release_year: 2023
+notes: >-
+  Counted from the released data file on 2026-10-10: 2,801 coded passages (columns Code
+  and Text, semicolon-separated CSV) with 66 distinct passage codes, plus 68 category rows
+  across a five-level hierarchy (K1-K5). Each record is one passage, so dialogue_structure
+  is utterance_level and sessions is null. dataset_type is synthetic following the OnCoCo
+  precedent for this group's expert-created counselling messages: no human session stands
+  behind the passages. Scope confirmed as psychosocial counselling from the Institute for
+  E-Counselling's official page. Note: a 2020 paper by the same first author reports over
+  10,000 manually labelled passages; the released GeCCo 1.0 holds 2,801, so the figures
+  refer to different collection stages. A fork of this repository exists at
+  github.com/albrechtje/gecco-dataset; the canonical source is the th-nuernberg repository.
+last_verified: 2026-10-10
