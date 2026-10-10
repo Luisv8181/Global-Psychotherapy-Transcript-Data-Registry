@@ -1,0 +1,87 @@
+id: medic
+title: "MEDIC: A Multimodal Empathy Dataset in Counseling"
+canonical_url: https://arxiv.org/abs/2305.02842
+status: partially-verified
+dataset_type: demonstration
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Multimodal empathy-annotation dataset built from re-enacted face-to-face counseling
+  cases. The paper states the source material is UM Psychology's counseling case
+  videos in which both the client and the counselor are UM Psychology counselors who
+  acted out cases that used to be real, each case played out by two different
+  counselors. The final released visual modality is OpenPose face, torso and arm
+  feature points rather than raw video frames, and the paper states the original
+  patient is absent from the visual content. The dataset is designed for predicting
+  empathic communication at the talk-turn level, not for modeling naturally
+  occurring sessions.
+languages:
+  - zh
+language_context: >-
+  Dialogues are originally in Chinese. The paper's example table marks its English
+  text as the translation of the original, the annotation team was five
+  Chinese-speaking students, and the named video source is the Chinese platform
+  xiaoeknow.com.
+clinical_topics:
+  - marital relationships
+  - professional dilemmas
+  - family education
+  - meaning of life
+sessions: null
+participants: null
+longitudinal: false
+transcript:
+  available: true
+audio:
+  available: true
+video:
+  available: true
+annotations:
+  - expression_of_experience
+  - emotional_reaction
+  - cognitive_reaction
+access:
+  level: unknown
+  requirements: null
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license statement was found. The paper says the dataset is available
+    for research purposes but names no access route, repository, or contact, so
+    access and licensing could not be established. The arXiv and ACM licenses apply
+    to the paper, not to the data.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: false
+  notes: >-
+    The paper documents three measures: manual removal of personal information,
+    cropping out mentions of specific people or places, and replacing raw frames
+    with OpenPose feature points in the released visual modality. It also states the
+    clips are re-enactments of teaching cases, so no real patient appears in the
+    visual content. No contextual re-identification assessment was documented.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2305.02842
+    - https://arxiv.org/html/2305.02842v1
+  supporting_publications:
+    - https://ustc-ac.github.io/publication/manual-mm23-zhu/
+publication_year: 2023
+notes: >-
+  Provenance and classification are resolved from the paper's data-collection
+  section: 10 cases were divided into 38 videos averaging 17 minutes 50 seconds,
+  totalling 678 minutes (about 11 hours), segmented into 771 talk turns with an
+  average length of 52.76 seconds, 4.29 speaking turns and 129.45 words each.
+  Sessions is left null because the paper reports cases, videos and talk turns but
+  no session count, and participants is left null because the number of distinct
+  counselors across the 10 cases is not stated. The access route and license could
+  not be established: the paper names no dataset URL, code repository, or request
+  contact, and a search for a release site or code repository found none, so status
+  is partially-verified rather than verified. No videos or dialogue content are
+  recorded here; the record holds metadata and official links only.
+last_verified: 2026-10-10
