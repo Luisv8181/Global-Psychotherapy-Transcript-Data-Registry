@@ -97,3 +97,18 @@ def test_plan_queries_is_deterministic_and_does_not_mutate_records():
     report_b = plan_queries(proposals, records, "| Date | Channel | Query (exact) | Language | Screened | Relevant hits | By |\n|---|---|---|---|---|---|---|")
     assert report_a == report_b
     assert records == [{"id": "x", "title": "Known corpus", "canonical_url": "https://example.org"}]
+
+
+def test_plan_flags_exact_canonical_url_and_doi_as_review_hints():
+    records = [
+        {"id": "known", "title": "Known Resource", "canonical_url": "https://example.org/resource", "doi": "10.1000/xyz"},
+    ]
+    proposals = [
+        {"query": "https://www.example.org/resource?utm_source=search", "gap_tokens": ["resource"], "channel": "web", "primary_source_likely": 1, "lineage_likely": 1},
+        {"query": "10.1000/xyz", "gap_tokens": ["resource"], "channel": "paper", "primary_source_likely": 1, "lineage_likely": 1},
+    ]
+    report = plan_queries(proposals, records, "")
+    matches = {row["query"]: row["possible_registry_match_fields"] for row in report["ranked_queries"]}
+    assert matches["https://www.example.org/resource?utm_source=search"] == ["canonical_url"]
+    assert matches["10.1000/xyz"] == ["doi"]
+    assert all("human review only" in row["match_policy"] for row in report["ranked_queries"])
