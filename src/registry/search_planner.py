@@ -183,7 +183,7 @@ def score_query(query: dict, covered_tokens: set[str], prior_queries: list[str],
 
 
 def plan_queries(proposals: list[dict], records: list[dict], search_log: str) -> dict:
-    """Rank proposed queries and summarize known-registry duplicate keys."""
+    """Rank proposed queries and summarize known-registry identity keys."""
     prior = _log_queries(search_log)
     known_keys: set[str] = set()
     for record in records:
