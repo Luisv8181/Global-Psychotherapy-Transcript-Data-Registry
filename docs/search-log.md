@@ -47,4 +47,12 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-10-03 | GitHub official project repository / LREC paper | Multilingual KokoroChat English Chinese translation lineage 6565 6582 | ja/en/zh | 2 | multilingual-kokorochat | Codex |
 | 2026-10-03 | ScienceDirect primary publication | PARRY 1972 psychiatric simulation dialogue algorithm Colby | en | 2 | historical computational-therapy timeline | Codex |
 | 2026-10-06 | GitHub official project repository / primary paper | MentalBench-100k mental health dialogue benchmark 10000 conversations 100000 responses | en | 2 | mentalbench-100k | Codex |
-| 2026-10-07 | GitHub official project repository / data documentation | Psy-Insight bilingual mental health counseling dataset English Chinese provenance counts license | en/zh | 3 | psy-insight | Codex |
+| 2026-10-07 | GitHub official project repository / data documentation | Psy-Insight bilingual mental health counseling dataset English Chinese provenance counts license | en/zh | 3 | psy-insight | Codex || 2026-10-10 | Web search | GeCCo German e-counseling conversations corpus dataset | en | 8 | GEMCo paper arXiv 2607.23621; gecco-dataset repos (th-nuernberg canonical, albrechtje fork) | Subagent session |
+| 2026-10-10 | Web search | GEMCo German counseling proxy corpus arXiv 2607.23621 | en | 7 | GEMCo paper + data repo th-nuernberg/GEMCo | Subagent session |
+| 2026-10-10 | GitHub official data repository (README, LICENSE) | th-nuernberg/GEMCo repository files | en | 1 repo | gemco | Subagent session |
+| 2026-10-10 | GitHub official data repository (README, LICENSE.md, CSV row count) | th-nuernberg/gecco-dataset repository files | en/de | 1 repo | gecco | Subagent session |
+| 2026-10-10 | Official institute page | e-beratungsinstitut.de institute profile | de | 1 | psychosocial counseling scope confirmed for GeCCo | Subagent session |
+| 2026-10-10 | Web search | GeCCo Albrecht Lehmann German counseling conversation dataset paper | en | 8 | canonical repo th-nuernberg/gecco-dataset; OnCoCo paper same group | Subagent session |
+| 2026-10-10 | Web search | CALM-IT synthetic motivational interviewing dataset | en | 6 | paper arXiv 2601.10085 only; no data release found | Subagent session |
+| 2026-10-10 | Web search | CALM-IT github repository motivational interviewing dialogues code | en | 4 | no official code or data repository found | Subagent session |
+| 2026-10-10 | Web search | MEDIC multimodal empathy counseling video dataset 771 clips | en | 8 | MEDIC paper arXiv 2305.02842; STOPPED: face-to-face counseling videos show clients bodies and faces, no consent documentation found (AGENTS.md section 9) | Subagent session |
