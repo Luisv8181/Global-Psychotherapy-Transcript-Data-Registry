@@ -73,7 +73,70 @@ Record every search session in `docs/search-log.md`, one row per query and chann
 3. **Primary source reachable?** If not, add it to the candidate queue with what is known and what is missing.
 4. **Record.** Follow AGENTS.md. Set `status` from the evidence actually read.
 
-## 6. Estimating how much exists
+
+## 7. Search algorithm: adaptive discovery and evidence gates
+
+Use a repeatable loop rather than a flat list of broad queries. The goal is to maximize **new, in-scope resources with inspectable primary evidence**, not raw search-result volume.
+
+### 7.1 Build a query matrix before searching
+
+For each pass, select at least three dimensions and combine them deliberately:
+
+- **Resource form:** dataset, corpus, transcript, session recording, archive, data availability, benchmark, annotation corpus.
+- **Clinical/process term:** psychotherapy, counseling/counselling, motivational interviewing, alliance, empathy, supervision, crisis line, psychiatric interview.
+- **Provenance term:** real session, demonstration, role-play, simulated, synthetic, reconstructed, translated, de-identified, longitudinal.
+- **Discovery channel:** code/model hubs, research-data archives, language-resource catalogues, clinical-process literature, licensed libraries, NLP proceedings.
+- **Language/region:** use native-language query terms from the global discovery strategy, not only English queries translated mechanically.
+
+Avoid submitting many near-identical queries to the same index. Each query should test a distinct hypothesis, such as whether a language has public datasets, whether a paper describes an unreleased corpus, or whether a known corpus has a derived version.
+
+### 7.2 Run broad-to-narrow search passes
+
+1. **Discovery:** use two independent channel families where possible, such as a dataset hub and a publication index.
+2. **Candidate extraction:** capture title, canonical URL, language, apparent resource form, likely source, and which query found it. Treat all search snippets as leads only.
+3. **Deduplication:** normalize URLs (remove tracking parameters and fragments), then compare canonical title, repository owner, paper DOI/arXiv ID, dataset IDs, and known lineage. Check `data/`, the candidate queue, and all open PRs before creating a record.
+4. **Primary-source verification:** open the official dataset page/repository and the paper's methods/data-availability section when available. For licenses, open the license attached to the data itself. If a source cannot be opened, keep the item in the queue and state exactly what was inaccessible.
+5. **Scope gate:** verify the actual conversation domain. Exclude or flag legal, financial, academic, sales, general medical, and generic emotional-support resources unless the content fits the registry's declared scope.
+6. **Evidence extraction:** capture each claim with its own source: identity, provenance, language, structure/count, access, license, redistribution, privacy, consent/ethics, and lineage. Conflicting evidence stays visible.
+7. **Decision:** promote only claims supported by primary evidence. Otherwise queue, reject with a reason, or leave unknown.
+8. **Change and validate:** write metadata only, update the search log, run validator/tests/site build, then open a branch-based PR.
+
+### 7.3 Prioritize candidates by expected value, not popularity
+
+Use this lightweight score only to order *research effort*, never to assign evidence status:
+
+- +2: a primary source is reachable and directly describes the resource.
+- +2: fills a clear language, geography, modality, longitudinal, or provenance gap.
+- +1: supplies an official persistent identifier or canonical data URL.
+- +1: provides a distinct lineage or modality not already represented.
+- −2: likely duplicate or derivative with no new lineage value.
+- −2: likely out of scope after inspecting the actual content/domain.
+- −1: only secondary sources are reachable.
+- −1: no identifiable official access route.
+
+Break ties in favor of under-covered languages and resource classes, not larger advertised row counts. A high score is not permission to mark a record verified; the evidence table in AGENTS.md remains the gate.
+
+### 7.4 Track search yield and stop intelligently
+
+For every query, log the exact query string, language, channel, results screened, unique relevant leads, duplicates, out-of-scope hits, inaccessible primary sources, and next action. If the current log schema cannot represent these fields, preserve the existing table shape and put concise counts in the relevant cells rather than silently changing the schema.
+
+After each batch, compute:
+- **Unique yield:** new plausible in-scope leads / results screened.
+- **Verification yield:** candidates whose primary sources were actually opened / candidates selected.
+- **Duplicate rate:** already-known or derivative leads / plausible leads.
+- **Evidence completion:** core fields established from primary sources / core fields checked.
+
+Use these to adapt the next batch. Low unique yield in one channel means switch query vocabulary, language, or channel; it does not prove the corpus class is exhausted. Stop a channel only after multiple distinct query families return almost entirely known or out-of-scope results, and state the date and coverage limitations.
+
+### 7.5 Keep lineage as a graph
+
+For translated, reconstructed, expanded, annotated, or benchmark derivatives, record the upstream resource(s) and transformation separately from the derived resource. Search both directions: from a known dataset to its citations/forks/derivatives, and from a new dataset's data card back to the original source. Do not count multiple derivatives as independent underlying conversation collections when estimating registry coverage.
+
+### 7.6 Measure the algorithm itself
+
+At the end of each substantial pass, summarize query families tried, channel/language coverage, unique leads, duplicates, inaccessible sources, primary-source verification rate, and changes made. Periodically compare channels using unique verified yield rather than raw hits. Do not claim a search is comprehensive from search-engine result counts alone.
+
+## 8. Estimating how much exists
 
 Use three methods and report each with its assumptions.
 
