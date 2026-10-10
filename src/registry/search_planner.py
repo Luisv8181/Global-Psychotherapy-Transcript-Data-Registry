@@ -171,12 +171,24 @@ def plan_queries(proposals: list[dict], records: list[dict], search_log: str) ->
     prior = _log_queries(search_log)
     channels = _log_channels(search_log)
     known_keys: set[str] = set()
+    known_urls = {normalize_url(record.get("canonical_url")) for record in records if record.get("canonical_url")}
+    known_dois = {str(record.get("doi", "")).casefold().replace("https://doi.org/", "").replace("http://doi.org/", "").strip() for record in records if record.get("doi")}
     for record in records:
         known_keys.update(candidate_keys(record))
     ranked = [
         score_query(item, _tokenize(" ".join(item.get("gap_tokens", []))), prior, channels)
         for item in proposals
     ]
+    for item in ranked:
+        candidate_url = normalize_url(item["query"])
+        candidate_doi = item["query"].casefold().replace("https://doi.org/", "").replace("http://doi.org/", "").strip()
+        match_hints = []
+        if candidate_url in known_urls:
+            match_hints.append("canonical_url")
+        if candidate_doi in known_dois:
+            match_hints.append("doi")
+        item["possible_registry_match_fields"] = match_hints
+        item["match_policy"] = "human review only; no automatic deduplication or record changes"
     ranked.sort(key=lambda item: (-item["score"], item["query"].casefold()))
     return {
         "algorithm_version": "1.0",
