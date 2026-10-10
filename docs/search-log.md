@@ -48,3 +48,5 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-10-03 | ScienceDirect primary publication | PARRY 1972 psychiatric simulation dialogue algorithm Colby | en | 2 | historical computational-therapy timeline | Codex |
 | 2026-10-06 | GitHub official project repository / primary paper | MentalBench-100k mental health dialogue benchmark 10000 conversations 100000 responses | en | 2 | mentalbench-100k | Codex |
 | 2026-10-07 | GitHub official project repository / data documentation | Psy-Insight bilingual mental health counseling dataset English Chinese provenance counts license | en/zh | 3 | psy-insight | Codex |
+| 2026-10-09 | GitHub repository search; external source access blocked in connector | GeCCo German e-counseling conversations official repository/license follow-up | de | 1 | GeCCo candidate queue; primary source re-open pending | Codex |
+| 2026-10-09 | Research lead from arXiv identifier; external source access blocked in connector | GEMCo German counseling proxy corpus arXiv 2607.23621 official data release and licensing | de | 1 | GEMCo candidate queue; primary source re-open pending | Codex |
