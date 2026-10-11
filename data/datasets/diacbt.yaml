@@ -1,0 +1,86 @@
+id: diacbt
+title: "DiaCBT: A Long-Periodic Dialogue Corpus Guided by Cognitive Conceptualization Diagram for CBT-based Psychological Counseling"
+canonical_url: https://github.com/YouKenChaw/DiaCBT
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Synthetic multi-session counseling dialogues built for cognitive behavioral
+  therapy research. An LLM generates complete therapist-client counseling
+  processes, guided by cognitive conceptualization diagrams (CCDs) encoding
+  each simulated client's core beliefs, intermediate beliefs, situations,
+  automatic thoughts, emotions and behaviors, and by therapist strategy
+  segments annotated from 53 public CBT transcripts. The annotation seeds came
+  from the APA PsycTherapy database and a CBT textbook chosen by a licensed
+  CBT therapist with 300+ hours of counseling experience; those transcripts
+  are annotation sources only and are not part of the release. Psychology
+  graduate student annotators labeled 14 CBT strategies per segment; all
+  generated sessions were then manually screened by experts against
+  correctness, reasonableness and situation-diversity rules.
+therapy_modalities:
+  - cognitive_behavioral_therapy
+languages:
+  - en
+language_context: >-
+  The dialogues shown in the paper are written in English; the paper does not
+  state the corpus language explicitly.
+sessions: 540
+longitudinal: true
+annotations:
+  - 14 CBT strategy labels per segment
+  - client cognitive conceptualization diagrams (core and intermediate beliefs, situations, automatic thoughts, emotions, behaviors)
+  - expert screening decisions (correctness, reasonableness, situation diversity)
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: restricted
+  requirements: >-
+    The full corpus is not yet public; the README says the authors are
+    finalizing anonymization and IRB approval and asks interested researchers
+    to email zyg@stu.ecnu.edu.cn with a brief description of their research
+    intent. A 10-dialogue sample is public in data/sample/ of the repository.
+redistribution: conditional
+license:
+  type: none-selected
+  verified: true
+  source: https://github.com/YouKenChaw/DiaCBT
+  notes: >-
+    No license file exists in the official repository (checked 2026-10-11).
+    Recorded as a finding, not a gap; the arXiv article license does not
+    cover the dataset.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: false
+  notes: >-
+    Released dialogues are fully synthetic with simulated clients. The authors
+    say anonymization is still being finalized for the full release, so no
+    de-identification claim is documented.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/pdf/2509.02999
+    - https://github.com/YouKenChaw/DiaCBT
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2509.02999
+publication_year: 2025
+last_verified: 2026-10-11
+notes: >-
+  Statistics from Table 1 of the paper: 108 cases, 540 dialogue sessions (5
+  per case), average 264.87 utterances per case and 52.97 per session, average
+  6,253.20 tokens per case. Expert screening retained 2,613 of 3,600 strategy
+  segments (72.58 percent). Annotation seeds: 53 collected transcripts forming
+  33 sessions in 6 complete consultation processes (average 279.5 utterances).
+  CCD contexts draw on the C2D2 cognitive distortion dataset and
+  PatternReframe. Authors: Yougen Zhou, Ningning Zhou, Qin Chen, Jie Zhou,
+  Aimin Zhou, Liang He; affiliations: Shanghai Institute of Artificial
+  Intelligence for Education, School of Computer Science and Technology, and
+  School of Psychology and Cognitive Science, East China Normal University.
+  The public sample is 10 numbered case directories in data/sample/.
