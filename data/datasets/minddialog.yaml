@@ -63,4 +63,7 @@ notes: >-
   dataset release and is not an author source. ScienceDirect still returns HTTP 403 to automated
   fetch, and the live browser was served a Cloudflare human-verification challenge that could not
   be resolved in an unattended run. The review stays open.
+  Re-checked 2026-10-11: ScienceDirect still returns HTTP 403 to automated fetch, and
+  web, GitHub API and Hugging Face searches found no preprint, code repository, dataset
+  card or author-published video list. The review remains open.
 last_verified: 2026-09-24
