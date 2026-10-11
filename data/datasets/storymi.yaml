@@ -7,14 +7,14 @@ dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: Simulated motivational-interviewing dialogues generated from questionnaire-based client profiles and situational stories
 languages:
-  - unknown
-language_context: unknown
+  - en
+language_context: English
 therapy_modalities:
   - motivational_interviewing
 sessions: 6000
 longitudinal: unknown
 transcript:
-  available: unknown
+  available: true
 audio:
   available: false
 video:
@@ -27,14 +27,14 @@ annotations:
   - counseling_strategy_metrics
   - human_expert_evaluation
 access:
-  level: unknown
-  requirements: unknown
+  level: open
+  requirements: Public GitHub repository; no registration or request required. The full 6K-dialogue corpus is not released. Dialogue transcripts in the repository are limited to the human-evaluation subset, where human_anno/data.json holds 20 dialogues for each of 5 evaluated models, plus evaluation artifacts.
 redistribution: conditional
 license:
   type: none-selected
   verified: true
   source: https://github.com/Beren-sds/StoryMI
-  notes: The public project root inspected on 2026-09-26 contains no LICENSE file. Dataset-specific redistribution terms are not stated.
+  notes: The public project root inspected on 2026-10-10 contains no LICENSE file. Dataset-specific redistribution terms are not stated.
 privacy:
   deidentified: not_applicable_to_synthetic_generation
   contextual_reidentification_assessed: unknown
@@ -51,5 +51,5 @@ publication_year: 2026
 release_year: 2026
 historical_significance:
   - controllable_synthetic_motivational_interviewing
-notes: The ACL 2026 paper reports 6,000 simulated multi-turn MI dialogues grounded in 1,000 questionnaire-story pairs, covering 12 MI codes and 13 symptom domains. The workflow uses therapist, client and interaction-manager agents and includes human expert evaluation. The exact dataset distribution and dataset-specific access terms were not established from the reviewed primary sources.
-last_verified: 2026-09-26
+notes: The ACL 2026 paper reports 6,000 simulated multi-turn MI dialogues grounded in 1,000 questionnaire-story pairs, covering 12 MI codes and 13 symptom domains. The workflow uses therapist, client and interaction-manager agents and includes human expert evaluation. Re-checked on 2026-10-10. The public GitHub repository contains code, DSM-5-TR questionnaires, MI guideline PDFs and evaluation artifacts but not the full 6K corpus. Dialogue transcripts are available only for the human-evaluation subset, where human_anno/data.json holds 20 dialogues for each of 5 evaluated models. This differs from the paper abstract's statement that code and data are provided for reproducibility. The repository has no LICENSE file and dataset-specific redistribution terms are not stated.
+last_verified: 2026-10-10
