@@ -8,6 +8,7 @@ No candidates are waiting. Add new leads as rows of this table:
 
 | Candidate | Language | Type (provisional) | Confirmed so far | Still needed |
 |---|---|---|---|---|
+| **CALM-IT** (Nguyen et al., arXiv 2601.10085; Georgia Tech + Northwell Health; fully synthetic long-form Motivational Interviewing dialogues; multi_turn; client grounding = anonymized Reddit-derived vignettes + DASS-42/TIPI-based profiles; no raw Reddit posts released) | en | synthetic | Primary paper (v1, read 2026-10-10) confirms design and provenance; v2 abstract claims release of framework + 8,232-dialogue corpus (abstract is secondary evidence, unconfirmed) | A locatable release artifact: code repository, dataset card, or access route confirming the v2 "We release" claim. v1 said release only upon manuscript acceptance (acceptance status unknown); GitHub/HF/arXiv searches on 2026-10-10 found no official artifact. Revisit when an artifact surfaces. |
 
 ## Review flags from this pass
 
