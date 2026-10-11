@@ -1,0 +1,77 @@
+id: gemco
+title: "GEMCo: German E-Mail Counselling Corpus"
+canonical_url: https://github.com/th-nuernberg/GEMCo
+status: verified
+dataset_type: demonstration
+dialogue_structure: multi_turn
+domain: psychosocial_counseling
+source_context: >-
+  Releasable proxy corpus of asynchronous German e-mail counselling for mental-health
+  support, built at TH Nürnberg with active practitioners of German online counselling.
+  GEMCo-A holds 50 expert-authored fictional cases (403 messages); GEMCo-B holds 36
+  role-play threads (325 messages) in which real professional counsellors counselled
+  trained student role-players, so only the help-seeker role is played and the
+  counsellor side is genuine. A separate set of 124 real donated conversations was used
+  only for aggregate validation and is never released.
+geography:
+  countries:
+    - Germany
+languages:
+  - de
+sessions: 86
+participants: null
+longitudinal: false
+annotations:
+  - speaker_role
+  - counsellor_act_spans
+  - client_emotion_spans
+transcript:
+  available: true
+  format:
+    - json
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Public GitHub repository
+redistribution: conditional
+license:
+  type: CC-BY-4.0
+  verified: true
+  source: https://github.com/th-nuernberg/GEMCo/blob/master/LICENSE
+  notes: >-
+    The repository LICENSE file covers the gemco_A and gemco_B conversation data and
+    annotations under CC BY 4.0. GitHub's automatic license detection reports NOASSERTION;
+    the license text was read directly from the file.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: false
+  notes: >-
+    No real personal data by design. The repository states GEMCo-A is fictional and free of
+    real personal data, and that GEMCo-B carries no confidentiality constraints because every
+    client is role-played by consenting participants. The 124 real conversations used for
+    validation are withheld entirely. No independent re-identification assessment documented.
+ethics:
+  consent_documented: true
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://github.com/th-nuernberg/GEMCo
+    - https://arxiv.org/abs/2607.23621
+  supporting_publications: []
+publication_year: 2026
+release_year: 2026
+notes: >-
+  Counts verified against the data repository README on 2026-10-10: 86 complete threads
+  (50 + 36), 728 messages (403 + 325), every message human-written, one JSON file per
+  conversation plus span annotations. dataset_type is demonstration: no released thread
+  involves a real client; GEMCo-B help-seekers are trained student role-players and GEMCo-A
+  cases are collaboratively authored fiction. Participant counts reported in the paper:
+  34 professional counsellors and 13 students in GEMCo-B, two authoring counsellors plus one
+  independent reviewer in GEMCo-A. Annotations cover OnCoCo counsellor-act spans and
+  GoEmotions/Ekman client-emotion spans. The corpus was validated against 124 withheld real
+  conversations reported only as aggregates.
+last_verified: 2026-10-10
