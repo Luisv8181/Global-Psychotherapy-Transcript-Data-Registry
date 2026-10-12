@@ -1,0 +1,95 @@
+id: psycopref
+title: "PsychoCounsel-Preference (PsyCoPref): preference dataset for psycho-counseling LLMs"
+canonical_url: https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref
+status: verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+
+source_context: >-
+  Single-turn preference dataset for training and evaluating psycho-counseling
+  LLMs. Client speeches are aggregated from existing counseling corpora
+  (counsel-chat, MentalAgora, TherapistQA, Psycho8k, and the Hugging Face
+  datasets amod-counsel, MentalChat16K and phi2Mental); the counselor-side
+  responses and the preference labels are model-generated, so there is no
+  human session behind the response side. The classifier call here is a
+  judgment call: the client turns are human-authored material and the
+  responses are LLM-generated, matching the hybrid definition (human material
+  transformed by LLM generation) more closely than fully synthetic.
+publication_year: 2025
+release_year: 2025
+languages:
+  - unknown
+language_context: unknown
+participants: 26483
+therapy_modalities:
+  - unknown
+clinical_topics:
+  - unknown
+annotations:
+  - preference_labels
+  - principle_ratings
+
+transcript:
+  available: true
+  format:
+    - parquet
+audio:
+  available: false
+video:
+  available: false
+
+access:
+  level: open
+  requirements: >-
+    Public Hugging Face dataset under the Psychotherapy-LLM organization;
+    downloadable with no registration or gating. Train 34,329 examples and
+    test 2,324 examples, matching the paper's 34,329 / 2,324 split
+    (36,653 total; the abstract rounds to "36k").
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref
+  notes: >-
+    License is declared in the dataset card's metadata tags (license:cc-by-nc-4.0),
+    where the data lives. Non-commercial reuse only, attribution required. The
+    client speeches are aggregated from seven other corpora, each with its own
+    license terms; downstream reuse of the full text should be checked against
+    those source corpora terms.
+
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: null
+
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref
+    - https://arxiv.org/html/2502.19731v2
+  supporting_publications:
+    - https://arxiv.org/abs/2502.19731
+
+last_verified: 2026-10-11
+notes: >-
+  Pipeline: 26,483 client speeches collected (100-1,000 characters,
+  de-duplicated, average 366 characters), 3,291 held out for test and 23,192
+  for training. Twenty popular LLMs are sampled and prompted to roleplay as
+  psychotherapists; GPT-4o scores each response on a 5-Likert scale across
+  seven professional principles (empathy, relevance, clarity, safety,
+  self-exploration, autonomy, stage of change), the principle scores are
+  averaged, and pairs with an overall score gap of at least 1 become preference
+  pairs. Each row carries the client speech (question), the chosen and rejected
+  responses, which model produced each, and the per-principle ratings for both.
+  The authors validated the GPT-4o-generated preferences with two professional
+  psychotherapists hired through Upwork, who annotated 200 randomly sampled
+  pairs. Authors: Mian Zhang and Zhiyu Zoey Chen (University of Texas at
+  Dallas, Department of Computer Science) and Shaun M. Eack (University of
+  Pittsburgh, School of Social Work). This is a preference/ranking dataset,
+  not multi-turn conversations: do not cite it for turn-taking or dialogue
+  dynamics evidence.
