@@ -1,0 +1,87 @@
+id: mocc
+title: "MOCC: Multimodal Counseling Conversation Corpus"
+canonical_url: https://arxiv.org/abs/2609.17180
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: multi_turn
+source_context: >-
+  Human-recorded counseling sessions mined from public YouTube videos and the subscription
+  Alexander Street video platform by Wenjie Zheng, Qiming Xie, Jianfei Yu and Rui Xia (Nanjing
+  University of Science and Technology and Nanjing University). All sessions are conducted by
+  154 credential-verified counselors. The 482 sessions span real-client and simulated-client
+  interactions; simulated clients are portrayed by counselors, counseling graduate students, or
+  conference participants. The real-vs-simulated designation follows each source video's own
+  description, and the aggregate real/simulated split is not reported. Raw videos (277.36 hours)
+  are filtered to 202.58 hours and segmented into 3,709 problem-centered multi-turn dialogue units
+  (183,350 utterances; 80,678 counselor, 102,672 client; average 22 turns per unit). Pipeline:
+  manual video segment filtering, FFmpeg audio extraction, WhisperX speech transcription with
+  timestamp alignment, manual speaker-role verification, automatic PII detection with typed
+  placeholders or semantic generalization plus manual verification, and presenting-problem labels
+  from a taxonomy adapted from the GoodTherapy platform, adjudicated by a clinical annotation
+  team of one clinical psychologist and two graduate students.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - unknown
+longitudinal: null
+sessions: 482
+participants: 419
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+  - audio
+  - video
+access:
+  level: metadata-only
+  requirements: >-
+    The corpus itself has no public release as of 2026-10-12. The paper (v1, submitted 2026-09-15)
+    names no dataset card, code repository, or access route; the arXiv "Code, Data and Media"
+    section lists no links; the Hugging Face papers page for 2609.17180 returns 404; GitHub code
+    search for MOCC-R1 and the Hugging Face datasets API search for MOCC return no official
+    artifact. The source videos remain on YouTube and the Alexander Street subscription platform,
+    but the corpus (transcripts, segmentations, annotations) is not distributed.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated anywhere. The paper is published CC-BY-4.0; per registry policy,
+    an article's open-access license says nothing about the data.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper documents automatic PII detection over transcript spans (names, contact details)
+    replaced with typed placeholders or semantically generalized expressions, manually verified,
+    with outputs reviewed by the clinical annotation team. This is a documented process claim,
+    not a re-identification assessment; no linkage evaluation is reported.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2609.17180
+    - https://arxiv.org/html/2609.17180v1
+  supporting_publications: []
+publication_year: 2026
+release_year: null
+notes: >-
+  Classification deliberately stays unknown rather than real or demonstration. The paper confirms
+  real-client sessions exist in the corpus but reports no aggregate real/simulated split, and the
+  per-session designation follows each source video's own description, which was not re-read here.
+  Do not treat the whole corpus as demonstration without per-session source checks. Sensitivity
+  flags for the owner: the paper documents no consent procedure or ethics review for the recorded
+  clients (de-identification is the only stated protection), so a real-client subset carries the
+  same consent gap that blocked the HOPE video catalog. No per-video list is catalogued here and
+  no transcript, audio, or video content is included. The corpus is unreleased, so this is a
+  metadata-only placeholder; revisit if the authors publish a dataset card, code repository, or
+  access route. Counts are the paper's published figures (Table 1 and Table 2 of v1), not
+  independently re-counted.
+last_verified: 2026-10-12
