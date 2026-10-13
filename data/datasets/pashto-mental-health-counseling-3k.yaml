@@ -1,0 +1,82 @@
+id: pashto-mental-health-counseling-3k
+title: "Pashto Mental Health Counseling 3K"
+canonical_url: https://huggingface.co/datasets/nassimjp/pashto-mental-health-counseling-3k
+status: verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+
+source_context: >-
+  English-Pashto parallel single-turn counseling question-answer pairs. The dataset card says the
+  English material is the public mental-health counseling Q&A corpus mirrored at
+  Amod/mental_health_counseling_conversations (which mirrors the CounselChat therapist-answer
+  scrape described in this registry's counsel-chat record), translated and culturally adapted into
+  Pashto by the uploader as part of the iPashto.ai project.
+languages:
+  - en
+  - ps
+language_context: "translated; English-Pashto parallel counseling Q&A; translation method not stated"
+
+therapy_modalities:
+  - mental_health_counseling
+
+transcript:
+  available: true
+  format:
+    - csv
+modalities:
+  - text
+
+access:
+  level: open
+  requirements: None. Public ungated Hugging Face dataset.
+redistribution: conditional
+license:
+  type: apache-2.0
+  verified: true
+  source: https://huggingface.co/datasets/nassimjp/pashto-mental-health-counseling-3k
+  notes: >-
+    The dataset card declares license apache-2.0; the tag was confirmed through the Hugging Face
+    API on 2026-10-12. The declaration is the uploader's own: the underlying English questions and
+    therapist answers are third-party content scraped from counselchat.com, and this registry's
+    counsel-chat record notes that the original repository's MIT license may not extend to that
+    third-party text. Redistribution is therefore recorded as conditional despite the
+    permissive declared license. The Pashto translations are new derivative text; who translated
+    them (human or machine) is not stated on the card.
+
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Rows are context/response counseling pairs in English and Pashto. The source corpus consists of
+    questions posted by members of the public answered by licensed therapists; the source record
+    notes it includes answering therapists' information and profile URLs. Whether any of that
+    metadata survives in this derived translation was not checked row-by-row.
+
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/nassimjp/pashto-mental-health-counseling-3k
+  supporting_publications: []
+
+notes: >-
+  Counted via the Hugging Face datasets-server size API on 2026-10-12: 3,512 rows in the train
+  split, 4 columns (context_en, context_ps, response_en, response_ps). The card claims 3,000+
+  conversational pairs; the actual row count disagrees and is recorded here instead of picked from
+  the claim. The card's Data Structure section describes fields (instruction, thought, assistant,
+  original_en) that do not match the actual parquet columns. The README names
+  Amod/mental_health_counseling_conversations as the source, but that page is access-gated as of
+  2026-10-12 and could not be read to confirm the intermediate copy, so the English provenance is
+  traced through this registry's counsel-chat record (partially-verified, single_turn_qa,
+  2,129 therapist answers to 815 distinct questions counted 2026-09-25). The translation method
+  and its quality are not documented; spot-checked rows in the dataset viewer are parallel
+  English/Pashto Q&A. The card carries a disclaimer that the dataset is for research and training
+  only, not a substitute for professional advice. Published 2026-05-07 (lastModified) by nassimjp
+  (Nassim Nasibullah), iPashto.ai project, Saitama, Japan. A Pashto-language counseling resource
+  is rare in the registry; the unknown translation provenance is the main caveat for researchers.
+
+last_verified: 2026-10-12
