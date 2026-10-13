@@ -1,0 +1,76 @@
+id: e-daic
+title: "E-DAIC: Extended Distress Analysis Interview Corpus"
+canonical_url: https://www.ihp-lab.org/downloads/Extended-DAIC-BLANK_EULA.pdf
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: clinical_interview
+source_context: >-
+  Semi-clinical interviews conducted by Ellie, an animated virtual interviewer, either
+  controlled by a human in another room (Wizard-of-Oz) or acting in a fully autonomous way
+  with automated perception and behaviour generation modules. Developed by the USC Institute
+  for Creative Technologies as the extended version of DAIC-WOZ for depression and PTSD
+  assessment, and used as the corpus for the AVEC 2019 Detecting Depression with AI
+  sub-challenge. These are screening interviews, not therapy sessions.
+sessions: 275
+longitudinal: false
+transcript:
+  available: unknown
+audio:
+  available: true
+video:
+  available: unknown
+modalities:
+  - audio
+therapy_modalities: []
+clinical_topics:
+  - depression
+  - ptsd
+annotations:
+  - depression_labels
+access:
+  level: research-agreement
+  requirements: >-
+    Apply through the DAIC-WOZ / Extended DAIC portal (https://dcapswoz.ict.usc.edu/)
+    and return a signed copy of the
+    Extended DAIC End User License Agreement before downloading. Research use only;
+    commercial use is forbidden.
+redistribution: prohibited
+license:
+  type: research_access_agreement
+  verified: true
+  source: https://www.ihp-lab.org/downloads/Extended-DAIC-BLANK_EULA.pdf
+  notes: >-
+    The Extended DAIC EULA (read 2026-10-11) grants research use only, forbids commercial
+    use and distribution of the database or parts of it to any third party, allows
+    illustrative use in publications with subjects' identities protected, and requires
+    citing Gratch et al. (LREC 2014) and Ringeval et al. (AVEC 2019). The ICT Institute
+    may change the terms and require a new signature.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    No statement about scrubbing or de-identification of the E-DAIC package was read;
+    the DAIC-WOZ scrubbing notes in the sibling record were not transferred.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: true
+evidence:
+  primary_sources:
+    - https://www.ihp-lab.org/downloads/Extended-DAIC-BLANK_EULA.pdf
+    - https://opus.bibliothek.uni-augsburg.de/opus4/files/67305/67305.pdf
+    - https://dcapswoz.ict.usc.edu/
+publication_year: 2019
+historical_significance:
+  - Corpus for the AVEC 2019 Detecting Depression with AI sub-challenge
+notes: >-
+  Secondary sources (user papers, unconfirmed from a primary source) report 163/56/56
+  train/dev/test splits, time-stamped transcripts with speaker labels, audio recordings,
+  OpenFace-derived visual features and COVAREP/FORMANT acoustic features, PHQ-8 depression
+  scores and PTSD severity scores, and sessions of about 20 minutes; one secondary source
+  says the test set is drawn only from autonomous-AI interviews. The portal says detailed
+  documentation for this dataset is still being created, and the interview language was
+  not stated in the primary sources read. The prior daic-woz record notes that the
+  Extended DAIC is a separate, larger release not recorded there; this record fills that gap.
+last_verified: 2026-10-11
