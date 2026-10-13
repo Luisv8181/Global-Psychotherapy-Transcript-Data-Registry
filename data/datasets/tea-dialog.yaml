@@ -1,0 +1,89 @@
+id: tea-dialog
+title: "TEA-Dialog: Tool-enhanced Emotional Support Conversation Dialogues"
+canonical_url: https://huggingface.co/datasets/XingYuSSS/TEA-Dialog
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: emotional_support
+source_context: >-
+  Synthetic emotional support dialogues released with TEA-Bench (Sui et al.,
+  Harbin Institute of Technology), an interactive benchmark for evaluating
+  tool-augmented emotional support agents. Each dialogue pairs a simulated
+  user with an LLM supporter that has access to an MCP-style tool environment
+  (time, maps, places, Reddit-sourced relatable experiences, etc.) for
+  grounded instrumental support. The 81 scenarios are fine-grained emotional
+  support situations adapted from ExTES (Zheng et al., 2024); simulated
+  temporal and location contexts are treated as latent scenario attributes,
+  not real collection sites. Per the paper, the 365 released dialogues were
+  selected from interactions of nine evaluated LLMs on the basis of high
+  TEA-Scores (above 80) and absence of detected hallucinations, with
+  additional human filtering. Each row carries per-dialogue TEA-Scores and
+  hallucination metrics. A companion TEA-Scenario.json config releases the 81
+  scenarios. Fully simulated: no real users or clients are involved.
+therapy_modalities:
+  - emotional_support
+languages:
+  - en
+sessions: 365
+longitudinal: false
+annotations:
+  - TEA-Scores per dialogue (Information, Humanoid, Fluency, Diversity, Effectiveness)
+  - hallucination metrics per dialogue (content, all_hallucination, content_hallucination)
+  - user type (Action-oriented or Emotion-oriented)
+  - end reason
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: null
+redistribution: allowed
+license:
+  type: mit
+  verified: true
+  source: https://huggingface.co/datasets/XingYuSSS/TEA-Dialog
+  notes: >-
+    The dataset README's License section states the dataset is released under
+    the MIT License, and the card metadata declares license mit. The code
+    repository (XingYuSSS/TEA-Bench) carries an Apache-2.0 LICENSE file; per
+    AGENTS.md section 4 that covers the code, while the dataset card governs
+    the data.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Simulated data, not observed sessions. Simulated contexts name real-world
+    cities (Toronto, San Francisco, Los Angeles, London) and public places
+    via OpenStreetMap-derived location fields, but no real participants,
+    clients, or personal data are involved.
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/XingYuSSS/TEA-Dialog
+    - https://arxiv.org/abs/2601.18700
+    - https://github.com/XingYuSSS/TEA-Bench
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2601.18700
+publication_year: 2026
+last_verified: 2026-10-12
+notes: >-
+  365 counted from TEA-Dialog.json on 2026-10-12; the paper reports the same
+  figure ("a dataset of 365 high-quality dialogues"). content_messages per
+  dialogue: min 4, max 30, mean 8.3. Per the paper's Table 9, 320 dialogues are
+  Action-oriented and 45 Emotion-oriented user type. Contributing models (from
+  the source_file field): gemini-2.5-flash, gpt-4.1-nano-ca, gpt-4o-mini,
+  qwen-plus, qwen3-14b, qwen3-235b-a22b-instruct-2507, qwen3-32b, qwen3-8b,
+  qwen3-next-80b-a3b-instruct. The supporter system prompt observed in the
+  data file instructs the agent not to mention or imply it is an AI
+  assistant, so supporters impersonate human supporters; researchers reusing
+  the dialogues should be aware of this framing. The paper's SFT finding
+  (fine-tuning on TEA-Dialog improves in-distribution support but generalizes
+  poorly) is a result about the dataset, not a property of it. Authors'
+  affiliation: Harbin Institute of Technology. Venue/publication details
+  beyond the arXiv preprint (e.g. conference version) are unconfirmed.
