@@ -47,7 +47,8 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-10-03 | GitHub official project repository / LREC paper | Multilingual KokoroChat English Chinese translation lineage 6565 6582 | ja/en/zh | 2 | multilingual-kokorochat | Codex |
 | 2026-10-03 | ScienceDirect primary publication | PARRY 1972 psychiatric simulation dialogue algorithm Colby | en | 2 | historical computational-therapy timeline | Codex |
 | 2026-10-06 | GitHub official project repository / primary paper | MentalBench-100k mental health dialogue benchmark 10000 conversations 100000 responses | en | 2 | mentalbench-100k | Codex |
-| 2026-10-07 | GitHub official project repository / data documentation | Psy-Insight bilingual mental health counseling dataset English Chinese provenance counts license | en/zh | 3 | psy-insight | Codex || 2026-10-10 | Web search | GeCCo German e-counseling conversations corpus dataset | en | 8 | GEMCo paper arXiv 2607.23621; gecco-dataset repos (th-nuernberg canonical, albrechtje fork) | Subagent session |
+| 2026-10-07 | GitHub official project repository / data documentation | Psy-Insight bilingual mental health counseling dataset English Chinese provenance counts license | en/zh | 3 | psy-insight | Codex
+| 2026-10-10 | Web search | GeCCo German e-counseling conversations corpus dataset | en | 8 | GEMCo paper arXiv 2607.23621; gecco-dataset repos (th-nuernberg canonical, albrechtje fork) | Subagent session |
 | 2026-10-10 | Web search | GEMCo German counseling proxy corpus arXiv 2607.23621 | en | 7 | GEMCo paper + data repo th-nuernberg/GEMCo | Subagent session |
 | 2026-10-10 | GitHub official data repository (README, LICENSE) | th-nuernberg/GEMCo repository files | en | 1 repo | gemco | Subagent session |
 | 2026-10-10 | GitHub official data repository (README, LICENSE.md, CSV row count) | th-nuernberg/gecco-dataset repository files | en/de | 1 repo | gecco | Subagent session |
@@ -82,3 +83,5 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-10-10 | GitHub site search | CALM-IT motivational interviewing Nguyen code | en | 7 results; no official repo for the paper's authors | calm-it lead; no release route found | scheduled rotation task |
 | 2026-10-10 | Web search | CALM-IT synthetic corpus Hugging Face dataset motivational interviewing | en | 7 results; HF hits are unrelated CALM works (agentic LM, RNA model) | calm-it lead; no HF dataset found | scheduled rotation task |
 | 2026-10-10 | Hugging Face papers page | huggingface.co/papers/2601.10085 | en | 1 page; 404, no listing | calm-it lead; no release route found | scheduled rotation task |
+| 2026-10-07 | GitHub official project repository / data documentation | Psy-Insight bilingual mental health counseling dataset English Chinese provenance counts license | en/zh | 3 | psy-insight | Codex |
+| 2026-10-08 | GitHub official project repository / primary paper | PsychEval multi-session multi-therapy benchmark case-report reconstruction provenance license | en/unknown | 2 | psycheval (re-reviewed existing record) | Codex |
