@@ -1,0 +1,78 @@
+id: mindchat-r0-ft-data
+title: "MindChat-R0 Mental-Health Dialogue Dataset (4.5K)"
+canonical_url: https://huggingface.co/datasets/dongSHE/MindChat-R0-FT-Data
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: multi_turn
+domain: mental_health_counseling
+source_context: >-
+  Approximately 4.5K Chinese mental-health consultation dialogues collected from
+  the YiXinLi platform, released on Hugging Face for building and evaluating
+  MindChat-R0, an empathetic safe-response conversational model. Each sample is
+  a short multi-turn exchange. Topics cover stress, relationships, anxiety,
+  study and workplace pressure, family conflict and self-growth. Released in
+  synchronized JSONL and Parquet files (train, validation and test splits),
+  one dialogue per row.
+languages:
+  - zh
+sessions: 4500
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - jsonl
+    - parquet
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: >-
+    Public Hugging Face dataset page with no sign-in gate. The dataset README
+    limits use to non-commercial research and states redistribution is
+    restricted.
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+  source: https://huggingface.co/datasets/dongSHE/MindChat-R0-FT-Data/blob/main/README.md
+  notes: >-
+    The dataset README names no license type. It states the dataset is a
+    private research dataset for non-commercial use and that redistribution is
+    restricted. The card frontmatter declares license mit, which would permit
+    redistribution, in direct tension with the README. Treated as unresolved,
+    so no license type is recorded.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: false
+  notes: >-
+    Per the dataset's own README, all personally identifiable information was
+    removed or masked during preprocessing and unsafe content was filtered.
+    This is the publisher's claim, not an independent assessment.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/dongSHE/MindChat-R0-FT-Data
+  supporting_publications: []
+publication_year: 2025
+release_year: 2025
+last_verified: 2026-10-13
+notes: >-
+  The 4.5K figure is the dataset's own approximate count, not independently
+  counted. The dataset and the companion model dongSHE/MindChat-R0 (Qwen3-8B
+  base) were both published on 2025-10-15. This is a different corpus from
+  MindCorpus (Xue et al., arXiv 2601.01993, 5.7k synthetic sessions with no
+  release artifact). Different size, and collected platform dialogues rather
+  than synthetic roleplays. The "R0" name, the MindChat name, the YiXinLi
+  platform (one of MindCorpus's reported seed sources) and the "dongSHE"
+  handle all suggest a link to the same author team, but account ownership is
+  unconfirmed and the dataset card links no paper or repository, so the
+  relation stays a lead. Secondary corroboration only. The CPsyCoun paper
+  cites "MindChat (Yan and Xue, 2023)" as available online. Provenance type is
+  unknown because the README says dialogues "reflect real user concerns and
+  counselor-like responses" without stating the responders were real
+  counselors, so per the agent protocol they are not classified as real.
