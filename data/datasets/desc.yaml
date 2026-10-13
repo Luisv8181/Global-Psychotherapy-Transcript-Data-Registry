@@ -1,0 +1,93 @@
+id: desc
+title: "DESC: Diagnostic Emotional Support Conversation dataset"
+canonical_url: https://github.com/seungyeon-seo/DiagESC
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: mental_health_support
+source_context: >-
+  Dataset for the DiagESC task: PHQ-9-based depression diagnostic questioning
+  integrated into emotional support conversations. The emotional-support base
+  dialogue comes from the PESConv dataset (persona-augmented ESConv, Cheng et
+  al., 2023; crowdworker-collected support conversations with per-utterance
+  support-strategy tags); diagnostic turns are LLM-generated -- PHQ-9 symptom
+  questions by the supporter and paraphrased/augmented PHQ-9 frequency answers
+  by the seeker -- with keyword and model-based filtering, pre-assigned severity
+  labels, and expert (psychologist) verification of the validation and test
+  sets. A final supporter utterance delivers severity-based advice, escalating
+  to recommending a hospital or counselor at high severity.
+geography: null
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - emotional_support
+sessions: 976
+longitudinal: false
+annotations:
+  - support_strategies
+  - persona_sentences
+  - phq9_symptom_scores
+  - depression_severity_labels
+  - conversation_quality_ratings
+transcript:
+  available: true
+  format:
+    - json
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+generation:
+  method: llm_augmented_role_play_on_crowdworker_base
+  synthetic_dialogues: false
+  real_session_influence: none reported
+access:
+  level: open
+  requirements: Public GitHub repository; train/valid/test JSON files downloadable without an account.
+redistribution: conditional
+license:
+  type: none-selected
+  verified: false
+  source: https://github.com/seungyeon-seo/DiagESC
+  notes: >-
+    No LICENSE file in the repository (checked 2026-10-13); the README names
+    no data license. Redistribution recorded as conditional at most.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: false
+  notes: >-
+    Dialogues are constructed: the support base derives from crowdworker
+    role-play (ESConv via PAL/PESConv), and all diagnostic utterances are
+    LLM-generated from PHQ-9 templates. No real patients or clinical sessions
+    are involved. No independent re-identification assessment documented.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://github.com/seungyeon-seo/DiagESC
+    - https://aclanthology.org/2024.sigdial-1.59/
+  supporting_publications: []
+publication_year: 2024
+release_year: 2024
+notes: >-
+  Counted from the released data files on 2026-10-13: 730 train + 126 valid +
+  120 test = 976 dialogues, matching the paper's reported split. Turns per
+  dialogue in the released files range 25-79 (test) against the paper's
+  reported 24-111 range with mean 42. Each turn carries speaker
+  (seeker/supporter), a strategy annotation on supporter turns (including a
+  Diagnosis strategy for the PHQ-9 turns), persona sentences, and a
+  survey_score block (emotion intensity, empathy, relevance). The paper prints
+  the repository URL as github.com/seungyeonseo/DiagESC (no hyphen); that URL
+  does not resolve, and the live repository is
+  github.com/seungyeon-seo/DiagESC with first commits 2024-05-18. Authors:
+  Seungyeon Seo and Gary Geunbae Lee (POSTECH, Republic of Korea); presented
+  at SIGDIAL 2024. The paper's limitation section states the diagnostic
+  outcomes are intended solely for guidance, not definitive diagnosis.
+  Geography left null: author affiliation is Korean but the dialogues are in
+  English and the base crowdworker data's geography is not documented.
+last_verified: 2026-10-13
