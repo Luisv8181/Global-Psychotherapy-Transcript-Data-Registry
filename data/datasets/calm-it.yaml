@@ -41,7 +41,7 @@ access:
   requirements: >-
     The paper claims a release of the generation framework, evaluation protocol, and
     synthetic corpus, but no public repository, dataset page, or download location was
-    found as of 2026-10-11. No public access route is confirmed.
+    found as of 2026-10-12. No public access route is confirmed.
 redistribution: unknown
 license:
   type: unknown
@@ -65,13 +65,17 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.10085
 publication_year: 2026
-last_verified: 2026-10-11
+last_verified: 2026-10-12
 notes: >-
   The 8,232 figure is the full evaluated set: 686 client contexts x 3 lengths x 4 frameworks.
   The CALM-IT-generated arm is 686 x 3 = 2,058 dialogues. The paper's "large-scale synthetic
   corpus" release claim most plausibly refers to the CALM-IT-generated arm, but this is
-  unconfirmed, and no release location was found (GitHub, Hugging Face, arXiv, and web searches on 2026-10-10, re-checked 2026-10-11; a January 2026 secondary write-up said code and vignettes were "slated for
-  release"). The author list changed between versions: v1 (2026-01-15) listed Srijan Kumar;
+  unconfirmed, and no release location was found (GitHub, Hugging Face, arXiv, and web
+  searches on 2026-10-10; re-checked 2026-10-11 and 2026-10-12; a January 2026 secondary
+  write-up said code and vignettes were "slated for
+  release"). On 2026-10-12 the v2 PDF full text was read: the "We release" sentence is
+  present in the abstract but the PDF body contains no repository, dataset-card, or download
+  URL anywhere, and the GitHub API repository search returned 0 hits. The author list changed between versions: v1 (2026-01-15) listed Srijan Kumar;
   v2 (2026-05-27) lists Michael L. Birnbaum (Columbia) instead. Affiliations: Georgia
   Institute of Technology, Northwell Health, Columbia University. Client profiles are simulated
   personas, not real clients; the paper's own ethics statement frames CALM-IT as a research
