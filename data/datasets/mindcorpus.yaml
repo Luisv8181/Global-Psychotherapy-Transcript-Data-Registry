@@ -42,7 +42,7 @@ access:
   requirements: >-
     No public release route for the dataset was found. The paper's full text names
     no repository, dataset page, or download location, and the arXiv page's "Code,
-    Data and Media" section lists no URLs (checked 2026-10-12).
+    Data and Media" section lists no URLs (checked 2026-10-13).
 redistribution: unknown
 license:
   type: unknown
@@ -69,7 +69,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.01993
 publication_year: 2026
-last_verified: 2026-10-12
+last_verified: 2026-10-13
 notes: >-
   Statistics are the paper's reported figures (Table II): Chinese, 5.7k sessions,
   12.0 utterances per session, 84.0 average length; the 5700 figure is approximate.
@@ -77,5 +77,14 @@ notes: >-
   for possible publication". Authors: Dong Xue, Jicheng Tu, Ming Wang, Xin Yan,
   Fangzhou Liu, Jie Hu. Dataset scope is counseling and mental-health support, not
   diagnosis; the paper positions it for emotional-support dialogue research.
-  Record stays partially-verified until a locatable release artifact (repository,
+  Re-checked 2026-10-13. Still no locatable release artifact. GitHub API repo
+  search returned 0 hits for MindCorpus and for mind-corpus counseling, the
+  Hugging Face datasets API returned no match for MindCorpus or the arXiv id,
+  the arXiv abs page shows no code or data links, and the v2 full text contains
+  no repository, dataset or download URL. A related but distinct artifact
+  surfaced: dongSHE/MindChat-R0-FT-Data on Hugging Face is a 4.5K-dialogue
+  Chinese mental-health consultation dataset collected from YiXinLi for
+  MindChat-R0, published 2025-10-15, recorded separately as
+  mindchat-r0-ft-data. Same-author-team relation is unconfirmed. Record stays
+  partially-verified until a locatable release artifact (repository,
   dataset card, or access route) surfaces.
