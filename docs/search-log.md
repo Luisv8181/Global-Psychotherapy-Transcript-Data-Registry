@@ -98,3 +98,12 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-10-12 | Web search / arXiv | CALM-IT dataset Nguyen Georgia Tech Northwell synthetic motivational interviewing release GitHub | en | 8 | none; v2 abs page lists no code/data links; arXiv abstract now reads "We release a reproducible generation framework..." but names no location | worker session |
 | 2026-10-12 | arXiv v2 PDF full-text scan | PDF of arXiv:2601.10085v2 text-scanned for release URLs (github/huggingface/zenodo/osf) | en | 1 paper | none; the "We release" sentence is in the abstract only; the PDF body contains no repository, dataset-card, or download URL anywhere | worker session |
 | 2026-10-12 | GitHub API repository search | CALM-IT motivational interviewing | en | 0 results | none | worker session |
+| 2026-10-11 | Web search | MindDialog benchmark counseling dialogue understanding generation 325 hours demonstration videos data section | en | 10 | none; surfaced only adjacent papers | Claude session |
+| 2026-10-11 | Web search | "MindDialog" counseling dialogue benchmark Pattern Recognition 2026 data availability | en | 10 | authors and venue confirmed: He Hu et al., Pattern Recognition 2026, art. 113766, DOI 10.1016/j.patcog.2026.113766 | Claude session |
+| 2026-10-11 | Web search | MindDialog github dataset "He Hu" counseling dialogue code repository | en | 10 | none; no code repository found | Claude session |
+| 2026-10-11 | GitHub API (repositories) | MindDialog dialogue | en | 0 of 0 | none | Claude session |
+| 2026-10-11 | Hugging Face API (datasets) | MindDialog | en | 0 of 0 | none | Claude session |
+| 2026-10-11 | Crossref API (works) | 10.1016/j.patcog.2026.113766 | en | 1 record | metadata confirmed; only Elsevier API links (keyed), no open full text | Claude session |
+| 2026-10-11 | Web search | MindDialog dataset video list source videos YouTube psychotherapy demonstration "He Hu" OR "Juzheng Si" | en | 10 | none; no author-published video list found | Claude session |
+| 2026-10-11 | ScienceDirect direct fetch | https://www.sciencedirect.com/science/article/pii/S0031320326007314 | en | 1 page | HTTP 403; paper data section still unread | Claude session |
+| 2026-10-11 | Web search | MEDIC multimodal counseling empathy video dataset 771 clips paper | en | 10 | paper found (arXiv:2305.02842, ACM MM 2023), but medic record already exists on main (merged); no action taken | Claude session |
