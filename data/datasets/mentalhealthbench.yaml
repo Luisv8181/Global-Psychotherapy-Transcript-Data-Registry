@@ -1,0 +1,88 @@
+id: mentalhealthbench
+title: "MentalHealthBench"
+canonical_url: https://openai.com/index/introducing-mentalhealthbench/
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: mental_health_support
+source_context: >-
+  OpenAI's open benchmark for measuring how AI systems respond in realistic
+  mental-health conversations. 1,215 synthetic multi-turn conversations, each
+  ending with a user message; a model's reply to that final message is scored
+  against expert-written rubric criteria. Co-created with a global cohort of
+  more than 80 licensed mental-health experts (psychologists and psychiatrists)
+  from 22 countries. 5,262 rubric criteria in total across 10 behavior axes:
+  context seeking and assessment, actionable guidance and coping strategies,
+  clinical reasoning and health accuracy, interpretation and cognitive
+  reframing, empathy and emotional attunement, reality-testing calibration,
+  urgency calibration, harm avoidance, collaboration and user agency, and
+  communication and writing. Conversations span four user profiles (adult,
+  teen aged 13-17, caregiver, clinician) and the full acuity spectrum
+  (non_acute, high_acuity, emergent) in 11 languages. An evaluation benchmark
+  of AI behavior, not a corpus of real therapy sessions; recorded as adjacent
+  mental-health scope.
+languages:
+  - en
+  - es
+  - hi
+  - ar
+  - pt
+  - de
+  - id
+  - it
+  - fa
+  - tr
+  - zh
+sessions: 1215
+longitudinal: false
+annotations:
+  - 5,262 expert-authored rubric items (criterion_text, signed point weight, behavior_axis)
+  - acuity labels (non_acute, high_acuity, emergent)
+  - user_profile labels (adult, teen, clinician, caregiver)
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Openly downloadable zip (about 2.1 MB) from OpenAI's CDN; no registration or agreement required.
+redistribution: allowed
+license:
+  type: MIT
+  verified: true
+  source: https://cdn.openai.com/ctf-cdn/OAI_MentalHealthBench.zip (LICENSE inside the release zip)
+  notes: The release zip carries a full MIT License, copyright 2026 OpenAI, read at the data location. The companion paper is a separate publication; its license was not taken as the dataset's.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Fully synthetic conversations; the release README states they were created
+    with privacy-preserving techniques to reflect real-world usage patterns.
+    No real participants. OpenAI requests that examples not be published in
+    plain text or images online, to limit training-corpus contamination; a
+    canary string ships in every example.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://openai.com/index/introducing-mentalhealthbench/
+    - https://cdn.openai.com/ctf-cdn/OAI_MentalHealthBench.zip
+  supporting_publications:
+    - https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf
+release_year: 2026
+last_verified: 2026-10-14
+notes: >-
+  1,215 examples and 5,262 rubric items counted from
+  mentalhealthbench_eval.jsonl on 2026-10-14; the release README reports the
+  same figures. Language split counted from the same file (en 903, es 105,
+  hi 54, ar 34, pt 29, de 25, id 17, fa 17, it 17, tr 13, zh 1). Acuity split
+  non_acute 650, high_acuity 221, emergent 344; user_profile split adult 828,
+  teen 257, caregiver 60, clinician 70. Release year 2026 per paper PDF
+  CreationDate 2026-09-23; the exact month of the public announcement was not
+  established from the sources read. The official release URL is embedded in
+  the paper PDF as a URI annotation and the zip was downloaded and inspected
+  in full on 2026-10-14.
