@@ -1,0 +1,89 @@
+id: cradle-dialogue
+title: "CRADLE-Dialogue: Expert-Level Crisis Detection in Mental Health Conversations"
+canonical_url: https://huggingface.co/datasets/SungJoo/Cradle-Dialogue
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: crisis_support
+source_context: >-
+  Turn-level mental-health crisis detection benchmark (Byun et al., Emory
+  University; WMHS Workshop @ NeurIPS 2026). Dialogues are generated with
+  GPT-5 from real Reddit posts that seed CRADLE-Bench (Byun et al., EACL
+  2026), conditioned on seven clinical scenarios (including a
+  therapy/counseling session with a licensed mental health professional, a
+  conversation with a close friend or family member, and a doctor visit)
+  with controlled crisis-reveal timing (early/mid/late). Speaker roles are
+  User and Listener, not therapist and client, and the released artifact is
+  an evaluation benchmark for turn-level crisis detection, not a therapy
+  corpus; it is recorded as adjacent crisis-support material. The released
+  HF dataset combines a 600-dialogue clinician-annotated test set with
+  synthetic validation and training splits. The official release channel is
+  the Emory NLP repository emorynlp/CradleBench, whose README endorses the
+  SungJoo Hugging Face uploads.
+languages:
+  - unknown
+sessions: 4078
+longitudinal: false
+annotations:
+  - turn-level multi-label crisis annotations (alert_ongoing/alert_past; confirm_<type>_ongoing/past)
+  - 7 crisis types: SI_passive, SI_active, SH, DV, CA, SHA, RA
+  - inter-annotator agreement (Cohen's kappa 0.51-0.75 on crisis-labeled turns, two disjoint clinician teams)
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: null
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated on the Hugging Face card or dataset README,
+    and the official emorynlp/CradleBench repository ships no LICENSE file.
+    The arXiv PDF footer carries CC BY-NC-SA 4.0, but that is the paper's
+    license; per AGENTS.md section 4 an article's license says nothing about
+    the data, so it is not recorded as the dataset's license.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Test dialogues are GPT-5 expansions of real Reddit posts from
+    crisis-related and general mental-health subreddits (the CRADLE-Bench
+    seeds); no de-identification procedure for the dialogue data is
+    documented in the sources read.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2606.10380
+    - https://github.com/emorynlp/CradleBench
+    - https://huggingface.co/datasets/SungJoo/Cradle-Dialogue
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2606.10380
+publication_year: 2026
+last_verified: 2026-10-14
+notes: >-
+  Split counts from the author-endorsed HF dataset README, confirmed against
+  the HF datasets API on 2026-10-14: test 600 dialogues / 8,975 turns / 713
+  labels (clinician-annotated by two licensed psychologists, one PhD
+  clinical postdoctoral resident, and one licensed clinical social worker,
+  in independent rounds by two disjoint teams with adjudication);
+  validation 420 dialogues / 6,679 turns / 549 labels (GPT-5 synthetic);
+  train 3,058 dialogues / 48,557 turns / 3,902 labels (GPT-5 synthetic with
+  structured label injection). Per the paper's Table 2: 226 dialogues
+  (37.7%) contain at least one Alert label, 417 (69.5%) at least one Confirm
+  label, and 160 (26.7%) contain neither; mean 1.18 labels per dialogue.
+  Fields: dialogue_id, turn_id, text (prefixed User: or Listener:), labels
+  (semicolon-separated or empty). Average ~15 turns per test dialogue. The
+  paper also releases a fine-tuned Qwen3-32B crisis-detection model
+  (SungJoo/cradle-dialogue-qwen3-32b-2epoch); model licensing not reviewed.
+  HF dataset is open and ungated (220 downloads at read time; card last
+  modified 2026-04-21, before the June 2026 arXiv v1). Companion resources
+  not reviewed: the post-level CRADLE-Bench benchmark
+  (SungJoo/CRADLE-Bench, EACL 2026) that supplied the seed posts.
