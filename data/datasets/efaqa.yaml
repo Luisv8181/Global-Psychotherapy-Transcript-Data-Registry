@@ -1,0 +1,93 @@
+id: efaqa
+title: "Emotional First Aid Dataset (EFAQA): Chinese Psychological Counseling Q&A Corpus"
+canonical_url: https://github.com/chatopera/efaqa-corpus-zh
+status: partially-verified
+dataset_type: peer_support
+dialogue_structure: multi_turn
+domain: counseling
+source_context: >-
+  Annotated release of Chatopera's Emotional First Aid corpus: Chinese
+  psychological-counseling question-and-answer pairs collected from public
+  counseling and mental-health websites, then manually annotated as
+  multi-turn dialogues with three severity labels. Per the official README,
+  the "audience" replier may or may not be a professional counselor
+  ("网友可能是心理咨询师，也可能不是"), so it is recorded as peer_support
+  rather than practitioner-answered. A sibling repository
+  (chatopera/efaqa-corpus-raw) holds the unannotated crawled source, which
+  the README describes as several times larger (over 44 million characters)
+  and better suited to LLM training; the annotated 20,000-item release is
+  positioned for research use.
+therapy_modalities:
+  - unknown
+languages:
+  - zh
+geography:
+  countries:
+    - China
+  regions:
+    - east_asia
+  scope: unknown
+  evidence_level: inferred
+sessions: 20000
+longitudinal: false
+annotations:
+  - S1 trouble-type label (19 categories, e.g. academic concerns, career, family, divorce, LGBT)
+  - S2 suspected mental-disorder label (README stresses "suspected"; not a clinical diagnosis)
+  - S3 SOS severity label (README stresses "suspected"; not a clinical assessment)
+  - per-chat-message labels (question, knowledge, negative flags)
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: restricted
+  requirements: >-
+    Download requires a purchased certificate (EFAQA_DL_LICENSE) from the
+    Chatopera certificate store; the README restricts the corpus to research
+    use. The raw corpus repo uses the same certificate mechanism.
+redistribution: conditional
+license:
+  type: unknown
+  verified: false
+  source: https://github.com/chatopera/efaqa-corpus-zh/blob/master/LICENSE
+  notes: >-
+    The repository LICENSE file (Chunsong Public License 1.0) governs the
+    download/code tooling. The README states the corpus itself requires a
+    purchased certificate and is for research use only, but the data
+    license terms live on the certificate store page, which could not be
+    opened in this session, so the data license is recorded as unknown.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The README states the data was de-identified during curation: original
+    crawl URLs and image content removed, commenter names regenerated, and
+    the help-seeker ("owner") shown anonymized. No assessment of
+    contextual re-identification is documented.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://github.com/chatopera/efaqa-corpus-zh
+    - https://github.com/chatopera/efaqa-corpus-raw
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2406.16567
+publication_year: 2020
+last_verified: 2026-10-13
+notes: >-
+  README claims "the first open QA corpus in psychological counseling" with
+  20,000 items, described as the largest public Chinese psychological
+  counseling dialogue corpus as of 2026-04-07 (its own press statement,
+  unconfirmed against other corpora). The KPT paper (Jiang et al., arXiv
+  2406.16567) cites the same 20K figure and identifies the corpus paper as
+  Wang, Wu, Li "Pat psychology: A corpus of questions and answers for
+  psychological counseling" (2020) at the corpus repository. Repository
+  created 2020-04-22, last updated 2026-10-08. S1/S2/S3 label codes and the
+  chat-message label flags are documented in the README; researchers should
+  note the README's explicit "suspected, not diagnosed" caveat on S2/S3.
+  Data files were not downloaded in this session (certificate required), so
+  the 20,000 figure is the published figure, not a counted one.
