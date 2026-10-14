@@ -1,0 +1,89 @@
+id: tu-ocdc
+title: "徳島大学 オンラインカウンセリング対話コーパス (TU-OCDC)"
+canonical_url: https://www.nii.ac.jp/dsc/idr/rdata/TU-OCDC/
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: real_therapy
+geography:
+  countries: [Japan]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: documented
+languages: [ja]
+language_context: original
+sessions: 50
+participants: 50
+longitudinal: false
+therapy_modalities:
+  - unknown
+clinical_topics:
+  - stress
+annotations:
+  - stress evaluations by the counselor and two occupational health experts
+  - emotion labels on Russell's circumplex model (valence-arousal coordinates) by five laypeople via mouse operation
+  - pre-session questionnaire (industry/occupation, employment status, sleep hours, etc.)
+  - face-image features and facial-expression analysis results from pre-processing (announced, not read as primary)
+transcript:
+  available: unknown
+audio:
+  available: unknown
+video:
+  available: true
+modalities:
+  - video
+access:
+  level: research-agreement
+  requirements: >-
+    Apply to the NII Informatics Research Data Repository. Applications are per
+    laboratory, submitted by a representative full-time staff member. Sign
+    Tokushima University's TU-OCDC terms of use and NII's IDR dataset service
+    terms; data is provided free of charge by download from a web server. Research
+    use only (including basic technology development); primarily university and
+    public research-institution researchers, with private-sector researchers admitted
+    depending on the research content. An annual usage report is requested, and NII
+    must be contacted before media or publicity use.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No open dataset license is stated. Access is governed by Tokushima
+    University's TU-OCDC terms of use and NII's IDR dataset service terms; the
+    terms documents were downloadable but not opened this session, so their
+    details are unknown.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The NII record page documents face de-identification: the provided video and
+    annotation data cover the worker side only, and face images have their face
+    parts replaced with an average face using SimSwap. This is a documented
+    processing claim, not a guarantee of anonymity or resistance to
+    re-identification.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: true
+evidence:
+  primary_sources:
+    - https://www.nii.ac.jp/dsc/idr/rdata/TU-OCDC/
+release_year: 2025
+notes: >-
+  Collected under the NEDO "young researcher discovery support" project
+  "Development of multimodal emotion estimation technology for highly accurate
+  early detection of stress in remote workers," led by Tokushima University: 50
+  workers recruited via crowdsourcing held ~30-minute sessions each with one
+  counselor (certified psychologist, 公認心理師) over Zoom; video and audio were
+  recorded. A viewer is published on the provider's GitHub site. The NII page
+  cites an Industrial Health journal paper for the collection details and an IPSJ
+  national-convention presentation paper for the annotation details; neither was
+  opened this session. The page says video and audio were recorded during
+  collection but describes the distributed package as video data and annotation
+  data only, so audio availability is recorded as unknown. An NII launch
+  announcement (secondary source, search snippet only) credits Associate
+  Professor Kazuyuki Matsumoto with the collection and mentions bundled
+  pre-computed image features and facial-expression analysis results; both are
+  unconfirmed until read as primary sources.
+last_verified: 2026-10-14
