@@ -62,10 +62,11 @@ ethics:
 evidence:
   primary_sources:
     - https://arxiv.org/html/2601.10085v2
+    - https://arxiv.org/html/2601.10085v3
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.10085
 publication_year: 2026
-last_verified: 2026-10-12
+last_verified: 2026-10-15
 notes: >-
   The 8,232 figure is the full evaluated set: 686 client contexts x 3 lengths x 4 frameworks.
   The CALM-IT-generated arm is 686 x 3 = 2,058 dialogues. The paper's "large-scale synthetic
@@ -81,3 +82,9 @@ notes: >-
   personas, not real clients; the paper's own ethics statement frames CALM-IT as a research
   framework not intended for clinical use, and notes the Reddit-derived profiles
   disproportionately reflect WEIRD populations.
+  Re-checked 2026-10-15 against v3 (published 2026-10-13): the v3 abstract no
+  longer carries the v2 "We release" sentence, and the full-text HTML contains
+  no repository, dataset-card, or download URL anywhere; GitHub API repository
+  search 0 hits; Hugging Face datasets API returns only unrelated CALM-Italy;
+  web search found no author-hosted release. Release remains gated on manuscript
+  acceptance per the v1 promise. Watch row retained in the candidate queue.
