@@ -1,0 +1,84 @@
+id: psychedialog
+title: "PsychēDialog"
+canonical_url: https://huggingface.co/datasets/Johnnyfans/PsycheDialog
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Multi-turn counseling dialogues synthesized through interactive LLM role-playing:
+  a Dialogue-Guided Seeker agent (role cards built by summarizing 5,000 PsyDT
+  dialogues, filtered to 1,003 evenly distributed cards) interacts with an
+  Emotion-Focused Therapy counselor pipeline that tracks the seeker's emotion
+  shifts and runs a safety risk analysis before each response. Fully synthetic;
+  no human sessions behind the dialogues.
+geography:
+  countries:
+    - China
+  regions:
+    - east_asia
+  scope: single_country
+  evidence_level: reported_in_publication
+languages: [zh]
+language_context: original
+dialects: []
+sessions: 1003
+longitudinal: false
+therapy_modalities:
+  - psychological_counseling
+  - emotion_focused_therapy
+annotations:
+  - speaker role labels
+  - dialogue topics
+  - emotion-shift tracking traces (Agent Mode training split)
+  - safety risk analysis traces (Agent Mode training split)
+transcript:
+  available: true
+  format:
+    - parquet
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: None. Public, ungated Hugging Face dataset; generation code and fine-tuned models on GitHub.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    The Hugging Face dataset card carries no license tag or license statement,
+    and the paper states no data license. The GitHub repository LICENSE is
+    Apache-2.0, which covers the code, not the data; it is not recorded as the
+    dataset license.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Dialogues are fully synthetic LLM role-plays, so human-session de-identification
+    does not apply; seeker role cards were derived by LLM summarization of PsyDT
+    dialogues.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Johnnyfans/PsycheDialog
+    - https://github.com/XNeil12138/PsycheChat
+  supporting_publications:
+    - https://arxiv.org/html/2601.12392
+publication_year: 2026
+notes: >-
+  Paper: PsychēChat, arXiv 2601.12392 (submitted 18 Jan 2026; authors at East
+  China University of Science and Technology and Shanghai Changning Mental
+  Health Center). Table 1 reports 1k dialogues at 13.1 average turns and 43.1
+  average utterance length; the Hugging Face API reports the train split as
+  exactly 1,003 examples in one parquet file. Seeds are 5,000 PsyDT dialogues
+  (Xie et al., 2025). The repository README claims acceptance to EMNLP 2026
+  Main; that claim is from the project authors and is not confirmed from
+  proceedings. Training splits for the two inference paradigms
+  (PsycheDialog-Counselor-Agent-Mode, PsycheDialog-Counselor-LLM-Mode) and the
+  seeker model (PsycheDialog-Seeker) are released alongside on Hugging Face.
+last_verified: 2026-10-15
