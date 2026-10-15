@@ -42,7 +42,10 @@ access:
   requirements: >-
     No public release route for the dataset was found. The paper's full text names
     no repository, dataset page, or download location, and the arXiv page's "Code,
-    Data and Media" section lists no URLs (checked 2026-10-12).
+    Data and Media" section lists no URLs (re-checked 2026-10-15: arXiv still v2,
+    revised 2026-01-24; GitHub API repository search for MindCorpus and MindChat
+    returned no author-published artifact; HF datasets API search returned only
+    unrelated English "Mind Corpus" sets; web search found no author-hosted repo).
 redistribution: unknown
 license:
   type: unknown
@@ -69,7 +72,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.01993
 publication_year: 2026
-last_verified: 2026-10-12
+last_verified: 2026-10-15
 notes: >-
   Statistics are the paper's reported figures (Table II): Chinese, 5.7k sessions,
   12.0 utterances per session, 84.0 average length; the 5700 figure is approximate.
@@ -78,4 +81,7 @@ notes: >-
   Fangzhou Liu, Jie Hu. Dataset scope is counseling and mental-health support, not
   diagnosis; the paper positions it for emotional-support dialogue research.
   Record stays partially-verified until a locatable release artifact (repository,
-  dataset card, or access route) surfaces.
+  dataset card, or access route) surfaces. Re-checked 2026-10-13 and 2026-10-15:
+  on both dates GitHub API, HF datasets API, and web searches found no
+  author-published release artifact; arXiv still shows v2 only. Companion record
+  mindchat-r0-ft-data covers the related collected YiXinLi corpus.
