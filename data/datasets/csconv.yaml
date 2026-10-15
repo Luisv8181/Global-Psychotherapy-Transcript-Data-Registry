@@ -1,0 +1,86 @@
+id: csconv
+title: "CSConv: Chinese Cognitive Stimulation Conversation Dataset"
+canonical_url: https://ar5iv.labs.arxiv.org/abs/2305.08200
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Chinese cognitive-stimulation conversations for elders with cognitive
+  impairment, built from cognitive stimulation therapy videos and the HKU
+  BrainLive handbook at roughly a 2 to 1 video-to-handbook ratio. The video
+  portion is Cantonese material translated into Mandarin. The handbook portion
+  is Mandarin conversations artificially created from the handbook's eighteen
+  CS principles. Each utterance carries a CS-principle label, an emotion label,
+  and an emotional support strategy label. Roles are SPEAKER (the elder) and
+  LISTENER (the paper calls this role a smart speaker or a health care worker).
+  The introducing paper frames cognitive stimulation as a psychological therapy;
+  this is an adjacent clinical-intervention corpus rather than classic talk
+  therapy, and that scope placement is flagged for owner review. The paper says
+  all data were professionally produced and reviewed twice, but it does not
+  establish whether the source videos show real therapy clients or
+  demonstration material.
+therapy_modalities:
+  - cognitive_stimulation
+  - emotional_support
+languages:
+  - zh
+sessions: 2643
+longitudinal: false
+annotations:
+  - CS principle labels (7 types)
+  - emotion labels (8 types)
+  - emotional support strategy labels (9 types)
+transcript:
+  available: unknown
+audio:
+  available: unknown
+video:
+  available: unknown
+access:
+  level: unknown
+  requirements: >-
+    The paper links data and code to github.com/jiangjyjy/CSD. That repository
+    returned 404 on 2026-10-14 via both web fetch and the GitHub API
+    (deleted or made private). No mirror or alternate release route was
+    located. Whether the data files are currently obtainable anywhere is
+    unknown.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated in the introducing paper, and the data
+    repository is no longer reachable, so no license file could be read.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper does not discuss de-identification. Two thirds of the material
+    derives from videos of cognitive stimulation therapy. Consent and the
+    identifiability of anyone shown in the source videos are not documented.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://ar5iv.labs.arxiv.org/abs/2305.08200
+    - https://arxiv.org/html/2406.16567v1
+  supporting_publications: []
+publication_year: 2023
+last_verified: 2026-10-14
+notes: >-
+  Primary evidence is the introducing paper (Jiang et al., ACL 2023, pages
+  10628 to 10640) read in full on 2026-10-14. It reports 2,643 conversations
+  and 16,845 utterances (8,363 SPEAKER plus 8,480 LISTENER), averaging 6.37
+  utterances per conversation (Table 2). The KPT paper (Jiang et al., arXiv
+  2406.16567), which uses CSConv as an experimental dataset, independently
+  confirms the 2.6K CS-based conversation description and the Chinese
+  cognitive-stimulation identity. Source videos are Cantonese, translated to
+  Mandarin. Handbook-derived conversations were artificially created in
+  Mandarin. The handbook is the HKU social work BrainLive program, cited in
+  the paper as brainlive.socialwork.hku.hk. No release year is stated in the
+  paper. The official release repository github.com/jiangjyjy/CSD is
+  unreachable as of 2026-10-14, so the record stays partially-verified until
+  a locatable data artifact exists.
