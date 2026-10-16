@@ -1,14 +1,13 @@
 id: longcounsel-8
 title: "LongCounsel-8: A Benchmark Suite for Longitudinal Depression Tracking from Multi-Session Counseling Dialogues"
 canonical_url: https://arxiv.org/abs/2609.03507
-status: partially-verified
+status: verified
 dataset_type: synthetic
 dialogue_structure: multi_turn
 domain: counseling
-source_context: Synthetic multi-session counseling trajectories generated from real-world client profiles, empirical depression trajectories, symptom compositions and counseling patterns
-languages:
-  - unknown
-language_context: unknown
+source_context: Synthetic multi-session counseling trajectories generated from real-world client profiles, empirical depression trajectories, symptom compositions and counseling patterns; construction used NHANES DPQ_L symptom co-occurrence sampling, PSYCHE-D aggregate trajectory data, PsychEval case structures and RealCBT dialogue-form calibration, with raw upstream records not redistributed
+languages: [en]
+language_context: original
 therapy_modalities:
   - counseling
 sessions: unknown
@@ -24,29 +23,50 @@ annotations:
   - simulated_self_reports
   - trajectory_labels
 access:
-  level: unknown
-  requirements: The arXiv paper links the public dataset at https://huggingface.co/datasets/hiddensev/LongCounsel-8.
-redistribution: unknown
+  level: open
+  requirements: >-
+    The Hugging Face API reports gated false and private false for the dataset,
+    and the LICENSE file was retrievable without authentication on 2026-10-16.
+    The card README still describes a request-and-approval download flow, which
+    appears stale.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: cc-by-nc-4.0
+  verified: true
+  source: https://huggingface.co/datasets/hiddensev/LongCounsel-8
+  notes: >-
+    CC BY-NC 4.0 stated in the LICENSE file at the root of the Hugging Face
+    dataset repository (read 2026-10-16), matching the license tag on the dataset
+    card and its API metadata. The notice says upstream resources retain their
+    own licenses or terms (NHANES Data User Agreement, PSYCHE-D and PsychEval
+    under CC BY-NC 4.0, Qwen model cards Apache 2.0, OpenAI service terms) and
+    that the intended-use and clinical-safety statements are responsible-use
+    guidance rather than license terms.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://arxiv.org/abs/2609.03507
+    - https://huggingface.co/datasets/hiddensev/LongCounsel-8
 publication_year: 2026
 release_year: 2026
 historical_significance:
   - longitudinal_synthetic_counseling_benchmark
 notes: >-
-  The September 2026 arXiv paper introduces a suite of three independently generated datasets
-  totaling 7,749 five-session counseling trajectories. The benchmark uses profile-grounded simulation,
-  empirically informed depression-state construction and indirect behavioral realization, with
-  session-level PHQ-8 states used as controlled evaluation targets. The paper describes the data as
-  generated from real-world client profiles and related empirical sources, so it is synthetic rather
-  than observed counseling-session evidence. The reviewed primary source does not establish the
-  dataset license, redistribution terms, or exact released data-access conditions; those fields
-  remain unknown.
-last_verified: 2026-09-26
+  The September 2026 arXiv paper (Jiayi Li, Zhaomin Wu, Bingsheng He) introduces a
+  suite of three independently generated datasets totaling 7,749 five-session
+  counseling trajectories with 1,549,800 utterances. Released editions are
+  longcounsel-8-qwen-3.5-35b-a3b (3,690 trajectories, 738,000 utterances,
+  train/val/test 2,583/369/738), longcounsel-8-gpt-5.6-luna-low (3,690 trajectories,
+  738,000 utterances, same splits) and longcounsel-8-gpt-5.4-mini-low (369
+  trajectories, 73,800 utterances, 258/37/74). Each trajectory holds transcript.jsonl
+  (200 rows, five sessions by twenty exchanges by two speakers), ground_truth.json
+  (session-level latent PHQ-8 vectors and severity bands) and self_report.json
+  (simulated post-session questionnaires). The benchmark uses profile-grounded
+  simulation, empirically informed depression-state construction and indirect
+  behavioral realization, with session-level PHQ-8 states as controlled evaluation
+  targets. The paper describes the data as generated from real-world client profiles
+  and related empirical sources, so it is synthetic rather than observed
+  counseling-session evidence.
+last_verified: 2026-10-16
