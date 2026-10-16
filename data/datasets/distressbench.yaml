@@ -1,0 +1,89 @@
+id: distressbench
+title: "DistressBench"
+canonical_url: https://huggingface.co/datasets/ScaleAI/DistressBench
+status: verified
+dataset_type: demonstration
+dialogue_structure: mixed
+domain: mental_health_support
+source_context: >-
+  Scale AI's open benchmark for evaluating whether a language model can sustain
+  safe, useful support across a crisis conversation. User turns are authored by
+  licensed clinicians (no real clients), spanning 23 suicide and self-harm
+  subcategories. Each task pairs a clinician-authored user trajectory with a
+  task-specific rubric of weighted atomic criteria across seven dimensions of
+  crisis support and a clinician reference response; a model reply is scored
+  criterion by criterion as the weighted share of required care delivered. The
+  public release carries 359 of 718 tasks (50 percent), a 75-task calibration
+  set with per-criterion labels from three clinicians, per-judge labels for 25
+  evaluated models, the frozen judge panel and grader, and 20 long-horizon
+  red-team transcripts with conversation-level violation labels. The remaining
+  359 tasks are withheld as a private holdout for contamination checks. An
+  evaluation benchmark of AI behavior, not a corpus of real therapy sessions;
+  recorded as adjacent mental-health scope.
+languages:
+  - en
+sessions: 359
+longitudinal: false
+annotations:
+  - 3,415 public rubric criteria (6-20 per task, weighted 1-20, across 7 dimensions)
+  - task metadata (turn structure, age band U18 or O18, prompt intent, explicit type, progression stage, subcategory)
+  - calibration labels from 3 clinicians on 75 tasks plus 455 candidate judge-panel rankings
+  - per-criterion judge verdicts for 25 evaluated models (3 attempts each)
+  - conversation-level violation labels for 20 long-horizon transcripts
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: registration
+  requirements: Gated on Hugging Face with automatic approval; a user must accept the dataset conditions and agree to share contact information before files can be downloaded.
+redistribution: allowed
+license:
+  type: cc-by-4.0
+  verified: true
+  source: https://huggingface.co/datasets/ScaleAI/DistressBench
+  notes: >-
+    The dataset card's License section states the dataset is released under the
+    CC BY 4.0 License, read at the data location on 2026-10-16; the HF API
+    metadata independently tags license cc-by-4.0. The repository also ships a
+    LICENSE sibling file, which could not be opened without accepting the
+    access gate. Redistribution is conditional on attribution per the license.
+privacy:
+  deidentified: not_applicable_to_demonstrations
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    No real clients or participants appear in the conversations; all user
+    trajectories are authored by licensed clinicians as fictional crisis
+    scenarios, and reference responses are clinician-written. De-identification
+    does not apply.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/ScaleAI/DistressBench
+    - https://arxiv.org/abs/2610.12758
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2610.12758
+publication_year: 2026
+release_year: 2026
+last_verified: 2026-10-16
+notes: >-
+  359 public tasks of 718 total, per the card's Public/Private Split section
+  (public subset keeps all 23 subcategories; split stratified by subcategory,
+  age group, turn structure, intent, and progression stage). Card composition
+  table counts used here: 220 multi-turn and 139 single-turn public tasks;
+  251 O18 and 108 U18 tasks; 3,415 public rubric criteria. Long-horizon annex:
+  20 transcripts, 801 user-turn rows; full assistant turns for those live only
+  in the separate ScaleAI/DistressBench-LH dataset, described as released for
+  safety research rather than as an open corpus. Raw data files were not
+  downloaded (access gate requires login); all counts above are the card's
+  published figures, not counted rows. The card carries an explicit content
+  warning for suicidal ideation, self-harm, abuse, and other crisis content.
+  Authors per arXiv 2610.12758 (submitted 2026-10-08): Drew Rein, Patrick
+  Oathout, Vishal Kumar, Udari Madhushani Sehwag, Scale AI. The 19-clinician
+  figure reported in press coverage could not be confirmed from the sources
+  read and is not recorded.
