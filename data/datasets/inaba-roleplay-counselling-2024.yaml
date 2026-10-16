@@ -1,0 +1,66 @@
+id: inaba-roleplay-counselling-2024
+title: Inaba Role-Play Counselling Dialogues
+canonical_url: https://arxiv.org/abs/2402.12738
+status: partially-verified
+dataset_type: demonstration
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: clinician_roleplay
+geography:
+  countries: [Japan]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: reported_in_publication
+languages: [ja]
+language_context: original
+dialects: []
+cultural_contexts: [Japanese counseling context]
+sessions: 6
+longitudinal: false
+therapy_modalities:
+  - psychological_counseling
+annotations:
+  - counselor response key points
+  - counselor response intent labels
+transcript:
+  available: false
+access:
+  level: metadata-only
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Role-play collection among expert counselors, so there are no real clients whose
+    data would need de-identification. The paper does not describe any privacy,
+    consent, or ethics-review process.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2402.12738
+  supporting_publications: []
+last_verified: 2026-10-16
+notes: >-
+  Six Japanese role-play counselling dialogues collected via the LINE messaging app
+  by two expert counselors (Inaba, Ukiyo, Takamizo; University of Electro-Communications,
+  iDEAR Human Support Service, Japanese Organization of Mental Health and Educational
+  Agencies). One counselor played the client and the other the counselor, across six
+  themes: competition nervousness, a restrictive partner, a friend conflict, study
+  motivation, gender identity, and the meaning of life. Published counts from the
+  paper's Table 2: 1,194 client utterances (15,962 words) and 1,140 counselor utterances
+  (31,689 words). Counselor utterances are annotated with response key points and
+  response intent; themes 1-3 were annotated by the participating counselor, themes 4-6
+  by non-participating counselors. Seven professional counselors evaluated human and
+  GPT-4-generated utterances on a 3-point scale (Krippendorff's alpha 0.24; mean human
+  0.99 vs GPT-4 0.94; Mann-Whitney U-test showed no significant difference). Recorded
+  as demonstration because the sessions are expert-counselor role-play made to evaluate
+  an LLM counselling system, not naturally occurring sessions. Classified as unreleased:
+  the paper names no repository, dataset card, download, or data-use route, so access
+  is metadata-only. This is the earlier pilot from the same research group that later
+  built KokoroChat (6,589 dialogues, 2025); it is a distinct, separate collection.
