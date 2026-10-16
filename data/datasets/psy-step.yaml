@@ -1,0 +1,86 @@
+id: psy-step
+title: "Psy-Step: Structured Thought Elicitation with Planning"
+canonical_url: https://arxiv.org/abs/2604.04448
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Synthetic CBT counseling dialogues generated with GPT-4o-mini from client profiles
+  built on the PatternReframe dataset (crowdsourced personas with annotator-assigned
+  negative thoughts). Each persona's negative thought is decomposed into a surface-level
+  problem and an automatic thought; dialogues run in two stages, diagnostic and
+  intervention, each driven by a therapeutic plan with an ordered action sequence.
+  Filtered for CBT fidelity using the Cognitive Therapy Rating Scale (dialogues with
+  any CTRS item at 4 or below on a 6-point scale were discarded; 67.71% retained).
+  130 sampled dialogues were reviewed by three mental health professionals. Authors:
+  Jihyun Lee et al., POSTECH. The corpus is also the training data for the paper's
+  Stepper counseling agent, built on Llama-3.1-8B-Instruct.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - cognitive_behavioral_therapy
+sessions: 6425
+longitudinal: false
+transcript:
+  available: unknown
+modalities:
+  - text
+annotations:
+  - automatic_thoughts
+  - therapeutic_plan_and_action_sequence
+  - ctrs_quality_filter
+generation:
+  method: llm_dialogue_generation
+  models:
+    - GPT-4o-mini
+  source_dataset: "PatternReframe (crowdsourced persona and negative-thought annotations; each thought decomposed into a surface-level problem and an automatic thought)"
+  synthetic_dialogues: true
+access:
+  level: metadata-only
+  requirements: >-
+    No repository, dataset card, or download URL is named in the paper. The paper's
+    comparison table marks Psy-Step as open, but gives no access route; arXiv's
+    Code, Data and Media section lists no author artifact, and a GitHub repository
+    search found no official release. Recorded metadata-only until an artifact
+    surfaces.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated in the paper. The article's CC BY license covers
+    the paper, not the data, per registry policy; the OpenAI API terms cited in the
+    paper cover the authors' model use, not the dataset.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Fully synthetic dialogues from decomposed persona profiles; no real counseling
+    recordings and no participant data, so there is no real-client consent question.
+    CTRS-based filtering and manual spot checks are documented as quality control,
+    not as de-identification.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2604.04448
+    - https://arxiv.org/html/2604.04448v1
+  supporting_publications: []
+publication_year: 2026
+release_year: null
+historical_significance:
+  - CBT-structured synthetic corpus with explicit automatic-thought elicitation and ordered action sequences
+notes: >-
+  Counts are the paper's published figures (6,425 dialogues and 231,172 turns after
+  filtering, section 3.3 and Table 1; average 18.0 turns per dialogue), not
+  independently re-counted. Table 1 also confirms English language and synthetic
+  problem source (PatternReframe, described as crowdsourced personas). The 130-dialogue
+  expert review was a dataset quality check, reported separately from the Stepper
+  agent evaluations. Status stays partially-verified because identity, provenance
+  and design are confirmed from the primary paper, but no access route or dataset
+  license is established.
+last_verified: 2026-10-16
