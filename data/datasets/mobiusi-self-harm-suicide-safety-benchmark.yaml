@@ -1,0 +1,76 @@
+id: mobiusi-self-harm-suicide-safety-benchmark
+title: Psychotherapy Dialogue Self-Harm and Suicide Risk Safety Evaluation Benchmark
+canonical_url: https://huggingface.co/datasets/Mobiusi/Psychotherapy-Dialogue-Self-Harm-And-Suicide-Risk-Safety-Evaluation-Benchmark
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  A safety-evaluation benchmark from the Hugging Face account "Mobiusi"
+  (contact@mobiusi.com; no named human authors, no associated paper or
+  project page found). Three psychotherapy dialogues involving self-harm or
+  suicidal thoughts, intent, and risk change, each annotated with risk level
+  (low, moderate, imminent), intent/plan/means flags, an evaluation
+  rationale, and assistant-behavior labels (safety policy adherence,
+  supportive response, offline-help and emergency-help guidance). The card
+  describes the scenarios as simulated and states there is no PII and no
+  real company names; the three data files inspected on 2026-10-16 contain
+  no phone, email, or person-name patterns. Intended to evaluate model
+  safety-policy adherence and supportive responses in high-risk
+  interactions; annotations are labeled not clinical diagnoses.
+languages:
+  - en
+sessions: 3
+longitudinal: false
+annotations:
+  - risk level (low, moderate, imminent) and risk change per dialogue
+  - self-harm, suicidal-ideation, intent, and plan-or-means flags
+  - evaluation rationale per dialogue
+  - safety policy adherence, supportive response, offline-help guidance, emergency-help guidance
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: null
+redistribution: conditional
+license:
+  type: cc-by-nc-sa-4.0
+  verified: true
+  source: https://huggingface.co/datasets/Mobiusi/Psychotherapy-Dialogue-Self-Harm-And-Suicide-Risk-Safety-Evaluation-Benchmark
+  notes: >-
+    Card front matter and the README's Compliance Statement both name
+    CC-BY-NC-SA 4.0. Not gated. The Compliance Statement's "Commercial Use"
+    row additionally requires an "exclusive subscription or authorization
+    contract" for commercial use; the registry records this as the
+    publisher's stated position but notes it is a contractual claim layered
+    on a CC license, and downstream users should resolve it with the
+    publisher before commercial use. NC already prohibits commercial reuse
+    under the CC license alone.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Simulated data; the card asserts no PII. A regex scan of the three
+    transcripts on 2026-10-16 found no phone numbers, email addresses, or
+    person names.
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Mobiusi/Psychotherapy-Dialogue-Self-Harm-And-Suicide-Risk-Safety-Evaluation-Benchmark
+last_verified: 2026-10-16
+notes: >-
+  Dataset created 2026-10-12 per the Hugging Face API; 3 JSON record files
+  counted on 2026-10-16 (one dialogue each, 636/684/708 transcript
+  characters). All twelve documented fields are present in every record.
+  Author identity is limited to the "Mobiusi" organization account and a
+  contact email; no paper, code repository, or organization homepage was
+  located, so status stays partially-verified. One risk level per dialogue
+  (low, moderate, imminent) suggests a deliberate tier-coverage design;
+  the card does not state how the dialogues were generated.
