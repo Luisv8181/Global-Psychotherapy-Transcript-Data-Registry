@@ -73,5 +73,12 @@ notes: >-
   34 professional counsellors and 13 students in GEMCo-B, two authoring counsellors plus one
   independent reviewer in GEMCo-A. Annotations cover OnCoCo counsellor-act spans and
   GoEmotions/Ekman client-emotion spans. The corpus was validated against 124 withheld real
-  conversations reported only as aggregates.
-last_verified: 2026-10-10
+  conversations reported only as aggregates. Re-verified 2026-11-02 against live
+  primary sources: repository still public, last push 2026-06-19, tree unchanged
+  (50 gemco_A + 36 gemco_B conversation files, 50 + 36 annotation files);
+  message recount from the data files gives 403 + 325 = 728, matching the
+  record; LICENSE still CC BY 4.0 covering the gemco_A and gemco_B conversation
+  data and annotations; arXiv paper now v2 (revised 2026-08-10), abstract still
+  86 conversations, 728 messages, 124 real held-out conversations. No
+  classification, license, or access change.
+last_verified: 2026-11-02
