@@ -66,4 +66,22 @@ notes: >-
   Re-checked 2026-10-11: ScienceDirect still returns HTTP 403 to automated fetch, and
   web, GitHub API and Hugging Face searches found no preprint, code repository, dataset
   card or author-published video list. The review remains open.
+  Re-checked 2026-11-02 - the ScienceDirect article page now loads in a live browser as
+  an abstract page, where automated fetch previously returned HTTP 403 and the live browser
+  previously met a Cloudflare challenge. The version of record is shown as Pattern Recognition
+  volume 179 part C, November 2026, article 113766, with authors He Hu, Juzheng Si, Qianning
+  Wang, Tengjin Weng, Yihong Ji, Jiyue Jiang, Fei Ma, Yucheng Zhou, Laizhong Cui, and Qi Tian.
+  Full text was not accessible without organizational access or purchase, so the data section
+  and any data availability statement remain unread. The visible abstract describes the benchmark
+  as built from publicly available psychotherapy demonstration videos featuring real therapists
+  and reports 1,000 sessions, more than 100 hours of audio, and more than 20,000 dialogues across
+  nine expert-validated tasks. Those abstract figures sit alongside the 2026-09-24 reading of more
+  than 325 hours of source video and are not reconciled here, since the abstract is secondary
+  evidence and the full text was not read. No data availability statement, dataset repository link,
+  code link, or video list was visible on the abstract page, and GitHub repository search still
+  returns only the third-party PuLing0/minddialog_infer reproduction with no author link. Whether
+  the people in the client role were real clients, actors in role-play or demonstration sessions, or
+  simulated clients remains unresolved, so dataset_type stays unknown and the classification question
+  stays with the repository owner. last_verified is unchanged because the primary full text was
+  not read.
 last_verified: 2026-09-24
