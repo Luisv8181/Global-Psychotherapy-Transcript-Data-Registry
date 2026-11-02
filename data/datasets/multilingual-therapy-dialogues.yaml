@@ -1,0 +1,72 @@
+id: multilingual-therapy-dialogues
+title: "Multilingual Therapy Dialogues"
+canonical_url: https://huggingface.co/datasets/Algorithmic-Human-Development-Group/Multilingual-Therapy-Dialogues
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: mental_health_counseling
+source_context: >-
+  Bilingual patient-therapist exchange pairs in English and Persian. Per the
+  dataset card, English exchanges were collected from public sources and then
+  translated into Persian with Meta's SeamlessM4T model and refined in three
+  GPT-4o passes (tone, fluency, consistency). The released file pairs each
+  English patient turn and therapist turn with its Persian translation, so
+  the Persian side is model-transformed text, not originally Persian
+  conversation. The card names three upstream sources (Amod's
+  mental_health_counseling_conversations on Hugging Face and two Kaggle
+  mental-health conversation sets) plus additional manually curated sources,
+  but does not state whether the original English exchanges were real
+  sessions, role-plays, or otherwise produced, so the upstream provenance
+  stays unknown.
+languages:
+  - en
+  - fa
+sessions: 7179
+longitudinal: false
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Public Hugging Face dataset page; ungated, single CSV download.
+redistribution: unknown
+license:
+  type: mit
+  verified: false
+  source: https://huggingface.co/datasets/Algorithmic-Human-Development-Group/Multilingual-Therapy-Dialogues
+  notes: >-
+    The card metadata and card header declare MIT, but no license section in
+    the card body states what the MIT grant covers, and the underlying
+    English exchanges come from third-party public sources whose rights are
+    not addressed on the card. Treat redistribution as unknown until the
+    upstream rights are checked.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Algorithmic-Human-Development-Group/Multilingual-Therapy-Dialogues
+publication_year: 2025
+last_verified: 2026-11-02
+notes: >-
+  7,179 data rows counted from SAT_dataset.csv on 2026-11-02, matching the
+  card's reported 7,179 samples. File columns are an index plus Patient,
+  Therapist, Translated Patient, and Translated Therapist: each row is one
+  patient turn with one therapist turn, so the released unit is a single
+  exchange, not a multi-turn dialogue, despite the dataset name. Card
+  last modified 2026-06-12 per the Hugging Face API; publication_year 2025
+  reflects that posting, and no paper is published yet (the card's citation
+  block reads "To be updated once the paper is published" and its arXiv and
+  GitHub badges carry no links). The card's Filtering step description is
+  truncated mid-sentence in the published card, so the filtering criteria are
+  unknown. No paper, code repository, or author-published evaluation
+  accompanies the release. First Persian-language record in the registry;
+  the Persian text is machine translation plus LLM refinement and must not
+  be cited as native Persian counseling conversation.
