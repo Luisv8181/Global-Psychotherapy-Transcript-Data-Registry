@@ -1,0 +1,113 @@
+id: cbt-bench
+title: "CBT-Bench: Evaluating Large Language Models on Assisting Cognitive Behavior Therapy"
+canonical_url: https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+source_context: >-
+  Three-level benchmark for evaluating LLMs on assisting cognitive behavior
+  therapy, from Zhang et al. Level I is CBT-QA, multiple-choice questions on
+  CBT knowledge drawn from graduate CBT course exams plus items composed by
+  CBT experts. Level II is cognitive model understanding, with classification
+  examples built from patient speech in the TherapistQA dataset, which the
+  paper says was sourced from mental-health-related posts in online forums.
+  Experts extracted situation-plus-thought segments from each post and
+  annotated them for cognitive distortions, primary core beliefs, and
+  fine-grained core beliefs. Level III is CBT-DP, 156 Deliberate Practice
+  exercises in the Boswell and Constantino tradition, each a typical patient
+  speech across ten key aspects of CBT sessions at three difficulty levels,
+  with a reference therapist response. The release also carries model
+  generations for the DP exercises and expert pairwise comparisons of
+  references against generations. No component is a real therapy session.
+  The hybrid call is a judgment on this mixed composition - forum-derived
+  material transformed by expert extraction and annotation, plus
+  expert-composed test items and teaching exercises - rather than a claim
+  that the whole release has one provenance.
+therapy_modalities:
+  - cognitive_behavioral_therapy
+languages:
+  - en
+annotations:
+  - cognitive_distortion_labels
+  - primary_core_belief_labels
+  - fine_grained_core_belief_labels
+  - cbt_qa_answer_choices
+  - deliberate_practice_reference_responses
+  - expert_pairwise_comparisons
+  - model_generations_for_dp_exercises
+transcript:
+  available: true
+  format:
+    - json
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: >-
+    Public Hugging Face dataset under the Psychotherapy-LLM organization,
+    downloadable with no registration or gating.
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+  notes: >-
+    The dataset card metadata where the data lives declares license
+    cc-by-nc-4.0, so that is the type recorded here. Two conflicting
+    statements are unresolved, which is why the record stays
+    partially-verified rather than verified. The paper PDF footer states
+    CC BY-NC-SA 4.0, which adds a share-alike clause the card does not
+    carry, and the companion code repository mianzhang/CBT-Bench contains
+    no LICENSE file. Reusers should check the card and the paper before
+    redistributing, and should not assume the share-alike clause away.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    No real therapy sessions are included, so no client de-identification
+    claim applies to Levels I and III. Level II segments derive from public
+    forum posts via TherapistQA, but no de-identification or consent
+    statement for that derivation was confirmed from the sources read
+    this run, so both fields stay unknown.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+    - https://arxiv.org/abs/2410.13218
+    - https://arxiv.org/html/2410.13218v2
+    - https://github.com/mianzhang/CBT-Bench
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2410.13218
+publication_year: 2025
+last_verified: 2026-11-03
+notes: >-
+  Test-set counts verified by counting the released data files on
+  2026-11-03, and they match the paper and the dataset README. CBT-QA test
+  220 items, CBT-CD distortions test 146, CBT-PC primary core belief test
+  184, CBT-FC fine-grained core belief test 112, and CBT-DP reference
+  exercises 156 in total across ten files, 14, 16, 15, 17, 16, 15, 17, 16,
+  15 and 15 per file. Seed files counted the same day are qa_seed 47,
+  distortions_seed 20, core_major_seed 20 and core_fine_seed 20. The
+  qa_seed count disagrees with the paper, which says 50 QA pairs were held
+  out for in-context use from 270 total, 220 test plus 50 held out. The
+  released qa_seed.json holds 47 rows, so the 50 figure is recorded here
+  as the paper claim and 47 as the counted file, not reconciled. The
+  dp-pairwise-comparison.json file holds 468 rows. Ten distortion
+  categories, three primary core beliefs (helpless, unlovable, worthless)
+  and 19 fine-grained core belief categories are named in the paper and
+  README. Authors are Mian Zhang, Xianjun Yang, Xinlu Zhang, Travis
+  Labrum, Jamie C. Chiu, Shaun M. Eack, Fei Fang, William Yang Wang and
+  Zhiyu Zoey Chen, University of Texas at Dallas, University of
+  California Santa Barbara, University of Pittsburgh, Princeton University
+  and Carnegie Mellon University. Preprint v1 October 2024, v2 and NAACL
+  2025 camera-ready January 2025. The same Psychotherapy-LLM organization
+  already has a PsyCoPref record in this registry, and CBT-Bench is a
+  distinct benchmark, not a duplicate of it. This is a benchmark of
+  single-turn items, not multi-turn conversations. Do not cite it for
+  turn-taking or dialogue dynamics evidence.
