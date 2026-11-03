@@ -1,0 +1,111 @@
+id: stage-aware-cbt-dialogues
+title: "Mental Health CBT Dialogues"
+canonical_url: https://huggingface.co/datasets/yuana1234567/Mental-health-CBT-dialogues
+status: verified
+dataset_type: synthetic
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+source_context: >-
+  Synthetic stage-aware cognitive behavioral therapy dialogue pairs
+  generated for inter-session support research. Each row is one patient
+  message plus one therapist response for a synthetic patient profile at
+  one CBT stage, with the prior action plan and therapeutic progress
+  carried forward to the next stage through a state card. Seed material
+  came from therapist-patient dialogues in Beck's CBT Manual, used as
+  ground-truth exemplars for prompting, not as released data. Three
+  exchanges were generated per profile, one for each of the early, middle
+  and late stages of treatment. Two mental health experts reviewed
+  randomly selected subsets balanced across stages and their feedback
+  refined phrasing, tone and therapeutic framing.
+therapy_modalities:
+  - cognitive_behavioral_therapy
+languages:
+  - en
+language_context: original
+sessions: null
+longitudinal: true
+clinical_topics:
+  - grief
+  - divorce
+  - relationship_issues
+  - work_academic_burnout
+  - life_transitions
+  - stress_and_coping
+annotations:
+  - therapy stage (early, middle, late)
+  - therapeutic topic
+  - patient population segment
+  - synthetic patient age and gender
+  - state card update (prior plan and progress)
+  - plan kind (new action plan or update)
+  - safety flags
+transcript:
+  available: true
+  format:
+    - jsonl
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+access:
+  level: open
+  requirements: Public, ungated Hugging Face dataset page with a single JSONL download.
+redistribution: allowed
+license:
+  type: cc-by-4.0
+  verified: true
+  source: https://huggingface.co/datasets/yuana1234567/Mental-health-CBT-dialogues
+  notes: >-
+    CC BY 4.0 is declared in the dataset card metadata and in the README
+    frontmatter on the dataset page itself, which is where the data lives.
+    No separate LICENSE file exists in the repository. Attribution is
+    required under the license terms.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    All patient profiles are synthetic and generated for this dataset.
+    The paper states the seed transcripts came from a published CBT
+    manual, not from real patient records. No re-identification
+    assessment is reported.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/yuana1234567/Mental-health-CBT-dialogues
+    - https://chrystalii.github.io/AI4mental/assets/papers/KDD_AI4Mental_CBTLLM_Final.pdf
+  supporting_publications:
+    - https://huggingface.co/datasets/yuana1234567/Mental-health-CBT-dialogues/raw/main/README.md
+publication_year: 2026
+release_year: 2026
+last_verified: 2026-11-02
+notes: >-
+  Counted from CBT_dialogues.jsonl on 2026-11-02, 9,000 rows, matching
+  the card and the paper. Stage split is exactly 3,000 early, 3,000
+  middle and 3,000 late, and each of the six topics holds exactly 1,500
+  rows, consistent with 3,000 profiles times three stages. Segment split
+  counted from the same file is Adults 3,522, General medical 1,542,
+  Other 1,650, Elderly 576, Adolescents 549, Perinatal 900 and Children
+  261. The paper reports an 80/10/10 train/validation/test split of the
+  same 9,000 pairs, but the released file carries no split column, so a
+  user cannot recover the paper's held-out test set from the download.
+  The paper also fine-tunes LLaMA-3.1-8B on the data as SA-CBT-LLM, but
+  neither the paper nor the card names the model that generated the
+  dialogues, so the generating model is left unrecorded. One URL
+  discrepancy is preserved here rather than smoothed over. The paper
+  prints the dataset address without a hyphen before CBT, while the
+  live Hugging Face dataset id carries that hyphen, and the hyphenated
+  address is the one that resolves. The card still says the paper link
+  will be added after publication, even though the workshop paper is now
+  public, so the card is stale on that point. Authors are Aijia Yuan,
+  Yang Gao, Edlin Garcia, Jianna Hur and Sagar Samtani, Indiana
+  University Bloomington, and the paper appeared at the AI for Cognitive
+  and Mental Health Support workshop at KDD 2026. Each row is a single
+  exchange, so the structure is recorded as single-turn question-answer
+  even though the dataset name uses the word dialogues. The three rows
+  sharing a profile id are linked by that id and by the state card, not
+  by a multi-turn conversation transcript.
