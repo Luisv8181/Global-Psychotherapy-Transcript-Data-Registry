@@ -1,0 +1,74 @@
+id: fadodr-mental-health-therapy
+title: "Mental Health Therapy (fadodr merged instruction dataset)"
+canonical_url: https://huggingface.co/datasets/fadodr/mental_health_therapy
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+source_context: >-
+  A third-party merged instruction-tuning dataset published on Hugging Face by
+  fadodr. Its README states it combines a real-therapy conversation set from a
+  Counsel Chat forum with synthetic discussion generated with ChatGPT, obtained
+  from three named sources and cleaned to anonymize it and remove conversations
+  deemed not relevant. The three named sources are nbertagnolli/counsel-chat,
+  Amod/mental_health_counseling_conversations and ShenLab/MentalChat16K, and all
+  three dataset pages resolve on Hugging Face. The files use an
+  instruction/input/output schema, so each row is a single-turn prompt/response
+  triple rather than a multi-turn session. The README gives no breakdown of how
+  many rows come from each source and no detail on the cleaning or anonymization
+  method, so the real-versus-synthetic mix and the quality of the anonymization
+  claim cannot be checked from the card alone. Counsel Chat and MentalChat16K are
+  already registry records in their own right, so this record covers only the
+  merged derivative, not its sources.
+languages:
+  - en
+sessions: null
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: >-
+    Public ungated parquet files on Hugging Face, train and test splits, no
+    account or agreement step reported on the card.
+redistribution: conditional
+license:
+  type: MIT
+  verified: false
+  source: https://huggingface.co/datasets/fadodr/mental_health_therapy
+  notes: >-
+    MIT is declared only in the dataset card metadata tags. The repository file
+    list contains no LICENSE file, and the three source datasets carry their own
+    terms, so the MIT tag is the uploader declaration, not a verified data
+    license, and it cannot be taken as clearing redistribution of the merged
+    third-party text.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The README claims the merged data was cleaned to make it anonymized, but
+    gives no method, no example of what was removed, and no re-identification
+    assessment. The claim is recorded as documented, not verified, and one source
+    is forum material that was public before merging.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/fadodr/mental_health_therapy
+    - https://huggingface.co/api/datasets/fadodr/mental_health_therapy
+  supporting_publications: []
+release_year: 2024
+last_verified: 2026-11-03
+notes: >-
+  Row counts are the Hugging Face API dataset_info figures read 2026-11-03,
+  train 8,580 plus test 3,678 for a total of 12,258 rows. The card was created
+  2024-08-01 per the API createdAt field, which is the basis for release_year
+  2024. No paper is attached to this dataset, so no article license was borrowed
+  for the data license. Users should treat the MIT tag and the anonymization
+  claim as uploader assertions and check the three source records before reuse,
+  since the merge inherits whatever limits its sources carry.
