@@ -1,0 +1,81 @@
+id: desc-diagesc
+title: "DESC: Diagnostic Emotional Support Conversation dataset"
+canonical_url: https://github.com/seungyeon-seo/DiagESC
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: emotional_support
+source_context: >-
+  DESC was synthesized for the Diagnostic Emotional Support Conversation (DiagESC) task (Seo and Lee,
+  POSTECH). Dialogue histories and persona sentences come from PESConv, the persona-augmented form of
+  the ESC emotional-support corpus, truncated to the point where at least two persona sentences have been
+  gathered; GPT-4 then generates diagnostic turns that ask about the nine PHQ-9 depression symptoms, with
+  seeker answers paraphrased and augmented from PHQ-9 response templates, and a closing turn that reports
+  the summed severity band. Because existing human-written dialogue history is retained and extended with
+  model-generated diagnostic turns, the corpus is hybrid rather than fully synthetic.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - emotional_support
+clinical_topics:
+  - depression
+annotations:
+  - depression_labels
+  - support_strategies
+longitudinal: false
+sessions: 976
+transcript:
+  available: true
+  format:
+    - text
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+access:
+  level: open
+  requirements: Public, ungated GitHub repository; train.json, valid.json and test.json.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No license stated anywhere checked 2026-11-03: the repository has no LICENSE file, the GitHub API
+    reports no license, and the one-paragraph README names none. Do not treat the paper's open-access
+    status as a dataset license.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    No real patient data is involved on the paper's account: history turns come from the PESConv/ESC
+    corpus and diagnostic turns are GPT-4 generated. The paper does not discuss de-identification of
+    DESC itself, so nothing is claimed here.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2408.06044
+    - https://arxiv.org/html/2408.06044v1
+    - https://github.com/seungyeon-seo/DiagESC
+  supporting_publications: []
+publication_year: 2024
+release_year: 2024
+notes: >-
+  Counts counted from the release files on 2026-11-03 (train.json 730, valid.json 126, test.json 120,
+  total 976), matching paper section 6.1 exactly; average 42 turns per dialogue, range 24 to 111
+  (paper). PHQ-9 severity bands: Minimal 0-4, Mild 5-9, Moderate 10-14, Moderately severe 15-19,
+  Severe 20-27; the Severe band holds more samples because it covers a wider score range. Validation
+  and test seeker utterances were expert-filtered: three psychologists with over four years of
+  professional experience re-labeled each symptom, with the mode value kept. Generation used GPT-4 with
+  keyword filtering on supporter turns and a RoBERTa classifier filter (threshold 0.7, trained on 256
+  manually verified utterances) on seeker turns. Reported diagnostic agreement against expert
+  annotation: mean QWK 0.70 across symptoms. Limits: no license, so redistribution is unknown; the
+  README is a single line and documents no terms, splits beyond the file names, or intended use; the
+  paper's severity labels are assigned by construction (pre-assigned PHQ-9 labels), not observed
+  diagnoses, so the corpus supports dialogue and diagnosis-generation research, not clinical claims.
+last_verified: 2026-11-03
