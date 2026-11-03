@@ -1,0 +1,80 @@
+id: mental-trust
+title: "MENTAL-TRUST: Trust Modeling in Counseling Conversations"
+canonical_url: https://arxiv.org/abs/2501.03064
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: multi_turn
+domain: counseling
+source_context: >-
+  A trust-annotation layer over the HOPE counseling conversations, not newly collected dialogue.
+  Every patient utterance in the HOPE subset is labelled with one of seven expert-verified ordinal
+  trust levels, four major levels (least trust, low trust, building trust, achieved trust) plus
+  intermediate levels (1.5, 2.5, 3.5), with conversations initialized at 2.5, and topic shifts are
+  also annotated. The paper benchmarks trust modelling on the annotations as TRUST-BENCH. The
+  dialogue text itself is HOPE's, so provenance follows the HOPE record.
+therapy_modalities:
+  - counseling
+languages:
+  - en
+language_context: original
+sessions: null
+longitudinal: false
+annotations:
+  - patient trust levels (seven ordinal levels)
+  - topic shifts
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: metadata-only
+  requirements: >-
+    The paper names no repository, dataset card, or download location for the annotations, and
+    none was found on 2026-11-03 (GitHub repository search, Hugging Face datasets API, web
+    search). The underlying HOPE transcripts are separately available under a research-access
+    agreement; see the hope-counseling-conversations record. No public access route for the
+    MENTAL-TRUST annotations themselves is confirmed.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license was stated in the paper. The arXiv page shows a CC BY-NC-ND 4.0 icon
+    for the paper itself; that is not the dataset's license.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper states the source data is a publicly available counseling dataset that had
+    undergone procedures to ensure anonymity and PII protection, but reports no
+    re-identification assessment of its own, and the HOPE record's consent gap still stands.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/html/2501.03064v1
+    - https://arxiv.org/abs/2501.03064
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2501.03064
+publication_year: 2025
+last_verified: 2026-11-03
+notes: >-
+  Authors Aseem Srivastava (IIIT Delhi), Zuhair Hasan Shaik (IIIT Dharwad), Tanmoy Chakraborty
+  (IIT Delhi), Md Shad Akhtar (IIIT Delhi); arXiv 2501.03064 v1, 6 January 2025. Annotation was
+  iterative, three expert linguists plus domain experts, final Cohen's kappa 0.77 after three
+  rounds (0.22, then 0.43, then 0.77). COUNT DISAGREEMENT, recorded not resolved: the abstract
+  and section 3 claim 212 dialogues and 12.9K utterances, but section 4 and Table 2 total 167
+  sessions (116 train, 17 test, 34 validation) and 10,172 utterances (6,902 plus 949 plus 2,321),
+  so the sessions field is left null rather than picking one figure. dataset_type stays unknown
+  to match HOPE; the paper's conclusion phrase about real counseling dialogues is not treated
+  as provenance evidence, since the HOPE record itself is unknown and many HOPE source videos
+  are titled as role-plays. Limitations stated in the paper: English only, text only, and no
+  proposed trust-modelling method. A secondary author page reports acceptance for oral
+  presentation at WWW 2025; no proceedings record was confirmed this run, so that venue claim
+  stays unconfirmed. Discovery route: a Spanish-language web search for counseling dialogue
+  corpora surfaced this English HOPE derivative; the same search also returned only
+  already-recorded HOPE and MentalChat16K plus out-of-scope items.
