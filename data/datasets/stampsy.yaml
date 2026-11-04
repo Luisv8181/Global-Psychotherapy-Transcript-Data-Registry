@@ -1,0 +1,82 @@
+id: stampsy
+title: "STAMPsy: Towards SpatioTemporal-Aware Mixed-Type Dialogues for Psychological Counseling"
+canonical_url: https://github.com/JOY-SWang/STAMPsy
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Chinese mixed-type online psychological counseling dialogues. Each dialogue carries at least
+  three dialogue types from five, task-oriented dialogue for diagnosis, knowledge-grounded dialogue,
+  conversational recommendation, empathetic dialogue, and question answering, with counselor turns
+  labeled by Hill helping skills and each turn stamped with a non-private spatiotemporal state
+  (time, location, weather) plus reference knowledge. Construction starts from 4,000 single texts
+  (public counseling cases and in-depth descriptions from counseling books plus selected PsyQA
+  conversations), filtered for private information, then expands single-turn text into multi-turn
+  dialogues with a multipart LLM system prompt shaped by the 9-Box Case Conceptualization Model.
+  Clinical psychologists checked the consistency and correctness of the dialogues, 8 psychology
+  experts annotated the dialogue goals, and two senior psychologists scored a 1,000-dialogue sample
+  at 0.91 with kappa 0.84. Accepted by AAAI as an oral presentation per the repository README.
+geography: null
+languages: [zh]
+language_context: original
+therapy_modalities:
+  - psychological_counseling
+sessions: 5006
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - json
+annotations:
+  - counselor helping skills (Hill)
+  - client behaviors
+  - spatiotemporal stamps
+  - knowledge-graph triples
+access:
+  level: research-agreement
+  requirements: >-
+    Only a small sample (STAMPsy_example.json) is public in the repository. For the full dataset,
+    sign the user agreement PDF in the repository and email the signed PDF to the maintainers.
+    A download link is sent after review. The repository README notes an English version of the
+    agreement was still forthcoming at last check.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No LICENSE file in the dataset repository and no dataset license stated in the paper. The
+    arXiv page shows a CC BY 4.0 icon for the paper itself, and that is not the dataset license.
+    The signed user agreement governs use, and its terms were not read this run because the
+    agreement PDF is in Chinese and was not translated.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: false
+  notes: >-
+    The paper reports filtering private information from the collected case texts and labeling
+    only non-private spatiotemporal state. No re-identification assessment was reported.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: true
+evidence:
+  primary_sources:
+    - https://arxiv.org/html/2412.16674v1
+    - https://github.com/JOY-SWang/STAMPsy
+  supporting_publications:
+    - https://arxiv.org/abs/2412.16674
+publication_year: 2025
+last_verified: 2026-11-04
+notes: >-
+  Count disagreement, recorded not resolved. The introduction states 61,832 utterances, but
+  Table 3 lists 24,762 user utterances and 25,661 bot utterances, which sum to 50,423. The
+  5,006-dialogue count is consistent across the abstract, the introduction, and Table 3. Table 3
+  also reports an average of 16.51 goals per dialogue (range 6 to 34) and 3.74 distinct activities
+  per dialogue. The 4,000 single texts are the construction input, not a session count. Dataset
+  type is hybrid, not synthetic, because the dialogues are LLM expansions of human-authored
+  single-turn material (PsyQA conversations and published case descriptions), following the AugESC
+  precedent in this registry. No real client session stands behind any dialogue. The full data
+  files were not inspected because access requires the signed agreement, so the transcript format
+  json reflects the public sample file only. Geography is left null because the paper names
+  Chinese-language data from Beijing-affiliated institutions but does not state where the source
+  cases came from.
