@@ -46,6 +46,14 @@ access:
     revised 2026-01-24; GitHub API repository search for MindCorpus and MindChat
     returned no author-published artifact; HF datasets API search returned only
     unrelated English "Mind Corpus" sets; web search found no author-hosted repo).
+    Re-checked 2026-11-03: arXiv API still shows v2 only with abs and pdf links
+    and no code or data link; GitHub API repository search for MindCorpus returned
+    0 repos and for MindChat 90 repos with no author artifact among the top 30
+    screened; HF datasets API search for mindcorpus returned only the same two
+    unrelated English "Mind Corpus" sets and for mindchat only user1009/mindchat
+    (empty card, unattributable) and dongSHE/MindChat-R0-FT-Data (the companion
+    collected YiXinLi corpus, not MindCorpus); web search returned paper pages
+    only, no author-hosted release artifact.
 redistribution: unknown
 license:
   type: unknown
@@ -72,7 +80,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.01993
 publication_year: 2026
-last_verified: 2026-10-15
+last_verified: 2026-11-03
 notes: >-
   Statistics are the paper's reported figures (Table II): Chinese, 5.7k sessions,
   12.0 utterances per session, 84.0 average length; the 5700 figure is approximate.
@@ -83,5 +91,7 @@ notes: >-
   Record stays partially-verified until a locatable release artifact (repository,
   dataset card, or access route) surfaces. Re-checked 2026-10-13 and 2026-10-15:
   on both dates GitHub API, HF datasets API, and web searches found no
-  author-published release artifact; arXiv still shows v2 only. Companion record
+  author-published release artifact; arXiv still shows v2 only. Re-checked
+  2026-11-03 with the same result across arXiv API, GitHub API, HF datasets API,
+  and web search. Companion record
   mindchat-r0-ft-data covers the related collected YiXinLi corpus.
