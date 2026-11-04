@@ -1,0 +1,104 @@
+id: cradle-dialogue
+title: "CRADLE-Dialogue: Clinician-Annotated Turn-Level Crisis Detection Benchmark"
+canonical_url: https://huggingface.co/datasets/SungJoo/Cradle-Dialogue
+status: verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: crisis_support
+source_context: >-
+  A benchmark for turn-level crisis detection in multi-turn conversations,
+  introduced in "Expert-Level Crisis Detection in Mental Health Conversations"
+  (Byun et al., arXiv 2606.10380). Dialogues were generated with GPT-5 from
+  real high-risk Reddit posts in CRADLE Bench, conditioned on an assigned
+  crisis label and one of seven disclosure scenarios, with a controlled
+  crisis reveal timing of early, mid, or late. The test split is annotated at
+  the turn level by four mental health professionals. Each crisis event gets
+  at most one Alert label for the earliest ambiguous signal and one Confirm
+  label for the turn where a specific crisis type becomes explicitly
+  identifiable, each with an ongoing or past temporal state. The train and
+  validation splits are synthetic dialogues with labels injected during
+  generation, not clinician-annotated. The paper states the dialogues are
+  generated rather than drawn from naturally occurring counseling, hotline,
+  or peer-support conversations, so no real client session stands behind any
+  dialogue. The seven scenarios are talking to a close friend or family
+  member, a therapy or counseling session, a private conversation with a
+  teacher or professor, a doctor visit, reporting to an authority figure,
+  an anonymous help post in a support forum, and casual online talk, so only
+  a subset of dialogues are set in counseling sessions.
+languages:
+  - en
+sessions: 4078
+longitudinal: false
+clinical_topics:
+  - suicidal_ideation
+  - self_harm
+  - domestic_violence
+  - rape
+  - sexual_harassment
+  - child_abuse
+annotations:
+  - turn-level multi-label crisis annotations with ongoing or past temporal state
+  - Alert labels for the earliest ambiguous signal of possible crisis
+  - Confirm labels for the turn where a specific crisis type becomes identifiable
+  - scenario assignment and controlled reveal timing per dialogue
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Openly downloadable parquet files from Hugging Face, no registration or agreement required.
+redistribution: conditional
+license:
+  type: cc-by-nc-4.0
+  verified: true
+  source: https://huggingface.co/datasets/SungJoo/Cradle-Dialogue
+  notes: >-
+    The license is declared in the dataset card frontmatter and in the
+    card metadata tags on Hugging Face, where the data lives. Non-commercial
+    reuse only, with attribution. The dataset API top-level license field
+    returns null, so the card frontmatter and tags are the license source
+    recorded here. The project GitHub repository carries no LICENSE file,
+    and the arXiv paper license was not taken as the data license.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Dialogues are model-generated from public Reddit posts, not transcripts
+    of real sessions. No de-identification or re-identification statement
+    for CRADLE-Dialogue was found in the sources read. The underlying
+    CRADLE Bench posts carry their own provenance, which this record does
+    not re-verify.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/SungJoo/Cradle-Dialogue
+    - https://github.com/emorynlp/CradleBench
+  supporting_publications:
+    - https://arxiv.org/abs/2606.10380
+publication_year: 2026
+last_verified: 2026-11-04
+notes: >-
+  Counted from the Hugging Face parquet files on 2026-11-04. Test 8,975 rows,
+  validation 6,679 rows, and train 48,557 rows, matching the card split
+  counts and the paper figures exactly. The files carry only turn_id, text,
+  and labels columns. Dialogue counts were recovered from turn_id resets
+  in file order and match the published figures, with test 600 dialogues,
+  validation 420 dialogues, and train 3,058 dialogues, for 4,078 dialogues
+  and 64,211 turns in total. The card README data-fields section names a
+  dialogue_id field that is absent from the shipped files, so dialogue
+  boundaries in the files rest on turn_id resets in file order, recorded
+  here as an assumption, not a documented field. Test split statistics from
+  the paper are 713 crisis labels, 226 dialogues with at least one Alert
+  label, 417 with at least one Confirm label, and 160 with neither, with an
+  average of 14.96 turns per test dialogue. Annotation agreement on
+  crisis-labeled turns was Cohen kappa 0.51 to 0.75 across two disjoint
+  annotator teams, with adjudication by a third annotator and senior-expert
+  tie-break. The language is English in all paper examples and card text
+  read, and no separate language statement was found. No dialogue text is
+  reproduced in this record.
