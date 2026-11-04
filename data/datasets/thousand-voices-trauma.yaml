@@ -1,0 +1,111 @@
+id: thousand-voices-trauma
+title: "Thousand Voices of Trauma: A Large-Scale Synthetic Dataset for Modeling Prolonged Exposure Therapy Conversations"
+canonical_url: https://huggingface.co/datasets/yenopoya/thousand-voices-trauma
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Synthetic prolonged exposure (PE) therapy dialogues for PTSD, released
+  with the NeurIPS 2025 Datasets and Benchmarks paper by Suhas BN, Andrew
+  M. Sherrill, Rosa I. Arriaga, Chris W. Wiese and Saeed Abdullah
+  (Penn State, Emory University, Georgia Tech). Each of 500 simulated
+  clinical cases is structured into six core PE phases, yielding 3,000
+  conversation files, all generated with Claude Sonnet 3.5 from
+  clinically grounded prompt templates. Fully simulated: no real patients
+  or real session transcripts are involved, and the paper states the
+  prompts were refined with input from licensed psychotherapists based
+  on their experience delivering PE therapy, not on real transcripts.
+therapy_modalities:
+  - prolonged_exposure
+languages:
+  - en
+language_context: English
+sessions: 500
+participants: 500
+longitudinal: false
+clinical_topics:
+  - ptsd
+  - trauma
+annotations:
+  - client demographics (age, gender, ethnicity, relationship status, occupation, living situation)
+  - trauma type (20 types)
+  - trauma-related behaviors (10 types)
+  - co-occurring conditions
+  - therapist metadata (age, gender, profile)
+  - conversation phase (six PE phases)
+  - emotional trajectory benchmark scores
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+access:
+  level: registration
+  requirements: >-
+    Gated Hugging Face dataset: a Hugging Face account and acceptance of
+    the dataset's access conditions are required before the files are
+    visible. The dataset card text itself is public. The paper's data
+    availability section likewise describes gated access on Hugging Face
+    under a restrictive license.
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/yenopoya/thousand-voices-trauma
+  notes: >-
+    The dataset card's License section states the dataset is released
+    under CC BY-NC 4.0. The arXiv paper's own open-access license is a
+    different license for the paper and was not borrowed as the dataset
+    license. Non-commercial use only, per the CC BY-NC 4.0 terms.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Fully synthetic per both the card and the paper. Simulated profiles
+    carry diverse demographics (paper abstract: ages 18-80, mean 49.3;
+    49.4% male, 44.4% female, 6.2% non-binary) and 20 trauma types, but no
+    real participants are involved. The card restricts use to research
+    and educational purposes and forbids consumer-facing mental health
+    applications, diagnostic or treatment claims, and deployment in
+    unsupervised clinical settings.
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/yenopoya/thousand-voices-trauma
+    - https://arxiv.org/abs/2504.13955v4
+    - https://openreview.net/pdf/353bb3f2a463cce33dc56b6609d68a328dc97d66.pdf
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2504.13955
+publication_year: 2025
+last_verified: 2026-11-04
+notes: >-
+  Sessions are counted as 500 clinical cases, each yielding six
+  phase-conversations, for 3,000 conversation files plus matched metadata
+  files, per both the paper and the card; the 3,000 figure was not
+  counted from the files this run because the Hugging Face files sit
+  behind the gated-access consent step, which is why the record stays
+  partially-verified rather than verified. Phase labels differ slightly
+  between sources and are recorded, not reconciled: the card lists P5
+  Orientation to Imaginal Exposure, P6 Monitoring SUDS Ratings, P7
+  Reinforcing During Exposure, P8 Eliciting Thoughts and Feelings, P10
+  Full Imaginal Exposure and P11 Processing the Exposure, while the
+  paper names Orientation to Imaginal Exposure, Imaginal Exposure
+  Duration, Monitoring SUDS Ratings, Reinforcing Comments, Eliciting
+  Thoughts and Feelings, and Processing the Imaginal. The companion
+  EMNLP 2025 Findings fidelity study (How Real Are Synthetic Therapy
+  Conversations, arXiv 2504.21800) analyzed a 400-conversation subset
+  (200 real-world and 200 synthetic); that subset figure is not the
+  release size and is not recorded as one. Clinical experts validated
+  therapeutic fidelity per the paper, while also suggesting refinements
+  for greater authenticity. Screen-outs this run: introvoyz041 HF sets
+  (PMC-Treatment medical literature, pgc-schizophrenia genetics, a
+  Clinicians Thesaurus book text, STEM/chemistry sets) are not
+  psychotherapy conversation corpora; omi-health medical-dialogue-to-soap-summary
+  is general medical dialogue summarization, not psychotherapy.
