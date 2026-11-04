@@ -1,0 +1,82 @@
+id: augmented-counselchat
+title: "LLM-Augmented Multi-turn CounselChat Dialogues"
+canonical_url: https://arxiv.org/abs/2406.08718
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Single-turn CounselChat question-answer pairs (record counsel-chat) expanded into
+  multi-turn counseling dialogues by a two-step LLM pipeline. Step 1 extracts client
+  information, therapist counseling characteristics, and a description of the client's
+  mental disorder from each source pair. Step 2 generates the multi-turn dialogue with
+  the instruction-tuned Llama3-70B. The first turn of each augmented dialogue reproduces
+  the original client utterance and the response of the most-recommended therapist for
+  that question; subsequent turns are model-generated. The source pairs were selected
+  for four disorder categories, and one expert per client utterance was used. Authors
+  are affiliated with KT (South Korea). Presented at the IJCAI 2024 AI4Research workshop.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - counseling
+clinical_topics:
+  - depression
+  - anxiety
+  - anger_management
+  - trauma
+sessions: 143
+longitudinal: false
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: metadata-only
+  requirements: >-
+    The paper's abstract states the pipeline and dataset are publicly available and
+    links the repository below, but as of 2026-11-04 that repository contains only a
+    README.md file (92 bytes, title only) and no data files, code, or license. No
+    public access route to the augmented dialogues themselves was found.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated in the paper and the linked repository carries no
+    LICENSE file. The arXiv page shows a CC BY 4.0 icon for the paper itself; that is
+    not the dataset's license.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper does not discuss de-identification. First turns reproduce CounselChat
+    posts that were already public, and later turns are model-generated; no
+    re-identification assessment was reported.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/html/2406.08718v1
+    - https://github.com/jwkim-chat/A-Data-Augmentation-Pipeline-Leveraging-Large-Language-Models-for-Counseling-Conversations
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2406.08718
+publication_year: 2024
+last_verified: 2026-11-04
+notes: >-
+  Count distribution from Table 1 of the paper: Depression 69, Anxiety 45, Anger
+  Management 16, Trauma 13, summing to 143 augmented cases. A random subset of 70
+  dialogues (Depression 34, Anxiety 22, Anger Management 8, Trauma 6) was used as the
+  paper's test set for zero-shot and few-shot generation experiments; the paper reports
+  automatic evaluation only, no human evaluation of the augmented dialogues. Turn counts
+  per dialogue are not stated in the paper. The record is partially-verified because the
+  dataset's existence, provenance, and composition are confirmed from the full paper
+  text, but the dialogues themselves are not publicly retrievable: the linked
+  repository holds only a README, so the paper's "publicly available" claim does not
+  currently hold for the data. This is a distinct record from counsel-chat, which covers
+  the original single-turn source data. Follow-up lead from the 2026-11-04 STAMPsy run:
+  the Ellis Alicante mental-health crisis benchmark remains unexamined.
