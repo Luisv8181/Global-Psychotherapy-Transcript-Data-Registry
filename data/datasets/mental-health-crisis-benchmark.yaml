@@ -1,0 +1,107 @@
+id: mental-health-crisis-benchmark
+title: "Mental Health Crisis Benchmark and Response Evaluation Datasets"
+canonical_url: https://ellisalicante.org/datasets/mental-health-crisis-llms/
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: utterance_level
+domain: crisis_support
+source_context: >-
+  An evaluation benchmark, not a corpus of therapy sessions, introduced in
+  "Between Help and Harm: An Evaluation of Mental Health Crisis Handling by
+  LLMs" (Arnaiz-Rodriguez et al., JMIR Mental Health 2026). 2,252 user-side
+  inputs curated from about 239,000 inputs merged from 12 publicly available
+  mental-health datasets, each labeled with one of six crisis categories or
+  no_crisis. A companion dataset holds model-generated responses to the same
+  examples with human appropriateness scores and LLM evaluator judgments.
+  The benchmark is for crisis-category classification and for auditing LLM
+  responses to crisis disclosures. The authors state it is not clinical
+  guidance, direct therapeutic advice, or a standalone triage system.
+languages:
+  - en
+sessions: 2252
+longitudinal: false
+clinical_topics:
+  - suicidal_ideation
+  - self_harm
+  - anxiety_crisis
+  - violent_thoughts
+  - substance_abuse_or_withdrawal
+  - risk_taking_behaviors
+annotations:
+  - crisis category labels (six categories plus no_crisis)
+  - human appropriateness scores on the validation subset
+  - LLM evaluator judgments of model responses
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Openly downloadable parquet files from Hugging Face, no registration or agreement required.
+redistribution: conditional
+license:
+  type: cc-by-nc-4.0
+  verified: true
+  source: https://huggingface.co/datasets/arnaiztech/llms-mental-health-crisis-benchmark
+  notes: >-
+    The license is declared in the dataset card metadata of both Hugging Face
+    datasets (benchmark and responses), where the data lives, and stated in
+    the License section of each card README. Non-commercial reuse only, with
+    attribution. The arXiv paper license (CC BY-SA 4.0) was not taken as the
+    data license. The project GitHub repository carries no LICENSE file.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Entries are user crisis texts drawn from public datasets. No
+    de-identification or re-identification statement for the benchmark was
+    found in the sources read. Human appropriateness scores are described as
+    anonymized in the project README. The underlying source datasets carry
+    their own provenance and consent histories, which this record does not
+    re-verify.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://ellisalicante.org/datasets/mental-health-crisis-llms/
+    - https://huggingface.co/datasets/arnaiztech/llms-mental-health-crisis-benchmark
+    - https://huggingface.co/datasets/arnaiztech/llms-mental-health-crisis-responses
+    - https://github.com/ellisalicante/LLMs-Mental-Health-Crisis
+  supporting_publications:
+    - https://arxiv.org/abs/2509.24857
+    - https://doi.org/10.2196/88435
+publication_year: 2026
+release_year: 2026
+last_verified: 2026-11-04
+notes: >-
+  Counted from the benchmark examples parquet files on 2026-11-04. Validation
+  206 rows and test 2,046 rows, matching the published figures and the card
+  row-count section. Turn counts counted from the same files. Validation
+  examples carry 1 to 39 turns (median 2, 79 single-turn). Test examples carry
+  1 to 40 turns (median 3, 599 single-turn). The turns are sentence-split
+  segments of a single user input, per the project loader code, which splits
+  user text at sentence boundaries and caps segments at 40. No counselor or
+  assistant turns ship in the benchmark, so dialogue_structure is
+  utterance_level, not a speaker exchange. Test split source counts are even
+  at 168 per source loader except suicidal_finetune at 30. Validation source
+  counts are uneven (12 per loader plus a smaller second set of legacy source
+  ids), recorded here as counted, not reconciled. dataset_type stays unknown
+  because provenance is mixed. Some sources are human-authored public posts
+  and counseling texts, while others are synthetic (self-harm-synthetic-eval,
+  nart-100k-synthetic, and the partly synthetic MentalChat16K), so no single
+  provenance type covers the benchmark. The 12 distinct source datasets, per
+  the project loader code, are sajjadhadi Mental-Disorder-Detection-Data,
+  marmikpandya mental-health (loaded twice), fadodr mental_health_dataset,
+  fadodr mental_health_therapy, psycode1 psyset, Amod
+  mental_health_counseling_conversations, cypsiSAS transformed_Suicidal_ideation,
+  fanyin3639 test_test_self_harm_all_levels, arianaazarbal
+  self-harm-synthetic-eval, richie-ghost suicidal_finetune, ShenLab
+  MentalChat16K, and jerryjalapeno nart-100k-synthetic. Test labels come from
+  gpt-4o-mini as judge (three runs, majority vote) after it showed the
+  highest agreement with four domain experts on the validation set. The
+  response dataset covers five audited models on the test examples. No
+  dialogue text is reproduced in this record.
