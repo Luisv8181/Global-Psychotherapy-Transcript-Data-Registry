@@ -41,7 +41,7 @@ access:
   requirements: >-
     The paper claims a release of the generation framework, evaluation protocol, and
     synthetic corpus, but no public repository, dataset page, or download location was
-    found as of 2026-10-12. No public access route is confirmed.
+    found as of 2026-11-05. No public access route is confirmed.
 redistribution: unknown
 license:
   type: unknown
@@ -66,7 +66,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.10085
 publication_year: 2026
-last_verified: 2026-10-15
+last_verified: 2026-11-05
 notes: >-
   The 8,232 figure is the full evaluated set: 686 client contexts x 3 lengths x 4 frameworks.
   The CALM-IT-generated arm is 686 x 3 = 2,058 dialogues. The paper's "large-scale synthetic
@@ -88,3 +88,8 @@ notes: >-
   search 0 hits; Hugging Face datasets API returns only unrelated CALM-Italy;
   web search found no author-hosted release. Release remains gated on manuscript
   acceptance per the v1 promise. Watch row retained in the candidate queue.
+  Re-checked 2026-11-05: arXiv still v3 (13 Oct 2026), no v4; GitHub API
+  repository searches for CALM-IT, calm-it and calmit returned no author
+  artifact (top hits screened, all unrelated); Hugging Face datasets API
+  returns only unrelated CALM-Dataset/CALM-Italy; web search found no
+  author-hosted release. Release still not materialized.
