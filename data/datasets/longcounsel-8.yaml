@@ -1,17 +1,17 @@
 id: longcounsel-8
 title: "LongCounsel-8: A Benchmark Suite for Longitudinal Depression Tracking from Multi-Session Counseling Dialogues"
 canonical_url: https://arxiv.org/abs/2609.03507
-status: partially-verified
+status: verified
 dataset_type: synthetic
 dialogue_structure: multi_turn
 domain: counseling
 source_context: Synthetic multi-session counseling trajectories generated from real-world client profiles, empirical depression trajectories, symptom compositions and counseling patterns
 languages:
-  - unknown
+  - en
 language_context: unknown
 therapy_modalities:
   - counseling
-sessions: unknown
+sessions: 38745
 longitudinal: true
 transcript:
   available: true
@@ -24,18 +24,34 @@ annotations:
   - simulated_self_reports
   - trajectory_labels
 access:
-  level: unknown
-  requirements: The arXiv paper links the public dataset at https://huggingface.co/datasets/hiddensev/LongCounsel-8.
-redistribution: unknown
+  level: open
+  requirements: >-
+    Public Hugging Face dataset, downloadable with no registration or gating.
+    The manifest, split files and data archives were fetched without
+    authentication on 2026-11-05. The dataset README still carries
+    request-access wording, but the live dataset page is ungated
+    (Hugging Face API reports gated false) and the files download openly,
+    so the README wording is treated as stale.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/hiddensev/LongCounsel-8
+  notes: >-
+    The CC BY-NC 4.0 license is declared in the dataset card metadata and
+    stated in full in the LICENSE file at the data location, covering the
+    authors' original contributions. Sharing and adaptation require
+    attribution and are non-commercial only. The underlying source profiles
+    and statistics come from other corpora (PsychEval, RealCBT, PSYCHE-D,
+    NHANES), each with its own terms, so downstream reuse should be checked
+    against those sources as well.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://arxiv.org/abs/2609.03507
+    - https://huggingface.co/datasets/hiddensev/LongCounsel-8
 publication_year: 2026
 release_year: 2026
 historical_significance:
@@ -46,7 +62,13 @@ notes: >-
   empirically informed depression-state construction and indirect behavioral realization, with
   session-level PHQ-8 states used as controlled evaluation targets. The paper describes the data as
   generated from real-world client profiles and related empirical sources, so it is synthetic rather
-  than observed counseling-session evidence. The reviewed primary source does not establish the
-  dataset license, redistribution terms, or exact released data-access conditions; those fields
-  remain unknown.
-last_verified: 2026-09-26
+  than observed counseling-session evidence. The session count 38,745 is 7,749 trajectories times 5
+  sessions per trajectory, confirmed by the dataset manifest, which records sessions_per_trajectory 5
+  for every edition, and by the card description of 7,749 five-session trajectories with 1,549,800
+  utterances. Dialogues are in English, per the card language tag and the generation prompts in the
+  paper. The license and open access were confirmed from the dataset card and its LICENSE file on
+  2026-11-05. Still not established: geography (no country is named in the paper, and the card region
+  tag is uploader metadata, not treated as evidence) and de-identification (the paper documents no
+  de-identification step, consent statement or ethics review for the real-world client profiles the
+  simulation is grounded in).
+last_verified: 2026-11-05
