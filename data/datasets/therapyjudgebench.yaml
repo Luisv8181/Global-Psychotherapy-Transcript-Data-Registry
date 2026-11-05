@@ -1,0 +1,117 @@
+id: therapyjudgebench
+title: "TherapyJudgeBench: Expert-Annotated Dialogue Bank for Validating LLM Judges of CBT-Style Therapy Conversations"
+canonical_url: https://huggingface.co/datasets/therapygym/therapyjudgebench
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Fully synthetic CBT-style therapy dialogues released with TherapyGym
+  (Huang et al., Stanford University, University of California Berkeley,
+  and University of Hong Kong; NeurIPS 2026 Evaluations and Datasets
+  Track, version 2.0.0 released 2026-11-03). Each dialogue is one complete
+  simulated session of 10 messages (5 patient turns, 5 therapist turns)
+  between a GPT-o3-mini patient simulator conditioned on Patient-psi-CM
+  cognitive profiles and one of 8 therapist LLMs, all under a single
+  professional-CBT-therapist prompt style. The benchmark's purpose is
+  judge validation and calibration, not therapist benchmarking or
+  real-patient deployment: the card states it is not a clinical dataset,
+  a diagnostic tool, or a substitute for clinician review, and should not
+  be used to train, validate, or evaluate systems intended for real-patient
+  deployment. The companion 133 clinician-led counseling sessions used in
+  the paper to further validate the judge are a separate validation
+  exercise and are not part of this released dataset.
+therapy_modalities:
+  - cognitive_behavioral_therapy
+languages:
+  - en
+sessions: 116
+longitudinal: false
+annotations:
+  - CTRS skill ratings per dialogue (11 dimensions, 0-6 scale, dialogue-level)
+  - overall CTRS score per dialogue
+  - safety flags per dialogue (4 binary session-level categories)
+  - therapist model, patient model, patient profile, and session id per record
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+generation:
+  method: llm_to_llm_simulation
+  models:
+    - GPT-o3-mini (patient simulator)
+    - PHI_3_5
+    - CLAUDE_3_7
+    - GEMINI_2_0
+    - DEEPSEEK
+    - O3_MINI
+    - QWEN3_4B_LOCAL
+    - LLAMA_4_SCOUT
+    - O1
+  source_type: synthetic_patient_profiles
+  synthetic_dialogues: true
+access:
+  level: open
+  requirements: null
+redistribution: allowed
+license:
+  type: CC-BY-4.0
+  verified: true
+  source: https://huggingface.co/datasets/therapygym/therapyjudgebench
+  notes: >-
+    The dataset card metadata declares license cc-by-4.0, and a LICENSE
+    file in the dataset repository itself states the dataset is licensed
+    under CC BY 4.0. The arXiv paper's CC BY 4.0 icon covers the paper,
+    not the data, and was not used as the data license.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Fully synthetic dialogues from fictional CBT case profiles; the
+    datasheet states no images, audio, real-patient data, or PII are
+    included. No real participants are involved.
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/therapygym/therapyjudgebench
+    - https://arxiv.org/abs/2603.18008
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2603.18008
+publication_year: 2026
+release_year: 2026
+last_verified: 2026-11-04
+notes: >-
+  116 counted from therapyjudgebench.jsonl on 2026-11-04 (single test
+  split, one JSON object per line); every dialogue has 10 messages and
+  num_turns 5. 993 non-missing CTRS aspect ratings counted from the same
+  file (of 1,276 possible across 11 dimensions x 116 dialogues), matching
+  the v2 paper abstract and the card's v2.0.0 summary; missing ratings
+  are JSON null, concentrated in Guided Discovery and Technique
+  Application per the datasheet. Revised safety labels are present for
+  111 dialogues; Conversations 28, 33, 52, 53, and 60 have null for all
+  four safety fields (giving medical advice, failure to address crisis,
+  failure to address abuse, failure to address functional impairment).
+  18 fictional patient profiles; therapist-model counts counted from the
+  file are PHI_3_5 18, CLAUDE_3_7 18, GEMINI_2_0 18, DEEPSEEK 18, O3_MINI
+  18, QWEN3_4B_LOCAL 10, LLAMA_4_SCOUT 8, O1 8. Expert annotation by two
+  licensed CBT-trained practitioners (coauthors), blinded to model
+  identity, calibrated on CTRS rubrics; 20 percent double-annotated for
+  inter-rater reliability, the rest singly annotated; the public file
+  carries one consolidated expert_rating per dialogue and no
+  annotator-level records, so annotator disagreement is not exposed.
+  DISAGREEMENT RECORDED, NOT RESOLVED: the v1 abstract reported 1,270
+  expert ratings, while the v2 abstract, the v2.0.0 card, and this run's
+  count all give 993 non-missing CTRS aspect ratings; the 1,270 figure
+  is not used. The paper also reports 133 clinician-led counseling
+  sessions used for external judge validation; those sessions are not
+  in this dataset and no access route for them is stated. No ethics
+  review is documented for the synthetic release; the paper states no
+  external human subjects were involved and no additional IRB approval
+  was sought.
