@@ -1,0 +1,93 @@
+id: student-mental-health-counseling-vn
+title: "Student Mental Health Counseling VN"
+canonical_url: https://huggingface.co/datasets/chillies/student-mental-health-counseling-vn
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: single_turn_qa
+domain: mental_health_support
+
+source_context: >-
+  Vietnamese single-turn question-answer pairs about emotional distress and
+  mental-health support, released as two Parquet shards on Hugging Face by the
+  uploader chillies. The card carries no README prose, no paper, no stated
+  source for the conversations, and no license. The two columns are question and
+  answer. A content check of shard 0 on 2026-11-05 found the pairs read as
+  dialogue turns rather than standalone questions, with about a third starting
+  with conversational continuers, so the rows appear to have been cut from
+  longer exchanges. The dataset's own name claims student counseling, but that
+  characterization is not supported by the content checked, with only 1.9
+  percent of shard-0 questions carrying student or school terms, and it is left
+  unconfirmed here. Counseling or therapy terms appear in 9.1 percent of shard-0
+  answers. Off-topic turns occur, including at least one about business
+  planning, so the set is not a clean counseling corpus. Provenance is unknown,
+  and the pairs may be human-written, scraped, translated, or model-generated;
+  no evidence reviewed settles that.
+
+languages:
+  - vi
+language_context: "Vietnamese; 1000 of 1000 sampled questions in shard 0 contain Vietnamese diacritics"
+
+therapy_modalities:
+  - mental_health_support
+
+sessions: null
+longitudinal: false
+
+transcript:
+  available: true
+  format:
+    - parquet
+modalities:
+  - text
+
+access:
+  level: open
+  requirements: None. Public ungated Hugging Face dataset.
+
+redistribution: unknown
+
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No license field on the dataset card, no LICENSE file in the repository, and
+    no license statement in the README. The card metadata carries no license tag.
+
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    No de-identification, consent, or ethics statement was found on the card or
+    in the repository. Sampled rows include personal emotional disclosures, so
+    researchers should not assume the text is de-identified.
+
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/chillies/student-mental-health-counseling-vn
+  supporting_publications: []
+
+notes: >-
+  Counted from the dataset card's own dataset_info on 2026-11-05, with shard 0
+  counted from the downloaded Parquet file the same day. The card reports
+  750,169 rows in the train split across two shards; shard 0 holds 375,085 rows
+  with question and answer columns, median question length 237 characters and
+  median answer length 281 characters, no empty questions or answers in the
+  shard. The Hugging Face datasets-server rows and size endpoints return 404 for
+  this dataset, so counts come from the card metadata and the downloaded file,
+  not the viewer. Content-check figures are from shard 0 only. Three English
+  derivatives exist on Hugging Face and confirm the upstream identity but add no
+  provenance, with arafatanam/Student-Mental-Health-Counseling-750K translating
+  all 750,169 rows with Helsinki-NLP/opus-mt-vi-en, simxxran123/Student-Mental-
+  Health-Counseling-50K translating the first 50,000 rows with Google
+  Translator, and Tsovinar/student-mental-health-counseling-data republishing a
+  100,000-row labeled variant. The derivatives are recorded here as lineage, not
+  as independent corpora. Uploader chillies, first published 2024-05-05
+  (lastModified). Dataset_type stays unknown until a source for the conversations
+  is established, and the student label stays unconfirmed.
+
+last_verified: 2026-11-05
