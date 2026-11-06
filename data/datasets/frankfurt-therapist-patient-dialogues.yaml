@@ -1,0 +1,97 @@
+id: frankfurt-therapist-patient-dialogues
+title: "GDPR Compliant Collection of Therapist-Patient-Dialogues"
+canonical_url: https://arxiv.org/abs/2211.12360
+status: partially-verified
+dataset_type: real
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Real therapist-patient dialogues recorded as part of routine treatment in the
+  Department of Psychiatry, Psychosomatic Medicine and Psychotherapy at
+  University Hospital Frankfurt, collected for NLP research under a cooperation
+  contract with the Ubiquitous Knowledge Processing Lab at TU Darmstadt. Sessions
+  were recorded with two microphones, one channel per speaker, and the paper's
+  research goal is ex-post analysis of linguistic behaviour against clinical
+  parameters, including suicidality risk. Clinical parameters recorded per patient
+  are the Clinical Global Impression Scale, the Global Assessment of Functioning,
+  the Depressive Symptom Index, the severity of psychopathological findings, and
+  psychopharmacological medication. The paper is a methods account of starting
+  the collection under the GDPR, not a data release. It reports no session count,
+  no language, and no public access route.
+geography:
+  countries:
+    - Germany
+  regions:
+    - europe
+  scope: single_country
+  evidence_level: documented
+languages:
+  - unknown
+therapy_modalities:
+  - unknown
+clinical_topics:
+  - unknown
+sessions: null
+participants: null
+longitudinal: null
+annotations:
+  - unknown
+transcript:
+  available: unknown
+audio:
+  available: true
+video:
+  available: false
+modalities:
+  - audio
+access:
+  level: metadata-only
+  requirements: >-
+    No public access route. The paper states the data are shared only between
+    the two partner universities under a cooperation contract, that access is
+    restricted to project members who sign non-disclosure agreements, and that
+    the data must be deleted on the computer-science side once experiments are
+    complete. The hospital retains the data for 10 years for legal reasons.
+redistribution: prohibited
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated in the paper. The arXiv preprint itself is
+    distributed under a Creative Commons license; that license covers the paper,
+    not the data.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper describes a two-stage process. Audio recordings are pseudonymised
+    with a human in the loop, then identifying events are removed manually to
+    reach anonymised data, with a human rater confirming completeness. Voice is
+    treated as identifying under the GDPR, so raw speech is not transferred
+    between institutes and only technical audio features are shared. No formal
+    re-identification assessment is reported; the paper notes that unique
+    identifying events occur more often in forensic psychiatry.
+ethics:
+  consent_documented: documented
+  ethics_review_documented: documented
+  data_use_agreement: documented
+evidence:
+  primary_sources:
+    - https://arxiv.org/html/2211.12360v1
+  supporting_publications:
+    - https://doi.org/10.48550/arXiv.2211.12360
+publication_year: 2022
+last_verified: 2026-11-06
+notes: >-
+  Methods paper read in full on 2026-11-06. Authors are Tobias Mayer, Neha
+  Warikoo, Oliver Grimm, Andreas Reif and Iryna Gurevych. The paper was
+  presented at NeurIPS 2022. It reports no session count and does not state the
+  language of the dialogues, so both stay unknown; the sessions were recorded at
+  a Frankfurt clinic, which is not treated as evidence of language. A web search
+  on 2026-11-06 found no follow-up paper and no public release of the data, only
+  the NeurIPS 2022 listing of the same paper. The collection is therefore
+  recorded as unreleased and metadata-only. The dataset_type real rests on the
+  paper's statement that the dialogues are part of the clinical routine at the
+  psychiatry clinic, with real patients giving informed consent. Transcripts are
+  part of the planned pipeline but the paper does not confirm completed
+  transcripts, so transcript availability stays unknown.
