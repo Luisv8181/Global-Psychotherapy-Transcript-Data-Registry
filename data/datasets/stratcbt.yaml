@@ -1,0 +1,82 @@
+id: stratcbt
+title: "Steering the Compass: Aligning Dynamic Psychological Counseling Conversations with Cognitive Behavioral Therapy Strategies"
+canonical_url: https://github.com/zimuwangnlp/StratCBT
+status: partially-verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Synthetic cognitive behavioral therapy counseling dialogues. The paper reports 9,688 sessions
+  and around 256K utterances, averaging 26.4 utterances per session, in English. Each counselor
+  utterance is aligned with one of eight CBT strategies (Listening, Guidance, Modeling,
+  Story-telling, Cognitive Reframing, New Thoughts, Wrap Up, Others). Construction starts from the
+  PatternReframe dataset (9,688 negative statements, each paired with a persona, a cognitive
+  distortion, and reframed thoughts). GPT-4o selects the reframed thought that fits the persona and
+  models the client events, feelings, and behaviors, then Gemini 2.0-Flash generates the dialogue
+  in a self-chat framework, using in-context examples drawn from 23 collected realistic CBT
+  sessions from CheeseBurger Therapy (https://cheeseburgertherapy.org/), where peer counselors with
+  15-20 hours of training guide clients. The paper states it will release only the STRATCBT
+  dataset and will not distribute any of the collected sessions. The paper positions STRATCBT as
+  the only compared dataset that aligns counseling with utterance-level CBT strategies, and reports
+  its scope as limited to CBT and English.
+therapy_modalities:
+  - cognitive_behavioral_therapy
+languages:
+  - en
+sessions: 9688
+longitudinal: false
+annotations:
+  - CBT strategy label per counselor utterance (eight strategies)
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: metadata-only
+  requirements: >-
+    The paper names https://github.com/zimuwangnlp/StratCBT as where the dataset can be
+    obtained, but as of 2026-11-06 that repository holds no data files (only a LICENSE file, a
+    .gitignore, and a one-line README). No Hugging Face dataset was found for STRATCBT. No public
+    access route to the data is confirmed.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated in the paper. The repository LICENSE file is MIT (copyright 2026
+    Zimu Wang), but the repository holds no data, so that license is recorded here only as a
+    repository fact, not as the dataset license. The paper ethics section states the upstream
+    PatternReframe dataset is shared under the MIT licence.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: false
+  notes: >-
+    The paper ethics section states the STRATCBT documents do not contain private information and
+    that the authors manually verified a randomly sampled subset. The 23 collected CheeseBurger
+    Therapy sessions are not distributed with the dataset.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2026.emnlp-main.2285.pdf
+    - https://github.com/zimuwangnlp/StratCBT
+  supporting_publications:
+    - https://doi.org/10.18653/2026.emnlp-main.2285
+publication_year: 2026
+last_verified: 2026-11-06
+notes: >-
+  Counts are the paper figures (abstract and Table 1): 9,688 sessions, around 256K utterances,
+  average 26.4 utterances per session. The 9,688 sessions correspond one-to-one with the 9,688
+  PatternReframe negative statements. Authors: Zimu Wang, Yiwen Jiang, Xiangyu Zhao, Yaling Shen,
+  Jiahe Liu, Stephanie Fong, Maxmartwell H Cheng, Guilherme C Oliveira, Anh Nguyen, Robert
+  Desimone, Barnaby Nelson, Dominic Dwyer, Zongyuan Ge (Monash University, University of Liverpool,
+  MIT, University of Melbourne, Orygen). EMNLP 2026, pages 51994-52014. The repository was checked
+  via the GitHub API on 2026-11-06: single main branch, three files only (.gitignore, LICENSE,
+  README.md with the single line "# StratCBT"). Hugging Face datasets API searches for "stratcbt"
+  and "StratCBT" returned 0 datasets. Release status matches the earlier "Therapy as an NLP Task"
+  pattern: a named release route that currently holds no data. Re-check on a later run whether data
+  files appear in the repository.
