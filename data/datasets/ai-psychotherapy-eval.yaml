@@ -1,0 +1,119 @@
+id: ai-psychotherapy-eval
+title: "Assessing Risks of Large Language Models in Mental Health Support"
+canonical_url: https://huggingface.co/datasets/IanSteenstra/AI-Psychotherapy-Eval
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+
+source_context: >-
+  Fully model-generated longitudinal Motivational Interviewing sessions for
+  Alcohol Use Disorder, built to red-team AI psychotherapists. Six therapist
+  conditions (ChatGPT Basic on gpt-5-chat-latest, ChatGPT MI, Gemini MI on
+  gemini-2.5-flash, the Character.AI "Psychologist" persona, a Harmful AI
+  negative control on gemini-2.5-pro given an adversarial prompt, and a
+  passive control using the NIAAA "Rethinking Drinking" booklet) were paired
+  with 15 simulated patient personas representing five AUD phenotypes across
+  three stages of change, in a full factorial design of 180 dyads, each
+  scheduled for four weekly sessions of up to 48 therapist turns. No real
+  clients are involved; every dialogue turn is model-generated, including the
+  between-session simulation of adverse outcomes such as dropout, relapse and
+  suicide. The paper is a condensed version of the first author's PhD
+  dissertation (Steenstra, 2025, Northeastern University).
+
+languages:
+  - en
+language_context: English
+
+therapy_modalities:
+  - motivational_interviewing
+
+clinical_topics:
+  - alcohol_use
+
+sessions: 369
+participants: 15
+longitudinal: true
+
+transcript:
+  available: true
+  format:
+    - csv
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+
+annotations:
+  - crisis_detection
+  - crisis_protocol_adherence
+  - motivational_interviewing_fidelity
+  - working_alliance_inventory
+  - session_rating_scale
+  - substance_use_recovery_evaluator
+  - negative_effects_questionnaire
+  - between_session_journals
+  - adverse_outcomes
+
+access:
+  level: open
+  requirements: None. Public ungated Hugging Face dataset; the release is a single zip file.
+
+redistribution: allowed
+
+license:
+  type: cc-by-4.0
+  verified: true
+  source: https://huggingface.co/datasets/IanSteenstra/AI-Psychotherapy-Eval
+  notes: >-
+    The CC BY 4.0 license is declared in the dataset card metadata and the
+    README front matter. No LICENSE file is included inside the released zip,
+    so the card is the license location. The paper itself carries a CC BY 4.0
+    icon on arXiv, which is the article license, not the dataset license, and
+    is not relied on here.
+
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Fully synthetic: simulated patients with fabricated personas, so no real
+    person is represented. The personas carry invented names and clinical
+    histories; researchers should still treat the simulated adverse-outcome
+    content (including simulated suicide) as sensitive material.
+
+ethics:
+  consent_documented: not_applicable_to_synthetic_generation
+  ethics_review_documented: unknown
+  data_use_agreement: false
+
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/IanSteenstra/AI-Psychotherapy-Eval
+    - https://arxiv.org/abs/2602.19948
+  supporting_publications:
+    - https://arxiv.org/abs/2602.19948
+
+publication_year: 2026
+release_year: 2026
+
+notes: >-
+  Counted from the released data file on 2026-11-06: conversations.csv in
+  AI_Psychotherapy_Eval_Dataset.zip holds 27,218 rows (13,609 patient turns
+  and 13,609 therapist turns) across 369 unique pairing-and-session
+  combinations, matching the paper's N of 369 sessions; patient_personas.csv
+  holds 15 rows and pairings.csv 180 rows, matching the paper's 15 personas
+  and 180 dyads. Sessions run 6 to 96 turns; the paper caps sessions at 48
+  therapist turns, and pairings end early when a simulated adverse event
+  (dropout or suicide) occurs between sessions, which explains the 369
+  realized sessions against 720 scheduled. The six therapist conditions and
+  the stratification of the 15 personas by AUD phenotype prevalence are from
+  the full text of arXiv 2602.19948v2, read 2026-11-06. The paper text names
+  no dataset release location; the Hugging Face dataset is linked from the
+  paper's arXiv record only through the card's citation, and the card is the
+  release route. The zip also carries turn-level crisis and MI-fidelity
+  evaluations, patient-reported outcome surveys, between-session journals and
+  adverse-outcome records, and per-session summary metrics.
+
+last_verified: 2026-11-06
