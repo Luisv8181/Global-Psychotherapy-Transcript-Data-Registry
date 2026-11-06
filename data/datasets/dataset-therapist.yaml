@@ -1,0 +1,93 @@
+id: dataset-therapist
+title: "Kicaulah AI - Dataset Curhat & Therapist (Empathetic Counseling)"
+canonical_url: https://huggingface.co/datasets/Kicaulah/dataset-therapist
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: single_turn_qa
+domain: mental_health_support
+
+source_context: >-
+  English single-turn instruction/response pairs framed as empathetic counseling
+  and emotional support, in 10 categories (workplace burnout, quarter-life
+  crisis, breakup, family expectations, imposter syndrome, social anxiety and
+  loneliness, toxic relationships and boundaries, bereavement and grief,
+  academic and dissertation stress, radical self-acceptance and compassion).
+  The card describes the responses as natural and human and claims an
+  "Anti-AI-Speak Standard", but it names no production method: no authoring
+  process, no model, and no source for the prompts. The rows shown in the
+  dataset viewer are visibly templated, with repeated prompt frames and
+  identical response openers across prompts, which is consistent with template
+  or model generation but is not evidence of either, so provenance stays
+  unknown. This is emotional-support Q&A, not psychotherapy sessions; the
+  card's own use cases call the target "peer counselors and emotional sounding
+  boards".
+
+languages:
+  - en
+language_context: "English; card describes the set as natural conversational English"
+
+therapy_modalities:
+  - mental_health_support
+
+sessions: null
+longitudinal: false
+
+transcript:
+  available: true
+  format:
+    - parquet
+modalities:
+  - text
+
+access:
+  level: open
+  requirements: None. Public ungated Hugging Face dataset.
+
+redistribution: conditional
+
+license:
+  type: apache-2.0
+  verified: true
+  source: https://huggingface.co/datasets/Kicaulah/dataset-therapist
+  notes: >-
+    The dataset card carries the license:apache-2.0 metadata tag, confirmed
+    through the Hugging Face API on 2026-11-06. There is no LICENSE file in
+    the repository (tree lists only .gitattributes, README.md and data/), and
+    the README names no license. The declaration is the uploader's own, and no
+    production method for the text is stated, so the basis for licensing the
+    content is unclear. Redistribution is therefore recorded as conditional
+    despite the permissive declared license.
+
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    No de-identification, consent, or ethics statement was found on the card or
+    in the repository. The prompts present as generic constructed scenarios
+    rather than real help-seekers' posts, but that is an observation from the
+    viewer sample, not a documented fact, and whether any row derives from a
+    real person is not stated.
+
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Kicaulah/dataset-therapist
+  supporting_publications: []
+
+notes: >-
+  Counted via the Hugging Face datasets-server info endpoint on 2026-11-06:
+  1,100 rows in total (train 880, validation 110, test 110), matching the
+  card's own statistics, with instruction, response and category columns. The
+  card's citation dates the set to 2025 (Kicaulah AI Team); the dataset was
+  last modified 2026-09-30. The card's "Dataset Structure" example row does not
+  match the actual data: its example category "therapist" is not one of the 10
+  category values, and its example instruction about a child's fever matches no
+  observed row. The open question for researchers is provenance: the card
+  claims human-sounding language but documents no author, model, or source, so
+  dataset_type stays unknown until a production method is established.
+
+last_verified: 2026-11-06
