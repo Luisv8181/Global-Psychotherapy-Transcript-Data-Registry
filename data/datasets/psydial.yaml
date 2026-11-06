@@ -11,7 +11,7 @@ languages:
 language_context: Chinese
 therapy_modalities:
   - mental_health_counseling
-sessions: null
+sessions: 2382
 longitudinal: true
 transcript:
   available: true
@@ -29,8 +29,11 @@ access:
   requirements: none reported
 redistribution: unknown
 license:
-  type: unknown
-  verified: false
+  type: apache-2.0
+  verified: true
+  source: https://huggingface.co/datasets/qiuhuachuan/PsyDial-D4
+  notes: >-
+    The license is declared on the Hugging Face dataset cards where the data lives (all six sets D0_m, D1, D2, D3, D4 and D101 state Apache-2.0). The GitHub repository LICENSE file is CC0-1.0 instead, and the ACL 2025 paper states no license, so the two sources disagree and the data-location license is recorded here.
 privacy:
   deidentified: true
   method: privacy_preserving_reconstruction
@@ -39,10 +42,12 @@ evidence:
   primary_sources:
     - https://aclanthology.org/2025.acl-long.1049/
     - https://github.com/qiuhuachuan/PsyDial
+    - https://huggingface.co/datasets/qiuhuachuan/PsyDial-D4
 publication_year: 2025
 release_year: 2025
 historical_significance:
   - privacy-preserving reconstruction of long-term counseling dialogue
   - derived mental-health dialogue corpus
-notes: PsyDial is explicitly described by the authors as a semi-real Chinese-language dataset created by reconstructing real-world, long-term counseling dialogues. It should not be counted as a direct real-session transcript corpus because the released dialogue is reconstructed rather than the original observed interaction. The registry therefore keeps it in a derived/hybrid population and links it to the real-world source context.
-last_verified: 2026-09-24
+notes: >-
+  PsyDial is explicitly described by the authors as a semi-real Chinese-language dataset created by reconstructing real-world, long-term counseling dialogues. It should not be counted as a direct real-session transcript corpus because the released dialogue is reconstructed rather than the original observed interaction. The registry therefore keeps it in a derived/hybrid population and links it to the real-world source context. Re-verified on 2026-11-06. The released PsyDial set is D4 with 2,382 dialogues per the Hugging Face dataset card, and D101 holds 101 dialogues collected from professional counseling books.
+last_verified: 2026-11-06
