@@ -1,0 +1,95 @@
+id: m2cosc
+title: "M2CoSC: Multi Modal-Cognitive Support Conversation"
+canonical_url: https://huggingface.co/datasets/multimodal-reframing/M2CoSC
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Synthetic multimodal cognitive reframing dialogues from Kim et al. (POSTECH,
+  NAACL 2025). Each dialogue pairs a GPT-4-generated four-turn conversation
+  with one AffectNet facial-expression image of a virtual client. The client
+  role is played by GPT-4 and the therapist role by GPT-4 Vision, following a
+  four-stage framework of Introduction, Exploration, Brainstorming and
+  Suggestion. The client thought and thinking-trap labels come from the
+  cognitive reframing dataset of Sharma et al. (2023), and the image and
+  facial-expression label come from AffectNet. Matching between image and
+  thought was random with uniform distribution, and the happy expression was
+  excluded. Three native English speakers cleansed the data on four criteria
+  and three professional psychotherapists evaluated the test set. No real
+  client data was used. The paper reports 429 dialogues, while the released
+  files counted on 2026-11-06 hold 449 rows, see notes.
+therapy_modalities:
+  - cognitive_behavioral_therapy
+languages:
+  - en
+language_context: original
+sessions: 449
+participants: null
+longitudinal: false
+annotations:
+  - facial_expression label per dialogue (one of eight AffectNet expressions, happy excluded)
+  - client thought
+  - thinking_trap labels (cognitive distortion types)
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+  - image
+access:
+  level: open
+  requirements: >-
+    The Hugging Face dataset is public and ungated and holds train.jsonl and
+    test.jsonl with dialogues plus AffectNet image paths. The images
+    themselves are not distributed. The paper and the code repository state
+    that full access including images requires an AffectNet license.
+redistribution: conditional
+license:
+  type: cc-by-4.0
+  verified: true
+  source: https://huggingface.co/datasets/multimodal-reframing/M2CoSC
+  notes: >-
+    The dataset card declares CC BY 4.0. That covers the distributed files,
+    which are dialogues plus image paths. The images themselves are AffectNet
+    photographs and are not distributed, and full image access requires an
+    AffectNet license. The code repository carries no LICENSE file.
+privacy:
+  deidentified: not_applicable_to_synthetic_generation
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Dialogues are fully synthetic and no real client data was used. The image
+    paths point at AffectNet photographs of real people, but the images are
+    not included in the release. The paper states consent was obtained for all
+    research participants and that the release complies with AffectNet policies.
+ethics:
+  consent_documented: documented
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/multimodal-reframing/M2CoSC
+    - https://arxiv.org/abs/2502.06873
+    - https://arxiv.org/html/2502.06873v1
+    - https://github.com/nobel-postech/M2CoSC
+  supporting_publications:
+    - https://aclanthology.org/2025.naacl-long.250/
+publication_year: 2025
+release_year: 2025
+notes: >-
+  Counted from the released files on 2026-11-06. train.jsonl holds 349 rows
+  and test.jsonl holds 100 rows, 449 dialogues in total, each with exactly 8
+  conversation turns and 368 unique image paths across both files. The paper
+  Table 1 reports 429 dialogues with 329 in train and 100 in test, so the
+  released train split holds 20 more rows than the paper reports. The paper
+  figure and the counted figure are both recorded here rather than reconciled.
+  Total utterances counted are 3,592 against 3,432 implied by the paper
+  figure. The Hugging Face dataset was last modified 2025-11-18, after the
+  February 2025 paper, so the train split may have grown after publication.
+  The code repository was updated 2026-10-27 but holds no data files beyond
+  prompts and assets. The Sharma et al. (2023) source dataset for thoughts and
+  thinking traps was collected with informed consent per the paper.
+last_verified: 2026-11-06
