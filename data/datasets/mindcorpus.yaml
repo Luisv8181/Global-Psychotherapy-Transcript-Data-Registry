@@ -42,10 +42,12 @@ access:
   requirements: >-
     No public release route for the dataset was found. The paper's full text names
     no repository, dataset page, or download location, and the arXiv page's "Code,
-    Data and Media" section lists no URLs (re-checked 2026-10-15: arXiv still v2,
-    revised 2026-01-24; GitHub API repository search for MindCorpus and MindChat
-    returned no author-published artifact; HF datasets API search returned only
-    unrelated English "Mind Corpus" sets; web search found no author-hosted repo).
+    Data and Media" section lists no URLs (re-checked 2026-11-07: arXiv still v2,
+    revised 2026-01-24, no new version; GitHub API repository search for MindCorpus
+    returned 0 repos and MindChat returned 91 repos, top 30 screened, all unrelated
+    chat apps; HF datasets API returned only the same two unrelated English
+    "Mind Corpus" sets; a full-text scan of the v2 HTML found no code or data host
+    URL; web search found only the arXiv paper pages).
 redistribution: unknown
 license:
   type: unknown
@@ -72,7 +74,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.01993
 publication_year: 2026
-last_verified: 2026-10-15
+last_verified: 2026-11-07
 notes: >-
   Statistics are the paper's reported figures (Table II): Chinese, 5.7k sessions,
   12.0 utterances per session, 84.0 average length; the 5700 figure is approximate.
@@ -83,5 +85,8 @@ notes: >-
   Record stays partially-verified until a locatable release artifact (repository,
   dataset card, or access route) surfaces. Re-checked 2026-10-13 and 2026-10-15:
   on both dates GitHub API, HF datasets API, and web searches found no
-  author-published release artifact; arXiv still shows v2 only. Companion record
+  author-published release artifact; arXiv still shows v2 only. Re-checked
+  2026-11-07: arXiv still v2 (revised 2026-01-24, no new version); GitHub API,
+  HF datasets API, web search, and a full-text scan of the v2 HTML found no
+  author-published release artifact. Companion record
   mindchat-r0-ft-data covers the related collected YiXinLi corpus.
