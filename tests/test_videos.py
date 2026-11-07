@@ -10,7 +10,9 @@ from src.registry.validator import validate_registry
 from src.registry.videos import load_videos, parse_video_url
 
 ROOT = Path(__file__).resolve().parents[1]
-TODAY = date(2026, 9, 25)
+# Fixture "today" tracks the real date, like the real-registry check, so
+# re-verifying the fixture record (annomi.yaml) does not break the suite.
+TODAY = date.today()
 
 
 @pytest.mark.parametrize("url, expected", [

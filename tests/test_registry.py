@@ -1,5 +1,6 @@
+import re
 import shutil
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import pytest
@@ -9,7 +10,9 @@ from src.registry.records import load_records
 from src.registry.validator import validate_registry
 
 ROOT = Path(__file__).resolve().parents[1]
-TODAY = date(2026, 9, 25)
+# Fixture "today" tracks the real date, like the real-registry check below, so
+# re-verifying the fixture record (annomi.yaml) does not break the suite.
+TODAY = date.today()
 
 
 def test_registry_records_validate():
@@ -26,7 +29,8 @@ def test_template_is_skipped_by_loader():
 
 def test_dates_load_as_iso_strings():
     record = next(r for r in load_records(ROOT) if r["id"] == "annomi")
-    assert record["last_verified"] == "2026-09-24"
+    value = record["last_verified"]
+    assert isinstance(value, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value)
 
 
 @pytest.fixture
@@ -88,7 +92,10 @@ def test_unknown_is_valid_for_sessions_and_longitudinal(registry):
 
 
 def test_future_verification_date_is_an_error(registry):
-    rewrite(registry, "last_verified: 2026-09-24", "last_verified: 2027-01-01")
+    path = registry / "data" / "datasets" / "annomi.yaml"
+    record = yaml.safe_load(path.read_text(encoding="utf-8"))
+    future = (TODAY + timedelta(days=365)).isoformat()
+    rewrite(registry, f"last_verified: {record['last_verified']}", f"last_verified: {future}")
     assert any("in the future" in e for e in validate_registry(registry, today=TODAY).errors)
 
 
