@@ -5,6 +5,8 @@ status: partially-verified
 dataset_type: demonstration
 dialogue_structure: multi_turn
 domain: psychotherapy
+doi: https://doi.org/10.1109/ICASSP43922.2022.9746035
+publication_year: 2022
 source_context: Transcribed motivational interviewing demonstration videos. The repository README describes the 133 transcripts as "demonstrations of high- and low-quality motivational interviewing", and each transcript links to its source video.
 therapy_modalities:
   - motivational_interviewing
@@ -27,19 +29,43 @@ license:
   verified: false
   source: https://www.mdpi.com/1999-5903/15/3/110
   notes: >-
-    The GitHub repository has no license file and its README states no license. The data
-    availability statement of the 2023 Future Internet paper is reported to release the dataset
-    under a "Public Domain License"; this has not been read directly here. The CC BY 4.0 license
-    previously recorded belongs to that journal article, not to the dataset. The paper also reports
-    that video owners consented to dataset creation and public release for research.
+    The GitHub repository has no license file and its README states no license. The Data
+    Availability Statement of the 2023 Future Internet paper was read directly on 2026-11-07 and
+    states the full version of AnnoMI is available under the Public Domain License at the
+    repository URL, accessed on 10 Mar 2023. That statement is in the paper, not a license file
+    where the data lives, so the public-domain claim rests on the paper alone. The CC BY 4.0
+    license belongs to that journal article, not to the dataset. The paper also reports that
+    video owners consented to dataset creation and public release for research.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: true
+  ethics_review_documented: true
+  data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://github.com/uccollab/AnnoMI
     - https://www.mdpi.com/1999-5903/15/3/110
-notes: The repository describes the dialogues as demonstrations, so AnnoMI is excluded from the real-session population. Its 119 source videos are listed in the video catalog (data/videos/). On 2026-09-26, 117 were still online, the video behind transcript 89 was gone, and the one behind transcript 118 returned an unsettled response. 42 of the 119 are also source videos of
-  HighQuality (Pérez-Rosas et al., 2019), so the two corpora share material. Anno-AugMI and Anno-FairMI (record anno-augmi) are
-  augmented releases of AnnoMI's therapist utterances. Whether demonstrations used real clients or actors is not established per video.
-last_verified: 2026-09-24
+  supporting_publications:
+    - https://doi.org/10.1109/ICASSP43922.2022.9746035
+notes: >-
+  The repository describes the dialogues as demonstrations, so AnnoMI is excluded from the
+  real-session population. Its 119 source videos are listed in the video catalog (data/videos/).
+  On 2026-09-26, 117 were still online, the video behind transcript 89 was gone, and the one
+  behind transcript 118 returned an unsettled response. 42 of the 119 are also source videos of
+  HighQuality (Pérez-Rosas et al., 2019), so the two corpora share material. Anno-AugMI and
+  Anno-FairMI (record anno-augmi) are augmented releases of AnnoMI's therapist utterances.
+  Whether demonstrations used real clients or actors is not established per video. Re-verified
+  2026-11-07: counted from AnnoMI-full.csv, 13,551 rows hold 9,699 distinct utterances (8,839
+  high-quality and 860 low-quality) across 133 transcripts (110 high-quality and 23 low-quality
+  dialogues), matching the paper section 3.1 exactly; the extra rows are duplicate annotations
+  of the 7 inter-annotator-agreement transcripts. The MDPI page for the 2023 Future Internet
+  paper, previously refused to automated fetch, loaded on 2026-11-07 and its Data Availability
+  Statement was read directly. The paper states explicit permission was obtained from video
+  owners and from individuals appearing in the videos, and that the study was approved by the
+  Ethics Committee of the University of Aberdeen on 1 April 2021. Funding was the EC H2020
+  Marie Sklodowska-Curie PhilHumans project, contract 812882, with partial funding from the
+  ASTRID project. Geography remains unknown: the videos come from YouTube and Vimeo and no
+  country is stated. The 2026-09-26 video-availability check was not repeated this run.
+last_verified: 2026-11-07
