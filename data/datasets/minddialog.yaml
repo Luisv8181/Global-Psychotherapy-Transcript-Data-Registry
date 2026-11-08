@@ -16,7 +16,7 @@ languages:
   - unknown
 therapy_modalities:
   - psychotherapy
-sessions: unknown
+sessions: 2135
 longitudinal: unknown
 transcript:
   available: true
@@ -66,4 +66,29 @@ notes: >-
   Re-checked 2026-10-11: ScienceDirect still returns HTTP 403 to automated fetch, and
   web, GitHub API and Hugging Face searches found no preprint, code repository, dataset
   card or author-published video list. The review remains open.
-last_verified: 2026-09-24
+
+  Re-checked 2026-11-07. The paper is now published in Pattern Recognition, volume 179
+  part C, November 2026, article 113766 (Crossref). The ScienceDirect page loads in a
+  live browser with no Cloudflare challenge this time, but only as a paywalled preview,
+  so the full text, any Data Availability statement and any ethics statement remain
+  unread, and automated fetch still returns HTTP 403. The visible preview confirms the
+  dataset section figure of 2,135 dialogues from over 325 hours of video, nine tasks
+  (six understanding, three generation), and transcripts built by automated subtitle
+  extraction plus LLM processing with expert review and multi-round manual verification.
+  The preview text keeps the classification tension open, since the Introduction calls
+  the source publicly available psychotherapy demonstration videos featuring real
+  therapists while the abstract and dataset section call them real-world, authentic
+  counseling session videos, and nothing visible says who played the clients, so
+  dataset_type stays unknown and the owner call is still needed. No author preprint,
+  code repository, dataset card or release URL was found this run. Semantic Scholar,
+  OpenAlex, Unpaywall, Crossref, the Hugging Face datasets API, the GitHub API and web
+  search were all checked, and the paper is closed-access with no open-access copy
+  indexed. The preview page carries a CC BY statement for the article, but Crossref
+  lists only Elsevier text-mining licences and Unpaywall reports closed access, so that
+  statement is not relied on, and an article licence would not settle the dataset
+  licence in any case. A third-party inference reproduction, PuLing0/minddialog_infer,
+  lists eight JSON data files under data/ in its tree, but their contents were not
+  inspected, their provenance is unconfirmed, and the repository is not an author
+  release, so nothing from it is recorded as evidence. A 25,000-turn figure appeared
+  in one early page extraction but not in the rendered abstract, so it is not used.
+last_verified: 2026-11-07
