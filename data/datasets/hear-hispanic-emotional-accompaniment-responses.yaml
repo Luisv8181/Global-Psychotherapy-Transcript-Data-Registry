@@ -1,0 +1,74 @@
+id: hear-hispanic-emotional-accompaniment-responses
+title: "HEAR: Hispanic Emotional Accompaniment Responses"
+canonical_url: https://huggingface.co/datasets/BrunoGR/HEAR-Hispanic_Emotional_Accompaniment_Responses
+status: verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: emotional_support
+source_context: >-
+  Spanish single-turn emotional-accompaniment pairs built to train the
+  Solo Escuchame chatbot (a fine-tuned LLaMA-2-7b-Chat). Each sample is one
+  user text plus one GPT-3.5-Turbo generated empathetic response, labelled
+  with one of 11 Plutchik-based emotion classes. Input texts were translated
+  from English sources (TweetEval, DailyDialog, HappyDB) plus responses from
+  72 surveys the authors conducted, then re-annotated to the 11 classes. The
+  paper presents the chatbot as a supplementary tool for psychologists, not a
+  replacement for professional care. These are single-turn accompaniment
+  pairs, not therapy sessions and not multi-turn dialogues.
+languages:
+  - es
+publication_year: 2024
+release_year: 2024
+annotations:
+  - 11 Plutchik-based emotion classes (affection, joy, admiration, anger, sadness, optimism, hate, surprise, fear, calm, disgust)
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Openly downloadable Parquet files from the Hugging Face dataset page; no registration, gating, or agreement. All three split files were downloaded on 2026-11-08.
+redistribution: allowed
+license:
+  type: MIT
+  verified: true
+  source: https://huggingface.co/datasets/BrunoGR/HEAR-Hispanic_Emotional_Accompaniment_Responses
+  notes: >-
+    The dataset card metadata declares license mit, read where the data
+    lives. The card README License section says the Solo Escuchame system is
+    released under the MIT License, naming the chatbot rather than the
+    dataset; the card metadata license field is the dataset's own
+    declaration.
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper states the source material was preprocessed to remove all
+    personal information and web links before translation. Responses are
+    LLM-generated, not real user text. No re-identification assessment is
+    reported.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/BrunoGR/HEAR-Hispanic_Emotional_Accompaniment_Responses
+    - https://arxiv.org/html/2408.01852v2
+  supporting_publications:
+    - https://arxiv.org/abs/2408.01852
+last_verified: 2026-11-08
+notes: >-
+  Row counts counted from the released Parquet files on 2026-11-08 with
+  pyarrow: train 41,910, validation 2,220, test 1,320 (45,450 total). The
+  paper section 3.1 reports different figures (train 41,481, validation
+  2,200, test 1,320) and the card README reports validation 2,200 (200 per
+  class); the disagreement is recorded rather than resolved. The Hugging Face
+  repository was created 2023-10-20 and last modified 2024-08-07; release
+  year 2024 follows the paper. Authors: Bruno Gil Ramirez, Jessica Lopez
+  Espejel, Maria del Carmen Santiago Diaz, Gustavo Trinidad Rubin Linares
+  (Benemerita Universidad Autonoma de Puebla; Novelis Research and
+  Innovation Lab). The upstream HRECPW emotion-classification dataset is a
+  related resource, not a separate record here.
