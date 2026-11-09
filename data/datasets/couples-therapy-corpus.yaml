@@ -13,6 +13,13 @@ source_context: >-
 languages:
   - en
 language_context: original
+geography:
+  countries:
+    - United States
+  regions:
+    - north_america
+  scope: single_country
+  evidence_level: reported_in_publication
 therapy_modalities:
   - couples_therapy
 sessions: 574
@@ -39,13 +46,20 @@ access:
     The 2017 PLOS One paper's data availability statement says the data cannot be released to the
     public, and that researchers with proper IRB approvals may request them from the study's
     principal investigator at UCLA, as the paper's authors did.
-redistribution: unknown
+redistribution: prohibited
 license:
   type: unknown
   verified: false
+  notes: >-
+    No dataset license is stated in either paper read. The 2017 PLOS One article is CC BY, but that
+    license covers the article, not the data. Access to the data is governed by the IRB-gated request
+    to the study PI described in the data availability statement, not by a license document.
 privacy:
-  deidentified: unknown
+  deidentified: false
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The 2017 PLOS One data availability statement says the data cannot be fully anonymized and
+    therefore cannot be released to the public.
 ethics:
   consent_documented: documented
   ethics_review_documented: documented
@@ -59,14 +73,16 @@ historical_significance:
   - longitudinal multimodal couples-therapy corpus with behavioral annotations and treatment outcomes
 notes: >-
   The corpus comes from the UCLA/UW Couple Therapy Research Project. The 2017 PLOS One paper
-  (PMC5608311, read through the Europe PMC API on 2026-09-27) describes 134 chronically distressed
-  married couples, three recording sessions per couple over two years with some follow-up sessions
-  missing, manual transcripts, audio and video, and behavioral codes from the Couples Interaction and
-  Social Support Interaction Rating Systems. It states that the couples interacted in the absence of
-  any therapist or research staff, that the study was approved by the UCLA and University of
-  Washington IRBs, and that all participants gave written consent. The figure of 574 sessions comes
-  from the Interspeech 2019 paper (PMC9940777), which could not be opened on 2026-09-27 because the
-  PMC site returned a browser check, so it is unconfirmed. dataset_type stays real because these are
-  real participants from a clinical population; domain is couple_interaction because the recordings
-  are not therapist-client dialogue.
-last_verified: 2026-09-27
+  (PMC5608311, read in full on 2026-11-08) describes 134 chronically distressed married couples,
+  three recording sessions per couple over two years with some follow-up sessions missing, manual
+  transcripts, audio and video, and behavioral codes from the Couples Interaction and Social Support
+  Interaction Rating Systems. It states that the couples interacted in the absence of any therapist
+  or research staff, that the study was approved by the UCLA and University of Washington IRBs, and
+  that all participants gave written consent. The figure of 574 sessions was confirmed from the
+  Interspeech 2019 paper (PMC9940777, read in full on 2026-11-08), which states there is a total of
+  574 such sessions recorded at three points over two years. The 2017 PLOS One paper analyzed a
+  screened subset of 229 recordings with two 10-minute interactions each, 458 interactions in total,
+  after excluding sessions without outcome measures or with poor audio. dataset_type stays real
+  because these are real participants from a clinical population; domain is couple_interaction
+  because the recordings are not therapist-client dialogue.
+last_verified: 2026-11-08
