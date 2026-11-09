@@ -1,0 +1,114 @@
+id: cantonese-simulated-counselling-sessions
+title: "A Corpus of Simulated Counselling Sessions with Dialog Act Annotation"
+canonical_url: https://aclanthology.org/2022.lrec-1.615/
+status: partially-verified
+dataset_type: demonstration
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  86 simulated counselling sessions in Cantonese (152,000 Chinese characters) by John S. Y. Lee,
+  Haley H. M. Fong, L. S. Judy Wong, Chun Chung Mak, Chi Hin Yip and C. W. Larry Ng (City
+  University of Hong Kong), LREC 2022, pp. 5723-5730. Two subcorpora. Speech (29 dialogs):
+  transcripts of pedagogical counselling materials from textbooks by Professor Yeung-Chan (2002;
+  2004; 2006a; 2006b), produced by professional social workers and based on authentic cases
+  involving domestic violence and marriage and family relationship issues; the speech is
+  pre-planned to some extent and not entirely spontaneous. Five of the 29 sessions are
+  independent; the remaining 24 form series of 2 to 5 sessions between the same client and
+  counsellor. Text (57 dialogs): 18 undergraduate students chatting on WhatsApp with a freelance
+  counsellor (native Cantonese speaker, Master's degree in Counselling), 60 to 90 minutes per
+  session, 1 to 8 sessions per student, discussing 2 to 6 symptoms drawn from loneliness,
+  academic anxiety and test anxiety. Every utterance carries a dialog act label (client and
+  counsellor tagsets), each dialog is segmented into five stages (Introduction, Current Picture,
+  Desired Picture, Moving Forward, Closing, following Egan's Skilled Helper Model), and forward
+  and backward links relate utterances to each other. Inter-annotator agreement: client dialog
+  act 74.98% (Cohen's kappa 0.56, moderate), counsellor dialog act 71.43% (kappa 0.70,
+  substantial), backward links 75.76% (kappa 0.887, almost perfect), stages 74.22% (kappa 0.60,
+  moderate). Funded by the Health and Medical Research Fund (project 17180961), Food and Health
+  Bureau, Government of the Hong Kong Special Administrative Region.
+languages:
+  - zh
+language_context: original
+geography:
+  countries:
+    - Hong Kong
+  regions:
+    - east_asia
+  scope: single_country
+  evidence_level: reported_in_publication
+sessions: 86
+participants: null
+longitudinal: null
+therapy_modalities:
+  - unknown
+clinical_topics:
+  - domestic violence
+  - marriage and family issues
+  - loneliness
+  - academic anxiety
+  - test anxiety
+annotations:
+  - dialog act labels (client and counsellor tagsets)
+  - dialogue stage labels (five stages)
+  - forward and backward links between utterances
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+access:
+  level: metadata-only
+  requirements: >-
+    No locatable release artifact as of 2026-11-09. The paper calls this "the first publicly
+    available corpus of counselling sessions in Cantonese" and footnotes
+    https://github.com/CantoneseCounsellorChatbot, but that GitHub user/organization returns
+    HTTP 404 via the GitHub API (checked 2026-11-09), a GitHub repository search for the name
+    returns 0 results, and a web search finds no other code repository, dataset card, or download
+    route. The ACL Anthology page for the paper lists no code or data link. The corpus (transcripts,
+    annotations) is therefore not distributed through any route this review could locate; revisit
+    if the authors publish a repository or dataset card.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated anywhere in the paper. The LREC 2022 proceedings are published
+    CC-BY-NC-4.0; per registry policy, an article's open-access license says nothing about the data.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper makes no de-identification, consent, or ethics-review statement. Sensitivity flag:
+    the speech subcorpus is explicitly "based on authentic cases" from counselling textbooks, so
+    its provenance sits between teaching material and real-case derivation; do not treat the
+    demonstration classification as a guarantee that no real-case content is involved.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://aclanthology.org/2022.lrec-1.615/
+    - http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.615.pdf
+  supporting_publications: []
+publication_year: 2022
+release_year: null
+notes: >-
+  Classification is demonstration, not synthetic: both subcorpora are human-produced sessions made
+  to teach or illustrate counselling (textbook pedagogical material; students role-playing clients
+  with a counsellor), with no model-generated dialogue. The paper's own word is "simulated". The
+  29/57 split, the 152,000-character total, the turn counts (speech 72.03 turns per dialog, text
+  53.68), and the agreement figures are the paper's published figures (Tables 1, 3-8 and section 4),
+  not independently re-counted; no data files were accessible to count. Longitudinal design is
+  left null: 24 speech sessions form series of 2 to 5 sessions with the same client-counsellor
+  pair, so repeated-session structure exists for that subcorpus, but no longitudinal study design
+  is claimed. Participants is left null: the text subcorpus counts 18 students plus one
+  counsellor, but the speech subcorpus gives no participant count. Related resource, not the same
+  corpus: the same lead author published "A Counselling Corpus in Cantonese" (Lee, Cai, Xie and
+  Xing, SLTU-CCURL 2020), a post-reply-pair corpus for a virtual counsellor, available on request
+  to the first author; it is queued as a separate lead in docs/candidate-queue.md because it is
+  mostly chitchat pairs plus test-anxiety items rather than counselling conversations. No
+  transcript, audio, or video content is included here and no per-session list is catalogued.
+last_verified: 2026-11-09
