@@ -1,0 +1,97 @@
+id: therapydata
+title: therapydata
+canonical_url: https://huggingface.co/datasets/michelleyunun/therapydata
+status: partially-verified
+dataset_type: demonstration
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  A train/test re-upload of a subset of AnnoMI motivational-interviewing
+  demonstration transcripts, published on Hugging Face with no provenance
+  statement, README content, paper, or license from the uploader. The six
+  columns are copied from AnnoMI-full.csv, minus the video links, timestamps,
+  annotator ids, and sub-labels; missing labels are written as n/a.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - motivational_interviewing
+sessions: 64
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - parquet
+audio:
+  available: false
+video:
+  available: false
+modalities:
+  - text
+annotations:
+  - therapist_strategy
+  - client_change_talk
+access:
+  level: open
+  requirements: >-
+    None. Both parquet files are public on Hugging Face; no account or
+    agreement is needed.
+redistribution: conditional
+license:
+  type: none-selected
+  verified: true
+  source: https://huggingface.co/datasets/michelleyunun/therapydata
+  notes: >-
+    The dataset card carries no license tag and the README is the empty
+    Hugging Face template, so no license is stated anywhere by the uploader.
+    The underlying AnnoMI material's own release terms are recorded on the
+    AnnoMI record and remain partly unconfirmed, so redistribution of the
+    underlying material is at most conditional.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The underlying AnnoMI record documents de-identification of the source
+    material, but the re-uploader states nothing about de-identification and
+    the re-upload processing is undocumented, so this record leaves it unknown
+    rather than inheriting the claim.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/michelleyunun/therapydata
+    - https://github.com/uccollab/AnnoMI
+  supporting_publications:
+    - https://arxiv.org/pdf/2404.03312
+release_year: 2023
+notes: >-
+  Counted from the data files on 2026-11-09. Train holds 4,153 rows over 64
+  transcripts (ids 0-63); test holds 1,039 rows and carries no transcript_id
+  column. Derivation from AnnoMI was established by direct comparison with
+  AnnoMI-full.csv from the official AnnoMI repository (13,551 rows, 133
+  transcripts). The six columns match; topics match on all 64 train
+  transcripts; per-transcript distinct-utterance counts match AnnoMI
+  transcripts 0-63 in 63 of 64 cases. The one exception is transcript 63,
+  which holds 60 distinct utterances but only 55 distinct utterance texts,
+  so the uploader appears to have deduplicated on text. 4,152 of 4,153 train
+  utterance texts hash-match AnnoMI utterances after whitespace and case
+  normalisation; the single non-matching row is a truncated two-word
+  fragment. All 1,039 test utterance texts hash-match AnnoMI utterances from
+  transcripts 0-63, including all 568 test rows of 40 or more characters, and
+  none matches only transcripts outside 0-63. The split leaks. All 818
+  distinct test utterance texts also occur in train, so the train and test
+  splits are neither transcript-disjoint nor utterance-disjoint; do not use
+  this release as a held-out evaluation split. The uploader's processing is
+  undocumented. Five duplicate texts were dropped in transcript 63, one
+  fragment was truncated, n/a was substituted for missing labels, and the
+  annotator ids, video links, timestamps, and sub-labels were dropped. The
+  Hugging Face discussions page is empty and the uploader names no paper or
+  source. Status is partially-verified, not verified: the AnnoMI derivation
+  is established, but the uploader documents nothing about how the train/test
+  split was sampled, so the artifact's central claim cannot be confirmed from
+  a primary source. This record describes the re-upload only. The underlying
+  material is AnnoMI demonstration transcripts, recorded separately as
+  annomi; do not count therapydata as an independent corpus.
+last_verified: 2026-11-09
