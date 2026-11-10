@@ -1,0 +1,115 @@
+id: cbt-bench
+title: "CBT-Bench: Evaluating Large Language Models on Assisting Cognitive Behavior Therapy"
+canonical_url: https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+status: verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+
+source_context: >-
+  A three-level benchmark for evaluating LLMs on assisting cognitive behavior
+  therapy, built by the Psychotherapy-LLM group. Level I (CBT-QA) is 220
+  multiple-choice questions on basic CBT knowledge, collected from CBT exam
+  questions for Master of Social Work students and compositions from CBT
+  experts. Level II is cognitive model understanding: 146 cognitive distortion
+  examples, 184 primary core belief examples, and 112 fine-grained core belief
+  examples, built from patient speech in the TherapistQA dataset (mental
+  health forum posts) and annotated by six CBT experts, who extracted
+  situation-plus-thought segments and in some cases created plausible imagined
+  situations to supplement them. Level III (CBT-DP) is 156 deliberate-practice
+  exercises from Boswell and Constantino (2022), typical patient speeches in
+  ten categories of CBT sessions with one reference response each, at beginner,
+  intermediate, and advanced difficulty. This is a benchmark, not a transcript
+  corpus: there is no naturally occurring session behind any item, and the
+  hybrid type is a judgment call recording that the material is human material
+  (forum posts, exam questions, published training exercises) transformed by
+  expert annotation and curation into evaluation items.
+publication_year: 2024
+release_year: 2024
+languages:
+  - en
+therapy_modalities:
+  - cognitive_behavioral_therapy
+sessions: null
+participants: null
+longitudinal: false
+annotations:
+  - cognitive_distortion_labels
+  - primary_core_belief_labels
+  - fine_grained_core_belief_labels
+  - expert_pairwise_comparisons
+
+transcript:
+  available: true
+  format:
+    - json
+audio:
+  available: false
+video:
+  available: false
+
+access:
+  level: open
+  requirements: >-
+    Public Hugging Face dataset under the Psychotherapy-LLM organization,
+    downloadable with no registration or gating. File counts verified by
+    download on 2026-11-10: qa_test 220, qa_seed 47, distortions_test 146,
+    distortions_seed 20, core_major_test 184, core_major_seed 20,
+    core_fine_test 112, core_fine_seed 20, and 156 CBT-DP reference items
+    across the ten dp-reference-exe files.
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+  notes: >-
+    License is declared in the dataset card metadata (license tag
+    cc-by-nc-4.0) where the data lives. Non-commercial reuse only,
+    attribution required. The arXiv paper itself is CC BY-NC-SA 4.0; that is
+    the paper license, not the dataset license. The Level II patient speech
+    comes from the TherapistQA dataset and the Level III exercises from
+    Boswell and Constantino (2022); downstream reuse should be checked
+    against those source terms as well.
+
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper states that data collected from the hired expert annotators was
+    de-identified. No de-identification claim is made for the Level II patient
+    speech, which comes from public mental-health forum posts via TherapistQA.
+
+ethics:
+  consent_documented: true
+  ethics_review_documented: true
+  data_use_agreement: unknown
+
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+    - https://arxiv.org/html/2410.13218v2
+  supporting_publications:
+    - https://arxiv.org/abs/2410.13218
+
+last_verified: 2026-11-10
+notes: >-
+  Authors: Mian Zhang, Xianjun Yang, Xinlu Zhang, Travis Labrum, Jamie C.
+  Chiu, Shaun M. Eack, Fei Fang, William Yang Wang, Zhiyu Zoey Chen (UT
+  Dallas, UC Santa Barbara, University of Pittsburgh, Princeton, Carnegie
+  Mellon). Paper published 2024-10-17, v2 2025-01-26, NAACL 2025 camera
+  ready. Counts counted from the data files on 2026-11-10: 662 test items
+  (220 QA + 146 distortions + 184 core major + 112 core fine), 107 seed
+  items held out for training or in-context learning, and 156 CBT-DP
+  exercises, for 925 benchmark items in total. The repository also ships
+  Llama-3.1-8B and Llama-3.1-405B generations for the CBT-DP exercises and a
+  dp-pairwise-comparison.json file with 468 comparison entries; those are
+  model outputs and evaluation artifacts, not additional benchmark items.
+  The CBT-QA answers are not disclosed in the data files; the README points
+  to a Hugging Face Space tool for scoring. The paper's IRB approval and
+  informed consent cover the eight hired expert annotators and evaluators
+  (Upwork, graduate degree plus at least 5 hours of CBT training, $60 per
+  hour), not the authors of the forum posts behind Level II. Level II seed
+  files and the CBT-DP model generations were downloaded and counted, not
+  read in full. Do not cite this record for turn-taking or dialogue dynamics
+  evidence: every item is a single-turn question, classification, or
+  response-generation exercise.
