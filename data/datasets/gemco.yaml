@@ -73,5 +73,8 @@ notes: >-
   34 professional counsellors and 13 students in GEMCo-B, two authoring counsellors plus one
   independent reviewer in GEMCo-A. Annotations cover OnCoCo counsellor-act spans and
   GoEmotions/Ekman client-emotion spans. The corpus was validated against 124 withheld real
-  conversations reported only as aggregates.
-last_verified: 2026-10-10
+  conversations reported only as aggregates. Re-verified 2026-11-09 against the live
+  repository and arXiv v2; counts re-counted from the data files (50 + 36 threads,
+  403 + 325 messages, 86 annotation files) and the CC BY 4.0 license re-read from
+  the repository LICENSE file; no changes.
+last_verified: 2026-11-09
