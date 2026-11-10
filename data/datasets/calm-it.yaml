@@ -66,7 +66,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.10085
 publication_year: 2026
-last_verified: 2026-10-15
+last_verified: 2026-11-10
 notes: >-
   The 8,232 figure is the full evaluated set: 686 client contexts x 3 lengths x 4 frameworks.
   The CALM-IT-generated arm is 686 x 3 = 2,058 dialogues. The paper's "large-scale synthetic
@@ -88,3 +88,10 @@ notes: >-
   search 0 hits; Hugging Face datasets API returns only unrelated CALM-Italy;
   web search found no author-hosted release. Release remains gated on manuscript
   acceptance per the v1 promise. Watch row retained in the candidate queue.
+  Re-checked 2026-11-10. Still v3 (revised 2026-10-13), no v4; the v3 HTML
+  contains zero occurrences of the word release and its only github.com links
+  are LaTeXML, DeepEval, and arXiv feedback pages; GitHub API search for
+  CALM-IT plus motivational interviewing returned 0 hits and calm-it in name
+  returned 36 hits, all unrelated; Hugging Face datasets API still returns
+  only the unrelated CALM-Dataset/CALM-Italy; web search found no
+  author-hosted repository or dataset page.
