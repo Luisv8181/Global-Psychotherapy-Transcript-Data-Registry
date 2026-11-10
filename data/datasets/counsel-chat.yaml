@@ -8,7 +8,13 @@ domain: psychotherapy
 source_context: >-
   Scraped from counselchat.com, where individuals posted questions and licensed therapists posted
   answers. Each row is one therapist's answer to one question.
-geography: null
+geography:
+  countries:
+    - United States
+  regions:
+    - north_america
+  scope: single_country
+  evidence_level: reported_by_dataset_provider
 languages: [en]
 language_context: original
 therapy_modalities:
@@ -47,9 +53,13 @@ license:
     the therapists who posted them. The MIT license is the repository author's and may not extend
     to that third-party text, so redistribution is recorded as conditional.
 privacy:
-  deidentified: unknown
+  deidentified: false
   contextual_reidentification_assessed: unknown
-  notes: Rows include each answering therapist's information and profile URL. Questions are posts by members of the public.
+  notes: >-
+    The Hugging Face dataset card states the data is not anonymized and that
+    individuals' names can be found in the dataset; therapist names were kept
+    as part of the original dataset. Rows include each answering therapist's
+    information and profile URL. Questions are posts by members of the public.
 evidence:
   primary_sources:
     - https://github.com/nbertagnolli/counsel-chat
@@ -60,7 +70,12 @@ historical_significance:
   - early open English corpus of licensed therapists' written responses, widely used for counseling LLM fine-tuning
 notes: >-
   Counted from data/20200325_counsel_chat.csv on 2026-09-25, 2,129 answers to 815 distinct
-  questions. The most common topics are depression (330 answers), anxiety (249) and counseling
-  fundamentals (240). The README asks users to cite a 2020 Towards Data Science article rather
-  than a peer-reviewed paper.
-last_verified: 2026-09-25
+  questions; re-counted from the same file on 2026-11-10 with the same result
+  (2,129 rows, 815 distinct questionIDs). The most common topics are depression (330 answers), anxiety (249) and counseling
+  fundamentals (240). The Hugging Face dataset ships a newer scrape dated 20220401,
+  counted on 2026-11-10 at 2,775 answers to 940 distinct questions; the dataset
+  card says the scrape is from counselchat.com on 20220401. The README asks users to cite a 2020 Towards Data Science article rather
+  than a peer-reviewed paper. The source site counselchat.com returned HTTP 503 on 2026-11-10,
+  so the site itself is currently unreachable; the data remains available from the GitHub
+  repository and Hugging Face. The Hugging Face dataset card also states the license is MIT.
+last_verified: 2026-11-10
