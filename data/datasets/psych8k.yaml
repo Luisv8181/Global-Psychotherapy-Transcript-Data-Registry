@@ -1,7 +1,7 @@
 id: psych8k
 title: "Psych8k (ChatPsychiatrist counseling instruction data)"
 canonical_url: https://github.com/EmoCareAI/ChatPsychiatrist
-status: partially-verified
+status: verified
 dataset_type: hybrid
 dialogue_structure: single_turn_qa
 domain: psychotherapy
@@ -32,25 +32,50 @@ generation:
   source_type: real_counseling_recording_transcripts
   synthetic_dialogues: false
 access:
-  level: unknown
-  requirements: unknown
-redistribution: unknown
+  level: restricted
+  requirements: >-
+    Hugging Face dataset EmoCareAI/Psych8k is manually gated: access must be
+    requested on the dataset page and granted before download. The dataset
+    card (2024-04-07 news) adds "After obtaining access permission, please do
+    not disseminate data at will!"
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
-  notes: The repository's Apache 2.0 badge is labelled Code License. No dataset license or download location for Psych8k is stated in the README.
+  type: cc-by-nc-sa-4.0
+  verified: true
+  source: https://huggingface.co/datasets/EmoCareAI/Psych8k
+  notes: >-
+    The dataset card's YAML metadata declares license cc-by-nc-sa-4.0; the
+    Hugging Face API metadata license field for the same dataset returns null,
+    so the card declaration is what is recorded here. The repository's Apache
+    2.0 LICENSE covers code only. The card's "do not disseminate at will"
+    instruction means redistribution is conditional even though the CC
+    BY-NC-SA 4.0 terms themselves permit sharing under attribution,
+    non-commercial, share-alike conditions.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://github.com/EmoCareAI/ChatPsychiatrist
-publication_year: null
+    - https://huggingface.co/datasets/EmoCareAI/Psych8k
+  supporting_publications:
+    - https://arxiv.org/abs/2309.15461
+publication_year: 2023
 historical_significance:
   - LLM instruction data derived from real counseling recordings rather than generated from scratch
 notes: >-
   The README gives the session count as approximately 260 real conversations, so the value is
-  approximate. It does not identify where the recordings came from, whether clients consented to
-  derivative use, or whether the 8,187 pairs are downloadable; the source recordings are not
-  released. A separate 229-question Counselling Bench is included for evaluation.
-last_verified: 2026-09-25
+  approximate. It does not identify where the recordings came from or whether clients consented
+  to derivative use, and the source recordings are not released. The 8,187 query-answer pairs
+  ARE downloadable from the Hugging Face dataset (once manual access is granted); the hosted
+  file is named Alexander_Street_shareGPT_2.0.json, which suggests Alexander Street as the
+  recording source, but that is a filename hint only and is not confirmed by any statement in
+  the README or the dataset card, so geography stays unknown. The README also describes
+  another 100 query-answer pairs created as a test set by the same process; it is ambiguous
+  whether those 100 are within or in addition to the 8,187, so no total beyond 8,187 is
+  recorded. The data file itself could not be counted this run because the dataset is gated
+  (direct download returns an access-restricted message without authentication). A separate
+  229-question Counselling Bench is included for evaluation. The repository was last updated
+  2026-10-02 per the GitHub API; the README's substance is unchanged since the 2024-03-12
+  Hugging Face announcement.
+last_verified: 2026-11-11
