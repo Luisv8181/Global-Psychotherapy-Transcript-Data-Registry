@@ -185,3 +185,11 @@ From the cloud session's network: ICPSR search (HTTP 403), Zenodo records API (H
 | 2026-10-15 | GitHub API repo search (primary, data location) | calm-it motivational interviewing | en | 0 repos | calm-it lead; no release | scheduled rotation task |
 | 2026-10-15 | Hugging Face datasets API | search=calm-it; search=motivational interviewing dialogue | en | 1 + 15 datasets screened | calm-it lead; only unrelated CALM-Dataset/CALM-Italy; no calm-related hits in motivational-interviewing search | scheduled rotation task |
 | 2026-10-15 | Web search | CALM-IT motivational interviewing Nguyen Birnbaum code repository dataset release | en | 7 results screened | calm-it lead; no official code or data repository found; v1-era secondary snippet confirms release was gated on manuscript acceptance | scheduled rotation task |
+| 2026-11-10 | arXiv API atom feed (primary paper, version check) | id_list=2609.17180 | en | 1 paper | mocc; still v1 only (submitted 2026-09-15), atom feed links are abs + pdf only, no code/data link | scheduled rotation task |
+| 2026-11-10 | arXiv abs page (primary paper, version check) | 2609.17180 abs | en | 1 page | mocc; still v1 only; "Code, Data and Media" section lists no links | scheduled rotation task |
+| 2026-11-10 | arXiv HTML full text v1 (primary paper, link scan) | 2609.17180v1 HTML | en | 1 paper | mocc; no release or data-availability statement; only github.com links are LaTeXML and arXiv feedback pages; zero huggingface mentions | scheduled rotation task |
+| 2026-11-10 | GitHub API repository search (data location) | MOCC-R1 | en | 0 repos | mocc; no author artifact | scheduled rotation task |
+| 2026-11-10 | GitHub code search (data location) | MOCC-R1 | en | 10 hits screened | mocc; only third-party paper aggregators, no author repo | scheduled rotation task |
+| 2026-11-10 | Hugging Face datasets API (data location) | search=MOCC | en | 1 dataset | mocc; only unrelated pku-mocca/DexterHand motion-capture set, no release | scheduled rotation task |
+| 2026-11-10 | Hugging Face papers page (data location) | 2609.17180 | en | 1 page | mocc; still 404 | scheduled rotation task |
+| 2026-11-10 | Web search | MOCC Multimodal Counseling Conversation Corpus dataset release GitHub code | en | 8 results screened | mocc; paper pages only, no author-hosted repo | scheduled rotation task |

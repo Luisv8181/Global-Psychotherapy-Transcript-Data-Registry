@@ -40,11 +40,11 @@ modalities:
 access:
   level: metadata-only
   requirements: >-
-    The corpus itself has no public release as of 2026-10-12. The paper (v1, submitted 2026-09-15)
+    The corpus itself has no public release as of 2026-11-10. The paper (v1, submitted 2026-09-15)
     names no dataset card, code repository, or access route; the arXiv "Code, Data and Media"
-    section lists no links; the Hugging Face papers page for 2609.17180 returns 404; GitHub code
-    search for MOCC-R1 and the Hugging Face datasets API search for MOCC return no official
-    artifact. The source videos remain on YouTube and the Alexander Street subscription platform,
+    section lists no links; the Hugging Face papers page for 2609.17180 returns 404; GitHub repository
+    search for MOCC-R1 returns 0 hits and code search returns only third-party paper aggregators; the Hugging Face datasets API search for MOCC returns only an unrelated motion-capture dataset.
+    The source videos remain on YouTube and the Alexander Street subscription platform,
     but the corpus (transcripts, segmentations, annotations) is not distributed.
 redistribution: unknown
 license:
@@ -82,6 +82,12 @@ notes: >-
   same consent gap that blocked the HOPE video catalog. No per-video list is catalogued here and
   no transcript, audio, or video content is included. The corpus is unreleased, so this is a
   metadata-only placeholder; revisit if the authors publish a dataset card, code repository, or
-  access route. Counts are the paper's published figures (Table 1 and Table 2 of v1), not
+  access route. Re-checked 2026-11-10 - still v1 only (submitted 2026-09-15); arXiv "Code, Data
+  and Media" section still lists no links; arXiv HTML v1 contains no release or data-availability
+  statement and no author repository link (only LaTeXML and arXiv feedback github.com links, zero
+  huggingface mentions); GitHub repository search for MOCC-R1 0 hits, code search only
+  third-party paper aggregators; HF datasets API search for MOCC returns only an unrelated
+  motion-capture set; HF papers page for 2609.17180 still 404; web search no author-hosted repo.
+  Counts are the paper's published figures (Table 1 and Table 2 of v1), not
   independently re-counted.
-last_verified: 2026-10-12
+last_verified: 2026-11-10
