@@ -66,4 +66,13 @@ notes: >-
   Re-checked 2026-10-11: ScienceDirect still returns HTTP 403 to automated fetch, and
   web, GitHub API and Hugging Face searches found no preprint, code repository, dataset
   card or author-published video list. The review remains open.
+  Re-checked 2026-11-11 - the paper is now published (Pattern Recognition, November 2026,
+  DOI 10.1016/j.patcog.2026.113766; authors He Hu, Juzheng Si, Qianning Wang, Tengjin Weng,
+  Yihong Ji, Jiyue Jiang, Fei Ma, Yucheng Zhou, Laizhong Cui, Qi Tian, confirmed via Crossref).
+  Unpaywall and OpenAlex both report closed access with no open-access location, and Semantic
+  Scholar lists no open-access PDF. arXiv has no MindDialog preprint. GitHub API repo search
+  still finds only the third-party PuLing0/minddialog_infer reproduction, and the Hugging Face
+  datasets API returns no MindDialog dataset. ScienceDirect still returns HTTP 403 to automated
+  fetch, and a web search found no author preprint, code repository, dataset card or
+  author-published video list. The data section is still unread and the review remains open.
 last_verified: 2026-09-24
