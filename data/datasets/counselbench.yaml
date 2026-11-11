@@ -1,0 +1,112 @@
+id: counselbench
+title: "CounselBench: A Large-Scale Expert Evaluation and Adversarial Benchmark of Large Language Models in Mental Health Question Answering"
+canonical_url: https://github.com/llm-eval-mental-health/CounselBench
+status: verified
+dataset_type: hybrid
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+source_context: >-
+  A two-part evaluation benchmark for large language models answering
+  mental-health questions, built with 100 mental-health professionals at the
+  University of Southern California. CounselBench-Eval holds 2,000 expert
+  evaluations of answers to 100 real patient questions sampled from the public
+  forum CounselChat, five questions from each of 20 topics, each answered by
+  GPT-4, LLaMA 3, Gemini, and an online human therapist, with five independent
+  expert annotations per response. CounselBench-Adv holds 120 expert-authored
+  adversarial questions targeting six failure modes observed in Eval, with
+  1,080 responses from nine LLMs and expert annotations of whether the
+  targeted failure mode is present. The released data is an evaluation
+  benchmark, not a corpus of therapy sessions. The underlying questions are
+  real anonymous help-seeker posts and the human answers are real therapist
+  answers, but most released responses are model-generated and the primary
+  content is expert evaluation, so the record is classified hybrid rather
+  than real.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - counseling
+clinical_topics:
+  - depression
+  - anxiety
+  - relationships
+  - family_conflict
+  - parenting
+  - self_esteem
+  - trauma
+  - grief
+  - substance_abuse
+  - eating_disorders
+  - domestic_violence
+  - counseling_fundamentals
+sessions: null
+longitudinal: false
+transcript:
+  available: true
+  format:
+    - csv
+modalities:
+  - text
+annotations:
+  - expert evaluation scores across six dimensions (overall quality, empathy, specificity, factual consistency, medical advice, toxicity) with span-level annotations and written rationales
+  - adversarial failure-mode labels across six modes (apathetic response, unsupported assumptions, speculation about medical symptoms, judgmental response, specific medication suggestions, specific therapy-technique suggestions)
+access:
+  level: open
+  requirements: The three datasets are public and ungated on Hugging Face, and the code is public on GitHub. No registration or agreement required.
+redistribution: conditional
+license:
+  type: CC-BY-NC-ND-4.0
+  verified: true
+  source: https://huggingface.co/datasets/izi-ano/CounselBench-Eval
+  notes: >-
+    The CC BY-NC-ND 4.0 license is read from the dataset cards of all three
+    Hugging Face datasets at the data location. The GitHub code repository
+    carries no license. The paper is also CC BY-NC-ND 4.0 on arXiv, but that
+    is the article license, not the dataset license. CC BY-NC-ND forbids
+    commercial use and derivatives, so redistribution is conditional. The
+    underlying CounselChat questions and therapist answers are third-party
+    forum material, so the dataset license does not by itself clear reuse of
+    that text.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper ethics statement says all identifiers such as names and homepage
+    links were removed before use, annotators consented to release of
+    de-identified data, and no personally identifiable information was
+    collected. The patient questions are anonymous public forum posts.
+ethics:
+  consent_documented: true
+  ethics_review_documented: true
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2506.08584
+    - https://arxiv.org/html/2506.08584v4
+    - https://github.com/llm-eval-mental-health/CounselBench
+    - https://huggingface.co/datasets/izi-ano/CounselBench-Eval
+    - https://huggingface.co/datasets/izi-ano/CounselBench-Adv
+    - https://huggingface.co/datasets/izi-ano/CounselBench-Adv-human-annotation
+  supporting_publications: []
+publication_year: 2025
+release_year: 2025
+historical_significance:
+  - large-scale expert evaluation benchmark for LLM mental-health question answering with 100 mental-health professionals and 2,000 evaluations
+notes: >-
+  Row counts counted from the released CSV files on 2026-11-11. Eval has
+  2,000 rows, 100 distinct question IDs, four responders with 500 rows each
+  (gpt4, llama3, gemini, human), 20 topics, and 100 survey IDs, matching the
+  paper figure of 2,000 evaluations with five annotations per response. Adv
+  has 20 rows by six failure-mode columns, 120 questions in total. Adv human
+  annotation has 1,080 rows, nine models with 120 rows each and six failure
+  modes with 180 rows each, matching the paper figure of 1,080 responses.
+  The paper (v4, revised 14 May 2026) reports USC IRB exempt approval, Study
+  ID UP-25-00022. The Hugging Face dataset cards carry only a license
+  frontmatter line and no descriptive text. A third-party re-upload,
+  kanwal-mehreen18/CounselBench-Eval-new, is not the authors release and was
+  not used. Classification note: the record is hybrid because the released
+  datasets combine real anonymous CounselChat questions and real therapist
+  answers with model-generated answers and expert evaluations; the real
+  question provenance is stated in source_context, and the owner may prefer
+  a different type.
+last_verified: 2026-11-11
