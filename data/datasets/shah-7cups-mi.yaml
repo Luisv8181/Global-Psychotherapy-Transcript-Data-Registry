@@ -1,0 +1,100 @@
+id: shah-7cups-mi
+title: "Modeling Motivational Interviewing Strategies On An Online Peer-to-Peer Counseling Platform (7 Cups corpus)"
+canonical_url: https://doi.org/10.1145/3555640
+status: partially-verified
+dataset_type: peer_support
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Listener utterances from one-to-one text chats between support seekers and
+  volunteer peer counselors on 7 Cups of Tea, sampled January to August 2020
+  and annotated with motivational interviewing technique codes. The listeners
+  are volunteers who receive 30 to 60 minutes of training and must pass an
+  exam, and are not licensed professionals. After each conversation, members
+  may rate the conversation on a 5-point Likert scale from 1 (worst) to 5
+  (excellent). The annotation scheme has 17 codes, 13 drawn from MITI manuals
+  plus four created for the online setting, namely Support, Inappropriate,
+  Chit-Chat and Other. Annotation combined manual labeling with a
+  semi-supervised pass in which a fine-tuned BERT model suggested labels at
+  0.7 confidence or above and annotators manually verified each suggestion
+  before assigning it. The annotated set grew from 1,539 utterances in 147
+  conversations to 14,797 utterances in 734 conversations.
+therapy_modalities:
+  - motivational_interviewing
+languages:
+  - en
+collection_start_year: 2020
+collection_end_year: 2020
+sessions: 734
+participants: null
+longitudinal: true
+annotations:
+  - 17 MI technique codes (13 MITI-derived plus Support, Inappropriate, Chit-Chat, Other)
+  - conversation satisfaction ratings (5-point Likert, member-rated)
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: metadata-only
+  requirements: >-
+    No public access route is confirmed. The paper states the authors will
+    release the dataset and the Mental Health BERT models subject to
+    appropriate privacy and ethical considerations, but names no repository,
+    dataset page or download location, and no release artifact was found on
+    2026-11-12 in GitHub repository search, the Hugging Face datasets and
+    models APIs, or web search. Data were obtained by the authors through a
+    research collaboration with 7 Cups of Tea.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated in the paper and no dataset page exists to
+    carry one. The paper itself is published under a CC BY 4.0 license per the
+    NSF PAR copy, but that license covers the paper, not the data.
+privacy:
+  deidentified: true
+  contextual_reidentification_assessed: false
+  notes: >-
+    The paper states messages were anonymized by not including the usernames
+    of members or listeners, and that all examples shown in the paper were
+    paraphrased from 7 Cups chats using round-trip translation instead of
+    being quoted directly. No re-identification assessment was reported, and
+    the dataset itself was not described as de-identified beyond the username
+    removal, so this is recorded as the paper's anonymization claim, not as a
+    guarantee of anonymity.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://arxiv.org/abs/2211.05182
+    - https://kraut.hciresearch.info/wp-content/uploads/Shah22-ModelingMotivationalInterviewing.pdf
+  supporting_publications:
+    - https://doi.org/10.1145/3555640
+doi: https://doi.org/10.1145/3555640
+publication_year: 2022
+last_verified: 2026-11-12
+notes: >-
+  Counts are the paper's reported figures. The 14,797 figure counts labeled
+  listener utterances only, across 734 conversations. The number of member
+  utterances and the total message count per conversation are not stated, and
+  the number of distinct listeners and members is not stated, so participants
+  is left null. The paper's section 2 says the corpus was annotated using a
+  multi-label approach. The average conversation rating across the dataset was
+  4.14, and the paper groups ratings 4 to 5 as satisfactory and 1 to 3 as
+  unsatisfactory. The four new codes are Support, Inappropriate, Chit-Chat
+  and Other, defined in section 4.1. Longitudinal is set true because the
+  paper's second research question tracks the same listeners' technique use as
+  they gain experience. Lineage flag: this corpus is the plausible upstream
+  source for the reflections-in-peer-counseling record (O'Neil et al. 2023),
+  whose pairs were filtered from a larger annotated counseling-skills
+  dataset on an unnamed peer-to-peer platform, but no primary source read
+  here confirms the link, so it stays unconfirmed. The introducing paper is
+  Shah et al., Proc. ACM Hum.-Comput. Interact. 6, CSCW2, Article 527,
+  November 2022, read in full from the author-hosted PDF. The arXiv copy is
+  arXiv 2211.05182, submitted 2022-11-09.
