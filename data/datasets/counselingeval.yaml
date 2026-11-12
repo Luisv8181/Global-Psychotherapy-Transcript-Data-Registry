@@ -1,0 +1,71 @@
+id: counselingeval
+title: "CounselingEval: A Psychological Counseling Evaluation Framework"
+canonical_url: https://huggingface.co/datasets/LangAGI-Lab/CounselingEval
+status: verified
+dataset_type: synthetic
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Evaluation test set from the CACTUS paper (Lee et al., Findings of EMNLP 2024).
+  150 distinct synthetic client profiles, each presented with three counseling
+  attitudes (positive, neutral, negative), for 450 evaluation instances. Each row
+  carries an AI client attitude and instruction, counselor-side client information
+  with a 2-3 turn dialogue opening, and ground-truth CBT techniques. During
+  evaluation an AI client (gpt-3.5-turbo-0125 in the paper) continues the session
+  from the opening and the resulting conversation is scored with CTRS and PANAS.
+  A separate artifact from the CACTUS training corpus of 31,577 dialogues; it is
+  not a corpus of complete sessions.
+languages:
+  - en
+language_context: original
+therapy_modalities:
+  - cognitive_behavioral_therapy
+sessions: 450
+longitudinal: false
+annotations:
+  - client_attitude
+  - cbt_technique
+  - client_intake_form
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+access:
+  level: open
+  requirements: Public, ungated Hugging Face dataset (JSON).
+redistribution: conditional
+license:
+  type: GPL
+  verified: true
+  source: https://huggingface.co/datasets/LangAGI-Lab/CounselingEval
+  notes: >-
+    The dataset card license field reads "gpl" without a version. The companion
+    code repository (coding-groot/cactus) is GPL-2.0. A GPL license applied to
+    data carries copyleft conditions on redistribution.
+privacy:
+  deidentified: not_applicable_to_synthetic_data
+  contextual_reidentification_assessed: not_applicable
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: false
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/LangAGI-Lab/CounselingEval
+    - https://arxiv.org/abs/2407.03103
+    - https://aclanthology.org/2024.findings-emnlp.832/
+  supporting_publications: []
+publication_year: 2024
+release_year: 2024
+last_verified: 2026-11-11
+notes: >-
+  Counted from CounselingEval.json on 2026-11-11: 450 rows, 150 per attitude
+  (positive, neutral, negative). 147 distinct client names; a few names repeat
+  across profiles. Ground-truth CBT techniques span 12 labels, most frequent
+  Alternative Perspective (186), Evidence-Based Questioning (159) and
+  Problem-Solving Skills Training (111); each row lists 1-5 techniques.
+  Dialogue openings run 2-3 turns (mean 2.0). Dataset created on Hugging Face
+  2024-06-18; paper published July 2024. The AI client model named in the paper
+  appendix is gpt-3.5-turbo-0125.
