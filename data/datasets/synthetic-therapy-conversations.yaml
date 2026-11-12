@@ -1,0 +1,73 @@
+id: synthetic-therapy-conversations
+title: Synthetic Therapy Conversations
+canonical_url: https://huggingface.co/datasets/Mr-Bhaskar/Synthetic_Therapy_Conversations
+status: partially-verified
+dataset_type: unknown
+dialogue_structure: single_turn_qa
+domain: psychotherapy
+source_context: >-
+  A Hugging Face dataset uploaded by user Mr-Bhaskar in December 2023, with no
+  README, no description, no paper, and no stated generation method. It ships as
+  three CSV files (train, validation, test) with two columns, human and ai. Each
+  row is one human turn followed by one AI response, with no conversation
+  identifier or turn order, so no multi-turn structure can be reconstructed. The
+  uploader's name for the dataset asserts it is synthetic, but no generation
+  method, model, prompt, or source is documented anywhere on the dataset page,
+  so provenance is recorded as unknown rather than synthetic. The same three
+  files are used as one input to the merged derivative
+  RishiKompelli/Therapybotdataset, which is a separate resource, not this record.
+languages:
+  - en
+sessions: null
+transcript:
+  available: true
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: >-
+    Public, ungated download of the three CSV files from the Hugging Face
+    dataset page. No registration or agreement is required.
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No license is declared anywhere for this dataset. The Hugging Face API
+    returns no license for the dataset, and the repository contains no LICENSE
+    file and no README. Redistribution status is therefore unknown.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    No real participants are claimed and no consent or ethics statement exists,
+    but with no documented provenance the privacy status of the exchanges cannot
+    be assessed. Do not treat the exchanges as de-identified real sessions.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Mr-Bhaskar/Synthetic_Therapy_Conversations
+    - https://huggingface.co/datasets/Mr-Bhaskar/Synthetic_Therapy_Conversations/resolve/main/train.csv
+    - https://huggingface.co/datasets/Mr-Bhaskar/Synthetic_Therapy_Conversations/resolve/main/validation.csv
+    - https://huggingface.co/datasets/Mr-Bhaskar/Synthetic_Therapy_Conversations/resolve/main/test.csv
+  supporting_publications: []
+release_year: 2023
+last_verified: 2026-11-12
+notes: >-
+  Row counts were counted from the data files on 2026-11-12: train 6,719 rows,
+  validation 38 rows, test 50 rows, 6,807 rows in total. Column headers are
+  human and ai. The Hugging Face API reports the dataset created 2023-12-12,
+  last modified 2023-12-19, with no license and no description. Do not cite this
+  record as evidence that the dialogues are model-generated: the word synthetic
+  in the dataset name is the uploader's label only, and no generation method is
+  documented. Classification as synthetic, demonstration, or any other type
+  needs a stated generation method or source. The merged derivative
+  RishiKompelli/Therapybotdataset (no license, no card, merges eight upstream
+  sources per its main.py) was screened in the same pass and not recorded: it
+  adds no independent underlying collection and documents no provenance or
+  license of its own.
