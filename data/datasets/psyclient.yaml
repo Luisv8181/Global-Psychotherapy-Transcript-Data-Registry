@@ -1,0 +1,116 @@
+id: psyclient
+title: "PsyCLIENT-CP: Chinese Client Profiles for Counseling Simulation"
+canonical_url: https://github.com/qiuhuachuan/PsyCLIENT
+status: partially-verified
+dataset_type: hybrid
+dialogue_structure: unknown
+domain: psychotherapy
+
+source_context: >-
+  Client-profile dataset and behavior-trajectory files for LLM-based
+  simulated counseling clients, from the EMNLP 2026 paper "Client
+  Simulation via Conversational Trajectory Modeling for Trainee Practice
+  and Model Evaluation in Mental Health Counseling" (Qiu et al.). Two
+  professional counselors constructed 120 Chinese client profiles spanning
+  60 counseling topics. A further 324 conversational trajectories were
+  derived from the Chinese counseling-dialogue dataset of Li et al. (2023),
+  keeping dialogues with more than 30 turns and replacing client utterances
+  with a de-identified content representation plus behavior labels. The
+  simulator (Claude 3.5 Sonnet) conditions each client turn on a profile,
+  a trajectory of target behaviors and reference content, and the dialogue
+  history. The repository also ships a practice-room web app. The profiles
+  are fictional constructed clients, not real clients, and no dialogue text
+  is released. The trajectory file holds turn-ordered behavior labels only.
+  The hybrid call is a judgment call. The profiles are human-constructed,
+  while the trajectories are transformed from real human dialogues.
+
+geography:
+  countries: [China]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: documented
+languages:
+  - zh
+language_context: original
+therapy_modalities:
+  - unknown
+clinical_topics:
+  - unknown
+annotations:
+  - client_behavior_labels
+
+sessions: unknown
+longitudinal: unknown
+publication_year: 2026
+release_year: 2026
+doi: https://doi.org/10.18653/2026.emnlp-main.45
+
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+
+access:
+  level: open
+  requirements: >-
+    Public GitHub repository, downloadable with no registration or gating.
+    Only 10 of the 120 profiles the paper claims are present as files in
+    client_profile/ (1.txt through 10.txt), and only one trajectory file
+    (conv_trajectory/1.json) is present. See notes.
+redistribution: conditional
+license:
+  type: CC0-1.0
+  verified: true
+  source: https://github.com/qiuhuachuan/PsyCLIENT/blob/main/LICENSE
+  notes: >-
+    The repository root LICENSE file is CC0 1.0 and GitHub reports the
+    repository license as CC0-1.0. The paper states no separate data license.
+    The trajectories derive from the Li et al. (2023) dialogues, whose own
+    terms are not documented here, so reuse of that underlying material may
+    be constrained regardless of the repository license.
+
+privacy:
+  deidentified: documented
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper says trajectories use a de-identified content representation
+    after removing personally identifiable information, and the profiles are
+    constructed fictional clients with pseudonyms. No re-identification
+    assessment is reported.
+
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: false
+
+evidence:
+  primary_sources:
+    - https://github.com/qiuhuachuan/PsyCLIENT
+    - https://arxiv.org/html/2601.07312
+  supporting_publications:
+    - https://arxiv.org/abs/2601.07312
+    - https://aclanthology.org/2026.emnlp-main.45/
+
+last_verified: 2026-11-12
+notes: >-
+  Counted from the repository on 2026-11-12. client_profile/ holds 10 .txt
+  files (one profile each, 1,503 to 3,188 characters), not the 120 profiles
+  the paper and README claim, and conv_trajectory/ holds a single 1.json
+  with 102 turns of role plus behavior labels and no reference-content text,
+  not the 324 trajectories the paper reports. The paper reports profile
+  lengths of 1,421 to 7,740 characters (mean 3,930), 89 of 120 profiles over
+  2,000 characters, and 60 counseling topics. The README "Search 120 client
+  profiles" claim does not match the shipped files. The full 120-profile set
+  and the remaining trajectories have no locatable access route in the
+  repository as of this check. Upstream lineage. The trajectories derive
+  from Li et al. (2023), "Understanding client reactions in online mental
+  health counseling" (ACL 2023, the Client-Reactions dataset, 550 dialogues
+  in the PsyCLIENT paper account, 324 retained). That dataset has no registry
+  record of its own yet. Evaluation involved 24 professional counselors
+  rating authenticity and training utility. The paper reports Westlake
+  University Institutional Ethics Committee approval No. 20211013LZZ001.
+  Authors are Huachuan Qiu, Zhaoming Chen, Yuqian Chen, Yuan Xie, Yu Lu
+  and Zhenzhong Lan (Westlake University and University of Utah). arXiv
+  2601.07312, submitted 12 Jan 2026. EMNLP 2026 main, pages 975-1016.
