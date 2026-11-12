@@ -1,0 +1,95 @@
+id: reflections-in-peer-counseling
+title: "Reflections in Peer Counseling"
+canonical_url: https://huggingface.co/datasets/emoneil/reflections-in-peer-counseling
+status: partially-verified
+dataset_type: peer_support
+dialogue_structure: multi_turn
+domain: psychotherapy
+source_context: >-
+  Context-reflection pairs drawn from conversations between clients and
+  counselors on a large peer-to-peer online counseling service. The pairs were
+  filtered from a larger corpus of utterances annotated for several clinical
+  counseling skills, keeping only counselor messages annotated as reflections;
+  the counselors are minimally trained peer volunteers (the paper contrasts
+  their 45-minute to 1-hour online training with the reference-reflection
+  author's 100+ hours of crisis-hotline and textline training). Each instance
+  is a conversational context (the utterances up to and including the most
+  recent prior client message) plus the counselor reflection that followed.
+  Reflections were annotated at utterance level with the Motivational
+  Interviewing Treatment Integrity 4.2 (MITI) and Motivational Interviewing
+  Skill Code 2.5 (MISC) manuals. For 500 of the prompts (350 training, 150
+  test) the first author also wrote a reference reflection, simulating a
+  counselor reply in roughly the time a counselor would take.
+therapy_modalities:
+  - motivational_interviewing
+languages:
+  - en
+sessions: null
+longitudinal: false
+transcript:
+  available: false
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: metadata-only
+  requirements: >-
+    The data are not publicly shared. The paper (section 3.1) states the
+    client-counselor data cannot be publicly shared due to its sensitive
+    nature and privacy concerns, and the Hugging Face page states the same and
+    holds the dataset card only, with no data files (the page reports the
+    dataset is currently empty).
+redistribution: unknown
+license:
+  type: unknown
+  verified: false
+  notes: >-
+    No dataset license is stated on the dataset card or in the paper, and the
+    Hugging Face page carries no license tag. The paper is published under the
+    ACL open-access license; that license covers the paper, not the data.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: false
+  notes: >-
+    Whether the underlying data were de-identified is not stated. What the
+    paper does document is presentation-level alteration: the conversational
+    contexts and counselor responses shown in Table 1 were put through a full
+    round of Google Translate and additionally modified by an author so the
+    presented messages differ from the originals, and chat identifiers were
+    used only to keep training and test conversations disjoint. That is not a
+    de-identification claim about the dataset itself.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/emoneil/reflections-in-peer-counseling
+    - https://aclanthology.org/2023.gem-1.pdf
+  supporting_publications: []
+publication_year: 2023
+last_verified: 2026-11-12
+notes: >-
+  Counts are the paper's and card's reported figures: 1,111 context-reflection
+  observations in total (911 training, 150 test, 50 held out for few-shot
+  prompt design and hyperparameter tuning). 350 of the 911 training examples
+  form a reduced training set. The 1,111 figure counts observations, not
+  sessions or distinct chats; the number of distinct source chats is not
+  stated, so sessions is left null. Test-set chat identifiers differ from
+  training-set ones to avoid conversation overlap. The Hugging Face dataset
+  card was created 2022-09-30; the introducing paper is O'Neil et al.,
+  "Automatic Reflection Generation for Peer-to-Peer Counseling", Proceedings of
+  GEM 2023, pages 62-75, Singapore, December 2023 (read in the proceedings
+  PDF, paper section 3.1 and appendix C-D). The hypotheses were preregistered
+  (O'Neil and Ungar, 2022, cited in the paper). The paper's human-evaluation
+  annotators had worked with the source counseling-service dataset under IRB
+  approval; that is the basis for ethics_review_documented. Lineage flag: the
+  paper and card name no platform and no upstream corpus, saying only that the
+  pairs come from a larger annotated dataset of counseling skills. A plausible
+  match is Shah et al. 2022, "Modeling Motivational Interviewing Strategies on
+  an Online Peer-to-Peer Counseling Platform" (7 Cups, 734 chats, 14,797
+  MI-annotated utterances), but that link is NOT confirmed by any primary
+  source read here, so it is recorded only as an unconfirmed lead: the Shah
+  corpus itself is not yet a registry record and would need its own
+  primary-source review.
