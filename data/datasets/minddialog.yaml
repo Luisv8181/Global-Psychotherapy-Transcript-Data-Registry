@@ -66,4 +66,21 @@ notes: >-
   Re-checked 2026-10-11: ScienceDirect still returns HTTP 403 to automated fetch, and
   web, GitHub API and Hugging Face searches found no preprint, code repository, dataset
   card or author-published video list. The review remains open.
+  Re-checked 2026-11-13: the paper is now published in Pattern Recognition (November 2026;
+  authors confirmed through Crossref; Unpaywall reports it is not open access and lists no
+  open copy; no arXiv version exists). ScienceDirect still blocks automated access, and the
+  live browser was served a Cloudflare human-verification challenge on 2026-11-13, so the
+  paper's data section is still unread and the real-client question stays open. The
+  third-party mirror PuLing0/minddialog_infer was re-opened and its data files counted on
+  2026-11-13: eight JSON files holding 29,858 rows in total (client train 11,462 and test
+  2,000; counselor train 12,166 and test 2,000; therapy train 1,015 and test 200; topic
+  train 1,015 and test 200), with nine task definitions in tasks.py whose label spaces
+  match this record's annotations, 1,194 distinct utterance source files and 1,285
+  distinct dialogue filenames. The source filenames name Chinese and English
+  counseling-case video collections. The mirror still carries no license, no author
+  attribution and no link to the paper, so it is not an official release and changes
+  nothing recorded here for status, access or license; whether it may be treated as an
+  access route at all needs an owner decision, because the files hold timestamped
+  utterances drawn from named counseling-case videos. No author-published video list was
+  found, so the video-catalog lead stays open. The review remains open.
 last_verified: 2026-09-24
