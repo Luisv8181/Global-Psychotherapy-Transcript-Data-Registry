@@ -46,6 +46,14 @@ access:
     revised 2026-01-24; GitHub API repository search for MindCorpus and MindChat
     returned no author-published artifact; HF datasets API search returned only
     unrelated English "Mind Corpus" sets; web search found no author-hosted repo).
+    Re-checked 2026-11-13: arXiv still v2 (revised 2026-01-24), "Code, Data and
+    Media" lists only generic aggregator toggles; HTML v2 full text contains zero
+    "release" and zero "huggingface" mentions and its only github.com links are
+    arXiv's own; GitHub API found one new empty repo maqueef/Mindcorpus (created
+    2026-11-08, size 0, no description, not author-linked) and no author artifact
+    among 91 MindChat hits; HF datasets API returned only the unrelated English
+    Mind-Corpus sets and the already-recorded MindChat-R0-FT-Data; no HF papers
+    page for 2601.01993 exists; web search found no author-hosted repo.
 redistribution: unknown
 license:
   type: unknown
@@ -72,7 +80,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.01993
 publication_year: 2026
-last_verified: 2026-10-15
+last_verified: 2026-11-13
 notes: >-
   Statistics are the paper's reported figures (Table II): Chinese, 5.7k sessions,
   12.0 utterances per session, 84.0 average length; the 5700 figure is approximate.
@@ -83,5 +91,8 @@ notes: >-
   Record stays partially-verified until a locatable release artifact (repository,
   dataset card, or access route) surfaces. Re-checked 2026-10-13 and 2026-10-15:
   on both dates GitHub API, HF datasets API, and web searches found no
-  author-published release artifact; arXiv still shows v2 only. Companion record
+  author-published release artifact; arXiv still shows v2 only. Re-checked
+  2026-11-13: still v2 only, and the same channels found no release artifact; one
+  new empty GitHub repo named Mindcorpus (maqueef/Mindcorpus, created 2026-11-08)
+  is not author-linked and holds no files. Companion record
   mindchat-r0-ft-data covers the related collected YiXinLi corpus.
