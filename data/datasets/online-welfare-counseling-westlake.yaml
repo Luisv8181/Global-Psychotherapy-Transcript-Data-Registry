@@ -1,19 +1,27 @@
 id: online-welfare-counseling-westlake
-title: Online Mental Health Counseling Dataset (Westlake/Zhejiang University)
-canonical_url: https://aclanthology.org/2023.acl-long.577/
-status: verified
+title: "Client-Reactions: Understanding Client Reactions in Online Mental Health Counseling"
+canonical_url: https://github.com/dll-wu/Client-Reactions
+status: partially-verified
 dataset_type: real
-dialogue_structure: unknown
+dialogue_structure: multi_turn
 domain: psychotherapy
-source_context: Text-based counseling interactions collected over two years from an online welfare counseling platform
+source_context: >-
+  Text-based counseling interactions collected over two years from an online
+  welfare counseling platform. Free, about 50-minute sessions between actual
+  clients and experienced counselors, in Mandarin.
 geography:
   countries:
     - China
+  regions:
+    - east_asia
+  scope: single_country
+  evidence_level: documented
 languages:
   - zh
+language_context: original
 therapy_modalities:
   - online_counseling
-sessions: unknown
+sessions: 2382
 longitudinal: unknown
 transcript:
   available: true
@@ -27,18 +35,60 @@ annotations:
   - client_states
   - counseling_outcomes
 access:
-  level: unknown
-  requirements: unknown
+  level: research-agreement
+  requirements: >-
+    Raw conversation data is not publicly downloadable. The repository README
+    says the dataset is currently unable to be made publicly available and to
+    contact Anqi Li (lianqi@westlake.edu.cn). The paper requires third-party
+    requesters to provide valid ID, proof of work, and the reason for the
+    request, be affiliated with a non-profit academic or research institution,
+    hold IRB approval with a full-time principal investigator and written
+    approval from their institution's research office, and sign a Data
+    Nondisclosure Agreement promising not to share the data.
 redistribution: unknown
 license:
   type: unknown
   verified: false
+  notes: >-
+    No LICENSE file in the dataset repository (GitHub reports no license) and
+    the paper states no data license.
 privacy:
-  deidentified: unknown
+  deidentified: documented
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper says all client personal information was anonymized before
+    annotation and that the team manually de-identified and anonymized the
+    data. Annotators signed data confidentiality agreements.
+ethics:
+  consent_documented: true
+  ethics_review_documented: true
+  data_use_agreement: true
 evidence:
   primary_sources:
+    - https://github.com/dll-wu/Client-Reactions
     - https://aclanthology.org/2023.acl-long.577/
+  supporting_publications:
+    - https://arxiv.org/abs/2601.07312
 publication_year: 2023
-notes: The authors report a large-scale, high-quality text-based counseling dataset collected over two years from an online welfare counseling platform. The cited paper studies counselor strategies, client reaction behaviors, and counseling outcomes. Session count, exact platform identity, access terms, licensing, and privacy controls require separate verification.
-last_verified: 2026-09-24
+doi: https://doi.org/10.18653/v1/2023.acl-long.577
+last_verified: 2026-11-12
+notes: >-
+  Counts from the paper Table 1 and section 4.1, read in full on 2026-11-12.
+  2,382 conversation sessions, 479 with client self-reported outcome scales,
+  186,972 utterances, 78.49 utterances per dialogue on average, 848 speakers
+  including 40 counselors, and 520 sessions annotated with the framework. The
+  paper calls it the largest real-world counseling conversation corpus in
+  Mandarin. Ethics approval from the Westlake University Institutional Ethics
+  Committee 20211013LZZ001. Clients and counselors signed consent forms
+  stating conversations would be used for scientific research and might be
+  used by third parties. Status is partially-verified, not verified, because
+  no dataset license is stated anywhere. Count disagreement recorded here
+  rather than resolved. The PsyCLIENT paper (arXiv 2601.07312) describes this
+  dataset as 550 dialogues, while Li et al. report 2,382 sessions. The
+  PsyCLIENT paper also says its 324 trajectories keep dialogues with more
+  than 30 turns. The repository holds code only (data/ contains .gitkeep and
+  get_data.py, no data files). The framework and classifier code are public
+  but the conversations are gated as described under access. Authors are
+  Anqi Li, Lizhi Ma, Yaling Mei, Hongliang He, Shuai Zhang, Huachuan Qiu and
+  Zhenzhong Lan (Zhejiang University and Westlake University). ACL 2023,
+  pages 10358-10376.
