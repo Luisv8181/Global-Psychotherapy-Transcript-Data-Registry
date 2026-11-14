@@ -10,12 +10,10 @@ languages: [en]
 language_context: English
 therapy_modalities:
   - psychotherapy
-sessions: null
+sessions: 10464
 longitudinal: false
 transcript:
-  available: true
-  format:
-    - text
+  available: false
 modalities:
   - text
 generation:
@@ -24,7 +22,13 @@ generation:
   human_therapeutic_interactions_annotated: 579
   annotation_framework: EPITOME
 access:
-  level: unknown
+  level: metadata-only
+  requirements: >-
+    No public release route for the dataset was found. The full paper text
+    names no repository, dataset card, or download location, the first
+    author's GitHub account holds no dataset repository, a GitHub repository
+    search returns no match, and the Hugging Face datasets API returns no
+    match for the dataset title.
 redistribution: unknown
 license:
   type: unknown
@@ -36,8 +40,22 @@ evidence:
   primary_sources:
     - https://aclanthology.org/2025.clpsych-1.13/
 publication_year: 2025
-release_year: 2025
 historical_significance:
   - large-scale synthetic psychotherapy dialogue generation for empathy research
-notes: The paper reports 10,464 synthetic therapeutic dialogues generated with multiple LLMs and prompting techniques, alongside 579 collected and annotated therapeutic interactions. The registry treats the synthetic component as the primary corpus record and keeps the record partially verified until the exact released-data artifact, access terms, and generation configuration are independently verified.
-last_verified: 2026-09-24
+notes: >-
+  Re-verified against the full CLPsych 2025 paper on 2026-11-14. The paper
+  reports 10,464 synthetic therapy dialogues generated with GPT-3 and Falcon
+  7b prompts built on the EPITOME empathy framework, plus 579 annotated
+  human therapeutic interactions. The 579 break down as 365 dialogue pairs
+  from the MOST+ trial, an Australian headspace youth service, and 214 from
+  Alexander Street Press transcripts, while the 3,081 Reddit dialogue pairs
+  are the Sharma et al. baseline dataset and not part of the 579. No release
+  artifact exists, so transcript availability is recorded as not released and
+  access as metadata-only, and the release year is removed. No dataset license
+  is stated anywhere in the paper or in any release location, so the dataset
+  license stays unknown. Geography stays unknown because the synthetic
+  dialogues carry no stated geography, and the Australian and Alexander Street
+  sources of the annotated subset do not establish the geography of the corpus
+  as a whole. Three authors annotated the data after nine one-hour training
+  sessions with feedback from a clinical psychologist.
+last_verified: 2026-11-14
