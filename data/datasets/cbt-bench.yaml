@@ -1,0 +1,93 @@
+id: cbt-bench
+title: "CBT-Bench: Evaluating Large Language Models on Assisting Cognitive Behavior Therapy"
+canonical_url: https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+status: verified
+dataset_type: hybrid
+dialogue_structure: mixed
+domain: psychotherapy
+source_context: >-
+  A benchmark for evaluating large language models on assisting cognitive
+  behavior therapy (CBT), built with clinical psychologists, social work
+  professors and hired CBT experts. Three levels. Level I (CBT-QA) is 220
+  multiple-choice questions testing basic CBT knowledge, 92 drawn from
+  graduate CBT course exams and 178 composed by CBT experts, plus 47 seed
+  examples. Level II tests cognitive model understanding on patient speech
+  taken from the TherapistQA dataset, itself sourced from mental-health-related
+  posts in online forums, with experts extracting situation and thought
+  segments and creating plausible imagined situations and thoughts where the
+  originals were insufficiently detailed. CBT-CD has 146 cognitive distortion
+  examples, CBT-PC 184 primary core belief examples and CBT-FC 112
+  fine-grained core belief examples, plus 20 seed examples each. Level III
+  (CBT-DP) has 156 deliberate practice exercises from Boswell and Constantino
+  2022, ten categories of typical patient speech in CBT sessions with
+  reference therapist responses, used as a proxy for real session efficacy
+  because real CBT session data is hard to access. An evaluation benchmark of
+  AI behavior and expert-composed therapy scenarios, not a corpus of real
+  therapy sessions, recorded as adjacent psychotherapy scope.
+languages:
+  - en
+therapy_modalities:
+  - cognitive_behavioral_therapy
+sessions: null
+longitudinal: false
+annotations:
+  - cognitive distortion labels (10 categories)
+  - primary core belief labels (helpless, unlovable, worthless)
+  - fine-grained core belief labels (19 categories)
+  - CBT knowledge-type labels for CBT-QA (basic concepts, practical knowledge, case studies, other)
+  - pairwise expert preference judgments for CBT-DP (468 comparisons)
+transcript:
+  available: true
+  format:
+    - text
+audio:
+  available: false
+video:
+  available: false
+access:
+  level: open
+  requirements: Openly downloadable from Hugging Face, no registration or agreement required; all data files downloaded anonymously on 2026-11-14.
+redistribution: conditional
+license:
+  type: CC-BY-NC-4.0
+  verified: true
+  source: https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+  notes: The dataset card declares CC-BY-NC-4.0. No LICENSE file ships in the dataset repository. The companion code repository github.com/mianzhang/CBT-Bench carries no license detectable via the GitHub API, so the card license is recorded as the data license and redistribution is conditional on the non-commercial term.
+privacy:
+  deidentified: unknown
+  contextual_reidentification_assessed: unknown
+  notes: >-
+    Level I and Level III items are expert-composed or book-derived. Level II
+    situations and thoughts derive from public forum posts via TherapistQA, and
+    whether those source posts were de-identified is not established by the
+    sources read. No real session participants appear in any level.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
+evidence:
+  primary_sources:
+    - https://huggingface.co/datasets/Psychotherapy-LLM/CBT-Bench
+    - https://arxiv.org/abs/2410.13218
+    - https://github.com/mianzhang/CBT-Bench
+  supporting_publications:
+    - https://arxiv.org/pdf/2410.13218
+publication_year: 2024
+release_year: 2024
+last_verified: 2026-11-14
+notes: >-
+  Counts verified by downloading and counting the data files on 2026-11-14.
+  qa_test.json holds 220 rows and qa_seed.json 47 rows, distortions_test.json
+  146, core_major_test.json 184 and core_fine_test.json 112, each with a
+  20-row seed file, and the ten CBT-DP reference files total 156 exercises.
+  The paper reports 270 CBT-QA pairs in total with 50 seed examples, but the
+  released qa_seed.json holds 47 rows, so the released seed count and the
+  paper disagree by three. The paper reports the same 146, 184 and 112 test
+  counts as the released files. Dataset card last modified 2025-09-19 per the
+  Hugging Face API. The GitHub code repository was last updated 2026-08-11 and
+  holds evaluation code, not the data files. Provenance is mixed across the
+  three levels, so dataset_type hybrid is a best fit for the record as a
+  whole, with Level III closer to demonstration and Level I expert-composed
+  exam and QA material. Level II patient speech derives from TherapistQA forum
+  posts, not from real therapy sessions, and no real clients appear in any
+  level.
