@@ -1,11 +1,11 @@
 id: bimisc
 title: "BiMISC: Bilingual Motivational Interviewing Conversations"
 canonical_url: https://aclanthology.org/2024.lrec-main.498/
-status: verified
+status: partially-verified
 dataset_type: real
 dialogue_structure: multi_turn
 domain: psychotherapy
-source_context: Motivational interviewing conversations sourced from real counseling sessions
+source_context: Motivational interviewing conversations sourced from real Dutch counseling sessions, 80 recordings from 18 clients, with an English translation of each Dutch conversation
 geography:
   countries:
     - Netherlands
@@ -15,10 +15,14 @@ languages:
 language_context: Bilingual English-Dutch motivational interviewing
 therapy_modalities:
   - motivational_interviewing
-sessions: null
+sessions: 80
 longitudinal: null
 transcript:
-  available: true
+  available: false
+audio:
+  available: false
+video:
+  available: false
 annotations:
   - motivational_interviewing_skill_code
 access:
@@ -28,13 +32,21 @@ redistribution: unknown
 license:
   type: unknown
   verified: false
+  notes: >-
+    The release repository has no LICENSE file and the GitHub API returns no license for it. The CC BY-NC 4.0 notice on the paper covers the paper only, not the dataset.
 privacy:
-  deidentified: unknown
+  deidentified: documented
   contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: true
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://aclanthology.org/2024.lrec-main.498/
     - https://ir.cwi.nl/pub/34266
+    - https://github.com/XIN-von-SUN/Eliciting-MISC-in-Psychotherapy-with-LLMs
 publication_year: 2024
-notes: The publication explicitly describes BiMISC as a bilingual English-Dutch dataset sourced from real counseling sessions and expert-annotated using the MISC scheme. Session count and access terms are not asserted here because the cited primary sources do not establish them.
-last_verified: 2026-09-24
+notes: >-
+  Re-verified against the LREC-COLING 2024 paper, Sun et al., and the release repository on 2026-11-14. The paper reports 80 conversations and 8,572 utterances in Dutch and English, annotated with 26 fine-grained MISC codes, 16 for therapists and 10 for clients, averaging 108 utterances per conversation. The source material is 80 audio recordings from 18 clients in real Dutch MI counseling sessions, transcribed by the therapists, anonymized, machine-translated into English with Google Translate, and post-edited by two Dutch Master's students. The English version is therefore a translation of the Dutch originals, not independently collected sessions. The paper states client consent to record and that names, addresses and personal details were removed or replaced with pseudonyms. The paper says the dataset is released at the GitHub repository listed in the primary sources, but that repository holds no data files as of 2026-11-14, only a README saying more content will come soon, and no license file. No Hugging Face dataset for BiMISC was found. Access and license therefore remain unestablished, and the status is partially-verified rather than verified. The CC BY-NC 4.0 notice on the paper covers the paper only, not the dataset. Funded by the EU Horizon H2020 TIMELY project, grant 101017424.
+last_verified: 2026-11-14
