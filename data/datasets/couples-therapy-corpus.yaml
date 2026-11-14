@@ -10,6 +10,11 @@ source_context: >-
   couple therapy (Integrative versus Traditional Behavioral Couple Therapy). They are not therapy
   sessions. Each spouse chose an issue in the relationship and the couple discussed it without any
   therapist or research staff present, before therapy, after 26 weeks and two years later.
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_country
+  evidence_level: documented
 languages:
   - en
 language_context: original
@@ -19,9 +24,7 @@ sessions: 574
 participants: 268
 longitudinal: true
 annotations:
-  - Social Support Interaction Rating System codes
-  - Couples Interaction Rating System codes
-  - session-level behavioral ratings
+  - 32 session-level behavioral codes: 19 Social Support Interaction Rating System (SSIRS) and 13 Couples Interaction Rating System (CIRS) codes, each rated by 3-4 trained annotators on a 1-9 scale
   - longitudinal therapy outcome ratings
 transcript:
   available: true
@@ -64,9 +67,14 @@ notes: >-
   missing, manual transcripts, audio and video, and behavioral codes from the Couples Interaction and
   Social Support Interaction Rating Systems. It states that the couples interacted in the absence of
   any therapist or research staff, that the study was approved by the UCLA and University of
-  Washington IRBs, and that all participants gave written consent. The figure of 574 sessions comes
-  from the Interspeech 2019 paper (PMC9940777), which could not be opened on 2026-09-27 because the
-  PMC site returned a browser check, so it is unconfirmed. dataset_type stays real because these are
-  real participants from a clinical population; domain is couple_interaction because the recordings
+  Washington IRBs, and that all participants gave written consent. The figure of 574 sessions is now
+  confirmed from the Interspeech 2019 paper (PMC9940777), read in full on 2026-11-13: 134 couples,
+  574 sessions at three time points over two years, with manual transcripts carrying speaker labels.
+  That paper also confirms the 32-code split (19 SSIRS, 13 CIRS), each code rated by 3-4 trained
+  annotators on a 1-9 scale, and therapy outcomes rated on a 4-point scale at 26 weeks and/or 2
+  years. Geography is the United States: the study was conducted by UCLA and the University of
+  Washington. License, redistribution and de-identification remain unknown: neither paper states a
+  dataset license or de-identification procedure, and the data are not publicly released.
+  dataset_type stays real because these are real participants from a clinical population; domain is couple_interaction because the recordings
   are not therapist-client dialogue.
-last_verified: 2026-09-27
+last_verified: 2026-11-13
