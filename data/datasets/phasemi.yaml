@@ -1,20 +1,32 @@
 id: phasemi
 title: "PhaseMI: A Motivational Interviewing Dataset for Enhancing Phase Progression in LLM-based Counseling"
 canonical_url: https://github.com/regina-kim/phase_mi
-status: partially-verified
+status: verified
 dataset_type: synthetic
 dialogue_structure: multi_turn
 domain: counseling
-source_context: Simulated motivational-interviewing counseling dialogues generated with therapist, client and supervisor LLMs to control progression across MI phases
+source_context: >-
+  Simulated motivational-interviewing counseling dialogues generated with therapist, client and
+  supervisor LLMs (GPT-4o) to control progression across MI phases. Seed concerns were collected
+  from Reddit (r/College and r/gradSchool, 2022-2024) and filtered by concern taxonomy (academic,
+  interpersonal, emotional, career-related); the client prompt frames each simulated client as a
+  U.S. university student who posted the concern on Reddit.
 languages:
-  - unknown
-language_context: unknown
+  - en
+language_context: English
 therapy_modalities:
   - motivational_interviewing
-sessions: unknown
-longitudinal: unknown
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_country
+  evidence_level: reported_in_publication
+sessions: 13897
+longitudinal: false
 transcript:
-  available: unknown
+  available: true
+  format:
+    - text
 audio:
   available: false
 video:
@@ -27,15 +39,27 @@ annotations:
   - counseling_quality_evaluation
 access:
   level: open
-  requirements: The official repository links the public dataset at https://huggingface.co/datasets/jina005/phase_mi.
-redistribution: unknown
+  requirements: >-
+    Public Hugging Face dataset; the released phase_mi.jsonl was downloaded anonymously without
+    sign-in on 2026-11-14. The dataset card reports the repository as public and ungated.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: apache-2.0
+  verified: true
+  source: https://huggingface.co/datasets/jina005/phase_mi
+  notes: >-
+    The dataset card's license field states Apache-2.0; there is no LICENSE file in the dataset
+    repository, and the GitHub code repository has no license file either, so the card metadata is
+    the dataset's only license statement. Redistribution is conditional on the Apache-2.0 terms
+    (attribution, license notice).
 privacy:
   deidentified: not_applicable_to_synthetic_generation
   contextual_reidentification_assessed: unknown
-  notes: The dataset is generated rather than an observed clinical-session corpus.
+  notes: >-
+    The dataset is generated rather than an observed clinical-session corpus. Open question: the
+    seed concerns come from real Reddit posts and the released file carries a per-row concern
+    field, so whether seed text is reproduced verbatim in the release was not established from
+    the sources read this session.
 ethics:
   consent_documented: not_applicable_to_synthetic_generation
   ethics_review_documented: unknown
@@ -44,9 +68,22 @@ evidence:
   primary_sources:
     - https://github.com/regina-kim/phase_mi
     - https://aclanthology.org/2026.findings-acl.1970/
+    - https://huggingface.co/datasets/jina005/phase_mi
 publication_year: 2026
 release_year: 2026
 historical_significance:
   - phase_structured_synthetic_motivational_interviewing
-notes: The ACL 2026 paper introduces PhaseMI as a phase-structured MI dataset and describes a generation framework using therapist, client and supervisor LLMs to control phase transitions. The official repository, opened on 2026-09-26, links the public dataset and the ACL paper. The reviewed primary sources do not establish the dataset's exact size, language, license, or redistribution terms, so those fields remain unknown. It is not counted as direct observed psychotherapy-session evidence.
-last_verified: 2026-09-26
+notes: >-
+  The ACL 2026 paper introduces PhaseMI as a phase-structured MI dataset and describes a
+  generation framework using therapist, client and supervisor LLMs to control phase transitions.
+  Size confirmed two ways: the paper states N = 13,897 dialogue instances, and the released
+  phase_mi.jsonl counted on 2026-11-14 holds 13,897 rows with 13,897 distinct ids. Dialogue lists
+  in the file run 24-60 turns (mean 29.8), which includes supervisor turns; the paper's 20-44
+  therapist-client turns (mean 23.92) excludes them, so the two ranges are consistent. Language is
+  English: the paper's appendix states all counseling dialogues will be provided in English. Each
+  instance is a single MI session, so longitudinal is false; the four-dialogue evaluation sets in
+  the paper are parallel therapist-model variants of one seed concern, not follow-up sessions.
+  Geography reflects the simulated client persona (U.S. university student per the paper's
+  generation prompt), not observed participants. It is not counted as direct observed
+  psychotherapy-session evidence.
+last_verified: 2026-11-14
