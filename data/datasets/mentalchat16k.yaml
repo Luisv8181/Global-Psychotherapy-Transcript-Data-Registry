@@ -1,7 +1,7 @@
 id: mentalchat16k
 title: "MentalChat16K: A Benchmark Dataset for Conversational Mental Health Assistance"
 canonical_url: https://huggingface.co/datasets/ShenLab/MentalChat16K
-status: partially-verified
+status: verified
 dataset_type: hybrid
 dialogue_structure: single_turn_qa
 domain: mental_health_counseling
@@ -10,7 +10,13 @@ source_context: >-
   anonymized real interview transcripts of the PISCES clinical trial, between behavioral health
   coaches and caregivers of patients in palliative or hospice care. 9,775 synthetic question-answer
   pairs generated with GPT-3.5 Turbo across 33 mental health topics.
-geography: null
+geography:
+  countries:
+    - United States
+  regions:
+    - north_america
+  scope: single_country
+  evidence_level: documented
 languages: [en]
 language_context: original
 therapy_modalities:
@@ -18,7 +24,7 @@ therapy_modalities:
 clinical_topics:
   - caregiver_stress
   - palliative_and_hospice_caregiving
-sessions: null
+sessions: 378
 longitudinal: unknown
 transcript:
   available: true
@@ -26,6 +32,7 @@ modalities:
   - text
 participants:
   real_interview_transcripts: 378
+  caregivers_enrolled: 514
   caregivers_surveyed: 421
 generation:
   method: paraphrase_of_real_transcripts_plus_llm_synthesis
@@ -37,18 +44,25 @@ generation:
 access:
   level: open
   requirements: None reported. Published as a Hugging Face dataset.
-redistribution: unknown
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
-  notes: The GitHub repository is MIT-licensed, which covers its code. The dataset's own license on Hugging Face has not been read here.
+  type: mit
+  verified: true
+  source: https://huggingface.co/datasets/ShenLab/MentalChat16K
+  notes: The dataset card's front matter declares MIT for the dataset. The GitHub code repositories (ChiaPatricia and PennShenLab) are also MIT-licensed, which covers their code.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: true
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://github.com/ChiaPatricia/MentalChat16K
+    - https://github.com/PennShenLab/MentalChat16K
     - https://huggingface.co/datasets/ShenLab/MentalChat16K
+    - https://clinicaltrials.gov/study/NCT03712410
   supporting_publications:
     - https://dl.acm.org/doi/10.1145/3711896.3737393
     - https://pmc.ncbi.nlm.nih.gov/articles/PMC12520247/
@@ -61,5 +75,17 @@ notes: >-
   Of 421 caregivers who completed the information survey, the README reports that most are female
   and 88% identify as White, with fewer than 1% Hispanic. The real component is paraphrased
   question-answer pairs, not full session transcripts, so it is not counted as real-session data.
-  The trial's country is not stated in the README. The README's dataset citation is dated 2024; the paper appeared in KDD 2025 (ACM) and on PMC.
-last_verified: 2026-09-25
+  The README's dataset citation is dated 2024; the paper appeared in KDD 2025 (ACM) and on PMC.
+  Counts: the paper and README claim 6,338 interview pairs and 9,775 synthetic pairs (16,113 total),
+  but the released files counted on 2026-11-14 hold 6,310 rows in Interview_Data_6K.csv and 9,774 rows
+  in Synthetic_Data_10K.csv (16,084 total). The paper's Table 1 also appears to swap the two row
+  sizes, listing 9,775 for Interview Data and 6,338 for Synthetic Data, while the paper text, the
+  README and the released files all agree on the other assignment, and 378 sessions at 16.8 pairs per
+  session matches the interview side. Geography reflects the PISCES trial site only; the synthetic
+  component has no geography. Longitudinal stays unknown because the source trial ran repeat visits
+  per caregiver (three formal visits plus one exit visit) but the released pairs carry no visit or
+  session linkage in the files. The paper states participants signed informed consent and that
+  consent to release the paraphrased transcripts was obtained after manual removal of identifying
+  information; no IRB approval statement was found in the paper sections read, so ethics review
+  stays unknown.
+last_verified: 2026-11-14
