@@ -1,7 +1,7 @@
 id: psydial
 title: "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support"
 canonical_url: https://aclanthology.org/2025.acl-long.1049/
-status: verified
+status: partially-verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
 domain: mental_health_support
@@ -11,7 +11,7 @@ languages:
 language_context: Chinese
 therapy_modalities:
   - mental_health_counseling
-sessions: null
+sessions: 2382
 longitudinal: true
 transcript:
   available: true
@@ -26,11 +26,13 @@ generation:
   average_turns_per_dialogue: 37.8
 access:
   level: open
-  requirements: none reported
+  requirements: D1-D4 and D101 download anonymously from Hugging Face. D0_m returned HTTP 401 on anonymous download 2026-11-14 and needs Hugging Face authorization.
 redistribution: unknown
 license:
   type: unknown
   verified: false
+  source: https://github.com/qiuhuachuan/PsyDial/blob/main/LICENSE
+  notes: The GitHub repository LICENSE file is CC0-1.0, but the Hugging Face dataset cards for D0_m, D1-D4 and D101 all declare apache-2.0, and the paper states no license. The two sources disagree, so no license is recorded as verified until the conflict is clarified.
 privacy:
   deidentified: true
   method: privacy_preserving_reconstruction
@@ -39,10 +41,12 @@ evidence:
   primary_sources:
     - https://aclanthology.org/2025.acl-long.1049/
     - https://github.com/qiuhuachuan/PsyDial
+    - https://huggingface.co/datasets/qiuhuachuan/PsyDial-D4
 publication_year: 2025
 release_year: 2025
 historical_significance:
   - privacy-preserving reconstruction of long-term counseling dialogue
   - derived mental-health dialogue corpus
-notes: PsyDial is explicitly described by the authors as a semi-real Chinese-language dataset created by reconstructing real-world, long-term counseling dialogues. It should not be counted as a direct real-session transcript corpus because the released dialogue is reconstructed rather than the original observed interaction. The registry therefore keeps it in a derived/hybrid population and links it to the real-world source context.
-last_verified: 2026-09-24
+notes: >-
+  PsyDial is explicitly described by the authors as a semi-real Chinese-language dataset created by reconstructing real-world, long-term counseling dialogues. It should not be counted as a direct real-session transcript corpus because the released dialogue is reconstructed rather than the original observed interaction. The registry therefore keeps it in a derived/hybrid population and links it to the real-world source context. Re-verified 2026-11-14. The paper states 2,382 reconstructed long-term dialogues, and the D1, D2, D3 and D4 files on Hugging Face were each counted at 2,382 dialogues. D1-D4 are the same dialogues at four RMRR stages. D101 is the 101-dialogue test set from professional counseling books, but its file holds 1,278 rows of single-turn evaluation items (messages plus golden response), not 101 rows. D0_m, the masked real-world dialogues, returned HTTP 401 on anonymous download, so it is gated behind Hugging Face authorization while D1-D4 and D101 download anonymously. License is unresolved. The GitHub repository LICENSE is CC0-1.0 while every Hugging Face dataset card declares apache-2.0, and the paper states no license. No license is recorded as verified until the conflict is clarified, so the record moves from verified to partially-verified.
+last_verified: 2026-11-14
