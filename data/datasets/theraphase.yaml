@@ -6,10 +6,12 @@ dataset_type: hybrid
 dialogue_structure: multi_turn
 domain: psychotherapy
 source_context: >-
-  Paired initial-stage and completion-stage client records derived from CPsyCoun, using GPT-4
-  prompting to extract initial-stage information from comprehensive client information. The result
-  supports comparison of client information across treatment stages and should not be treated as
-  raw observed longitudinal therapy transcripts.
+  Paired initial-stage and completion-stage client records derived from CPsyCoun, using 5-shot
+  GPT-4 prompting to extract initial-stage information from each client's comprehensive record
+  (paper section 2.4). The paper's Limitations state the pairs were derived by splitting single
+  multi-turn conversations, which can represent client change but cannot fully capture the
+  characteristics of true multi-session data. The result supports comparison of client information
+  across treatment stages and should not be treated as raw observed longitudinal therapy transcripts.
 geography:
   countries:
     - China
@@ -22,6 +24,8 @@ longitudinal: true
 annotations:
   - initial-stage/completion-stage client pairing
   - symptom and treatment-outcome evaluation fields
+  - SCL-90 dimension scores per interview in AssessmentResult.csv
+  - Delta_PSDI treatment-outcome scores per client in TreatmentResult.csv
 transcript:
   available: true
 audio:
@@ -42,8 +46,14 @@ license:
   type: unknown
   verified: false
 privacy:
-  deidentified: unknown
+  deidentified: true
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The LREC 2026 paper's Ethics Statement says all datasets used in the study are either fully
+    synthetic, thus free of personally identifiable information, or have been rigorously anonymized
+    and are employed strictly under their original usage agreements. That is a blanket statement
+    covering every dataset in the study, not a TheraPhase-specific de-identification method, so no
+    method is recorded here.
 ethics:
   consent_documented: unknown
   ethics_review_documented: unknown
@@ -64,10 +74,13 @@ historical_significance:
   - explicit treatment-stage pairing built from an existing reconstructed counseling resource
 notes: >-
   The dataset card reports 400 clients and 800 sessions, with each client paired across an initial
-  and completion stage. The TheraPhase paper states that the dataset was constructed from CPsyCoun
-  and that GPT-4 was used in a 5-shot prompt to extract initial-stage information from comprehensive
-  client information. This establishes a derived relationship to CPsyCounD, but does not establish
-  that the 800 sessions are observed real therapy encounters. The current Hugging Face page reports
-  9,216 rows and 1.36 MB total file size. Dataset-specific license and privacy terms were not
-  established in this pass.
-last_verified: 2026-09-27
+  and completion stage. Counted from the Hugging Face repository tree on 2026-11-15: 800 case
+  files under TheraPhase/ across 400 distinct client ids, 1,315,034 bytes total; AssessmentResult.csv
+  holds 800 data rows and TreatmentResult.csv 400 data rows. The TheraPhase paper states that the
+  dataset was constructed from CPsyCoun and that GPT-4 was used in a 5-shot prompt to extract
+  initial-stage information from comprehensive client information. This establishes a derived
+  relationship to CPsyCounD, but does not establish that the 800 sessions are observed real therapy
+  encounters. No license is declared on the dataset card (cardData is null) and no LICENSE file is
+  in the repository as of 2026-11-15, so license and redistribution stay unknown. No therapy
+  modality is named in the paper or on the card.
+last_verified: 2026-11-15
