@@ -1,11 +1,11 @@
 id: hcot-corpus
 title: "HCoT-Corpus: Multi-turn Psychological Support Dialogue Corpus"
 canonical_url: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1733384/full
-status: verified
+status: partially-verified
 dataset_type: synthetic
 dialogue_structure: multi_turn
 domain: psychological_support
-source_context: GPT-4o rewriting of Chinese psychological support source data into multi-turn dialogues
+source_context: GPT-4o rewriting of CD-CN single-turn Chinese psychological support question-and-answer data into multi-turn dialogues
 geography:
   countries: [China]
   regions: [east_asia]
@@ -37,6 +37,7 @@ redistribution: unknown
 license:
   type: unknown
   verified: false
+  notes: The article is published CC BY by Frontiers, but that is the article license, not a dataset license. No dataset license was found in the paper or at any data location as of 2026-11-15.
 privacy:
   deidentified: true
   method: source_data_auditing_and_desensitization
@@ -49,5 +50,6 @@ release_year: 2026
 historical_significance:
   - large-scale multi-turn synthetic psychological support corpus
   - explicit analysis of simulation-reality gap
-notes: HCoT-Corpus contains 22,341 dialogues and 211,473 strategy annotations. The source explicitly notes that both roles are simulated by LLMs and that the corpus lacks many forms of resistance and ambiguity found in real clinical transcripts. It is therefore kept separate from observed counseling-session evidence.
-last_verified: 2026-09-24
+notes: >-
+  HCoT-Corpus contains 22,341 dialogues and 211,473 strategy annotations. Both roles are simulated by LLMs. The paper uses the 211,473 figure for both the total annotated strategies and the total turns, which is consistent because each supporter turn carries one strategy tag. The corpus holds about 430,000 utterances at an average of 9.47 turns per dialogue, where a turn is one Seeker-Supporter exchange. Strategy labels were checked on a 200-dialogue sample by three trained raters at 90.0 percent accuracy with Fleiss Kappa 0.85. The source CD-CN data combines PsyQA with more than 20,000 newer YiXinLi question-and-answer samples. The paper positions the corpus as a methodological proof of concept, not clinically validated, and prohibits direct clinical deployment. It warns the data shows an idealized hyper-cooperative interaction and lacks the resistance, non-compliance, and linguistic ambiguity of real clinical transcripts. No release route was found in the full paper text as of 2026-11-15. The article carries no Data Availability statement and names no repository, dataset card, or download link, and searches of Hugging Face and GitHub found no author artifact. The article itself is CC BY, which is the article license and does not cover the dataset. It is therefore kept separate from observed counseling-session evidence.
+last_verified: 2026-11-15
