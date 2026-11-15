@@ -15,6 +15,20 @@ language_context: parallel
 cultural_contexts: [Japanese source counseling context]
 sessions: 6589
 longitudinal: false
+therapy_modalities:
+  - psychological_counseling
+transcript:
+  available: true
+  format:
+    - json
+modalities:
+  - text
+annotations:
+  - 20-dimension client feedback
+  - ethical concern flags
+  - speaker role labels
+  - message timestamps
+  - topic labels
 access:
   level: open
 redistribution: conditional
@@ -23,8 +37,14 @@ license:
   verified: true
   source: https://github.com/UEC-InabaLab/MultilingualKokoroChat/blob/main/LICENSE
 privacy:
+  deidentified: not_applicable_to_roleplay_source
   contextual_reidentification_assessed: unknown
 evidence:
   primary_sources:
     - https://github.com/UEC-InabaLab/MultilingualKokoroChat
-last_verified: 2026-09-24
+  supporting_publications:
+    - https://aclanthology.org/2026.lrec-1.695/
+publication_year: 2026
+notes: >-
+  Re-verified 2026-11-15 against the live repository and the LREC 2026 paper (Suzuki, Qi and Inaba, pages 8838-8849). The dataset translates KokoroChat, a manually authored Japanese counseling corpus created through role-play by trained counselors, into English and Chinese with a Multi-LLM Ensemble method, so no real clients are involved and de-identification does not apply. Sessions 6589 is the Japanese source count. The released translations number 6582 English and 6565 Chinese JSON files, counted from the repository tree on 2026-11-15, matching the paper table; the README statistics table swaps the two numbers, listing English 6565 and Chinese 6582. The shortfall from 6589 is attributed in the README to LLM safety-filter exclusions. Each file holds one dialogue with role, timestamp, Japanese origin and translated content, plus topic labels and a client review with feedback scores and ethical-concern flags. The LICENSE file holds the full CC BY-NC-ND 4.0 text. Translation models and the human-preference validation are documented in the paper. Consent and ethics-review evidence for the source role-play collection remain unknown.
+last_verified: 2026-11-15
