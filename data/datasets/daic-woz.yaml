@@ -1,16 +1,18 @@
 id: daic-woz
 title: "DAIC-WOZ: Distress Analysis Interview Corpus, Wizard-of-Oz Interviews"
 canonical_url: https://dcapswoz.ict.usc.edu/
-status: partially-verified
+status: verified
 dataset_type: real
 dialogue_structure: multi_turn
 domain: clinical_interview
 source_context: >-
   Semi-structured clinical interviews designed to support the diagnosis of depression, PTSD and
   anxiety, conducted in English by Ellie, an animated virtual interviewer controlled by a human in
-  another room. Participants were recruited through online ads and at a US veterans' facility and
-  include both distressed and non-distressed people. These are screening interviews, not therapy
-  sessions.
+  another room. The Wizard-of-Oz participants were recruited through Craigslist online ads only;
+  the US veterans' facility recruitment in the wider DAIC was for the face-to-face and automated
+  arms, not this subset. Participants include both distressed and non-distressed people, 60 of 193
+  collected interviews distressed per the paper's Table 1. These are screening interviews, not
+  therapy sessions.
 geography:
   countries: [United States]
   regions: [north_america]
@@ -46,19 +48,22 @@ annotations:
 access:
   level: research-agreement
   requirements: >-
-    Request through the DAIC-WOZ site with a signed agreement. The 2014 paper says the corpus is
-    shared case by case, on request, for research purposes. The current request page could not be
-    read (see notes).
-redistribution: unknown
+    Request through the DAIC-WOZ site's Apply Now route with a signed DAIC-WOZ End-User License
+    Agreement; the form asks for a university-affiliated email. The 2014 paper says the corpus is
+    shared case by case, on request, for research purposes.
+redistribution: prohibited
 license:
   type: research_access_agreement
-  verified: false
-  source: https://www.ihp-lab.org/downloads/Extended-DAIC-BLANK_EULA.pdf
+  verified: true
+  source: https://forms.zohopublic.com/websupport2/form/DAICWOZEndUserLicenseAgreement/formperma/hI_A2994P58EhnvMBTuMF7QwCKGY-XHogrksVpC0OZk
   notes: >-
-    The DAIC-WOZ agreement itself could not be read. The agreement for the related Extended DAIC,
-    read on 2026-09-26, allows research use only, forbids commercial use and distribution to third
-    parties, allows illustrative use in publications with subjects' identities protected, and
-    requires citing the 2014 LREC paper. Whether DAIC-WOZ's agreement is identical is unconfirmed.
+    The DAIC-WOZ End-User License Agreement itself, read 2026-11-16 at the agreement form for
+    this database. It allows non-commercial research use only, forbids commercial use, forbids
+    distributing the database or parts of it to any third party, allows illustrative use in
+    publications with subjects' identities protected, and requires citing Gratch et al. (LREC
+    2014). The Extended DAIC has a separate agreement form with near-identical terms that
+    additionally requires citing the AVEC 2019 paper, and the ihp-lab.org PDF previously recorded
+    is that Extended DAIC agreement.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
@@ -75,19 +80,27 @@ evidence:
     - https://aclanthology.org/L14-1421/
     - https://dcapswoz.ict.usc.edu/wp-content/uploads/2022/02/DAICWOZDepression_Documentation.pdf
     - https://www.ihp-lab.org/downloads/Extended-DAIC-BLANK_EULA.pdf
+    - https://dcapswoz.ict.usc.edu/
+    - https://forms.zohopublic.com/websupport2/form/DAICWOZEndUserLicenseAgreement/formperma/hI_A2994P58EhnvMBTuMF7QwCKGY-XHogrksVpC0OZk
 publication_year: 2014
 historical_significance:
   - widely used benchmark for automatic depression detection from interviews (AVEC challenges)
 notes: >-
-  The LREC 2014 paper (Gratch et al.) describes the wider DAIC, with face-to-face, teleconference,
-  Wizard-of-Oz and automated interviews; participants completed a consent form that included
-  optional consent to share their data for research. DAIC-WOZ is the Wizard-of-Oz part. Its
-  documentation (read 2026-09-26) says the package holds 189 session folders numbered 300 to 492,
-  with sessions 342, 394, 398 and 460 excluded, and gives per-session scrubbed audio, a scrubbed
+  Re-verified 2026-11-16 against live primary sources. The DAIC-WOZ site now loads; it returned
+  HTTP 403 (Cloudflare) in September 2026. The site, updated 2026-10-26, confirms 189 sessions of
+  7 to 33 minutes with an average of 16 minutes, each with a transcript, participant audio and
+  facial features. The LREC 2014 paper (Gratch et al.) describes the wider DAIC, with
+  face-to-face, teleconference, Wizard-of-Oz and automated interviews; participants completed a
+  consent form that included optional consent to share their data for research. Its Table 1
+  counts 193 Wizard-of-Oz interviews collected, 60 distressed and 133 not, all transcribed, so
+  the released package holds 189 after 4 exclusions for technical reasons. Its documentation
+  (re-read 2026-11-16) says the package holds 189 session folders numbered 300 to 492, with
+  sessions 342, 394, 398 and 460 excluded, and gives per-session scrubbed audio, a scrubbed
   transcript, facial and acoustic features, and PHQ-8 labels and train/dev/test splits from AVEC
-  2017. Sessions 451, 458 and 480 lack the interviewer's side of the transcript. The DAIC-WOZ site
-  and its download pages returned HTTP 403 (Cloudflare) from this session; the documentation PDF
-  was reachable. A web search summary says the data is released only to academic and non-profit
-  researchers; reported by a secondary source, unconfirmed. The Extended DAIC is a separate, larger
-  release not recorded here.
-last_verified: 2026-09-26
+  2017. Sessions 451, 458 and 480 lack the interviewer's side of the transcript. Duration figures
+  disagree, and both are recorded. The paper says Wizard-of-Oz interviews ran 5 to 20 minutes,
+  while the site says released sessions range 7 to 33 minutes with an average of 16 minutes. The
+  DAIC-WOZ agreement itself was read 2026-11-16 (see license). No ethics-review statement was
+  found in the paper, so ethics_review_documented stays unknown. The Extended DAIC is a separate,
+  larger release not recorded here, and its documentation is still being created per the site.
+last_verified: 2026-11-16
