@@ -1,18 +1,19 @@
 id: kmi-korean-motivational-interviewing
 title: "KMI: A Dataset of Korean Motivational Interviewing Dialogues for Psychotherapy"
 canonical_url: https://aclanthology.org/2025.naacl-long.541/
+doi: https://doi.org/10.18653/v1/2025.naacl-long.541
 status: verified
 dataset_type: synthetic
 dialogue_structure: multi_turn
 domain: psychotherapy
-source_context: LLM-generated Korean motivational interviewing sessions grounded in motivational interviewing theory and professional therapist expertise
+source_context: LLM-generated Korean motivational interviewing sessions grounded in motivational interviewing theory and professional therapist expertise; dialogue contexts crawled from public posts on the Korean psychological counseling platform Mindcafe
 geography:
   countries: [South Korea]
   regions: [east_asia]
   scope: single_country
   evidence_level: documented
-languages: [ko]
-language_context: Korean
+languages: [ko, en]
+language_context: Korean original dialogues with an English translation of every utterance
 therapy_modalities:
   - motivational_interviewing
 sessions: 1000
@@ -23,26 +24,46 @@ transcript:
     - text
 modalities:
   - text
+annotations:
+  - mi_behavior_labels
 generation:
   method: llm_simulation
   theory: motivational_interviewing
   expert_grounding: professional_therapist_expertise
 access:
-  level: unknown
-redistribution: unknown
+  level: open
+  requirements: Public GitHub repository; kmi.json downloads directly with no registration or request step
+redistribution: allowed
 license:
-  type: unknown
-  verified: false
+  type: cc-by-4.0
+  verified: true
+  source: https://github.com/hjkim811/KMI/blob/main/LICENSE
+  notes: >-
+    Full CC BY 4.0 text in the repository LICENSE file, copyright Hyunjong Kim.
+    The repository carries no other license statement, and the ACL paper states no dataset license.
 privacy:
   deidentified: not_applicable
   contextual_reidentification_assessed: not_applicable
 evidence:
   primary_sources:
     - https://aclanthology.org/2025.naacl-long.541/
+    - https://github.com/hjkim811/KMI
 publication_year: 2025
 release_year: 2025
 historical_significance:
   - Korean synthetic psychotherapy dialogue corpus
   - theory-grounded motivational interviewing simulation
-notes: The authors describe KMI as a synthetic dataset of 1,000 Korean motivational interviewing dialogues generated with LLMs and grounded in professional therapist expertise. It should be analyzed separately from observed clinical-session corpora.
-last_verified: 2026-09-24
+notes: >-
+  Counted from kmi.json on 2026-11-15. The file holds 1,000 dialogues and 18,116 utterances,
+  18.12 turns per dialogue on average with a range of 15 to 31, matching the paper Table 2
+  average of 18.12. Categories counted from the same file are Mental Health 200,
+  Interpersonal Relationships 200, Ego·Personality 200, Career·Employment 200,
+  Academic·Examination 100, Addiction·Obsession 50 and Family 50. Every therapist utterance
+  carries one of eight MI labels, and experts judged the labels 96.0 percent accurate on a
+  210-utterance sample. Complex Reflection is the most frequent therapist label at 36 percent,
+  and the reflection-to-question ratio is 1.8 to 1. Context data came from public Mindcafe
+  posts by anonymous users; the authors report no interaction with those users and say GPT-4
+  filtered extreme or violent context content. Four professional counselors certified by the
+  Korean Psychological Association evaluated the dataset. The paper cautions that chatbots
+  trained on KMI need human supervision.
+last_verified: 2026-11-15
