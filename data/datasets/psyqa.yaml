@@ -7,13 +7,22 @@ dialogue_structure: single_turn_qa
 domain: mental_health_support
 source_context: >-
   Chinese mental-health support questions with long-form counseling answers, annotated with support
-  strategies. Where the questions and answers were collected is not stated in the repository README.
-geography: null
+  strategies. Crawled from the Q&A column of Yixinli (xinli001.com/qa), a Chinese mental-health
+  service platform with about 22 million users and over 600 professional counselors (paper
+  section 3.1). Questions are posted by anonymous help-seekers; answers are written by
+  well-trained volunteers or professional counselors, with 8 percent of answers from
+  State-Certificated Class 2 Psychological Counselors and 35 percent from volunteers hired by
+  Yixinli.
+geography:
+  countries: [China]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: documented
 languages: [zh]
 language_context: original
 therapy_modalities:
   - mental_health_support
-sessions: null
+sessions: 22346
 longitudinal: false
 transcript:
   available: true
@@ -33,19 +42,28 @@ license:
   source: https://github.com/thu-coai/PsyQA/blob/main/README.md
   notes: The repository has no license file. Access is governed by the signed user agreement described in the README. Redistribution is recorded as prohibited because the full data is released only to individual signatories; confirm against the agreement text.
 privacy:
-  deidentified: unknown
+  deidentified: true
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper (section 3.2) states personal information was removed by rule-based filtering, and
+    questions are posted by anonymous help-seekers (section 1). No re-identification assessment
+    was reported.
 evidence:
   primary_sources:
     - https://github.com/thu-coai/PsyQA
-  supporting_publications:
     - https://arxiv.org/abs/2106.01702
+  supporting_publications: []
 publication_year: 2021
 historical_significance:
   - widely used Chinese counseling Q&A resource, cited in the SoulChat README as the common baseline dataset
 notes: >-
-  Accepted to Findings of ACL 2021. The README does not give question or answer counts, or the
-  platform the data came from; these are left unknown until the paper or agreement is reviewed.
-  dataset_type is real on the basis that the questions are posted by help-seekers; confirm how the
-  answers were produced.
-last_verified: 2026-09-25
+  Accepted to Findings of ACL 2021. Counts are the published figures from the paper (Table 3):
+  22,346 questions and 56,063 answers, 2.51 answers per question on average; 4,012 questions
+  (17.9 percent) have their highest-voted answer annotated with support strategies. Sessions is
+  the question count, since each question is one single-turn exchange. Answers average 524.6
+  Chinese characters. The full data is released only under a signed user agreement, so the counts
+  are as published and were not independently counted from a data file. The user-agreement
+  document itself was not read, so the redistribution basis is still unconfirmed against its text.
+  dataset_type is real on the basis that the questions are posted by help-seekers and the answers
+  are written by volunteers or professional counselors.
+last_verified: 2026-11-16
