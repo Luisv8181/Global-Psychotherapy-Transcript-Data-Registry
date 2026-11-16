@@ -1,7 +1,7 @@
 id: esconv
 title: "ESConv: Emotional Support Conversation Dataset"
 canonical_url: https://github.com/thu-coai/Emotional-Support-Conversation
-status: partially-verified
+status: verified
 dataset_type: peer_support
 dialogue_structure: multi_turn
 domain: emotional_support
@@ -47,13 +47,18 @@ evidence:
     - https://aclanthology.org/2021.acl-long.269/
   supporting_publications:
     - https://arxiv.org/abs/2106.01144
+doi: https://doi.org/10.18653/v1/2021.acl-long.269
 publication_year: 2021
 release_year: 2021
 historical_significance:
   - widely used benchmark for emotional support dialogue generation
   - strategy-annotated supporter turns based on a helping-skills framework
 notes: >-
-  Counted from ESConv.json on 2026-09-25, 1,300 conversations and 38,365 turns, of which 991
-  concern a current experience and 309 a previous one. In 2024 the authors added FailedESConv.json
-  with 196 conversations dropped during collection. The collection method is described in the ACL 2021 paper.
-last_verified: 2026-09-25
+  Re-counted from ESConv.json downloaded 2026-11-16, 1,300 conversations and 38,365 turns, of which
+  991 concern a current experience and 309 a previous one; problem-type counts match the README
+  table exactly. FailedESConv.json re-counted the same day, 196 conversations. The repository was
+  last pushed 2024-06-19 and is unchanged since; GitHub license detection still reports
+  NOASSERTION, but the LICENSE file text was read directly and is CC BY-NC 4.0. In 2024 the
+  authors added FailedESConv.json with 196 conversations dropped during collection. The collection
+  method is described in the ACL 2021 paper.
+last_verified: 2026-11-16
