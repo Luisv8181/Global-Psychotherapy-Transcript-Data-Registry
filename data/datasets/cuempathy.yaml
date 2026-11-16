@@ -9,20 +9,34 @@ source_context: Actual counseling sessions collected for psychotherapy research
 geography:
   countries:
     - Hong Kong
+  regions:
+    - east_asia
+  scope: single_country
+  evidence_level: reported_in_publication
 languages:
-  - en
+  - zh
+language_context: code_switched
+dialects:
+  - Cantonese
 therapy_modalities:
   - counseling
 sessions: 156
-longitudinal: unknown
+longitudinal: true
+collection_start_year: 2017
+collection_end_year: 2019
 transcript:
   available: true
   format:
     - speech
     - transcript
+audio:
+  available: true
+video:
+  available: true
 modalities:
   - audio
   - text
+  - video
 participants:
   therapist_client_dyads: 39
 annotations:
@@ -30,19 +44,39 @@ annotations:
   - client_ratings
   - speaker_turn_timestamps
 access:
-  level: unknown
-  requirements: unknown
+  level: restricted
+  requirements: Only research personnel involved in the study may access the audio data and text transcriptions (paper section 3.2); no public access route exists.
 redistribution: unknown
 license:
   type: unknown
   verified: false
+  notes: No public release exists, so no dataset license could be read.
 privacy:
-  deidentified: unknown
+  deidentified: documented
   contextual_reidentification_assessed: unknown
+  notes: Names and locations were removed from the transcriptions before analysis (paper section 3.2). No de-identification of the audio or video recordings is stated.
+ethics:
+  consent_documented: true
+  ethics_review_documented: true
+  data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://research.cuhk.edu.hk/en/publications/cuempathy-a-counseling-speech-dataset-for-psychotherapy-research-2/
     - https://arxiv.org/abs/2409.02466
+  supporting_publications:
+    - https://doi.org/10.1109/ISCSLP57327.2022.10038072
 publication_year: 2022
-notes: 156 actual counseling sessions involving 39 therapist-client dyads. The publication describes speech collection, subjective ratings, transcription, and speaker-turn timestamp processing. Repeated-session longitudinal structure is not explicitly established in the sources reviewed, so it remains unknown. Access and redistribution terms require separate verification.
-last_verified: 2026-09-24
+notes: >-
+  156 selected sessions from 428 recorded November 2017 to October 2019 in a 20-week
+  psychotherapy practicum at a CUHK counseling clinic. 39 therapist-client dyads with
+  4 sessions each, about 50 minutes each. Clients are real help-seeking adults seen by
+  trainee therapists under supervision. Sessions are in Hong Kong Cantonese with
+  occasional English code-mixing, transcribed in traditional Chinese characters. Names
+  and locations were removed from the transcriptions. Only research personnel involved
+  in the study may access the audio data and text transcriptions, and no public release,
+  repository, dataset card or download route exists as of this check, so no dataset
+  license could be established. The record's earlier language value of English came from
+  the publication page, which describes the paper, not the data. Because the corpus holds
+  recordings of real identifiable clients, any change to how this record is used needs
+  the repository owner.
+last_verified: 2026-11-16
