@@ -67,4 +67,11 @@ notes: >-
   10,000 manually labelled passages; the released GeCCo 1.0 holds 2,801, so the figures
   refer to different collection stages. A fork of this repository exists at
   github.com/albrechtje/gecco-dataset; the canonical source is the th-nuernberg repository.
-last_verified: 2026-10-10
+  Re-verified 2026-11-15 against the live primary sources: repository unchanged since the
+  2023-11-29 push, README still GeCCo 1.0, LICENSE.md still CC BY 4.0, and the released
+  files re-counted from the live download (2,801 coded passages, 66 distinct codes, 68
+  category rows), matching the record exactly. The Institute for E-Counselling page is
+  live and still describes its work as electronically mediated communication in the
+  psychosocial counselling field, confirming scope. No change to status, license or
+  classification; last_verified updated.
+last_verified: 2026-11-15
