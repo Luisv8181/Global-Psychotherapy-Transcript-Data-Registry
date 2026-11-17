@@ -8,17 +8,52 @@ domain: mental_health_counseling
 source_context: >-
   Bilingual multi-turn mental health counseling dataset with session- and
   turn-level annotations for psychotherapy type, topic, stage, strategy,
-  emotion, observation, reasoning, and summaries. The project's public data
-  documentation describes English and Chinese counseling sessions and states
-  that the dataset is anonymous. The project page also exposes the underlying
-  dialogue content, so the registry records metadata and official links only.
+  emotion, observation, reasoning, and summaries. Dialogues were collected
+  from psychotherapy books, blogs, and crawled corpora. The repository
+  copyright document names Book3 (psychotherapy books filtered from The Pile),
+  MNBVC, PsyArXiv, the Emotional First Aid Raw Dataset crawled from Yixinli
+  and Douban, and CBook. The paper organizes the material hierarchically as
+  Case, Session, Turn, with 189 cases and 951 sessions. Annotations were
+  produced by mapping explanatory text from the source books onto dialogues
+  with a sliding-window algorithm plus embedding and LLM relevance checks,
+  then human review. The dataset is anonymous per the project page, which
+  also exposes the underlying dialogue content, so the registry records
+  metadata and official links only.
 languages:
   - en
   - zh
 language_context: bilingual
-clinical_topics: null
-sessions: unknown
-longitudinal: unknown
+clinical_topics:
+  - ongoing depression
+  - partner relationship issues
+  - child-parent relationship issues
+  - appearance anxiety
+  - academic pressure
+  - job crisis
+  - school bullying
+  - friend problems
+  - sleep problems
+  - substance abuse
+  - procrastination
+sessions: 951
+longitudinal: true
+therapy_modalities:
+  - cognitive_behavioral_therapy
+  - solution_focused_brief_therapy
+  - psychoanalytic_therapy
+  - psychodynamic_therapy
+  - client_centered_therapy
+  - adlerian_therapy
+  - family_therapy
+  - marriage_family_systems_therapy
+  - acceptance_commitment_therapy
+  - rational_emotive_behavior_therapy
+  - gestalt_therapy
+  - reality_therapy
+  - postmodern_therapy
+  - existential_therapy
+  - multicultural_integration_therapy
+  - feminist_therapy
 transcript:
   available: true
 audio:
@@ -30,9 +65,19 @@ access:
   requirements: Public project repository with dataset links.
 redistribution: unknown
 license:
-  type: unknown
-  verified: false
-  notes: The project repository's own license for the dataset was not established. A processed derivative on Hugging Face states that rights and licensing follow the upstream sources, so redistribution should not be inferred from repository availability.
+  type: mixed
+  verified: true
+  source: https://github.com/ckqqqq/Psy-Insight/blob/main/docs/data_source/data_source.md
+  notes: >-
+    The repository has no LICENSE file and GitHub reports no license. The
+    repository copyright document states the dataset license inherits from
+    its raw sources, naming the MIT license, the Apache 2.0 license, and the
+    Chunsong public license. The English material derives from Book3
+    psychotherapy books under MIT per that document, the Chinese book material
+    from CBook under Apache 2.0, and the crawled Chinese material from MNBVC
+    under MIT and the Emotional First Aid Raw Dataset under its own license.
+    Because the terms differ by source, no single dataset license exists and
+    redistribution is not stated for the combined dataset.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
@@ -44,19 +89,50 @@ evidence:
   primary_sources:
     - https://github.com/ckqqqq/Psy-Insight
     - https://github.com/ckqqqq/Psy-Insight/blob/main/data/README.md
+    - https://github.com/ckqqqq/Psy-Insight/blob/main/docs/data_source/data_source.md
+    - https://arxiv.org/abs/2503.03607
+    - https://arxiv.org/html/2503.03607v1
   supporting_publications:
     - https://psy-insight.anonymous-demo.fun/
 publication_year: 2025
 notes: >-
-  The official repository reports 520 English counseling sessions and 521
-  Chinese counseling sessions in its data documentation, while the project
-  README describes 6,208 English dialogue rounds and 5,776 Chinese rounds.
-  Because the source materials expose conflicting counts across repository
-  pages and do not establish a single consistent session total in the reviewed
-  primary sources, sessions is left unknown. Provenance is also left unknown:
-  the repository describes counseling dialogues and examples, but the reviewed
-  sources do not establish whether the conversations are naturally occurring,
-  demonstrations, role-play, synthetic, or a mixture. Third-party processed
-  derivatives describe the data as following upstream source licenses, which
-  reinforces that dataset-specific redistribution terms need separate verification.
-last_verified: 2026-10-07
+  Sessions counted from the released data files on 2026-11-17. The file
+  en_data_version7.json holds 520 sessions with 6,208 dialogue turns and
+  cn_data_version7.json holds 431 sessions with 5,776 turns, 951 sessions in
+  total. Those counts match the paper Tables 2 and 3 and its Figure 1 exactly,
+  and they supersede the conflicting figures in data README.md, which says
+  460 English sessions in one place and 430 in another and 521 Chinese
+  sessions. The paper Table 1 psychotherapy distribution is internally
+  inconsistent, its session counts sum to 824 against a stated overall of 786
+  and its Unknown row pairs 10 sessions with 13.15 percent, so the modality
+  counts reported here are the counted file values, not the paper table.
+  Counted psychotherapy labels in the English file are Solution-Focused Brief
+  Therapy 350, Psychoanalytic Therapy 44, Cognitive Behaviour Therapy 40,
+  Client-Centered Therapy 22, Adlerian Therapy 16, Family Therapy 10,
+  Acceptance Commitment Therapy 8, Marriage and Family Systems Therapy 8,
+  Rational Emotive Behavior Therapy 8, Gestalt Therapy 5, Reality Therapy 4,
+  Postmodern Therapy 3, Existential Therapy 2. Counted labels in the Chinese
+  file are Cognitive Behavioral Therapy 191, Unknown 75, Solution-Focused
+  Brief Therapy 48, Psychodynamic Therapy with Infants and Parents 23,
+  Family Therapy 18, Multicultural Integration Therapy 14, Postmodern Therapy
+  13, Existential Therapy 7, Gestalt Therapy 7, Marriage and Family Systems
+  Therapy 7, Reality Therapy 6, Client-Centered Therapy 6, Rational Emotive
+  Behavior Therapy 5, Adlerian Therapy 4, Feminist Therapy 4, Psychoanalytic
+  Therapy 2, and one blank label. Longitudinal is true because the paper
+  section 4 records 189 cases, 114 English and 75 Chinese, with each case
+  holding several sessions in a counseling cycle, and the Chinese file carries
+  stage labels from 1st Session to 34th Session. The English file carries no
+  stage values. Provenance stays unresolved for classification. The paper
+  describes the dialogues as face-to-face counseling drawn from blogs and
+  books and calls them real counseling data, but the underlying material is
+  published case material from books and crawled corpora, and no source states
+  whether the clients were real, so dataset_type stays unknown pending an
+  owner call. Geography stays unknown because no source states where the
+  dialogues come from, and author affiliation is not dataset geography.
+  Redistribution stays unknown because the inherited licenses differ by source
+  and no combined redistribution statement exists. A processed derivative on
+  Hugging Face states that rights and licensing follow the upstream sources,
+  which reinforces that dataset-specific redistribution terms need separate
+  verification. No videos or dialogue content are recorded here; the record
+  holds metadata and official links only.
+last_verified: 2026-11-17
