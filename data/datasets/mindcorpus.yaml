@@ -46,6 +46,14 @@ access:
     revised 2026-01-24; GitHub API repository search for MindCorpus and MindChat
     returned no author-published artifact; HF datasets API search returned only
     unrelated English "Mind Corpus" sets; web search found no author-hosted repo).
+    Re-checked 2026-11-17: arXiv still v2; the v2 full text contains no github or
+    huggingface link; GitHub search found only an empty unrelated repo
+    (maqueef/Mindcorpus, created 2026-11-08, no description, no files); HF datasets
+    API still returns only the two unrelated English Mind-Corpus sets, plus a
+    third-party user1009/mindchat upload (single-turn instruction JSON, no card,
+    uploader not an author) that does not match the paper's 5.7k multi-turn
+    sessions and is not counted as a release; web search found only the paper
+    pages.
 redistribution: unknown
 license:
   type: unknown
@@ -72,7 +80,7 @@ evidence:
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.01993
 publication_year: 2026
-last_verified: 2026-10-15
+last_verified: 2026-11-17
 notes: >-
   Statistics are the paper's reported figures (Table II): Chinese, 5.7k sessions,
   12.0 utterances per session, 84.0 average length; the 5700 figure is approximate.
@@ -83,5 +91,11 @@ notes: >-
   Record stays partially-verified until a locatable release artifact (repository,
   dataset card, or access route) surfaces. Re-checked 2026-10-13 and 2026-10-15:
   on both dates GitHub API, HF datasets API, and web searches found no
-  author-published release artifact; arXiv still shows v2 only. Companion record
-  mindchat-r0-ft-data covers the related collected YiXinLi corpus.
+  author-published release artifact; arXiv still shows v2 only. Re-checked
+  2026-11-17: arXiv still v2 (revised 2026-01-24); v2 full text contains no github
+  or huggingface link; GitHub search found only an empty unrelated repo
+  (maqueef/Mindcorpus, created 2026-11-08); HF API still returns only the two
+  unrelated English Mind-Corpus sets plus a third-party user1009/mindchat
+  single-turn instruction JSON that does not match the paper's dataset; web search
+  found only the paper pages. Still no author-published release artifact.
+  Companion record mindchat-r0-ft-data covers the related collected YiXinLi corpus.
