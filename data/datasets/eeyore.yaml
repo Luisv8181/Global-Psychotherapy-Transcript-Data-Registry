@@ -1,7 +1,7 @@
 id: eeyore
 title: "Eeyore: Depression Client-Simulation Training Data"
 canonical_url: https://huggingface.co/datasets/liusiyang/eeyore_depression_sft
-status: partially-verified
+status: verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
 domain: mental_health_support
@@ -20,8 +20,8 @@ therapy_modalities:
   - motivational_interviewing
 clinical_topics:
   - depression
-sessions: unknown
-longitudinal: unknown
+sessions: 3042
+longitudinal: true
 transcript:
   available: true
   format:
@@ -37,47 +37,67 @@ annotations:
 access:
   level: registration
   requirements: >-
-    Hugging Face login and acceptance of the dataset's access gate, which approves requests
-    automatically. The gate's conditions were not read because they are shown only after login.
-redistribution: unknown
+    Hugging Face login and acceptance of the dataset's access gate. The gate is
+    auto-approval (HF API reports gated auto, confirmed 2026-11-16); the gate's
+    conditions were not read because they are shown only after login.
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
+  type: none-selected
+  verified: true
   source: https://huggingface.co/api/datasets/liusiyang/eeyore_depression_sft
   notes: >-
-    The dataset card metadata of all four Eeyore datasets, read through the Hugging Face API on
-    2026-09-26, declares no license. The card text needs a login and was not read, so a license
-    stated only in the text cannot be ruled out. The paper names four source corpora, each with its
-    own terms (see the HOPE, ESConv and AnnoMI records); how those terms apply to this release is not
-    stated on the pages read.
+    No license is declared in the HF card metadata of any of the four Eeyore datasets
+    (read via the HF API 2026-11-16), in any of the four card READMEs (auto-generated
+    dataset_info YAML only, no license prose), or in the official GitHub repository
+    MichiganNLP/Eeyore, which has no LICENSE file. The authors have not granted an open
+    license, so reuse rests on no stated terms and redistribution is conditional at most.
+    The paper names four source corpora, each with its own terms (see the HOPE, ESConv and
+    AnnoMI records); how those terms apply to this release is not stated on the pages read.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
 ethics:
   consent_documented: unknown
-  ethics_review_documented: unknown
+  ethics_review_documented: true
   data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://huggingface.co/api/datasets/liusiyang/eeyore_depression_sft
     - https://huggingface.co/api/datasets/liusiyang/eeyore_profile
+    - https://huggingface.co/api/datasets/liusiyang/eeyore_depression_generated_preference
+    - https://huggingface.co/api/datasets/liusiyang/eeyore_depression_expert_preference
+    - https://github.com/MichiganNLP/Eeyore
     - https://aclanthology.org/2025.findings-acl.707/
+    - https://arxiv.org/html/2503.00018v1
   supporting_publications:
     - https://arxiv.org/abs/2503.00018
 publication_year: 2025
 historical_significance:
   - expert-in-the-loop training data for simulated depressed clients in counselor training
 notes: >-
-  The Findings of ACL 2025 paper (read as arXiv HTML v1) reports 5,618 candidate conversations,
-  of which 3,042 were kept after GPT-4o labelling and rebalancing, and 453 of those given a
-  counseling history by segmenting long conversations. The Hugging Face metadata lists 3,209 rows
-  in eeyore_depression_sft (fields messages, source, id_source) and 3,209 in eeyore_profile (the
-  same plus profile), 1,605 model-generated preference pairs in eeyore_depression_generated_preference
-  and 317 expert preference pairs in eeyore_depression_expert_preference. The 3,042 and 3,209 figures
-  have not been reconciled; the extra rows may come from the segmentation, which is unconfirmed.
-  The paper describes the instruction-tuning format as the profile in the system prompt with the
-  client's turns as the assistant messages. What text the released files contain was not checked,
-  because the files are gated. English is taken from the
-  four source corpora named in the paper; the files were not opened. The paper reports IRB approval
-  for its user studies with experts; it says nothing on review of the source data.
-last_verified: 2026-09-26
+  Re-verified 2026-11-16 against the published ACL Findings 2025 paper (read in full as
+  arXiv HTML v1 and the ACL PDF), the official release repository MichiganNLP/Eeyore, and
+  the Hugging Face API plus card text for all four datasets. The paper reports 5,618 candidate
+  conversations processed and 3,042 kept after GPT-4o labelling and rebalancing, with 453 of
+  those given a counseling history by segmenting long conversations and summarizing the earlier
+  sessions. The released SFT and profile files list 3,209 rows each in HF metadata, 167 more
+  than the paper's 3,042, and the gap is unreconciled; segmentation is a candidate explanation
+  but the paper does not say it adds rows, so it is not claimed. The preference files list 1,605
+  model-generated pairs and 317 expert pairs; the paper says 1,933 model pairs met the selection
+  criteria and 317 expert annotations were collected with 250 retained after filtering, so the
+  released expert file matches the collected count rather than the retained count, while the
+  released model file is 328 short of the paper's used count. No license is declared anywhere
+  read. HF card metadata for all four datasets lists no license, each card README is only
+  auto-generated dataset_info YAML with no license prose, and the official GitHub repository
+  has no LICENSE file, so the license is recorded as none-selected and redistribution as
+  conditional at most. The Hugging Face gate auto-approves, but its conditions were not read
+  because they show only after login. The paper's ethics section states IRB approval for all
+  user studies and says nothing on review of the source data. No de-identification step is
+  described in the paper, and the four source corpora carry their own terms, so de-identification
+  stays unknown. Geography stays unknown: the paper names no geography for its sources, which
+  span Reddit threads, YouTube counseling videos, crowdsourced support chats and MI
+  demonstrations; the HOPE record in this registry reports majority United States, but that
+  covers one of four sources. The instruction-tuning format puts the profile in the system
+  prompt with the client's turns as the assistant messages. English is taken from the four
+  source corpora named in the paper; the gated files were not opened.
+last_verified: 2026-11-16
