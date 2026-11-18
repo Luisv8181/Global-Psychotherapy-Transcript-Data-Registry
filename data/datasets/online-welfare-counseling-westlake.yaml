@@ -3,9 +3,12 @@ title: Online Mental Health Counseling Dataset (Westlake/Zhejiang University)
 canonical_url: https://aclanthology.org/2023.acl-long.577/
 status: verified
 dataset_type: real
-dialogue_structure: unknown
+dialogue_structure: multi_turn
 domain: psychotherapy
-source_context: Text-based counseling interactions collected over two years from an online welfare counseling platform
+source_context: >-
+  Text-based counseling interactions collected over two years from Xinling, an online welfare
+  counseling platform built by the authors. Sessions are about 50 minutes each, between actual
+  clients and experienced counselors.
 geography:
   countries:
     - China
@@ -13,7 +16,7 @@ languages:
   - zh
 therapy_modalities:
   - online_counseling
-sessions: unknown
+sessions: 2382
 longitudinal: unknown
 transcript:
   available: true
@@ -27,18 +30,51 @@ annotations:
   - client_states
   - counseling_outcomes
 access:
-  level: unknown
-  requirements: unknown
-redistribution: unknown
+  level: research-agreement
+  requirements: >-
+    The dataset is not publicly available. The paper states it "will be made available for
+    researchers who agree to follow ethical guidelines"; the repository README says to contact
+    the author (lianqi@westlake.edu.cn) for access. The paper's Ethics Statement requires
+    requesters to provide a valid ID, proof of work, and the reason for the request; be
+    affiliated with a non-profit academic or research institution; hold Institutional Review
+    Board approval with a full-time principal investigator and written approval from the
+    institution's office of Research; and sign a Data Non-disclosure Agreement promising not
+    to share the data.
+redistribution: prohibited
 license:
   type: unknown
   verified: false
+  notes: >-
+    No license is stated in the paper and the code repository has no LICENSE file, so the
+    dataset license is unknown. The Data Non-disclosure Agreement required for access promises
+    requesters will not share the data, which is why redistribution is recorded as prohibited.
 privacy:
-  deidentified: unknown
+  deidentified: documented
   contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: true
+  ethics_review_documented: true
+  data_use_agreement: true
 evidence:
   primary_sources:
     - https://aclanthology.org/2023.acl-long.577/
+    - https://github.com/dll-wu/Client-Reactions
+doi: https://doi.org/10.18653/v1/2023.acl-long.577
 publication_year: 2023
-notes: The authors report a large-scale, high-quality text-based counseling dataset collected over two years from an online welfare counseling platform. The cited paper studies counselor strategies, client reaction behaviors, and counseling outcomes. Session count, exact platform identity, access terms, licensing, and privacy controls require separate verification.
-last_verified: 2026-09-24
+notes: >-
+  The authors report a large-scale, high-quality text-based counseling dataset collected over
+  two years from the Xinling online welfare counseling platform. The cited paper studies
+  counselor strategies, client reaction behaviors, and counseling outcomes. Re-verified against
+  the full text of the ACL 2023 paper on 2026-11-18: 2,382 conversation sessions, 479 of which
+  received the clients' self-reported outcome scales; the paper's Table 1 confirms the 2,382
+  figure. Before annotation the authors anonymized all clients' personal information (name,
+  organization, and similar), and the Ethics Statement says they "spared no efforts to manually
+  de-identify and anonymize the data". Ethics approval was granted by the Institutional Ethics
+  Committee (20211013LZZ001); all clients and counselors signed a consent form stating the
+  conversations would be used for scientific research and might be used by third parties. The
+  repository holds code only (data/ contains just a .gitkeep and a get_data.py that expects a
+  local JSON file); no data files are released there. Longitudinal stays unknown: a two-year
+  collection span is documented, but the paper does not document repeated observations of the
+  same clients. Status stays verified, matching registry practice for records whose license is
+  unknown but whose identity, provenance, and access terms are confirmed from primary sources.
+last_verified: 2026-11-18
