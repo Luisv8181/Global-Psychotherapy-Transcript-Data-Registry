@@ -42,9 +42,12 @@ access:
   requirements: >-
     The paper links data and code to github.com/jiangjyjy/CSD. That repository
     returned 404 on 2026-10-14 via both web fetch and the GitHub API
-    (deleted or made private). No mirror or alternate release route was
-    located. Whether the data files are currently obtainable anywhere is
-    unknown.
+    (deleted or made private). Re-checked 2026-11-18 - still 404 via the
+    GitHub API, the Hugging Face datasets search for CSConv returned no
+    dataset, GitHub repository search found no author artifact (the one
+    same-named repository is a 2019 colorscheme converter), and a web search
+    found no mirror or alternate release route. Whether the data files are
+    currently obtainable anywhere is still unknown.
 redistribution: unknown
 license:
   type: unknown
@@ -67,9 +70,10 @@ evidence:
   primary_sources:
     - https://ar5iv.labs.arxiv.org/abs/2305.08200
     - https://arxiv.org/html/2406.16567v1
+    - https://aclanthology.org/2023.acl-long.593/
   supporting_publications: []
 publication_year: 2023
-last_verified: 2026-10-14
+last_verified: 2026-11-18
 notes: >-
   Primary evidence is the introducing paper (Jiang et al., ACL 2023, pages
   10628 to 10640) read in full on 2026-10-14. It reports 2,643 conversations
@@ -83,4 +87,9 @@ notes: >-
   the paper as brainlive.socialwork.hku.hk. No release year is stated in the
   paper. The official release repository github.com/jiangjyjy/CSD is
   unreachable as of 2026-10-14, so the record stays partially-verified until
-  a locatable data artifact exists.
+  a locatable data artifact exists. Re-checked 2026-11-18 - the introducing
+  paper was re-read in full via ar5iv and the ACL Anthology record
+  (Jiang et al., ACL 2023, pages 10628-10640, DOI
+  10.18653/v1/2023.acl-long.593) confirms the Table 2 counts, and the
+  release repository is still unreachable with no mirror found, so the
+  record stays partially-verified.
