@@ -35,9 +35,23 @@ access:
   requirements: None for reading. The 1966 CACM paper is free in the ACM Digital Library's open 1951-2000 backfile, and the 1965 MAD-SLIP listing with the DOCTOR script is published through ELIZAGEN. The physical originals are held in the Weizenbaum papers at MIT.
 redistribution: conditional
 license:
-  type: source_specific
-  verified: false
-  notes: Reported as released under CC0 in May 2021 with permission of the Weizenbaum estate (source code and DOCTOR script). The 1966 paper, including its example conversation, remains under ACM's terms, which allow free reading but do not by themselves grant redistribution. The CC0 release is reported by ELIZAGEN and secondary sources and has not been confirmed on the release page itself.
+  type: mit
+  verified: true
+  source: https://hdl.handle.net/1721.3/201699
+  notes: >-
+    The MIT DSpace item holding the 1965 printout states "Licensed under an
+    MIT software license" and ships a LICENSE.txt containing the MIT License
+    text (Copyright 1965 MIT), read 2026-11-18. This conflicts with the
+    ELIZAGEN release page, where Jeff Shrager states (May 23, 2021) the
+    Weizenbaum estate granted permission to open-source the code under a
+    Creative Commons CC0 public domain license. The record follows the
+    license at the data location per AGENTS.md section 4. The 1966 paper,
+    including its example conversation, remains under ACM terms; ACM's April
+    2022 backfile announcement states 1951-2000 publications are freely
+    available to view and download, which supports reading access but does
+    not by itself grant redistribution. ELIZAGEN's page still states the
+    paper is "inaccessible, except to members or for purchase", which the
+    backfile announcement contradicts for reading access.
 privacy:
   deidentified: not_applicable_to_historical_system
   contextual_reidentification_assessed: not_applicable
@@ -46,13 +60,29 @@ evidence:
     - https://doi.org/10.1145/365153.365168
     - https://hdl.handle.net/1721.3/201699
   supporting_sources:
-    - https://sites.google.com/view/elizagen-org/original-eliza
+    - https://elizagen.org/original-eliza.html
     - https://www.acm.org/media-center/2022/april/50-years-backfile
+    - https://arxiv.org/abs/2501.06707
+    - https://github.com/rupertl/eliza-ctss
 publication_year: 1966
 collection_start_year: 1965
 historical_significance:
   - early documented computational therapeutic dialogue
   - DOCTOR script simulated a Rogerian psychotherapist
   - multiple contemporaneous ELIZA versions and scripts are documented
-notes: ELIZA is included as a historical predecessor to modern computational therapy and synthetic dialogue corpora, not as a modern psychotherapy dataset. Primary evidence documents the 1966 publication, while recovered MIT archive material supports earlier 1965 versions. The registry should preserve version-specific evidence rather than treating ELIZA as a single immutable artifact.
-last_verified: 2026-09-24
+notes: >-
+  ELIZA is included as a historical predecessor to modern computational
+  therapy and synthetic dialogue corpora, not as a modern psychotherapy
+  dataset. Primary evidence documents the 1966 publication, while recovered
+  MIT archive material supports earlier 1965 versions. The registry should
+  preserve version-specific evidence rather than treating ELIZA as a single
+  immutable artifact. Re-verified 2026-11-18: the original 1965 code was
+  restored to operation in December 2024 on a reconstructed CTSS running on
+  an emulated IBM 7094 (Lane et al., arXiv 2501.06707, published 2025-01-12;
+  later cited as IEEE Annals of the History of Computing 47(1), 8-23, 2025).
+  The restoration repository (github.com/rupertl/eliza-ctss) carries no
+  LICENSE file. The ACM Digital Library article page for the 1966 paper
+  could not be opened on 2026-11-18 (Cloudflare verification would not
+  clear); the free-reading claim rests on ACM's 2022 backfile announcement,
+  re-read this run.
+last_verified: 2026-11-18
