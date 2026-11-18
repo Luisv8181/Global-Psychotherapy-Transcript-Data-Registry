@@ -71,6 +71,7 @@ evidence:
     - https://arxiv.org/html/2305.02842v1
   supporting_publications:
     - https://ustc-ac.github.io/publication/manual-mm23-zhu/
+    - https://doi.org/10.1145/3581783.3612346
 publication_year: 2023
 notes: >-
   Provenance and classification are resolved from the paper's data-collection
@@ -84,4 +85,16 @@ notes: >-
   contact, and a search for a release site or code repository found none, so status
   is partially-verified rather than verified. No videos or dialogue content are
   recorded here; the record holds metadata and official links only.
-last_verified: 2026-10-10
+
+  Re-verified 2026-11-18 - the arXiv v1 full text was re-read and the counts
+  confirmed (771 talk turns, 38 videos, 10 cases, 678 minutes). No release
+  artifact has surfaced - GitHub repository search returned no author repository,
+  the Hugging Face datasets API returned no MEDIC dataset, the arXiv abs page
+  lists no code or data links, and the USTC project page carries only the
+  abstract. The published version (ACM MM 2023) is now listed under supporting
+  publications, but the ACM article page itself could not be opened on
+  2026-11-18 because Cloudflare verification would not clear, so its
+  affiliations and any data-availability statement were not read from the page.
+  The identity of UM Psychology, the source of the case videos, could not be
+  established from the paper or web search, so geography stays unknown.
+last_verified: 2026-11-18
