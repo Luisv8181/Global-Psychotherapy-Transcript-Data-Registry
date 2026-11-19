@@ -21,6 +21,9 @@ languages:
 sessions: 86
 participants: null
 longitudinal: false
+therapy_modalities:
+  - systemic
+  - client_centred
 annotations:
   - speaker_role
   - counsellor_act_spans
@@ -73,5 +76,15 @@ notes: >-
   34 professional counsellors and 13 students in GEMCo-B, two authoring counsellors plus one
   independent reviewer in GEMCo-A. Annotations cover OnCoCo counsellor-act spans and
   GoEmotions/Ekman client-emotion spans. The corpus was validated against 124 withheld real
-  conversations reported only as aggregates.
-last_verified: 2026-10-10
+  conversations reported only as aggregates. Re-verified 2026-11-19: counted 86 conversation
+  JSON files and 728 messages in the downloaded repository archive, matching the README;
+  README and LICENSE re-read, CC BY 4.0 still stated (GitHub license detection still
+  NOASSERTION, license text read directly from the file); arXiv 2607.23621 now v2, revised
+  2026-08-10, abstract and full text read. Therapy modalities recorded as systemic and
+  client-centred from the paper: the two authoring counsellors have systemic and
+  client-centred training and the generative-validation prompt instructs
+  systemic-client-centred practice; this describes the counsellors' orientation, not a
+  per-thread modality label. No ethics-review statement found in the paper, so
+  ethics_review_documented stays unknown; consent for GEMCo-B publication and for the
+  withheld real data is documented in the paper. Repository last pushed 2026-11-19.
+last_verified: 2026-11-19
