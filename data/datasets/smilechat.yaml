@@ -1,20 +1,25 @@
 id: smilechat
 title: "SmileChat: Chinese Multi-turn Mental Health Support Dialogues (SMILE)"
 canonical_url: https://github.com/qiuhuachuan/smile
-status: partially-verified
+status: verified
 dataset_type: hybrid
 dialogue_structure: multi_turn
 domain: mental_health_support
 source_context: >-
-  Real single-turn mental-health mutual-help question-answer posts, expanded by ChatGPT into
-  multi-turn help-seeker and supporter dialogues with the SMILE (Single-turn to Multi-turn
-  Inclusive Language Expansion) method.
-geography: null
+  Real single-turn mental-health mutual-help question-answer posts from PsyQA (Sun et al. 2021),
+  crawled from the Chinese platform xinli001.com, expanded by ChatGPT into multi-turn
+  help-seeker and supporter dialogues with the SMILE (Single-turn to Multi-turn Inclusive
+  Language Expansion) method. SMILECHAT consists of 55,165 dialogues averaging 5.7 turns.
+geography:
+  countries: [China]
+  regions: [east_asia]
+  scope: single_country
+  evidence_level: reported_in_publication
 languages: [zh]
 language_context: original
 therapy_modalities:
   - mental_health_support
-sessions: null
+sessions: 55165
 longitudinal: false
 transcript:
   available: true
@@ -23,12 +28,15 @@ modalities:
 generation:
   method: llm_multi_turn_expansion
   models:
-    - ChatGPT
+    - GPT-3.5 Turbo
   source_type: real_single_turn_mutual_help_qa
   synthetic_dialogues: true
 access:
   level: open
-  requirements: None. The README states that the repository's data directory contains all dialogues built with SMILE.
+  requirements: >-
+    None. The README states that the repository's data directory contains all dialogues built
+    with SMILE; 55,165 dialogue files counted in the repository data directory on 2026-11-19,
+    matching the paper's published figure exactly.
 redistribution: conditional
 license:
   type: CC0-1.0
@@ -38,19 +46,37 @@ license:
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper's anonymization statement covers only the separate 50-dialogue PsyTest set
+    (expert anonymization removing names and addresses); no de-identification claim is made
+    for SMILECHAT itself, whose source posts were public PsyQA questions and answers.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://github.com/qiuhuachuan/smile
   supporting_publications:
     - https://arxiv.org/abs/2305.00450
+    - https://aclanthology.org/2024.findings-emnlp.34/
+doi: https://doi.org/10.18653/v1/2024.findings-emnlp.34
 publication_year: 2024
 historical_significance:
   - early LLM-based expansion of real single-turn help-seeking posts into multi-turn counseling-style dialogue
   - training data for the MeChat Chinese mental health support model
 notes: >-
-  The README describes expanding real mental-health mutual-help Q&A into multi-turn dialogues and
-  reports acceptance to EMNLP 2024 Findings. The README reports 310,087 training samples after
-  conversion; these are turn-level samples, not dialogues. The dialogue count and the specific source
-  Q&A corpus are not stated in the README and are left unknown here. The authors note that generated
-  dialogues are shorter than real counseling and differ in strategy distribution.
-last_verified: 2026-09-25
+  Re-verified 2026-11-19 against the repository README, the repository file tree, and the
+  EMNLP 2024 Findings paper (arXiv 2305.00450v3; ACL Anthology 2024.findings-emnlp.34,
+  pp. 615-636, DOI 10.18653/v1/2024.findings-emnlp.34). The paper reports 55,165 dialogues
+  and the repository data directory holds exactly 55,165 numbered JSON files (0.json to
+  56031.json); each file is one multi-turn dialogue with role, content, and per-sentence
+  annotation fields. Converting the dialogues yields the 310,087 training samples the README
+  reports. The expansion model is gpt-3.5-turbo-0613. The paper's Ethics Statement records
+  Westlake University Institutional Ethics Committee approval 20211013LZZ001. The paper also
+  describes a separate 50-dialogue real-life test set, PsyTest, released only through a gated
+  request process (ID, proof of work, IRB approval, NDA); no PsyTest files are present in this
+  repository, so PsyTest is not part of this record. The authors note that generated dialogues
+  are shorter than real counseling and differ in strategy distribution, and that reproducing
+  the dialogues from PsyQA requires an agreement with the original data owner.
+last_verified: 2026-11-19
