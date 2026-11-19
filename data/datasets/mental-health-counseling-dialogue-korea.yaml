@@ -1,6 +1,6 @@
 id: mental-health-counseling-dialogue-korea
 title: Mental Health Counseling Dialogue
-canonical_url: https://aihub.or.kr
+canonical_url: "https://aihub.or.kr/aihubdata/data/view.do?pageIndex=1&currMenu=115&topMenu=100&srchOptnCnd=OPTNCND001&searchKeyword=%EC%8B%AC%EB%A6%AC%EC%83%81%EB%8B%B4+%EB%8C%80%ED%99%94&srchDetailCnd=DETAILCND001&srchOrder=ORDER001&srchPagePer=20&aihubDataSe=data&dataSetSn=71806"
 status: verified
 dataset_type: real
 dialogue_structure: multi_turn
@@ -25,22 +25,67 @@ annotations:
   - substance_use
   - expert_clinical_labels
 access:
-  level: open
+  level: registration
   provider: AI Hub
+  requirements: >-
+    An AI Hub account and a download approval are required before download or
+    API use; the dataset page states approval must be obtained by clicking
+    download on the dataset page. Applications are restricted to Korean
+    nationals ("내국인만 데이터 신청이 가능합니다"). The page shows an active
+    download button and 3,675 downloads as of 2026-11-18.
 redistribution: unknown
 license:
   type: unknown
   verified: false
+  notes: >-
+    No license statement appears on the AI Hub dataset detail page (searched
+    for "라이선스" on 2026-11-18, no match); only site-wide terms links are
+    shown. The Diagnostics 2026 article is CC BY, but that license covers the
+    article, not the data.
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
-  evidence_note: The published study describes the transcripts as de-identified.
+  evidence_note: >-
+    The Diagnostics 2026 paper describes the transcripts as de-identified and
+    says preprocessing performed de-identification of personal information.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: unknown
 evidence:
   primary_sources:
-    - https://aihub.or.kr
-    - https://www.mdpi.com/2075-0383/16/12/1817
+    - "https://aihub.or.kr/aihubdata/data/view.do?pageIndex=1&currMenu=115&topMenu=100&srchOptnCnd=OPTNCND001&searchKeyword=%EC%8B%AC%EB%A6%AC%EC%83%81%EB%8B%B4+%EB%8C%80%ED%99%94&srchDetailCnd=DETAILCND001&srchOrder=ORDER001&srchPagePer=20&aihubDataSe=data&dataSetSn=71806"
+    - https://www.mdpi.com/2075-4418/16/12/1817
+  supporting_publications: []
+doi: https://doi.org/10.3390/diagnostics16121817
 collection_start_year: 2021
 collection_end_year: 2023
 publication_year: 2026
-notes: 1661 Korean counseling-session transcripts, averaging about 30 minutes or 5000 Korean characters per session. Two clinical psychology experts reviewed records and assigned depression, anxiety, and substance-use labels. Verify current AI Hub access and terms before use.
-last_verified: 2026-09-24
+notes: >-
+  Re-verified 2026-11-18. The Diagnostics 2026 paper (Jeong et al.,
+  Diagnostics 16, 1817) was read in full and reports 1,661 de-identified
+  Korean counseling-session transcripts from actual clients and counselors at
+  accredited domestic centers, collected 2021-2023 and averaging about 30
+  minutes or 5,000 Korean characters per session. Labels were assigned by two
+  licensed clinical psychologists (Cohen's kappa 0.82) and are expert judgment,
+  not a formal clinical diagnosis. Label distribution in Table 2 is depression
+  484 (29.13 percent), anxiety 487 (29.31 percent), substance use disorder 448
+  (26.97 percent) and no positive label 242 (14.56 percent), with 159 comorbid
+  pairs and 27 triple-comorbid sessions. Ethics approval is Catholic Kwandong
+  University Ethics Committee approval CKU-25-02-0902, dated 14 October 2025,
+  with ethical review waived because the study used a publicly available
+  de-identified dataset. The record's old MDPI link used ISSN 2075-0383 and
+  returns 404. The correct article URL uses ISSN 2075-4418, and the DOI was
+  added. The AI Hub dataset page (dataSetSn 71806, titled "심리상담 데이터")
+  was read 2026-11-18 and shows build year 2024, version 1.2 final open
+  2025-06-30, 73.19 MB, 465,474 labeling items and the same 484/487/448/242
+  breakdown. Two unresolved tensions are recorded, not resolved. First, the AI
+  Hub page describes 1,661 hours of audio, which does not reconcile with the
+  paper's 1,661 sessions averaging 30 minutes (about 830 hours). Second, the
+  page tags the dataset generation method as LLM and notes some synthetic data
+  is excluded from the public release, while the paper treats the corpus as
+  real client-counselor sessions. Access was corrected from open to
+  registration, since AI Hub requires an account and download approval
+  restricted to Korean nationals. License remains unknown, as no license
+  statement appears on the dataset page.
+last_verified: 2026-11-18
