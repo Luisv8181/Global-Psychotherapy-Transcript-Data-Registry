@@ -1,7 +1,7 @@
 id: mentalchat16k
 title: "MentalChat16K: A Benchmark Dataset for Conversational Mental Health Assistance"
 canonical_url: https://huggingface.co/datasets/ShenLab/MentalChat16K
-status: partially-verified
+status: verified
 dataset_type: hybrid
 dialogue_structure: single_turn_qa
 domain: mental_health_counseling
@@ -10,7 +10,11 @@ source_context: >-
   anonymized real interview transcripts of the PISCES clinical trial, between behavioral health
   coaches and caregivers of patients in palliative or hospice care. 9,775 synthetic question-answer
   pairs generated with GPT-3.5 Turbo across 33 mental health topics.
-geography: null
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_country
+  evidence_level: documented
 languages: [en]
 language_context: original
 therapy_modalities:
@@ -18,8 +22,8 @@ therapy_modalities:
 clinical_topics:
   - caregiver_stress
   - palliative_and_hospice_caregiving
-sessions: null
-longitudinal: unknown
+sessions: 378
+longitudinal: true
 transcript:
   available: true
 modalities:
@@ -37,18 +41,29 @@ generation:
 access:
   level: open
   requirements: None reported. Published as a Hugging Face dataset.
-redistribution: unknown
+redistribution: conditional
 license:
-  type: unknown
-  verified: false
-  notes: The GitHub repository is MIT-licensed, which covers its code. The dataset's own license on Hugging Face has not been read here.
+  type: MIT
+  verified: true
+  source: https://huggingface.co/datasets/ShenLab/MentalChat16K
+  notes: >-
+    MIT is the license field on the Hugging Face dataset card, read at the data location on
+    2026-11-19 (card frontmatter "license: mit"; API cardData confirms). The GitHub code
+    repository is also MIT-licensed, but the card license is the dataset's own. Redistribution is
+    conditional on the MIT terms (retain copyright and license notice).
 privacy:
   deidentified: documented
   contextual_reidentification_assessed: unknown
+ethics:
+  consent_documented: true
+  ethics_review_documented: unknown
+  data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://github.com/ChiaPatricia/MentalChat16K
     - https://huggingface.co/datasets/ShenLab/MentalChat16K
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC12520247/
+    - https://clinicaltrials.gov/study/NCT01444027
   supporting_publications:
     - https://dl.acm.org/doi/10.1145/3711896.3737393
     - https://pmc.ncbi.nlm.nih.gov/articles/PMC12520247/
@@ -58,8 +73,22 @@ historical_significance:
   - rare public resource derived from real clinical-trial counseling interviews
   - pairs real-derived and synthetic components under one benchmark
 notes: >-
-  Of 421 caregivers who completed the information survey, the README reports that most are female
-  and 88% identify as White, with fewer than 1% Hispanic. The real component is paraphrased
-  question-answer pairs, not full session transcripts, so it is not counted as real-session data.
-  The trial's country is not stated in the README. The README's dataset citation is dated 2024; the paper appeared in KDD 2025 (ACM) and on PMC.
-last_verified: 2026-09-25
+  Re-verified 2026-11-19 against the Hugging Face dataset card, the GitHub README, the KDD 2025
+  paper (PMC12520247) and the PISCES trial registration NCT01444027. Of 421 caregivers who completed
+  the information survey, the README reports that most are female and 88% identify as White, with
+  fewer than 1% Hispanic. The real component is paraphrased question-answer pairs, not full session
+  transcripts, so it is not counted as real-session data. Sessions is the paper Table 1 figure of
+  378 interview transcripts; the underlying trial gave each caregiver three formal visits plus one
+  exit visit, so the design is longitudinal. Geography is the United States: the trial registration
+  lists the single site as University of Washington, Seattle, WA, with NINR as collaborator, and
+  the paper's authors are at the University of Pennsylvania. Consent is documented in the paper
+  ("Upon consent to participate in the study, 514 caregivers were enrolled"); no IRB or
+  ethics-review statement was found in the full text, so ethics_review_documented stays unknown.
+  Source disagreement recorded: the PMC rendering of the paper Table 1 swaps the two rows (it
+  lists Interview Data as 9,775 rows and Synthetic Data as 6,338), while both the Hugging Face
+  card and the GitHub README give interview 6,338 pairs and synthetic 9,775; the figures here
+  follow the card and README. Row count counted from the released file this run: the single
+  train parquet at the data location holds 16,084 rows, 29 fewer than the README total of 16,113
+  (6,338 + 9,775). The README's dataset citation is dated 2024; the paper appeared in KDD 2025
+  (ACM) and on PMC.
+last_verified: 2026-11-19
