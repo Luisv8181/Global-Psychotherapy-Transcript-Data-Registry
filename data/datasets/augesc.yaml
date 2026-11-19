@@ -36,21 +36,39 @@ license:
   type: CC-BY-NC-4.0
   verified: true
   source: https://huggingface.co/datasets/thu-coai/augesc
+  notes: >-
+    CC-BY-NC-4.0 is the license on the Hugging Face dataset card, where the data lives.
+    The code repository has no LICENSE file (GitHub API reports NOASSERTION, checked
+    2026-11-19), so no code license is recorded here.
 privacy:
   deidentified: unknown
   contextual_reidentification_assessed: unknown
+  notes: >-
+    The paper states the construction "does not involve human participants and thus does
+    not collect any personal identifying information", but it describes no de-identification
+    procedure for the seed posts, which are crowdsourced personal situation descriptions
+    from EmpatheticDialogues, so de-identification stays unknown. The paper also warns
+    AugESC may contain toxic or biased content and is for research use only, not for
+    deployed systems or commercial use.
+ethics:
+  consent_documented: unknown
+  ethics_review_documented: true
+  data_use_agreement: unknown
 evidence:
   primary_sources:
     - https://huggingface.co/datasets/thu-coai/augesc
     - https://github.com/thu-coai/AugESC
   supporting_publications:
     - https://arxiv.org/abs/2202.13047
+    - https://aclanthology.org/2023.findings-acl.99/
 publication_year: 2023
 historical_significance:
   - early LLM augmentation of an emotional-support corpus (ESConv), scaling it by about 50 times
 notes: >-
-  Counted from augesc.txt on 2026-09-26, 65,077 dialogues with 1,738,446 turns (26.7 per dialogue
-  on average). Per the paper, the completing model starts from available dialogue posts, so each
-  dialogue is seeded by real text and completed by the model; the source of the posts is described
-  in the paper and not reviewed here. Published in Findings of ACL 2023.
-last_verified: 2026-09-26
+  Re-counted from augesc.txt on 2026-11-19, 65,077 dialogues with 1,738,446 turns (26.7 per dialogue
+  on average), matching the paper's Table 2 figures of 65K dialogues and 1,738K utterances. Per the
+  paper (section 3.2), the completing model starts from 8,950 EmpatheticDialogues posts with negative
+  emotion labels, so each dialogue is seeded by real text and completed by the model. The Hugging Face
+  card carries a region:us tag, but the paper states no geography for the seed posts, so geography
+  stays unknown. Published in Findings of ACL 2023 (DOI 10.18653/v1/2023.findings-acl.99).
+last_verified: 2026-11-19
