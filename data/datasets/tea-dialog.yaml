@@ -70,11 +70,18 @@ evidence:
     - https://github.com/XingYuSSS/TEA-Bench
   supporting_publications:
     - https://doi.org/10.48550/arXiv.2601.18700
+    - https://aclanthology.org/2026.acl-long.2152/
 publication_year: 2026
-last_verified: 2026-10-12
+last_verified: 2026-11-20
 notes: >-
   365 counted from TEA-Dialog.json on 2026-10-12; the paper reports the same
-  figure ("a dataset of 365 high-quality dialogues"). content_messages per
+  figure ("a dataset of 365 high-quality dialogues"). Re-counted from
+  TEA-Dialog.json on 2026-11-20, still 365 dialogues and 81 scenarios in
+  TEA-Scenario.json, user types still 320 Action-oriented and 45
+  Emotion-oriented, content_messages still 4 to 30 per dialogue. Simulated
+  city contexts counted 2026-11-20 are Toronto 218, London 110, Los Angeles
+  19 and San Francisco 18; these are simulated scenario attributes, not
+  collection sites, so geography stays unestablished. content_messages per
   dialogue: min 4, max 30, mean 8.3. Per the paper's Table 9, 320 dialogues are
   Action-oriented and 45 Emotion-oriented user type. Contributing models (from
   the source_file field): gemini-2.5-flash, gpt-4.1-nano-ca, gpt-4o-mini,
@@ -85,5 +92,11 @@ notes: >-
   the dialogues should be aware of this framing. The paper's SFT finding
   (fine-tuning on TEA-Dialog improves in-distribution support but generalizes
   poorly) is a result about the dataset, not a property of it. Authors'
-  affiliation: Harbin Institute of Technology. Venue/publication details
-  beyond the arXiv preprint (e.g. conference version) are unconfirmed.
+  affiliation: Harbin Institute of Technology. Published as an ACL 2026 Main
+  paper (Proceedings of the 64th Annual Meeting of the Association for
+  Computational Linguistics, Volume 1, Long Papers, pages 46390-46416, DOI
+  10.18653/v1/2026.acl-long.2152), confirmed from the ACL Anthology entry on
+  2026-11-20; the code repository README now states the same. The Hugging
+  Face card is unchanged since the record was written (last modified
+  2026-05-13, license mit in card metadata, README License section still
+  states the dataset is released under the MIT License, ungated and public).
