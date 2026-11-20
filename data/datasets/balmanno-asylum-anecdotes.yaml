@@ -5,6 +5,19 @@ status: partially-verified
 dataset_type: unknown
 dialogue_structure: mixed
 domain: psychotherapy
+source_context: >-
+  Anecdotes by Dr John Balmanno written 1821-1840 while he was physician at the Glasgow Asylum
+  for Lunatics (Gartnaval), bound at the rear of Dr Robert Cleghorn's case notes of asylum
+  patients dated 1814 (RCPSG 1/20/2/2). The College's catalogue describes the volume as case
+  notes of patients from the Glasgow Asylum for Lunatics in Cleghorn's hand with further notes
+  by Balmanno and anecdotes by Balmanno at the back. The College's blog describes the anecdotes
+  as an unusual record of patient case histories, often giving details of interaction between
+  the patient and the doctor, or between patients, using quotations from the patients, and
+  recording the doctor's feelings about the cases, in contrast to the clinical notes more
+  commonly found in the period. One anecdote describes the threat of the whirling chair
+  (rotation therapy) being used to make a taciturn patient speak. This is nineteenth-century
+  asylum clinical material, not a verified psychotherapy-session corpus; dataset type remains
+  unknown.
 collection_start_year: 1821
 collection_end_year: 1840
 historical_period: 1800s
@@ -12,6 +25,13 @@ historical_significance:
   - early asylum case material containing documented doctor-patient exchanges and patient quotations
 languages:
   - en
+geography:
+  countries:
+    - United Kingdom
+  regions:
+    - europe
+  scope: single_country
+  evidence_level: documented
 transcript:
   available: true
 audio:
@@ -24,13 +44,22 @@ redistribution: conditional
 license:
   type: unknown
   verified: false
+  source: https://heritage.rcpsg.ac.uk/terms-of-use
+  notes: >-
+    No license is stated for the case-note text itself. The College's Terms of Use page, read
+    2026-11-20, states that most collection images on the site are licensed under a Creative
+    Commons BY-NC-SA License and that any other copyright restrictions will be noted on
+    individual item pages; no restriction is noted on the catalogue page for RCPSG 1/20/2/2.
+    The image license does not establish a license for the manuscript text, so the dataset
+    license stays unknown rather than inheriting it.
 privacy:
-  deidentified: unknown
+  deidentified: false
   contextual_reidentification_assessed: unknown
   notes: >-
-    The archive concerns historical patients and includes names in the surviving case material.
-    The registry has not established a corpus-wide de-identification or contextual
-    re-identification assessment.
+    Not deidentified: the archive material names patients, and the College's own blog quotes a
+    named patient (Mr Anderson) from the anecdotes. The catalogue describes patient case notes
+    with patient quotations. No de-identification or contextual re-identification assessment
+    has been established.
 ethics:
   consent_documented: unknown
   ethics_review_documented: unknown
@@ -38,13 +67,20 @@ ethics:
 evidence:
   primary_sources:
     - "https://heritage.rcpsg.ac.uk/items/browse?tags=John+Balmanno"
-  supporting_publications:
     - "https://heritageblog.rcpsg.ac.uk/2020/11/02/dr-john-balmannos-asylum-anecdotes/"
-last_verified: 2026-09-26
+  supporting_publications: []
+last_verified: 2026-11-20
 notes: >-
-  The Royal College of Physicians and Surgeons of Glasgow archive identifies case notes from
-  the Glasgow Asylum for Lunatics with further notes by John Balmanno and Balmanno's anecdotes
-  at the rear of the volume (RCPSG 1/20/2/2). The College's historical article reports that
-  the anecdotes were written between 1821 and 1840 and often record interaction between patients
-  and the doctor using patient quotations. This is asylum clinical material, not a verified
-  psychotherapy-session corpus; dataset type remains unknown.
+  Re-verified 2026-11-20 against the Royal College of Physicians and Surgeons of Glasgow
+  catalogue page and the College's own 2020 blog post on the anecdotes (both read in full):
+  the volume is RCPSG 1/20/2/2, Cleghorn's 1814 case notes with Balmanno's notes and anecdotes
+  at the rear; the anecdotes were written 1821-1840 and record doctor-patient exchanges with
+  patient quotations. Geography (Glasgow, United Kingdom), source context and de-identification
+  (false: patients are named) are now established from those primary sources. The Terms of Use
+  page was also read: it licenses collection images under CC BY-NC-SA but states no license
+  for the case-note text, so the dataset license stays unknown. Still not established: the
+  number of anecdotes (no session count), whether any case was followed longitudinally, a
+  therapy modality (the material predates modern modalities; rotation therapy is described as
+  a physical asylum treatment, not a psychotherapy modality), and a publication or release year
+  (the anecdotes are unpublished manuscript material). This is asylum clinical material, not a
+  verified psychotherapy-session corpus; dataset type remains unknown.
