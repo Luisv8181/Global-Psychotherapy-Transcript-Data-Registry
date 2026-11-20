@@ -5,6 +5,16 @@ status: partially-verified
 dataset_type: unknown
 dialogue_structure: unknown
 domain: psychotherapy
+source_context: >-
+  New York State Archives series B2579, 120 patient case books (60 cubic feet),
+  1859-1898, from Manhattan State Hospital and its predecessor and branch
+  facilities (New York City Asylum for the Insane, Blackwell's Island, Hart's
+  Island Branch Lunatic Asylum). The finding aid's volume list numbers 120
+  volumes, 1-120, spanning mixed, female-only, and male-only case books, plus
+  Hart's Island branch case books (volumes 104-120) and one 1887-1889 volume
+  covering people found arriving on ships from Europe and held for return.
+  Typical entries record names, admission dates, ages, origins, physical
+  conditions, observations of behavior, treatment procedures, and other notes.
 collection_start_year: 1859
 collection_end_year: 1898
 historical_period: 1800s
@@ -12,6 +22,11 @@ historical_significance:
   - extensive nineteenth-century state-hospital patient case-book series
 languages:
   - en
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_country
+  evidence_level: documented
 transcript:
   available: true
 audio:
@@ -19,18 +34,29 @@ audio:
 video:
   available: false
 access:
-  level: metadata-only
+  level: restricted
+  requirements: >-
+    Restricted in accordance with Mental Hygiene Law, Section 33.13, relating
+    to confidentiality of clinical records. Access is permitted under certain
+    conditions upon approval by the Office of Mental Health.
 redistribution: unknown
 license:
   type: unknown
   verified: false
+  notes: >-
+    No license is stated on the finding aid. The volumes are New York State
+    records held under a confidentiality restriction, which is an access
+    condition, not a license.
 privacy:
-  deidentified: unknown
+  deidentified: false
   contextual_reidentification_assessed: unknown
   notes: >-
-    The New York State Archives finding aid describes patient records containing names and other
-    clinical details. The registry has not established a collection-wide de-identification method
-    or unrestricted access to the underlying volumes.
+    The finding aid states typical entries include patient names, admission
+    dates, ages, origins, and clinical observations, so the volumes as held
+    are identified records, not de-identified. Access is restricted under
+    Mental Hygiene Law, Section 33.13, and permitted only under certain
+    conditions upon approval by the Office of Mental Health. No
+    re-identification assessment was reported.
 ethics:
   consent_documented: unknown
   ethics_review_documented: unknown
@@ -38,12 +64,21 @@ ethics:
 evidence:
   primary_sources:
     - "https://findingaids.nysed.gov/do/46061472-14a2-5857-b402-837e080d604e"
+    - "https://iarchives.nysed.gov/xtf/view?docId=ead/findingaids/B2579.xml"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-11-20
 notes: >-
-  The New York State Archives finding aid identifies 120 volumes, 60 cubic feet, covering 1859-1898.
-  It describes typical entries as including names, admissions, ages, origins, physical conditions,
-  observations of behavior, treatment procedures and other notes. The registry treats this as a
-  historical clinical-record archive, not a verified psychotherapy transcript corpus. The finding
-  aid was reachable through web search but returned an access error when opened directly in this session,
-  so access and license remain unconfirmed.
+  The New York State Archives finding aid (series B2579) identifies 120 volumes,
+  60 cubic feet, covering 1859-1898. It describes typical entries as including
+  names, admissions, ages, origins, physical conditions, observations of behavior,
+  treatment procedures and other notes. Re-verified 2026-11-20. The finding aid
+  now opens directly (it returned an access error in September 2026) and the
+  NYSA iarchives mirror carries the full 120-volume list, confirming the volume
+  count and the branch coverage (Blackwell's Island, Hart's Island, and the New
+  York City Asylum for the Insane). The registry treats this as a historical
+  clinical-record archive, not a verified psychotherapy transcript corpus. Session
+  and participant counts are not established, since 120 volumes is a volume count,
+  not a session count. No license is stated on the finding aid. Related NYSA
+  series under the same creator are patient case files W0133, patient indexes
+  B2405, and annual reports B2604, which are separate records, not part of this
+  series.
