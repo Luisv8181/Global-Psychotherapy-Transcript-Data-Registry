@@ -5,11 +5,33 @@ status: partially-verified
 dataset_type: unknown
 dialogue_structure: unknown
 domain: psychotherapy
-collection_start_year: 1904
+source_context: >-
+  The American Journal of Insanity, published 1844-1921 in 77 volumes and
+  continued under the new title American Journal of Psychiatry. The HathiTrust
+  catalog record states it was issued July 1844 to April 1894 by the New York
+  State Lunatic Asylum at Utica and July 1894 to 1921 by the American
+  Medico-Psychological Association, and published in Baltimore by the Utica
+  State Hospital Press. Its subject headings are psychiatry, psychoses,
+  pathological psychology, and insanity law, all as periodicals. The January
+  1846 issue (volume 2), read in full text this session, carries clinical
+  articles on brain physiology and the pathology of insanity, asylum case
+  reports, and medico-legal proceedings, including a court report on a murder
+  trial. The journal is a historical clinical periodical, not a corpus of
+  therapy transcripts.
+collection_start_year: 1844
 collection_end_year: 1921
-historical_period: 1900s
+publication_year: 1844
+historical_period: 1800s
+historical_significance:
+  - founding journal of American psychiatry and predecessor of the American Journal of Psychiatry
 languages:
   - en
+geography:
+  countries: [United States]
+  regions: [north_america]
+  scope: single_country
+  evidence_level: documented
+longitudinal: false
 transcript:
   available: true
 audio:
@@ -20,14 +42,26 @@ access:
   level: open
 redistribution: conditional
 license:
-  type: unknown
+  type: public-domain-reported
   verified: false
+  source: https://catalog.hathitrust.org/Record/000681155
+  notes: >-
+    All 77 volumes were published in the United States between 1844 and 1921,
+    before 1923, so the journal text is in the public domain in the United
+    States, and HathiTrust lists every volume as full view. No explicit license
+    statement was found on the catalog record, so this is reported, not
+    verified. The scan files hosted by HathiTrust and the Internet Archive
+    carry their own terms of use.
 privacy:
-  deidentified: unknown
+  deidentified: false
   contextual_reidentification_assessed: unknown
   notes: >-
-    The historical review reports asylum case reports and clinical discussions, sometimes with
-    patient quotations. The registry has not established a corpus-wide de-identification method.
+    The January 1846 issue (volume 2), read in full text this session, prints
+    an asylum case report of a patient identified by initials, with admission
+    history, symptoms, and an autopsy account, and a medico-legal report that
+    names the defendant and the victim. The volumes as published are
+    identified material, not de-identified. No collection-wide
+    de-identification method has been established.
 ethics:
   consent_documented: unknown
   ethics_review_documented: unknown
@@ -35,8 +69,17 @@ ethics:
 evidence:
   primary_sources:
     - "https://catalog.hathitrust.org/Record/000681155"
+    - "https://archive.org/details/sim_american-journal-of-psychiatry_1846-01_2"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-11-20
 notes: >-
-  Historical clinical archive, not a verified psychotherapy transcript corpus. Individual issues
-  and articles should be screened for dialogue before use in transcript-oriented research.
+  Historical clinical archive, not a verified psychotherapy transcript corpus.
+  Collection years corrected this run from 1904-1921 to 1844-1921 against the
+  HathiTrust catalog record, which gives the run as 1844-1921 in 77 volumes.
+  Sessions and therapy modalities are not applicable here, since the record
+  describes a serial journal rather than a session corpus, and are left
+  unknown rather than inferred. Longitudinal is false, since no repeated
+  observation of the same participant or case is documented as a design. Full
+  text of the whole run is openly viewable through HathiTrust and the Internet
+  Archive. Individual issues and articles should be screened for dialogue
+  before use in transcript-oriented research.
