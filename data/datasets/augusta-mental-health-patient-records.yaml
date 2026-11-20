@@ -5,13 +5,30 @@ status: partially-verified
 dataset_type: unknown
 dialogue_structure: unknown
 domain: psychotherapy
+source_context: >-
+  Historical patient medical case histories from the Maine Insane Hospital (later Augusta State
+  Hospital, then Augusta Mental Health Institute), held by the Maine State Archives and published
+  on Digital Maine. The collection page describes 40 leather-bound volumes (01-40) spanning
+  1840-1910, each volume holding numbered, paginated patient case histories with multiple dated
+  entries by the attending physician. This is a clinical-record collection, not a transcript corpus
+  of therapy sessions; whether individual volumes contain dialogue or patient quotations has not
+  been screened.
 collection_start_year: 1840
 collection_end_year: 1910
+publication_year: 2021
 historical_period: 1800s
 historical_significance:
   - long-running digitized institutional patient-record collection from a nineteenth-century state hospital
 languages:
   - en
+geography:
+  countries:
+    - United States
+  regions:
+    - north_america
+  scope: single_country
+  evidence_level: documented
+longitudinal: true
 transcript:
   available: true
 audio:
@@ -22,14 +39,22 @@ access:
   level: open
 redistribution: conditional
 license:
-  type: unknown
+  type: public-domain-reported
   verified: false
+  source: https://digitalmaine.com/amhi_medical_patient_cases/1
+  notes: >-
+    The Volume 1 item page carries a Rights Statement of "No Copyright - United States"
+    (rightsstatements.org/vocab/NoC-US/1.0/): the organization that made the item available
+    believes the item is in the Public Domain under the laws of the United States, with no
+    determination for other countries. That is a reported public-domain belief, not a license
+    grant, so verified stays false. Volume 17 carries the same statement.
 privacy:
-  deidentified: unknown
+  deidentified: false
   contextual_reidentification_assessed: unknown
   notes: >-
-    The collection contains historical patient medical records. The registry has not established
-    whether all records are deidentified or whether contextual re-identification risks have been assessed.
+    Not deidentified: the collection page states the volumes provide the patient's name, dates of
+    admission and discharge, place of birth, marital status, a brief diagnosis, and dated entries
+    by the attending physician, with a patient index in each volume (except Volume 14).
 ethics:
   consent_documented: unknown
   ethics_review_documented: unknown
@@ -37,11 +62,24 @@ ethics:
 evidence:
   primary_sources:
     - "https://digitalmaine.com/amhi/"
+    - "https://digitalmaine.com/amhi_medical_patient_cases"
+    - "https://digitalmaine.com/amhi_medical_patient_cases/1"
+    - "https://digitalmaine.com/amhi_medical_patient_cases/16"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-11-20
 notes: >-
   Digital Maine identifies Patient Medical Records covering 1840-1910 within the Augusta Mental
-  Health Institute collections. The institution began in 1840 as the Maine Insane Hospital and
-  later changed names. The registry records this as a historical clinical-record resource, not as
-  a verified psychotherapy dialogue corpus; individual volumes require screening for dialogue or
-  patient quotations.
+  Health Institute collections. The institution began in 1840 as the Maine Insane Hospital, was
+  renamed Augusta State Hospital in 1913 and Augusta Mental Health Institute in 1973, and closed
+  in 2004 (replaced by Riverview Psychiatric Center on the same campus). The collection page
+  lists 40 leather-bound volumes (01-40); 17 volumes (1-17) were published online as of
+  2026-11-20 and the page states the collection is still being imaged. Volumes 1-23 hold mixed
+  genders; volumes 24-40 are single-gender. Volume 1 is cited as published 2021 and Volume 17
+  as 2022 on their Digital Maine item pages; publication_year records 2021, the first volume's
+  year. Longitudinal is true because each case history holds multiple dated entries by the
+  attending physician describing the patient's condition over the stay. The registry records this
+  as a historical clinical-record resource, not as a verified psychotherapy dialogue corpus;
+  individual volumes require screening for dialogue or patient quotations. Left unknown,
+  honestly: therapy modalities (the pages name no modality), session and participant counts (40
+  volumes is not a session count), consent and ethics review (not stated on the pages), and
+  redistribution beyond conditional.
