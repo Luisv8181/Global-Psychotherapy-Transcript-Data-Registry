@@ -5,6 +5,19 @@ status: partially-verified
 dataset_type: unknown
 dialogue_structure: unknown
 domain: psychotherapy
+source_context: >-
+  Case books of Crichton Royal Institution, Scotland's seventh and last royal asylum, founded on an
+  endowment left by Dr James Crichton and driven by Elizabeth Crichton, built on land south of Dumfries
+  and opened 3 June 1839, gaining its royal title in 1840. Under Physician Superintendent Dr W. A. F.
+  Browne moral treatment was extolled, with recreation and occupation as part of treatment. Southern
+  Counties Asylum opened in 1849 for pauper patients and merged with the Institution in 1884 to form
+  the First and Second Houses. The hospital joined the National Health Service in 1948 and closed in
+  November 2011. Six case-book series cover 1839 to 1937. The books are printed forms recording
+  admission and clinical and family history followed by dated case-note entries on attitude, treatment
+  and response, with additional clinical material attached in many volumes. The papers are held by
+  Dumfries and Galloway Archives and were digitised by the University of Glasgow as part of a Wellcome
+  Trust funded project, with digitised material accessed freely online through the Wellcome Library
+  catalogue.
 collection_start_year: 1839
 collection_end_year: 1937
 historical_period: 1800s
@@ -12,8 +25,13 @@ historical_significance:
   - large nineteenth- and early-twentieth-century psychiatric case-note archive with longitudinal patient records
 languages:
   - en
+geography:
+  countries: [United Kingdom]
+  regions: [europe]
+  scope: single_country
+  evidence_level: documented
 sessions: null
-longitudinal: unknown
+longitudinal: true
 transcript:
   available: true
 audio:
@@ -26,13 +44,22 @@ redistribution: conditional
 license:
   type: unknown
   verified: false
+  source: https://wellcomecollection.org/works/a4xtc6ac
+  notes: >-
+    No licence is stated for the case-note text. The catalogue copyright note directs enquiries for
+    reproduction for commercial purposes to the Archivist, Dumfries and Galloway Archives and Local
+    Studies, and the terms of use make the papers available subject to UK data-protection conditions.
+    The digitised volume 1 IIIF location states CC BY-NC 4.0 for the digitised images; that image
+    licence was not adopted as the licence for the case-note text, since a later volume held only in
+    closed stores carries no licence statement at all.
 privacy:
-  deidentified: unknown
+  deidentified: false
   contextual_reidentification_assessed: unknown
   notes: >-
-    The collection contains historical patient records. The Wellcome description notes that the
-    original papers are subject to archival and data-protection conditions; the registry has not
-    established a collection-wide de-identification method.
+    The case books are not de-identified. The printed queries sheet pasted into volume 1 asks first
+    for the patient's name, age, condition, occupation, disposition and general deportment, and the
+    front index of the volume lists patients by full name with case and page numbers. No
+    de-identification method is described anywhere in the sources read.
 ethics:
   consent_documented: unknown
   ethics_review_documented: unknown
@@ -41,12 +68,23 @@ evidence:
   primary_sources:
     - "https://wellcomecollection.org/works/vbqzb7wf"
     - "https://wellcomecollection.org/works/wpbpjymq"
+    - "https://wellcomecollection.org/works/utmcnmq8"
+    - "https://wellcomecollection.org/works/a4xtc6ac"
+    - "https://iiif.wellcomecollection.org/presentation/v2/b22654033"
   supporting_publications: []
-last_verified: 2026-09-26
+last_verified: 2026-11-20
 notes: >-
   The Wellcome collection contains Crichton Royal Institution Case Books, Southern Counties Asylum
   Case Books, Male Case Books, Female Case Books, Chronic Case Books and Other Case Books covering
-  1839-1937. The records contain admission and history information followed by case-note entries
-  describing attitude, treatment and response. Individual volumes are available online, including
-  the 1839-1840 first Crichton Royal Institution case book. This is a psychiatric case-note archive,
-  not a verified psychotherapy transcript corpus.
+  1839-1937, with the series ranges confirmed on the catalogue page as Crichton Royal Institution
+  1839-1885, Southern Counties Asylum 1839-1885, Male 1840-1937, Female 1845-1937, Chronic 1845-1904
+  and Other 1899-1906. The records contain admission and history information followed by case-note
+  entries describing attitude, treatment and response. Individual volumes are available online,
+  including the 1839-1840 first Crichton Royal Institution case book, which holds cases 1 to 82 in
+  392 digitised pages. Patients often appear in multiple volumes through readmission, transfer
+  between departments or length of stay, and case-note entries for 27 patients in volume 1 are
+  continued in volume 8, which is why longitudinal is recorded as true. This is a psychiatric
+  case-note archive, not a verified psychotherapy transcript corpus. Therapy modalities are not
+  recorded because the material predates modern modalities; moral treatment under Dr Browne is
+  described in the source context. Session counts do not apply to case books, and no publication
+  year is recorded because the volumes are unpublished manuscripts.
